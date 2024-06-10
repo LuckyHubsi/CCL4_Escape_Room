@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C55E93D1-64CD-4284-B238-EE5C96011CBB}" SchemaVersion="110">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{C55E93D1-64CD-4284-B238-EE5C96011CBB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C55E93D1-64CD-4284-B238-EE5C96011CBB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{70738921-B883-4353-B99D-E2C50AEC4784}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Torch" ID="{F96C55E1-57D4-4977-A177-426F4EED8267}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cauldron" ID="{2B5D7B80-435F-4E50-8FB5-18DC5D5F7E70}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footsteps" ID="{EFC36215-A6E9-4EBF-B92D-74A5018638D4}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
