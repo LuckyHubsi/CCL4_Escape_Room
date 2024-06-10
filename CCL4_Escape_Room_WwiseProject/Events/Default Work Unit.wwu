@@ -19,18 +19,29 @@
 						<Action Name="" ID="{E828C1DB-DCD4-43C2-AABD-E9C0C7783E36}" ShortID="730295402">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Cauldron" ID="{2B5D7B80-435F-4E50-8FB5-18DC5D5F7E70}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+									<ObjectRef Name="Cauldron" ID="{80E91274-6F2C-45C4-875E-1780CB537C57}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Torch" ID="{1C5A43E2-B83E-4A6F-A33D-E41ABB2CC5E2}">
+				<Event Name="Play_Player_Torch" ID="{B23C645E-5805-4E4F-B9D9-D369489E5D08}">
 					<ChildrenList>
-						<Action Name="" ID="{4A85468A-27DF-4947-A047-5919FA55D661}" ShortID="1048443822">
+						<Action Name="" ID="{E2C88C50-B0FA-4F2C-B8B7-41F0AA863014}" ShortID="125653789">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Torch" ID="{F96C55E1-57D4-4977-A177-426F4EED8267}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+									<ObjectRef Name="Player Torch" ID="{ADA63D8D-4684-4831-A74C-EBD380EAAF6C}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Torch_Crackling" ID="{DE1FD978-1BEA-4281-B259-99AC7F872488}">
+					<ChildrenList>
+						<Action Name="" ID="{FBE8953E-DFFD-420E-91C8-0788C77D4B7C}" ShortID="354551076">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Torch Crackling" ID="{D8CD20A4-CCE2-4C12-91BA-B599F65AD4F6}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

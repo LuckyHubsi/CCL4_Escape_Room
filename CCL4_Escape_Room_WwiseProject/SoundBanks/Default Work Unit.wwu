@@ -5,9 +5,10 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{70738921-B883-4353-B99D-E2C50AEC4784}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Torch" ID="{F96C55E1-57D4-4977-A177-426F4EED8267}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Cauldron" ID="{2B5D7B80-435F-4E50-8FB5-18DC5D5F7E70}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Footsteps" ID="{EFC36215-A6E9-4EBF-B92D-74A5018638D4}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Torch_Crackling" ID="{DE1FD978-1BEA-4281-B259-99AC7F872488}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Cauldron" ID="{EBBD3B38-AD89-486B-A000-444A1D0EA575}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Footsteps" ID="{A91E6A99-451A-49D9-943F-F3CE19CA8A99}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Player_Torch" ID="{B23C645E-5805-4E4F-B9D9-D369489E5D08}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

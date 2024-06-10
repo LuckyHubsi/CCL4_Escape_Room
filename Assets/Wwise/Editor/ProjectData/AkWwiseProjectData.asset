@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584835735066566714
+    m_lastTime: -8584835615709121546
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584835735069106362
+    m_lastTime: -8584835606415043350
     List:
     - name: Play_Cauldron
       guid: 383bbdeb89ad6b48a000444a1d0ea575
@@ -110,9 +110,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 383bbdeb89ad6b48a000444a1d0ea575
       Path: Events\Default Work Unit\Play_Cauldron
-      maxAttenuation: 10
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 5
+      maxDuration: 4.166604
+      minDuration: 4.166604
     - name: Play_Footsteps
       guid: 996a1ea91a45d949943ff3ce19ca8a99
       id: 3854155799
@@ -130,6 +130,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.7845625
       minDuration: 0.6015625
+    - name: Play_Player_Torch
+      guid: 5e643cb205584f4eb9d9d369489e5d08
+      id: 618472270
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play_Player_Torch
+        ObjectType: 3
+        guid: 5e643cb205584f4eb9d9d369489e5d08
+      Path: Events\Default Work Unit\Play_Player_Torch
+      maxAttenuation: 5
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Torch_Crackling
+      guid: 78d91fdeea1b8142b25999ac7f872488
+      id: 45744291
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play_Torch_Crackling
+        ObjectType: 3
+        guid: 78d91fdeea1b8142b25999ac7f872488
+      Path: Events\Default Work Unit\Play_Torch_Crackling
+      maxAttenuation: 5
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -303,7 +337,7 @@ MonoBehaviour:
     m_lastTime: -8584835735066406724
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 090000000a000000
+  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000b0000000c0000000d0000000e0000000f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

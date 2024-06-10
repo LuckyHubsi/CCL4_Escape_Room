@@ -39,13 +39,17 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{93862DEF-36A2-A6D6-69D1-521078080704}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AF7C59B4-E259-B42B-A5A7-F4CCB02DEAE7}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="201119281" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cauldron.wav</ShortName>
 					<CachePath>SFX/Cauldron_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="215573568" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Torch Crackling.wav</ShortName>
+					<CachePath>SFX/Torch Crackling_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="442710542" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_1.wav</ShortName>
@@ -77,7 +81,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3212638512" Name="Play_Cauldron" MaxAttenuation="10" DurationType="Infinite">
+				<Event Id="3212638512" Name="Play_Cauldron" MaxAttenuation="5" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="201119281"/>
 					</MediaRefs>
@@ -100,44 +104,20 @@
 								<MediaRef Id="995375094"/>
 							</MediaRefs>
 						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="4248645337"/>
-							<MediaRefs>
-								<MediaRef Id="467592888"/>
-								<MediaRef Id="942542682"/>
-								<MediaRef Id="969354292"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2058049674" Default="true"/>
-							<MediaRefs>
-								<MediaRef Id="442710542"/>
-								<MediaRef Id="691056013"/>
-								<MediaRef Id="995375094"/>
-							</MediaRefs>
-						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2025845440" Name="Play_Torch" MaxAttenuation="3" DurationType="OneShot" DurationMin="0.21144791" DurationMax="0.21144791">
-					<SwitchContainers>
-						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="1572296608" Id="3053630529" Default="true"/>
-							<MediaRefs>
-								<MediaRef Id="466972273"/>
-							</MediaRefs>
-						</SwitchContainer>
-					</SwitchContainers>
+				<Event Id="618472270" Name="Play_Player_Torch" MaxAttenuation="5" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="215573568"/>
+						<MediaRef Id="466972273"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="45744291" Name="Play_Torch_Crackling" MaxAttenuation="5" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="215573568"/>
+					</MediaRefs>
 				</Event>
 			</Events>
-			<StateGroups>
-				<StateGroup Id="1572296608" Name="Ignition">
-					<States>
-						<State Id="748895195" Name="None"/>
-						<State Id="2452206122" Name="False"/>
-						<State Id="3053630529" Name="True"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
@@ -148,5 +128,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C54F0116-F6B7-0666-DA24-A18BE854C433}</FileHash>
+	<FileHash>{71D3E731-1DFE-C313-2A3E-CB6270590249}</FileHash>
 </SoundBanksInfo>

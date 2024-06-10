@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2025845440	Play_Torch			\Default Work Unit\Play_Torch	
+	45744291	Play_Torch_Crackling			\Default Work Unit\Play_Torch_Crackling	
+	618472270	Play_Player_Torch			\Default Work Unit\Play_Player_Torch	
 	3212638512	Play_Cauldron			\Default Work Unit\Play_Cauldron	
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
 
@@ -10,21 +11,14 @@ Switch	ID	Name	Switch Group			Notes
 	2058049674	Wood	Footsteps			
 	4248645337	Grass	Footsteps			
 
-State Group	ID	Name			Wwise Object Path	Notes
-	1572296608	Ignition			\Default Work Unit\Ignition	
-
-State	ID	Name	State Group			Notes
-	748895195	None	Ignition			
-	2452206122	False	Ignition			
-	3053630529	True	Ignition			
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	201119281	Cauldron	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Cauldron_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Cauldron		524072
-	442710542	Footsteps_Wood_1	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Footsteps_Wood_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps Wood\Footsteps_Wood_1		71174
-	466972273	Torch Ignition	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Torch Ignition_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Torch\Torch Ignition		20394
-	467592888	Footsteps_Grass_3	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Footsteps_Grass_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps Grass\Footsteps_Grass_3		67072
-	691056013	Footsteps_Wood_2_wav	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Footsteps_Wood_2.wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps Wood\Footsteps_Wood_2_wav		57846
-	942542682	Footsteps_Grass_1	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Footsteps_Grass_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps Grass\Footsteps_Grass_1		62138
-	969354292	Footsteps_Grass_2	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Footsteps_Grass_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps Grass\Footsteps_Grass_2		75414
-	995375094	Footsteps_Wood_3_wav	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Footsteps_Wood_3.wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps Wood\Footsteps_Wood_3_wav		65252
+	201119281	Cauldron	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Cauldron_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Cauldron		400090
+	215573568	Torch Crackling	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Torch Crackling_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Torch Crackling		591862
+	442710542	Footsteps_Wood_1	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Footsteps_Wood_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps Wood\Footsteps_Wood_1		71174
+	466972273	Torch Ignition	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Torch Ignition_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Torch\Torch Ignition		20394
+	467592888	Footsteps_Grass_3	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Footsteps_Grass_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps Grass\Footsteps_Grass_3		67072
+	691056013	Footsteps_Wood_2_wav	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Footsteps_Wood_2.wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps Wood\Footsteps_Wood_2_wav		57846
+	942542682	Footsteps_Grass_1	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Footsteps_Grass_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps Grass\Footsteps_Grass_1		62138
+	969354292	Footsteps_Grass_2	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Footsteps_Grass_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps Grass\Footsteps_Grass_2		75414
+	995375094	Footsteps_Wood_3_wav	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Footsteps_Wood_3.wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps Wood\Footsteps_Wood_3_wav		65252
 
