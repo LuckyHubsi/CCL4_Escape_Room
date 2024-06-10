@@ -103,6 +103,6 @@ public class ScenesManager : MonoBehaviour
     {
         // fill the bar smoothly through the MoveTowards
         // interpolates between the current fillAmount and the newly calulcated loading percentage in the LoadSceneAsync func
-        progressBar.fillAmount = Mathf.MoveTowards(progressBar.fillAmount, target, Time.deltaTime * 3);
+        // progressBar.fillAmount = Mathf.MoveTowards(progressBar.fillAmount, target, Time.deltaTime * 3);
     }
 }
