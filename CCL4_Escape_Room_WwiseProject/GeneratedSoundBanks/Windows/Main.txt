@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	2025845440	Play_Torch			\Default Work Unit\Play_Torch	
 	3212638512	Play_Cauldron			\Default Work Unit\Play_Cauldron	
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
 
@@ -19,7 +20,6 @@ State	ID	Name	State Group			Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	201119281	Cauldron	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Cauldron_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Cauldron		524072
-	215573568	Torch Crackling	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Crackling_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Torch\Torch Crackling		1183628
 	442710542	Footsteps_Wood_1	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Footsteps_Wood_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps Wood\Footsteps_Wood_1		71174
 	466972273	Torch Ignition	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Ignition_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Torch\Torch Ignition		20394
 	467592888	Footsteps_Grass_3	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Footsteps_Grass_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps Grass\Footsteps_Grass_3		67072

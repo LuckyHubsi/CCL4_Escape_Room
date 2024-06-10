@@ -266,31 +266,6 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Torch Crackling" ID="{5C38D385-06B2-4778-9FAE-2528AA532EC8}" ShortID="1058670821">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Torch Crackling" ID="{7F6B83A4-AE78-44EA-815F-2C22509AD702}">
-											<Language>SFX</Language>
-											<AudioFile>Torch Crackling.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="215573568"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Torch Crackling" ID="{7F6B83A4-AE78-44EA-815F-2C22509AD702}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="Torch Ignition" ID="{B7A6C770-A27C-4AF9-BB0D-51C8F68DFE11}" ShortID="385308427">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
@@ -320,23 +295,39 @@
 										<ActiveSource Name="Torch Ignition" ID="{964946DE-AE22-4A4D-97BB-D56216DFFC29}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Torch Crackling" ID="{2758DD55-83D3-4FA5-99F5-931BAC7F675D}" ShortID="374475498">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Torch Crackling" ID="{5DBD04CC-FA3D-431B-81EF-CB72BCA3F0A8}">
+											<Language>SFX</Language>
+											<AudioFile>Torch Crackling.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="215573568"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Torch Crackling" ID="{5DBD04CC-FA3D-431B-81EF-CB72BCA3F0A8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Torch Ignition" ID="{B7A6C770-A27C-4AF9-BB0D-51C8F68DFE11}"/>
+										<ItemRef Name="Torch Crackling" ID="{2758DD55-83D3-4FA5-99F5-931BAC7F675D}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Torch Crackling" ID="{5C38D385-06B2-4778-9FAE-2528AA532EC8}"/>
+										<ItemRef Name="Torch Ignition" ID="{B7A6C770-A27C-4AF9-BB0D-51C8F68DFE11}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="False" ID="{F3F207B4-4CBD-4B71-8C76-D626AF6C9ECF}"/>
-										<ItemList>
-											<ItemRef Name="Torch Crackling" ID="{5C38D385-06B2-4778-9FAE-2528AA532EC8}"/>
-										</ItemList>
-									</Grouping>
 									<Grouping>
 										<SwitchRef Name="True" ID="{E7E990D8-F6C6-468E-977A-1836DCE4401F}"/>
 										<ItemList>

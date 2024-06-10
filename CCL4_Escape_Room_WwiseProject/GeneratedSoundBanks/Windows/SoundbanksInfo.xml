@@ -39,17 +39,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0BD01B37-BE92-DA90-EE91-B7B13A676998}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{93862DEF-36A2-A6D6-69D1-521078080704}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="201119281" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cauldron.wav</ShortName>
 					<CachePath>SFX/Cauldron_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="215573568" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Torch Crackling.wav</ShortName>
-					<CachePath>SFX/Torch Crackling_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="442710542" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_1.wav</ShortName>
@@ -104,6 +100,32 @@
 								<MediaRef Id="995375094"/>
 							</MediaRefs>
 						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="4248645337"/>
+							<MediaRefs>
+								<MediaRef Id="467592888"/>
+								<MediaRef Id="942542682"/>
+								<MediaRef Id="969354292"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2058049674" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="442710542"/>
+								<MediaRef Id="691056013"/>
+								<MediaRef Id="995375094"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2025845440" Name="Play_Torch" MaxAttenuation="3" DurationType="OneShot" DurationMin="0.21144791" DurationMax="0.21144791">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1572296608" Id="3053630529" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="466972273"/>
+							</MediaRefs>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 			</Events>
@@ -126,5 +148,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C7EB743F-EF0F-C8E6-8A3C-3E692D30B7BE}</FileHash>
+	<FileHash>{C54F0116-F6B7-0666-DA24-A18BE854C433}</FileHash>
 </SoundBanksInfo>
