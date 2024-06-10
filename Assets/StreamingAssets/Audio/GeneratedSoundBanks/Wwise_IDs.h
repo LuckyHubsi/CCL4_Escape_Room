@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_CAULDRON = 3212638512U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_TORCH = 2025845440U;
     } // namespace EVENTS
 
     namespace STATES

@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Torch" ID="{1C5A43E2-B83E-4A6F-A33D-E41ABB2CC5E2}">
+					<ChildrenList>
+						<Action Name="" ID="{4A85468A-27DF-4947-A047-5919FA55D661}" ShortID="1048443822">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Torch" ID="{F96C55E1-57D4-4977-A177-426F4EED8267}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
