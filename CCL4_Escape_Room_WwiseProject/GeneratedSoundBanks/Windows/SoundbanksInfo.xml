@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{735EF552-0967-8BB6-302B-5327500F3E24}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<StateGroups>
+				<StateGroup Id="1572296608" Name="Ignition">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2452206122" Name="False"/>
+						<State Id="3053630529" Name="True"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="Footsteps">
+					<Switches>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0BD01B37-BE92-DA90-EE91-B7B13A676998}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="201119281" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cauldron.wav</ShortName>
+					<CachePath>SFX/Cauldron_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="215573568" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Torch Crackling.wav</ShortName>
+					<CachePath>SFX/Torch Crackling_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="442710542" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Wood_1.wav</ShortName>
+					<CachePath>SFX/Footsteps_Wood_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="466972273" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Torch Ignition.wav</ShortName>
+					<CachePath>SFX/Torch Ignition_10C4C929.wem</CachePath>
+				</File>
+				<File Id="467592888" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Grass_3.wav</ShortName>
+					<CachePath>SFX/Footsteps_Grass_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="691056013" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Wood_2.wav.wav</ShortName>
+					<CachePath>SFX/Footsteps_Wood_2.wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="942542682" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Grass_1.wav</ShortName>
+					<CachePath>SFX/Footsteps_Grass_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="969354292" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Grass_2.wav</ShortName>
+					<CachePath>SFX/Footsteps_Grass_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="995375094" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Wood_3.wav.wav</ShortName>
+					<CachePath>SFX/Footsteps_Wood_3.wav_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3212638512" Name="Play_Cauldron" MaxAttenuation="10" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="201119281"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3854155799" Name="Play_Footsteps" DurationType="OneShot" DurationMin="0.6015625" DurationMax="0.7845625">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="4248645337"/>
+							<MediaRefs>
+								<MediaRef Id="467592888"/>
+								<MediaRef Id="942542682"/>
+								<MediaRef Id="969354292"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2058049674" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="442710542"/>
+								<MediaRef Id="691056013"/>
+								<MediaRef Id="995375094"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="1572296608" Name="Ignition">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2452206122" Name="False"/>
+						<State Id="3053630529" Name="True"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="Footsteps">
+					<Switches>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{C7EB743F-EF0F-C8E6-8A3C-3E692D30B7BE}</FileHash>
+</SoundBanksInfo>

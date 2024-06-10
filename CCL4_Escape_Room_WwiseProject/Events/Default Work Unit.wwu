@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A6608180-E719-42C8-8695-CC464271BD8B}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{A6608180-E719-42C8-8695-CC464271BD8B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Footsteps" ID="{A91E6A99-451A-49D9-943F-F3CE19CA8A99}">
+					<ChildrenList>
+						<Action Name="" ID="{A659F16E-8157-444E-B82C-7DF29E227BF8}" ShortID="121598998">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{EFC36215-A6E9-4EBF-B92D-74A5018638D4}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Cauldron" ID="{EBBD3B38-AD89-486B-A000-444A1D0EA575}">
+					<ChildrenList>
+						<Action Name="" ID="{E828C1DB-DCD4-43C2-AABD-E9C0C7783E36}" ShortID="730295402">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cauldron" ID="{2B5D7B80-435F-4E50-8FB5-18DC5D5F7E70}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
