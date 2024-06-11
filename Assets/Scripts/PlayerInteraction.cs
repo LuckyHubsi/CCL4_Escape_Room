@@ -8,6 +8,9 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField]
     private Torch _carriedTorch;
 
+    [Header("Wwise Torch Reference")]
+    public AK.Wwise.Event playerInterActPlayEvent;
+
     private void Awake()
     {
         _cam = GetComponentInChildren<Camera>();
@@ -43,6 +46,12 @@ public class PlayerInteraction : MonoBehaviour
     {
         torch.gameObject.SetActive(false);
         _carriedTorch.gameObject.SetActive(true);
+
+        //Equip Torch
+        AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Torch", gameObject);
+
+        playerInterActPlayEvent.Post(gameObject);
+
     }
 
     public void CombineTorch(Torch torch)
@@ -53,6 +62,8 @@ public class PlayerInteraction : MonoBehaviour
             {
                 _carriedTorch.SetTorchState(Torch.TorchState.Purple);
                 Debug.Log("Player Torch: Purple");
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
+                playerInterActPlayEvent.Post(gameObject);
             }
 
             if (_carriedTorch.torchState == Torch.TorchState.Unlit)
@@ -61,11 +72,21 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     _carriedTorch.SetTorchState(Torch.TorchState.Red);
                     Debug.Log("Player Torch: Red");
+
+
+                    //Pickup Torch Flame Sound
+                    AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
+                    playerInterActPlayEvent.Post(gameObject);
                 }
                 if (torch.torchState == Torch.TorchState.Blue)
                 {
                     _carriedTorch.SetTorchState(Torch.TorchState.Blue);
                     Debug.Log("Player Torch: Blue");
+
+
+                    //Pickup Torch Flame Sound
+                    AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
+                    playerInterActPlayEvent.Post(gameObject);
                 }
             }
         }

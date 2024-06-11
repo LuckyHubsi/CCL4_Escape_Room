@@ -7,6 +7,9 @@ State	ID	Name	State Group			Notes
 	3053630529	True	Ignition			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	493210468	Player Interact			\Default Work Unit\Master Audio Bus\Player Interact	
+	2385628198	Footsteps			\Default Work Unit\Master Audio Bus\Footsteps	
+	2607556080	Menu			\Default Work Unit\Master Audio Bus\Menu	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

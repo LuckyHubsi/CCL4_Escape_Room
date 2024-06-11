@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{29C483A0-A352-4DB6-9294-39BF3B2F1C9F}" SchemaVersion="110">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{29C483A0-A352-4DB6-9294-39BF3B2F1C9F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{29C483A0-A352-4DB6-9294-39BF3B2F1C9F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Click_Pitch" ID="{A6DC4477-BE1D-4C55-9B13-694F1AB3876E}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterFrequency" Type="Real32" Value="800"/>
+						<Property Name="FilterType" Type="int32" Value="4"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

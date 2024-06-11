@@ -5,69 +5,79 @@
 			<ChildrenList>
 				<Folder Name="Environment" ID="{1F107662-24B4-4735-B666-243CA4E04131}" ShortID="618420124">
 					<ChildrenList>
-						<Sound Name="Torch Crackling" ID="{D8CD20A4-CCE2-4C12-91BA-B599F65AD4F6}" ShortID="208537615">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>6</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Torch" ID="{BD58D00A-70FB-4517-A35E-1C662A14361D}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
-								</Reference>
-							</ReferenceList>
+						<Folder Name="Indoor" ID="{C3DB1B59-3223-40EC-AB7C-55B8604E241B}" ShortID="778630046">
 							<ChildrenList>
-								<AudioFileSource Name="Torch Crackling" ID="{581A8FE6-1238-4CCF-AF8E-1E4C97C5CF37}">
-									<Language>SFX</Language>
-									<AudioFile>Torch Crackling.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="215573568"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="Torch Crackling" ID="{D8CD20A4-CCE2-4C12-91BA-B599F65AD4F6}" ShortID="208537615">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Torch" ID="{BD58D00A-70FB-4517-A35E-1C662A14361D}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Torch Crackling" ID="{581A8FE6-1238-4CCF-AF8E-1E4C97C5CF37}">
+											<Language>SFX</Language>
+											<AudioFile>Torch Crackling.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="215573568"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Torch Crackling" ID="{581A8FE6-1238-4CCF-AF8E-1E4C97C5CF37}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cauldron" ID="{80E91274-6F2C-45C4-875E-1780CB537C57}" ShortID="205409857">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Cauldron" ID="{D7697C20-014D-4908-BAAD-D5CBDC210E3A}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cauldron" ID="{303415E7-3111-4464-BDFF-5EC480D78637}">
+											<Language>SFX</Language>
+											<AudioFile>Cauldron.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="201119281"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cauldron" ID="{303415E7-3111-4464-BDFF-5EC480D78637}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Torch Crackling" ID="{581A8FE6-1238-4CCF-AF8E-1E4C97C5CF37}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Cauldron" ID="{80E91274-6F2C-45C4-875E-1780CB537C57}" ShortID="205409857">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Cauldron" ID="{D7697C20-014D-4908-BAAD-D5CBDC210E3A}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Cauldron" ID="{303415E7-3111-4464-BDFF-5EC480D78637}">
-									<Language>SFX</Language>
-									<AudioFile>Cauldron.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="201119281"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Cauldron" ID="{303415E7-3111-4464-BDFF-5EC480D78637}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</Folder>
+						<Folder Name="Outdoor" ID="{38B9993D-3BA6-4518-ACE8-EC84C0672874}" ShortID="292771165"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{F0075B49-D4E8-451B-859D-EF519831BF1E}" ShortID="332277042">
@@ -81,7 +91,7 @@
 									<ObjectRef Name="Wood" ID="{9C086411-CAF6-4A01-B935-F5DFB4E86D31}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+									<ObjectRef Name="Footsteps" ID="{428BF76C-8BEC-43AC-8FEA-C9F25D2B72CE}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Footsteps" ID="{82DE029F-6651-4570-BEC3-886992FE671C}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
@@ -194,6 +204,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Footsteps_Wood_1" ID="{E3279BCC-F867-47C1-BCE9-78D7EA224DF5}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.316037622956498"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Footsteps_Wood_1.wav</AudioFile>
 													<MediaIDList>
@@ -216,6 +230,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Footsteps_Wood_2_wav" ID="{F84BAFE8-8854-4980-8391-1ABA1200E918}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.189769716334165"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.189769716334165"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Footsteps_Wood_2.wav.wav</AudioFile>
 													<MediaIDList>
@@ -238,6 +257,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Footsteps_Wood_3_wav" ID="{D846B8DA-7B7F-430E-9EB5-2ECB5EF18925}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.262625710030479"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.262625710030479"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Footsteps_Wood_3.wav.wav</AudioFile>
 													<MediaIDList>
@@ -277,16 +301,356 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
-						<RandomSequenceContainer Name="Player Torch" ID="{ADA63D8D-4684-4831-A74C-EBD380EAAF6C}" ShortID="959112775">
-							<PropertyList>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-							</PropertyList>
+						<SwitchContainer Name="Player Interact" ID="{EF40D2FC-F813-4249-8FEF-DE25B7AE80CD}" ShortID="781385320">
 							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Torch" ID="{BD58D00A-70FB-4517-A35E-1C662A14361D}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Window_Rune_Gone" ID="{6B5E099C-92B6-4C09-8DC5-4E8C7DB667C7}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Player Interact" ID="{ECA32155-0AEB-4042-B028-B36A32B351ED}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="PlayerInteractSwitch" ID="{1D6FDA0A-B3EA-4A54-8E9D-6C352874436A}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Other Torch Interaction" ID="{ADA63D8D-4684-4831-A74C-EBD380EAAF6C}" ShortID="959112775">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Torch" ID="{BD58D00A-70FB-4517-A35E-1C662A14361D}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Torch Crackling" ID="{2758DD55-83D3-4FA5-99F5-931BAC7F675D}" ShortID="374475498">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Torch" ID="{BD58D00A-70FB-4517-A35E-1C662A14361D}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Torch Crackling" ID="{5DBD04CC-FA3D-431B-81EF-CB72BCA3F0A8}">
+													<Language>SFX</Language>
+													<AudioFile>Torch Crackling.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="215573568"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Torch Crackling" ID="{5DBD04CC-FA3D-431B-81EF-CB72BCA3F0A8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Torch Ignition" ID="{B7A6C770-A27C-4AF9-BB0D-51C8F68DFE11}" ShortID="385308427">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Torch" ID="{BD58D00A-70FB-4517-A35E-1C662A14361D}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Torch Ignition" ID="{964946DE-AE22-4A4D-97BB-D56216DFFC29}">
+													<Language>SFX</Language>
+													<AudioFile>Torch Ignition.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="466972273"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Torch Ignition" ID="{964946DE-AE22-4A4D-97BB-D56216DFFC29}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="Torch Ignition" ID="{B7A6C770-A27C-4AF9-BB0D-51C8F68DFE11}"/>
+										<ItemRef Name="Torch Crackling" ID="{2758DD55-83D3-4FA5-99F5-931BAC7F675D}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<Sound Name="Torch Degnition" ID="{93C97DAD-DDC0-4EBF-9E2D-4EA289EE66C4}" ShortID="418528250">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Torch Degnition" ID="{6F3E5328-76DC-47D3-ADE9-E58AFC88937F}">
+											<Language>SFX</Language>
+											<AudioFile>Torch Degnition.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="891873728"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Torch Degnition" ID="{6F3E5328-76DC-47D3-ADE9-E58AFC88937F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Torch Dropping" ID="{6BE42484-6F38-4EA7-8BB8-4D0DADB58FC9}" ShortID="119278948">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Torch Dropping" ID="{5F63ADC7-CD7B-4792-9605-D80820A8EF4A}">
+											<Language>SFX</Language>
+											<AudioFile>Torch Dropping.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="525695517"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Torch Dropping" ID="{5F63ADC7-CD7B-4792-9605-D80820A8EF4A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Torch Equipping" ID="{E8AD28B8-3045-44E0-89C7-BFCE7929E593}" ShortID="708090915">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Torch Equipping" ID="{4F79FB93-6400-4328-A3E0-44CFD539EC30}">
+											<Language>SFX</Language>
+											<AudioFile>Torch Equipping.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="573187394"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Torch Equipping" ID="{4F79FB93-6400-4328-A3E0-44CFD539EC30}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Torch Combination" ID="{78F481FC-19E4-45B2-92AD-7503D388FF69}" ShortID="38481200">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Torch Combination" ID="{0314B601-5047-478C-BA81-E9751C44C892}">
+											<Language>SFX</Language>
+											<AudioFile>Torch Combination.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="71493339"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Torch Combination" ID="{0314B601-5047-478C-BA81-E9751C44C892}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Window Rune be gone" ID="{AB3034D5-E7E5-4B8B-8749-765B2A1CDBF2}" ShortID="564415457">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Window" ID="{C6FBF658-1ED6-4D30-B162-386479523916}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Window Rune be gone" ID="{D6DE6ACD-5391-4CE1-8645-1CCEA364E0EF}">
+											<Language>SFX</Language>
+											<AudioFile>Window Rune be gone.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="340508672"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Window Rune be gone" ID="{D6DE6ACD-5391-4CE1-8645-1CCEA364E0EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Torch Dropping" ID="{6BE42484-6F38-4EA7-8BB8-4D0DADB58FC9}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Other Torch Interaction" ID="{ADA63D8D-4684-4831-A74C-EBD380EAAF6C}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Torch Degnition" ID="{93C97DAD-DDC0-4EBF-9E2D-4EA289EE66C4}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Torch Equipping" ID="{E8AD28B8-3045-44E0-89C7-BFCE7929E593}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Window Rune be gone" ID="{AB3034D5-E7E5-4B8B-8749-765B2A1CDBF2}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Torch Combination" ID="{78F481FC-19E4-45B2-92AD-7503D388FF69}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Equipping_Torch" ID="{B2B5084F-9CDF-49F3-9B4D-72A0A9429062}"/>
+										<ItemList>
+											<ItemRef Name="Torch Equipping" ID="{E8AD28B8-3045-44E0-89C7-BFCE7929E593}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Degnition_Torch" ID="{2A23C85B-C61A-483A-A9AB-A34DC2338D83}"/>
+										<ItemList>
+											<ItemRef Name="Torch Degnition" ID="{93C97DAD-DDC0-4EBF-9E2D-4EA289EE66C4}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Combining_Torch" ID="{EAC36B7E-E396-4E12-9696-FB4A36EDA73A}"/>
+										<ItemList>
+											<ItemRef Name="Torch Combination" ID="{78F481FC-19E4-45B2-92AD-7503D388FF69}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Other_Torch_Interaction" ID="{46B2167F-674D-4FA7-A751-E3DB376DD4E3}"/>
+										<ItemList>
+											<ItemRef Name="Other Torch Interaction" ID="{ADA63D8D-4684-4831-A74C-EBD380EAAF6C}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Window_Rune_Gone" ID="{6B5E099C-92B6-4C09-8DC5-4E8C7DB667C7}"/>
+										<ItemList>
+											<ItemRef Name="Window Rune be gone" ID="{AB3034D5-E7E5-4B8B-8749-765B2A1CDBF2}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Dropping_Torch" ID="{36AF1EEB-C10C-4665-985F-BC88AFAD98D8}"/>
+										<ItemList>
+											<ItemRef Name="Torch Dropping" ID="{6BE42484-6F38-4EA7-8BB8-4D0DADB58FC9}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Menu" ID="{2B1B51A7-A0FA-4AB2-89E8-0EDF967A2AC7}" ShortID="845994443">
+					<ChildrenList>
+						<Sound Name="Click" ID="{F2511A38-7806-4BBC-9D61-1B4392E2EF67}" ShortID="602815248">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Click_Pitch" ID="{A6DC4477-BE1D-4C55-9B13-694F1AB3876E}" WorkUnitID="{29C483A0-A352-4DB6-9294-39BF3B2F1C9F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Menu" ID="{CB742730-1959-4ACC-B6E0-552A544D2B99}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Click" ID="{927D73DF-FC7C-48C1-9400-055E43B53ADF}">
+									<Language>SFX</Language>
+									<AudioFile>Click.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="93414285"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Click" ID="{927D73DF-FC7C-48C1-9400-055E43B53ADF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Main Menu" ID="{A811F7A6-E8D5-4669-B1A5-77F6133944BA}" ShortID="338145308">
+							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
 								</Reference>
@@ -295,79 +659,18 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Torch Crackling" ID="{2758DD55-83D3-4FA5-99F5-931BAC7F675D}" ShortID="374475498">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Torch" ID="{BD58D00A-70FB-4517-A35E-1C662A14361D}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Torch Crackling" ID="{5DBD04CC-FA3D-431B-81EF-CB72BCA3F0A8}">
-											<Language>SFX</Language>
-											<AudioFile>Torch Crackling.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="215573568"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Torch Crackling" ID="{5DBD04CC-FA3D-431B-81EF-CB72BCA3F0A8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Torch Ignition" ID="{B7A6C770-A27C-4AF9-BB0D-51C8F68DFE11}" ShortID="385308427">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Torch" ID="{BD58D00A-70FB-4517-A35E-1C662A14361D}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Torch Ignition" ID="{964946DE-AE22-4A4D-97BB-D56216DFFC29}">
-											<Language>SFX</Language>
-											<AudioFile>Torch Ignition.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="466972273"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Torch Ignition" ID="{964946DE-AE22-4A4D-97BB-D56216DFFC29}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								<AudioFileSource Name="Main Menu" ID="{ACE3A4B2-EB6A-4394-878B-2F6E4F809B43}">
+									<Language>SFX</Language>
+									<AudioFile>Main Menu.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="653648158"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
-							<Playlist>
-								<ItemRef Name="Torch Ignition" ID="{B7A6C770-A27C-4AF9-BB0D-51C8F68DFE11}"/>
-								<ItemRef Name="Torch Crackling" ID="{2758DD55-83D3-4FA5-99F5-931BAC7F675D}"/>
-							</Playlist>
-						</RandomSequenceContainer>
+							<ActiveSourceList>
+								<ActiveSource Name="Main Menu" ID="{ACE3A4B2-EB6A-4394-878B-2F6E4F809B43}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

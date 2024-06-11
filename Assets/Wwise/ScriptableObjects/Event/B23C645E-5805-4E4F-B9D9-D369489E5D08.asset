@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d665ba3634d38a4438b3d82d5456592d, type: 3}
   m_Name: B23C645E-5805-4E4F-B9D9-D369489E5D08
   m_EditorClassIdentifier: 
-  objectName: Play_Player_Torch
-  id: 618472270
+  objectName: Play_Player_Interact
+  id: 305502530
   guid: B23C645E-5805-4E4F-B9D9-D369489E5D08

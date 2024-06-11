@@ -8,7 +8,7 @@
 						<ObjectRef Name="Play_Torch_Crackling" ID="{DE1FD978-1BEA-4281-B259-99AC7F872488}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Cauldron" ID="{EBBD3B38-AD89-486B-A000-444A1D0EA575}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps" ID="{A91E6A99-451A-49D9-943F-F3CE19CA8A99}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Player_Torch" ID="{B23C645E-5805-4E4F-B9D9-D369489E5D08}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Player_Interact" ID="{B23C645E-5805-4E4F-B9D9-D369489E5D08}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

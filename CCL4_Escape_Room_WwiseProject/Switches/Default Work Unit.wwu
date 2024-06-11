@@ -9,6 +9,16 @@
 						<Switch Name="Grass" ID="{F1EDF000-0B16-4889-869F-1176AB083A54}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="PlayerInteractSwitch" ID="{1D6FDA0A-B3EA-4A54-8E9D-6C352874436A}">
+					<ChildrenList>
+						<Switch Name="Equipping_Torch" ID="{B2B5084F-9CDF-49F3-9B4D-72A0A9429062}"/>
+						<Switch Name="Other_Torch_Interaction" ID="{46B2167F-674D-4FA7-A751-E3DB376DD4E3}"/>
+						<Switch Name="Degnition_Torch" ID="{2A23C85B-C61A-483A-A9AB-A34DC2338D83}"/>
+						<Switch Name="Dropping_Torch" ID="{36AF1EEB-C10C-4665-985F-BC88AFAD98D8}"/>
+						<Switch Name="Combining_Torch" ID="{EAC36B7E-E396-4E12-9696-FB4A36EDA73A}"/>
+						<Switch Name="Window_Rune_Gone" ID="{6B5E099C-92B6-4C09-8DC5-4E8C7DB667C7}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

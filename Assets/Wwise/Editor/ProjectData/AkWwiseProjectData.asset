@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: eafcec529750d349a35cb8b6f9ea10d9
     GuidInternal: 
-    m_lastTime: -8584835735066386726
+    m_lastTime: -8584835028405314936
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: d9f972ba25cf1e478f1e6084a932fd25
     GuidInternal: 
-    m_lastTime: -8584835735068036724
+    m_lastTime: -8584834866342994166
     List:
+    - name: Footsteps
+      guid: 6cf78b42ec8bac438feac9f25d2b72ce
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d9f972ba25cf1e478f1e6084a932fd25
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Footsteps
+        ObjectType: 2
+        guid: 6cf78b42ec8bac438feac9f25d2b72ce
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Footsteps
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +71,40 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Menu
+      guid: 302774cb5919cc4ab6e0552a544d2b99
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d9f972ba25cf1e478f1e6084a932fd25
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Menu
+        ObjectType: 2
+        guid: 302774cb5919cc4ab6e0552a544d2b99
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Menu
+    - name: Player Interact
+      guid: 5521a3eceb0a4240b028b36a32b351ed
+      id: 493210468
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d9f972ba25cf1e478f1e6084a932fd25
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Player Interact
+        ObjectType: 2
+        guid: 5521a3eceb0a4240b028b36a32b351ed
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Player Interact
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584835615709121546
+    m_lastTime: -8584834946239831850
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -94,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584835606415043350
+    m_lastTime: -8584834851901128278
     List:
     - name: Play_Cauldron
       guid: 383bbdeb89ad6b48a000444a1d0ea575
@@ -111,8 +162,8 @@ MonoBehaviour:
         guid: 383bbdeb89ad6b48a000444a1d0ea575
       Path: Events\Default Work Unit\Play_Cauldron
       maxAttenuation: 5
-      maxDuration: 4.166604
-      minDuration: 4.166604
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Footsteps
       guid: 996a1ea91a45d949943ff3ce19ca8a99
       id: 3854155799
@@ -129,10 +180,10 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Play_Footsteps
       maxAttenuation: 0
       maxDuration: 0.7845625
-      minDuration: 0.6015625
-    - name: Play_Player_Torch
+      minDuration: 0.41179278
+    - name: Play_Player_Interact
       guid: 5e643cb205584f4eb9d9d369489e5d08
-      id: 618472270
+      id: 305502530
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -140,13 +191,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 808160a619e7c8428695cc464271bd8b
-      - ElementName: Play_Player_Torch
+      - ElementName: Play_Player_Interact
         ObjectType: 3
         guid: 5e643cb205584f4eb9d9d369489e5d08
-      Path: Events\Default Work Unit\Play_Player_Torch
-      maxAttenuation: 5
-      maxDuration: -1
-      minDuration: -1
+      Path: Events\Default Work Unit\Play_Player_Interact
+      maxAttenuation: 0
+      maxDuration: Infinity
+      minDuration: 0.4446146
     - name: Play_Torch_Crackling
       guid: 78d91fdeea1b8142b25999ac7f872488
       id: 45744291
@@ -176,7 +227,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2ade91069170c24cacce4a5ec4fe9c51
     GuidInternal: 
-    m_lastTime: -8584835735069096388
+    m_lastTime: -8584835028406676602
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -190,7 +241,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 8a8572cf7ed26d4a9bb72b0afc0090bd
     GuidInternal: 
-    m_lastTime: -8584835735066486723
+    m_lastTime: -8584835028405314936
     List:
     - name: Ignition
       guid: 7e190f52fb906347bd8bea2bfb02043c
@@ -270,7 +321,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584835735066416727
+    m_lastTime: -8584834863684947743
     List:
     - name: Footsteps
       guid: 9f02de8251667045bec3886992fe671c
@@ -322,6 +373,120 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: PlayerInteractSwitch
+      guid: 0ada6f1deab3544a8e9d6c352874436a
+      id: 3391040932
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da2316fc5bf4294f92d829e9d4c1cd54
+      - ElementName: PlayerInteractSwitch
+        ObjectType: 11
+        guid: 0ada6f1deab3544a8e9d6c352874436a
+      Path: Switches\Default Work Unit\PlayerInteractSwitch
+      values:
+      - name: Combining_Torch
+        guid: 7e6bc3ea96e3124e9696fb4a36eda73a
+        id: 805831506
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Combining_Torch
+          ObjectType: 10
+          guid: 7e6bc3ea96e3124e9696fb4a36eda73a
+      - name: Degnition_Torch
+        guid: 5bc8232a1ac63a48a9aba34dc2338d83
+        id: 1723853725
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Degnition_Torch
+          ObjectType: 10
+          guid: 5bc8232a1ac63a48a9aba34dc2338d83
+      - name: Dropping_Torch
+        guid: eb1eaf360cc16546985fbc88afad98d8
+        id: 3013747789
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Dropping_Torch
+          ObjectType: 10
+          guid: eb1eaf360cc16546985fbc88afad98d8
+      - name: Equipping_Torch
+        guid: 4f08b5b2df9cf3499b4d72a0a9429062
+        id: 1070326592
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Equipping_Torch
+          ObjectType: 10
+          guid: 4f08b5b2df9cf3499b4d72a0a9429062
+      - name: Other_Torch_Interaction
+        guid: 7f16b2464d67a74fa751e3db376dd4e3
+        id: 1918408915
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Other_Torch_Interaction
+          ObjectType: 10
+          guid: 7f16b2464d67a74fa751e3db376dd4e3
+      - name: Window_Rune_Gone
+        guid: 9c095e6bb692094c8dc54e8c7db667c7
+        id: 1785219138
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Window_Rune_Gone
+          ObjectType: 10
+          guid: 9c095e6bb692094c8dc54e8c7db667c7
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -334,10 +499,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: b736530e3cb3e4468df3369e8cb9b587
     GuidInternal: 
-    m_lastTime: -8584835735066406724
+    m_lastTime: -8584835028405314936
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000b0000000c0000000d0000000e0000000f000000
+  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

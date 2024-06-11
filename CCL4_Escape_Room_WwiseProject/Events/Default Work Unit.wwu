@@ -25,12 +25,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Player_Torch" ID="{B23C645E-5805-4E4F-B9D9-D369489E5D08}">
+				<Event Name="Play_Player_Interact" ID="{B23C645E-5805-4E4F-B9D9-D369489E5D08}">
 					<ChildrenList>
 						<Action Name="" ID="{E2C88C50-B0FA-4F2C-B8B7-41F0AA863014}" ShortID="125653789">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Player Torch" ID="{ADA63D8D-4684-4831-A74C-EBD380EAAF6C}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+									<ObjectRef Name="Player Interact" ID="{EF40D2FC-F813-4249-8FEF-DE25B7AE80CD}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

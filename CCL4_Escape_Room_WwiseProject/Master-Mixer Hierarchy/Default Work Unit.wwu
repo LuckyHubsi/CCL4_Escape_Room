@@ -9,6 +9,19 @@
 							<ObjectRef Name="System" ID="{A996ADFA-AAB4-43A4-822D-5753FDF32AEF}" WorkUnitID="{285A2066-F6BD-49FF-90B1-2DCDBE239D7E}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Footsteps" ID="{428BF76C-8BEC-43AC-8FEA-C9F25D2B72CE}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="Player Interact" ID="{ECA32155-0AEB-4042-B028-B36A32B351ED}"/>
+						<Bus Name="Menu" ID="{CB742730-1959-4ACC-B6E0-552A544D2B99}"/>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

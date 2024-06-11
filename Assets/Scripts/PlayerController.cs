@@ -6,6 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody _rb;
 
+    [Header("Wwise")]
+    public AK.Wwise.Event footstepsPlayEvent;
+    private bool footstepsIsPlaying = false;
+    private float lastFootstepTime = 0;
+    public float footstepsFrequency = 125;
+
     #region Camera Controls
 
     [SerializeField]
@@ -77,6 +83,9 @@ public class PlayerController : MonoBehaviour
         {
             _crosshair.gameObject.SetActive(false);
         }
+
+        //Wwise
+        lastFootstepTime = Time.time;
     }
 
     private void Update()
@@ -126,6 +135,18 @@ public class PlayerController : MonoBehaviour
             velocityChange.y = 0;
 
             _rb.AddForce(velocityChange, ForceMode.VelocityChange);
+
+            //Player Movement Sound
+            if((targetVelocity.x != 0 || targetVelocity.z != 0) && !footstepsIsPlaying)
+            {
+                footstepsPlayEvent.Post(gameObject);
+                lastFootstepTime = Time.time;
+                footstepsIsPlaying = true;
+            } else if(movementSpeed > 0 && Time.time - lastFootstepTime > footstepsFrequency / movementSpeed*Time.deltaTime) {
+                footstepsIsPlaying = false;
+            }
+
+
         }
     }
 
