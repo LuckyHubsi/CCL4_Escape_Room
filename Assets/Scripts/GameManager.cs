@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
+    public static GameManager instance;
 
-    private void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
-        // Singleton pattern implementation
-        if (Instance == null)
+        if (instance != null)
         {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
+            return;
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+
+        instance = this;
+        DontDestroyOnLoad(this.gameObject);
     }
 }
