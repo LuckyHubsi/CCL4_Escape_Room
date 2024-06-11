@@ -365,7 +365,7 @@ Transform:
   - {fileID: 6186459828370279615}
   - {fileID: 2414149019594835550}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2315189547009651895
 GameObject:
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 5249580842487707604}
   - component: {fileID: 2227085065727785608}
   m_Layer: 0
-  m_Name: Torch_Red
+  m_Name: Torch_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -535,7 +535,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cd6c76199ea3b3746911940e16af2270, type: 2}
+  - {fileID: 2100000, guid: 7ba55becfeb70cc4dbd814365b3ddb28, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6d64efd7a2607488dca132113138da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torchState: 0
+  torchState: 1
 --- !u!1 &3255752192279932284
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +605,7 @@ GameObject:
   - component: {fileID: 7128277640016411980}
   - component: {fileID: 6952744926457632621}
   - component: {fileID: 6175059600048211162}
+  - component: {fileID: 7798244859545124502}
   m_Layer: 0
   m_Name: Window
   m_TagString: Untagged
@@ -698,6 +699,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7798244859545124502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3255752192279932284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940864a06526e0846a3eb9aa108b5851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3381193678402593320
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,7 +936,7 @@ GameObject:
   - component: {fileID: 2726770494305393517}
   - component: {fileID: 823291961650655234}
   m_Layer: 0
-  m_Name: Torch_Blue
+  m_Name: Torch_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1029,7 +1042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6d64efd7a2607488dca132113138da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torchState: 0
+  torchState: 2
 --- !u!1 &4024221387576068218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,8 +1371,10 @@ GameObject:
   - component: {fileID: 7374814006592884417}
   - component: {fileID: 5171513546550125610}
   - component: {fileID: 2958372095530673065}
+  - component: {fileID: 7887240456259785862}
+  - component: {fileID: 4509479489763868094}
   m_Layer: 0
-  m_Name: Torch_Unlit
+  m_Name: Torch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1453,6 +1468,37 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &7887240456259785862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5205882878490690983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6d64efd7a2607488dca132113138da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torchState: 0
+--- !u!114 &4509479489763868094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5205882878490690983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &5348346629247551390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,7 +1830,7 @@ GameObject:
   - component: {fileID: 6486713171244325904}
   - component: {fileID: 556469131595358143}
   m_Layer: 0
-  m_Name: Torch_Yellow
+  m_Name: Torch_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1833,7 +1879,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3b0d5a6a43673ee479e906e64978ce77, type: 2}
+  - {fileID: 2100000, guid: 7ba55becfeb70cc4dbd814365b3ddb28, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1890,7 +1936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6d64efd7a2607488dca132113138da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torchState: 0
+  torchState: 3
 --- !u!1 &9054364536428019205
 GameObject:
   m_ObjectHideFlags: 0

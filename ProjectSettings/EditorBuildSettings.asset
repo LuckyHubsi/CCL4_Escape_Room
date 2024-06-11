@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Indoor.unity
     guid: aee3f2e8071dde449aaef343b1aee1c3
+  - enabled: 1
+    path: Assets/Scenes/Outdoor.unity
+    guid: 74e2709574e717040baf69c8b20eb9a9
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 13cd66b42ce524444b184f1ac15aca05
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: e63eeda90bab185468ea7ef35a18d469
   m_configObjects: {}

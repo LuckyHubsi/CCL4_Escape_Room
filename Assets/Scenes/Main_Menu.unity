@@ -268,6 +268,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88953143}
   m_CullTransparentMesh: 1
+--- !u!114 &219605409 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2298022603144166291, guid: 580ceca7709f0a24b957510778b04b7e, type: 3}
+  m_PrefabInstance: {fileID: 1305352486029462116}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &324737233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,7 +1296,7 @@ PrefabInstance:
     - target: {fileID: 7060997579077240113, guid: 580ceca7709f0a24b957510778b04b7e, type: 3}
       propertyPath: progressBar
       value: 
-      objectReference: {fileID: 1056845260}
+      objectReference: {fileID: 219605409}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

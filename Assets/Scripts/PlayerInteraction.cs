@@ -88,6 +88,8 @@ public class PlayerInteraction : MonoBehaviour
         return _carriedTorch;
     }
 
+
+
     private void PlayerLineOfSight()
     {
         RaycastHit hit;
