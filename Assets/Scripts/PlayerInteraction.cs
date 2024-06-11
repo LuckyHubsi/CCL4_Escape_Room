@@ -13,6 +13,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private Outline _currentOutline;
     private bool _playerHoldingItem = false;
+    private Torch _pickedUpTorch;
 
     private void Awake()
     {
@@ -52,9 +53,17 @@ public class PlayerInteraction : MonoBehaviour
 
     public void PickUpTorch(Torch torch)
     {
-        torch.gameObject.SetActive(false);
+        _pickedUpTorch = torch;
+        _pickedUpTorch.gameObject.SetActive(false);
         _carriedTorch.gameObject.SetActive(true);
         _playerHoldingItem = true;
+    }
+
+    public void DropTorch()
+    {
+        _pickedUpTorch.gameObject.SetActive(true);
+        _carriedTorch.gameObject.SetActive(false);
+        _playerHoldingItem = false;
     }
 
     public void CombineTorch(Torch torch)
@@ -98,18 +107,27 @@ public class PlayerInteraction : MonoBehaviour
             Interactable interactable = hit.collider.GetComponent<Interactable>();
             if (interactable != null)
             {
+                Outline outline = interactable.GetComponent<Outline>();
+
                 // Update the UI text with the interaction message
-                if (_playerHoldingItem)
+                if (_playerHoldingItem && outline == null)
                 {
                     interactableNameText.text = "Press 'E' to interact";
                 }
-                else
+                if (_playerHoldingItem && outline != null)
+                {
+                    interactableNameText.text = "Your hand is full";
+                }
+                if (!_playerHoldingItem && outline == null)
                 {
                     interactableNameText.text = interactable.gameObject.name;
                 }
+                if (!_playerHoldingItem && outline != null)
+                {
+                    interactableNameText.text = "Press 'E' to pick up " + interactable.gameObject.name;
+                }
 
                 // Handle the outline
-                Outline outline = interactable.GetComponent<Outline>();
                 if (outline != null)
                 {
                     // If the current outlined object is different, disable the previous outline
