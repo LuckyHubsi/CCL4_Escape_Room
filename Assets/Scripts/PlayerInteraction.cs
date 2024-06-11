@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour
 {
     private Camera _cam;
+    [SerializeField]
     private Torch _carriedTorch;
 
     private void Awake()
@@ -37,10 +38,11 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
+
     public void PickUpTorch(Torch torch)
     {
-        _carriedTorch = torch;
-        _carriedTorch.gameObject.SetActive(false); // Hide the torch being picked up
+        torch.gameObject.SetActive(false);
+        _carriedTorch.gameObject.SetActive(true);
     }
 
     public void CombineTorch(Torch torch)
