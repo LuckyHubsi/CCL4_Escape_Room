@@ -16,5 +16,16 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(this.gameObject);
+
+        DisableAllOutlines();
+    }
+
+    private void DisableAllOutlines()
+    {
+        Outline[] outlines = FindObjectsOfType<Outline>();
+        foreach (Outline outline in outlines)
+        {
+            outline.enabled = false;
+        }
     }
 }
