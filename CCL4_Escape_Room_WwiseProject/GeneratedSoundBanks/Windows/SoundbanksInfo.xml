@@ -52,7 +52,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{49F6A017-A31A-7055-CA87-88CF7595D917}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{273EDAF7-2EC3-C703-73BE-F93ECE62F29A}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -68,13 +68,17 @@
 					<ShortName>Torch Crackling.wav</ShortName>
 					<CachePath>SFX/Torch Crackling_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="296086376" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Magic Barrier Door.wav</ShortName>
+					<CachePath>SFX/Magic Barrier Door_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="340508672" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Window Rune be gone.wav</ShortName>
 					<CachePath>SFX/Window Rune be gone_10C4C929.wem</CachePath>
 				</File>
 				<File Id="442710542" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_1.wav</ShortName>
-					<CachePath>SFX/Footsteps_Wood_1_EAA22280.wem</CachePath>
+					<CachePath>SFX/Footsteps_Wood_1_028D8A8F.wem</CachePath>
 				</File>
 				<File Id="466972273" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Ignition.wav</ShortName>
@@ -92,9 +96,17 @@
 					<ShortName>Torch Equipping.wav</ShortName>
 					<CachePath>SFX/Torch Equipping_10C4C929.wem</CachePath>
 				</File>
+				<File Id="620638536" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Magic Barrier Window.wav</ShortName>
+					<CachePath>SFX/Magic Barrier Window_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="632952234" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Smoke.wav</ShortName>
+					<CachePath>SFX/Smoke_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="691056013" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_2.wav.wav</ShortName>
-					<CachePath>SFX/Footsteps_Wood_2.wav_2A4EDC20.wem</CachePath>
+					<CachePath>SFX/Footsteps_Wood_2.wav_A03D4110.wem</CachePath>
 				</File>
 				<File Id="891873728" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Degnition.wav</ShortName>
@@ -110,7 +122,7 @@
 				</File>
 				<File Id="995375094" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_3.wav.wav</ShortName>
-					<CachePath>SFX/Footsteps_Wood_3.wav_A2BBCEF8.wem</CachePath>
+					<CachePath>SFX/Footsteps_Wood_3.wav_4ED5FF9F.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -138,6 +150,16 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="2205790566" Name="Play_Magic_Barrier_Door" MaxAttenuation="3" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="296086376"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2862905942" Name="Play_Magic_Barrier_Window" MaxAttenuation="3" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="620638536"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="305502530" Name="Play_Player_Interact" DurationType="Mixed" DurationMin="0.4446146" DurationMax="Infinite">
 					<SwitchContainers>
@@ -180,11 +202,18 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2555336501" Name="Play_Smoke" MaxAttenuation="5" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="632952234"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="45744291" Name="Play_Torch_Crackling" MaxAttenuation="5" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="215573568"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2992760128" Name="Stop_Magic_Barrier_Door" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3780008132" Name="Stop_Magic_Barrier_Window" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
@@ -206,5 +235,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{74FAEEB5-E5DF-A0D7-7356-B977083677D5}</FileHash>
+	<FileHash>{0856D8BD-7050-AE54-109D-01BDD5D76E72}</FileHash>
 </SoundBanksInfo>

@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584834844035886688
+    m_lastTime: -8584834228702662213
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,8 +145,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584834844036692703
+    m_lastTime: -8584834228702695277
     List:
+    - name: Play
+      guid: 30991119ca5a7848a1b6564065a14ca6
+      id: 1256202815
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      Path: Events\Default Work Unit\Play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Cauldron
       guid: 383bbdeb89ad6b48a000444a1d0ea575
       id: 3212638512
@@ -157,10 +174,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
       - ElementName: Play_Cauldron
         ObjectType: 3
         guid: 383bbdeb89ad6b48a000444a1d0ea575
-      Path: Events\Default Work Unit\Play_Cauldron
+      Path: Events\Default Work Unit\Play\Play_Cauldron
       maxAttenuation: 5
       maxDuration: -1
       minDuration: -1
@@ -174,13 +194,56 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
       - ElementName: Play_Footsteps
         ObjectType: 3
         guid: 996a1ea91a45d949943ff3ce19ca8a99
-      Path: Events\Default Work Unit\Play_Footsteps
+      Path: Events\Default Work Unit\Play\Play_Footsteps
       maxAttenuation: 0
       maxDuration: 0.7845625
       minDuration: 0.41179278
+    - name: Play_Magic_Barrier_Door
+      guid: b04cdb182e920a4abbc0b8417feb7780
+      id: 2205790566
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Magic_Barrier_Door
+        ObjectType: 3
+        guid: b04cdb182e920a4abbc0b8417feb7780
+      Path: Events\Default Work Unit\Play\Play_Magic_Barrier_Door
+      maxAttenuation: 3
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Magic_Barrier_Window
+      guid: da2140a2f464f7409f7e23efbb08d65b
+      id: 2862905942
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Magic_Barrier_Window
+        ObjectType: 3
+        guid: da2140a2f464f7409f7e23efbb08d65b
+      Path: Events\Default Work Unit\Play\Play_Magic_Barrier_Window
+      maxAttenuation: 3
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Player_Interact
       guid: 5e643cb205584f4eb9d9d369489e5d08
       id: 305502530
@@ -191,13 +254,36 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
       - ElementName: Play_Player_Interact
         ObjectType: 3
         guid: 5e643cb205584f4eb9d9d369489e5d08
-      Path: Events\Default Work Unit\Play_Player_Interact
+      Path: Events\Default Work Unit\Play\Play_Player_Interact
       maxAttenuation: 0
       maxDuration: Infinity
       minDuration: 0.4446146
+    - name: Play_Smoke
+      guid: f130d8a9b94efe4e8e84979ed9769f19
+      id: 2555336501
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Smoke
+        ObjectType: 3
+        guid: f130d8a9b94efe4e8e84979ed9769f19
+      Path: Events\Default Work Unit\Play\Play_Smoke
+      maxAttenuation: 5
+      maxDuration: 9.148707
+      minDuration: 9.148707
     - name: Play_Torch_Crackling
       guid: 78d91fdeea1b8142b25999ac7f872488
       id: 45744291
@@ -208,13 +294,73 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
       - ElementName: Play_Torch_Crackling
         ObjectType: 3
         guid: 78d91fdeea1b8142b25999ac7f872488
-      Path: Events\Default Work Unit\Play_Torch_Crackling
+      Path: Events\Default Work Unit\Play\Play_Torch_Crackling
       maxAttenuation: 5
       maxDuration: -1
       minDuration: -1
+    - name: Stop
+      guid: 4f13f79ef1514b4bacc865c1d1b744c6
+      id: 788884573
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Stop
+        ObjectType: 4
+        guid: 4f13f79ef1514b4bacc865c1d1b744c6
+      Path: Events\Default Work Unit\Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Magic_Barrier_Door
+      guid: e6625b4d3b9d29458a6a2580df892a5f
+      id: 2992760128
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Stop
+        ObjectType: 4
+        guid: 4f13f79ef1514b4bacc865c1d1b744c6
+      - ElementName: Stop_Magic_Barrier_Door
+        ObjectType: 3
+        guid: e6625b4d3b9d29458a6a2580df892a5f
+      Path: Events\Default Work Unit\Stop\Stop_Magic_Barrier_Door
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Magic_Barrier_Window
+      guid: 45fc9e55dc04f5458615c8a27fb8ce1e
+      id: 3780008132
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Stop
+        ObjectType: 4
+        guid: 4f13f79ef1514b4bacc865c1d1b744c6
+      - ElementName: Stop_Magic_Barrier_Window
+        ObjectType: 3
+        guid: 45fc9e55dc04f5458615c8a27fb8ce1e
+      Path: Events\Default Work Unit\Stop\Stop_Magic_Barrier_Window
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -502,7 +648,7 @@ MonoBehaviour:
     m_lastTime: -8584835028405314936
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000002a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

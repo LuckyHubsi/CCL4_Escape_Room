@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d665ba3634d38a4438b3d82d5456592d, type: 3}
+  m_Name: A24021DA-64F4-40F7-9F7E-23EFBB08D65B
+  m_EditorClassIdentifier: 
+  objectName: Play_Magic_Barrier_Window
+  id: 2862905942
+  guid: A24021DA-64F4-40F7-9F7E-23EFBB08D65B

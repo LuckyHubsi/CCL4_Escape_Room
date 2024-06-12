@@ -25,6 +25,8 @@ public class Window : Interactable
                 _playerInteraction.DropTorch();
 
                 //Wwise
+                AkSoundEngine.PostEvent("Stop_Magic_Barrier_Window", gameObject);
+
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Window_Rune_Gone", gameObject);
                 AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             }
