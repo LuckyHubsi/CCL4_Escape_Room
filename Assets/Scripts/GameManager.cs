@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private RawImage smokeOverlay; // UI Image for smoke effect
 
+    [SerializeField]
+    private ParticleSystem smokeParticles;
+
     private float initialSmokeTime; // Store the initial smoke time
 
     #region PuzzleStates
@@ -77,6 +80,7 @@ public class GameManager : MonoBehaviour
         {
             smokeTime = initialSmokeTime;
             UpdateSmokeOverlay();
+            smokeParticles.Stop();
         }
 
         PuzzleCompletionStatus();
