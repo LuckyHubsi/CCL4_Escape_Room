@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Torch : Interactable
 {
-    public enum TorchState { Unlit, Red, Blue, Yellow, Purple }
+    public enum TorchState { Unlit, Red, Blue, Yellow, Purple, Green, Orange }
     [SerializeField]
     public TorchState torchState = TorchState.Unlit;
 
@@ -32,7 +32,7 @@ public class Torch : Interactable
     {
         if (torchState == TorchState.Unlit)
         {
-            _playerInteraction.PickUpTorch(this);
+            _playerInteraction.PickUpItem(this.gameObject);
         }
         else
         {
@@ -73,6 +73,12 @@ public class Torch : Interactable
             case TorchState.Purple:
                 particleColor = new Color(0.5f, 0, 0.5f); // Purple
                 break;
+            case TorchState.Green:
+                particleColor = Color.green;
+                break;
+            case TorchState.Orange:
+                particleColor = new Color(1f, 0.5f, 0);
+                break;
         }
 
         // Set the particle system colors
@@ -84,7 +90,7 @@ public class Torch : Interactable
 
         // Start the particle systems if they are not playing
         allParticles.Play();
-        if (!sparksParticles.isPlaying) sparksParticles.Play();
-        if (!fireParticles.isPlaying) fireParticles.Play();
+        sparksParticles.Play();
+        fireParticles.Play();
     }
 }

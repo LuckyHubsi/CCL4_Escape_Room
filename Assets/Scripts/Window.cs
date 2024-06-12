@@ -23,10 +23,13 @@ public class Window : Interactable
             {
                 Debug.Log("Window Interacted while Torch is Purple.");
 
-                _playerInteraction.DropTorch();
+                _playerInteraction.DropItem();
 
-                //Wwise
-/*                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Window_Rune_Gone", gameObject);
+                GameManager.instance.puzzleOneSolved = true;
+
+/*                //Wwise
+                AkSoundEngine.PostEvent("Stop_Magic_Barrier_Window", gameObject);
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Window_Rune_Gone", gameObject);
                 AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);*/
             }
         }
