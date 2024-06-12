@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
     private Camera _cam;
     [SerializeField]
     private Torch _carriedTorch;
+    [SerializeField]
+    private Text interactableNameText;
 
-    [Header("Wwise Torch Reference")]
-    public AK.Wwise.Event playerInterActPlayEvent;
+    private Outline _currentOutline;
+    private bool _playerHoldingItem = false;
+    private Torch _pickedUpTorch;
 
     private void Awake()
     {
@@ -18,11 +22,17 @@ public class PlayerInteraction : MonoBehaviour
         {
             Debug.LogError("Camera not found on player.");
         }
+
+        if (interactableNameText == null)
+        {
+            Debug.LogError("InteractableNameText not assigned in the Inspector.");
+        }
     }
 
     private void Update()
     {
         HandleInteraction();
+        PlayerLineOfSight();
     }
 
     private void HandleInteraction()
@@ -41,17 +51,19 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-
     public void PickUpTorch(Torch torch)
     {
-        torch.gameObject.SetActive(false);
+        _pickedUpTorch = torch;
+        _pickedUpTorch.gameObject.SetActive(false);
         _carriedTorch.gameObject.SetActive(true);
+        _playerHoldingItem = true;
+    }
 
-        //Equip Torch
-        AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Torch", gameObject);
-
-        playerInterActPlayEvent.Post(gameObject);
-
+    public void DropTorch()
+    {
+        _pickedUpTorch.gameObject.SetActive(true);
+        _carriedTorch.gameObject.SetActive(false);
+        _playerHoldingItem = false;
     }
 
     public void CombineTorch(Torch torch)
@@ -62,8 +74,6 @@ public class PlayerInteraction : MonoBehaviour
             {
                 _carriedTorch.SetTorchState(Torch.TorchState.Purple);
                 Debug.Log("Player Torch: Purple");
-                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
-                playerInterActPlayEvent.Post(gameObject);
             }
 
             if (_carriedTorch.torchState == Torch.TorchState.Unlit)
@@ -72,21 +82,11 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     _carriedTorch.SetTorchState(Torch.TorchState.Red);
                     Debug.Log("Player Torch: Red");
-
-
-                    //Pickup Torch Flame Sound
-                    AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
-                    playerInterActPlayEvent.Post(gameObject);
                 }
                 if (torch.torchState == Torch.TorchState.Blue)
                 {
                     _carriedTorch.SetTorchState(Torch.TorchState.Blue);
                     Debug.Log("Player Torch: Blue");
-
-
-                    //Pickup Torch Flame Sound
-                    AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
-                    playerInterActPlayEvent.Post(gameObject);
                 }
             }
         }
@@ -95,5 +95,78 @@ public class PlayerInteraction : MonoBehaviour
     public Torch GetCarriedTorch()
     {
         return _carriedTorch;
+    }
+
+
+
+    private void PlayerLineOfSight()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(_cam.transform.position, _cam.transform.forward, out hit, 2f))
+        {
+            Interactable interactable = hit.collider.GetComponent<Interactable>();
+            if (interactable != null)
+            {
+                Outline outline = interactable.GetComponent<Outline>();
+
+                // Update the UI text with the interaction message
+                if (_playerHoldingItem && outline == null)
+                {
+                    interactableNameText.text = "Press 'E' to interact";
+                }
+                if (_playerHoldingItem && outline != null)
+                {
+                    interactableNameText.text = "Your hand is full";
+                }
+                if (!_playerHoldingItem && outline == null)
+                {
+                    interactableNameText.text = interactable.gameObject.name;
+                }
+                if (!_playerHoldingItem && outline != null)
+                {
+                    interactableNameText.text = "Press 'E' to pick up " + interactable.gameObject.name;
+                }
+
+                // Handle the outline
+                if (outline != null)
+                {
+                    // If the current outlined object is different, disable the previous outline
+                    if (_currentOutline != null && _currentOutline != outline)
+                    {
+                        _currentOutline.enabled = false;
+                    }
+
+                    // Enable the new outline
+                    outline.enabled = true;
+                    _currentOutline = outline;
+                }
+                else if (_currentOutline != null)
+                {
+                    // If there's no outline on the current interactable, disable the previous outline
+                    _currentOutline.enabled = false;
+                    _currentOutline = null;
+                }
+            }
+            else
+            {
+                // If there's no interactable, disable the previous outline and clear the text
+                if (_currentOutline != null)
+                {
+                    _currentOutline.enabled = false;
+                    _currentOutline = null;
+                }
+                interactableNameText.text = "";
+            }
+        }
+        else
+        {
+            // If the raycast doesn't hit anything, disable the previous outline and clear the text
+            if (_currentOutline != null)
+            {
+                _currentOutline.enabled = false;
+                _currentOutline = null;
+            }
+            interactableNameText.text = "";
+        }
     }
 }
