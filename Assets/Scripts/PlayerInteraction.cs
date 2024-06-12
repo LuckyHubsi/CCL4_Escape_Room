@@ -132,6 +132,16 @@ public class PlayerInteraction : MonoBehaviour
         playerInterActionPlayEvent.Post(gameObject);*/
     }
 
+    public Torch GetCarriedTorch()
+    {
+        return _carriedTorch;
+    }
+
+    public Potion GetCarriedPotion()
+    {
+        return _carriedPotion;
+    }
+
     public void CombineTorch(Torch torch)
     {
         if (_playerHoldingItem && !_carriedPotion.gameObject.activeSelf)
@@ -195,11 +205,6 @@ public class PlayerInteraction : MonoBehaviour
                 }
             }
         }
-    }
-
-    public Torch GetCarriedTorch()
-    {
-        return _carriedTorch;
     }
 
     private void PlayerLineOfSight()
