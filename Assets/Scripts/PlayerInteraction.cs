@@ -15,6 +15,10 @@ public class PlayerInteraction : MonoBehaviour
     private bool _playerHoldingItem = false;
     private Torch _pickedUpTorch;
 
+/*    //Wwise
+    [SerializeField]
+    private AK.Wwise.Event playerInterActionPlayEvent;*/
+
     private void Awake()
     {
         _cam = GetComponentInChildren<Camera>();
@@ -57,13 +61,22 @@ public class PlayerInteraction : MonoBehaviour
         _pickedUpTorch.gameObject.SetActive(false);
         _carriedTorch.gameObject.SetActive(true);
         _playerHoldingItem = true;
+
+/*        //Wwise
+        AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Torch", gameObject);
+        playerInterActionPlayEvent.Post(gameObject);*/
     }
 
     public void DropTorch()
     {
         _pickedUpTorch.gameObject.SetActive(true);
+        _carriedTorch.SetTorchState(Torch.TorchState.Unlit);
         _carriedTorch.gameObject.SetActive(false);
         _playerHoldingItem = false;
+
+/*        //Wwise
+        AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Dropping_Torch", gameObject);
+        playerInterActionPlayEvent.Post(gameObject);*/
     }
 
     public void CombineTorch(Torch torch)
@@ -74,6 +87,10 @@ public class PlayerInteraction : MonoBehaviour
             {
                 _carriedTorch.SetTorchState(Torch.TorchState.Purple);
                 Debug.Log("Player Torch: Purple");
+
+/*                //Wwise
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
+                playerInterActionPlayEvent.Post(gameObject);*/
             }
 
             if (_carriedTorch.torchState == Torch.TorchState.Unlit)
@@ -82,11 +99,19 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     _carriedTorch.SetTorchState(Torch.TorchState.Red);
                     Debug.Log("Player Torch: Red");
+
+/*                    //Wwise
+                    AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
+                    playerInterActionPlayEvent.Post(gameObject);*/
                 }
                 if (torch.torchState == Torch.TorchState.Blue)
                 {
                     _carriedTorch.SetTorchState(Torch.TorchState.Blue);
                     Debug.Log("Player Torch: Blue");
+
+/*                    //Wwise
+                    AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
+                    playerInterActionPlayEvent.Post(gameObject);*/
                 }
             }
         }
