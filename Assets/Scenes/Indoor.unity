@@ -856,6 +856,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
+--- !u!114 &1342863157 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7203910735596211170, guid: 429276f856ebc094da6d050765b0e57d, type: 3}
+  m_PrefabInstance: {fileID: 5066568121546115895}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1418364418 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4517377013876296784, guid: ef18a7b6713544343a01f95fe842c307, type: 3}
@@ -2757,6 +2768,10 @@ PrefabInstance:
       value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 4396314048238554689, guid: 8c679bdb3fae0d94391def97f6dc1c71, type: 3}
+      propertyPath: smokeTime
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396314048238554689, guid: 8c679bdb3fae0d94391def97f6dc1c71, type: 3}
       propertyPath: barrierOne
       value: 
       objectReference: {fileID: 1027226591}
@@ -2768,6 +2783,10 @@ PrefabInstance:
       propertyPath: barrierThree
       value: 
       objectReference: {fileID: 244797063}
+    - target: {fileID: 4396314048238554689, guid: 8c679bdb3fae0d94391def97f6dc1c71, type: 3}
+      propertyPath: smokeOverlay
+      value: 
+      objectReference: {fileID: 1342863157}
     - target: {fileID: 4396314048238554689, guid: 8c679bdb3fae0d94391def97f6dc1c71, type: 3}
       propertyPath: barrierMirror
       value: 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,14 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private float gameTime = 300f; // Game duration in seconds
+
+    [SerializeField]
+    private float smokeTime = 60f; // Smoke duration in seconds
+
+    [SerializeField]
+    private RawImage smokeOverlay; // UI Image for smoke effect
+
+    private float initialSmokeTime; // Store the initial smoke time
 
     #region PuzzleStates
 
@@ -37,6 +46,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
 
         DisableAllOutlines();
+        initialSmokeTime = smokeTime;
     }
 
     void Update()
@@ -50,6 +60,25 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        if (!puzzleOneSolved)
+        {
+            if (smokeTime > 0)
+            {
+                smokeTime -= Time.deltaTime;
+                UpdateSmokeOverlay();
+
+                if (smokeTime <= 0)
+                {
+                    LoadLoseScene();
+                }
+            }
+        }
+        else
+        {
+            smokeTime = initialSmokeTime;
+            UpdateSmokeOverlay();
+        }
+
         PuzzleCompletionStatus();
     }
 
@@ -58,7 +87,7 @@ public class GameManager : MonoBehaviour
         ScenesManager.Instance.LoadScene(ScenesManager.Scene.Lose);
     }
 
-    public float GetRemainingTime()
+    public float GetRemainingGameTime()
     {
         return Mathf.Max(gameTime, 0);
     }
@@ -87,5 +116,13 @@ public class GameManager : MonoBehaviour
         {
             barrierThree.SetActive(false);
         }
+    }
+
+    private void UpdateSmokeOverlay()
+    {
+        float alpha = Mathf.Clamp01(1 - (smokeTime / initialSmokeTime));
+        Color color = smokeOverlay.color;
+        color.a = alpha;
+        smokeOverlay.color = color;
     }
 }

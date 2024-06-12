@@ -8,9 +8,9 @@ public class UITimer : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.instance != null)
+        if (GameManager.instance != null && timerText != null)
         {
-            float remainingTime = GameManager.instance.GetRemainingTime();
+            float remainingTime = GameManager.instance.GetRemainingGameTime();
             timerText.text = FormatTime(remainingTime);
         }
     }
