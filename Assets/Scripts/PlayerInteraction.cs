@@ -19,9 +19,9 @@ public class PlayerInteraction : MonoBehaviour
     private Torch _pickedUpTorch;
     private Potion _pickedUpPotion;
 
-/*    //Wwise
+    //Wwise
     [SerializeField]
-    private AK.Wwise.Event playerInterActionPlayEvent;*/
+    private AK.Wwise.Event playerInterActionPlayEvent;
 
     private void Awake()
     {
@@ -86,8 +86,8 @@ public class PlayerInteraction : MonoBehaviour
             _carriedTorch.gameObject.SetActive(true);
 
             // Wwise
-            // AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Torch", gameObject);
-            // playerInterActionPlayEvent.Post(gameObject);
+            AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Torch", gameObject);
+            playerInterActionPlayEvent.Post(gameObject);
 
             return;
         }
@@ -127,9 +127,9 @@ public class PlayerInteraction : MonoBehaviour
         }
 
 
-/*        //Wwise
+        //Wwise
         AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Dropping_Torch", gameObject);
-        playerInterActionPlayEvent.Post(gameObject);*/
+        playerInterActionPlayEvent.Post(gameObject);
     }
 
     public Torch GetCarriedTorch()
@@ -151,27 +151,27 @@ public class PlayerInteraction : MonoBehaviour
                 _carriedTorch.SetTorchState(Torch.TorchState.Purple);
                 Debug.Log("Player Torch: Purple");
 
-/*                //Wwise
+                //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
-                playerInterActionPlayEvent.Post(gameObject);*/
+                playerInterActionPlayEvent.Post(gameObject);
             }
             if (_carriedTorch.torchState == Torch.TorchState.Red && torch.torchState == Torch.TorchState.Yellow || _carriedTorch.torchState == Torch.TorchState.Yellow && torch.torchState == Torch.TorchState.Red)
             {
                 _carriedTorch.SetTorchState(Torch.TorchState.Orange);
                 Debug.Log("Player Torch: Orange");
 
-                /*                //Wwise
-                                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
-                                playerInterActionPlayEvent.Post(gameObject);*/
+                //Wwise
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
+                playerInterActionPlayEvent.Post(gameObject);
             }
             if (_carriedTorch.torchState == Torch.TorchState.Yellow && torch.torchState == Torch.TorchState.Blue || _carriedTorch.torchState == Torch.TorchState.Blue && torch.torchState == Torch.TorchState.Yellow)
             {
                 _carriedTorch.SetTorchState(Torch.TorchState.Green);
                 Debug.Log("Player Torch: Purple");
 
-                /*                //Wwise
-                                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
-                                playerInterActionPlayEvent.Post(gameObject);*/
+                //Wwise
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
+                playerInterActionPlayEvent.Post(gameObject);
             }
 
             if (_carriedTorch.torchState == Torch.TorchState.Unlit)
@@ -181,27 +181,27 @@ public class PlayerInteraction : MonoBehaviour
                     _carriedTorch.SetTorchState(Torch.TorchState.Red);
                     Debug.Log("Player Torch: Red");
 
-/*                    //Wwise
+                    //Wwise
                     AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
-                    playerInterActionPlayEvent.Post(gameObject);*/
+                    playerInterActionPlayEvent.Post(gameObject);
                 }
                 if (torch.torchState == Torch.TorchState.Blue)
                 {
                     _carriedTorch.SetTorchState(Torch.TorchState.Blue);
                     Debug.Log("Player Torch: Blue");
 
-/*                    //Wwise
+                    //Wwise
                     AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
-                    playerInterActionPlayEvent.Post(gameObject);*/
+                    playerInterActionPlayEvent.Post(gameObject);
                 }
                 if (torch.torchState == Torch.TorchState.Yellow)
                 {
                     _carriedTorch.SetTorchState(Torch.TorchState.Yellow);
                     Debug.Log("Player Torch: Yellow");
 
-/*                    //Wwise
-                     AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
-                     playerInterActionPlayEvent.Post(gameObject);*/
+                    //Wwise
+                    AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
+                    playerInterActionPlayEvent.Post(gameObject);
                 }
             }
         }

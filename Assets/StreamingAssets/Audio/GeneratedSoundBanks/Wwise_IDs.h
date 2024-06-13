@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_CAULDRON = 3212638512U;
+        static const AkUniqueID PLAY_CLICK = 311910498U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_MAGIC_BARRIER_DOOR = 2205790566U;
         static const AkUniqueID PLAY_MAGIC_BARRIER_WINDOW = 2862905942U;

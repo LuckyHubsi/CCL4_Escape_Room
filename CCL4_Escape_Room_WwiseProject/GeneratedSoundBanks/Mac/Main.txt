@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	45744291	Play_Torch_Crackling			\Default Work Unit\Play\Play_Torch_Crackling	
 	305502530	Play_Player_Interact			\Default Work Unit\Play\Play_Player_Interact	
+	311910498	Play_Click			\Default Work Unit\Play\Play_Click	
 	2205790566	Play_Magic_Barrier_Door			\Default Work Unit\Play\Play_Magic_Barrier_Door	
 	2555336501	Play_Smoke			\Default Work Unit\Play\Play_Smoke	
 	2862905942	Play_Magic_Barrier_Window			\Default Work Unit\Play\Play_Magic_Barrier_Window	
@@ -23,8 +24,12 @@ Switch	ID	Name	Switch Group			Notes
 	1918408915	Other_Torch_Interaction	PlayerInteractSwitch			
 	3013747789	Dropping_Torch	PlayerInteractSwitch			
 
+Effect plug-ins	ID	Name	Type				Notes
+	4151021112	Click_Pitch	Wwise Pitch Shifter			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	71493339	Torch Combination	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Torch Combination_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Combination		143146
+	93414285	Click	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\Click		100872
 	201119281	Cauldron	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Cauldron_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Cauldron		400090
 	215573568	Torch Crackling	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Torch Crackling_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Torch Crackling		591862
 	296086376	Magic Barrier Door	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Magic Barrier Door_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Magic Barrier Door		1079866
