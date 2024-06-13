@@ -104,6 +104,11 @@ public class GameManager : MonoBehaviour
         return Mathf.Max(gameTime, 0);
     }
 
+    public float GetRemainingSmokeTimer()
+    {
+        return Mathf.Max(smokeTime, 0);
+    }
+
     private void DisableAllOutlines()
     {
         Outline[] outlines = FindObjectsOfType<Outline>();
