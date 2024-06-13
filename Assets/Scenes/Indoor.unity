@@ -938,45 +938,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4452419397984696702, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
   m_PrefabInstance: {fileID: 999669871}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1941343827 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8678893401420760016, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
-  m_PrefabInstance: {fileID: 3791468777958229555}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1941343829
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941343827}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1901984940588351134, guid: 3f3acc81914dc81499f846c1995f0824, type: 3}
---- !u!114 &1941343830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941343827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 019b255b6e818354088d3d1d93d52b34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1950730743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1404,7 +1365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8263111110645304415, guid: af6c6c0518b9c884fb763883ff2cd285, type: 3}
       propertyPath: m_Name
-      value: Potion
+      value: Potion_Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1511,14 +1472,6 @@ PrefabInstance:
       propertyPath: smokeOverlay
       value: 
       objectReference: {fileID: 5066568121546115896}
-    - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
-      propertyPath: torchDataLoader
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
-      propertyPath: torches.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: torches.Array.data[0]
       value: 
@@ -1981,24 +1934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cauldron
       objectReference: {fileID: 0}
-    - target: {fileID: 8303035983228229994, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303035983228229994, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8678893401420760016, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1941343830}
-    - targetCorrespondingSourceObject: {fileID: 8678893401420760016, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1941343829}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
 --- !u!4 &3956803726943227088
 Transform:

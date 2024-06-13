@@ -1,11 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class TorchData_Loader
+public static class TorchData_Loader
 {
-    public void LoadTorchData(GameObject[] torches)
+    public static void LoadTorchData(GameObject[] torches)
     {
         string filePath = Path.Combine(Application.dataPath, "Data", "torchData.json");
 
@@ -36,7 +35,7 @@ public class TorchData_Loader
     }
 
     // Map color string to TorchState enum
-    Torch.TorchState TorchStateFromString(string color)
+  private static  Torch.TorchState TorchStateFromString(string color)
     {
         switch (color.ToLower())
         {

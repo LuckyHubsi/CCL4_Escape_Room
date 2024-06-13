@@ -24,8 +24,6 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject[] torches; // Array of torch game objects
 
-    private TorchData_Loader torchDataLoader; // Instance of TorchData_Loader
-
     private void Awake()
     {
         // Ensure singleton pattern
@@ -42,7 +40,6 @@ public class GameManager : MonoBehaviour
 
         // Initialization that should only happen once
         initialSmokeTime = smokeTime;
-        torchDataLoader = new TorchData_Loader();
     }
 
     private void Start()
@@ -50,7 +47,7 @@ public class GameManager : MonoBehaviour
         DisableAllOutlines();
 
         // Load torch data
-        torchDataLoader.LoadTorchData(torches);
+        TorchData_Loader.LoadTorchData(torches);
     }
 
     private void Update()
