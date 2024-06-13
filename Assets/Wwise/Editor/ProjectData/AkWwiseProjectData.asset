@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584833260480110882
+    m_lastTime: -8584833074524077495
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584833260481209134
+    m_lastTime: -8584833074524123192
     List:
     - name: Play
       guid: 30991119ca5a7848a1b6564065a14ca6
@@ -181,7 +181,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 383bbdeb89ad6b48a000444a1d0ea575
       Path: Events\Default Work Unit\Play\Play_Cauldron
-      maxAttenuation: 5
+      maxAttenuation: 3
       maxDuration: -1
       minDuration: -1
     - name: Play_Coughing
@@ -261,9 +261,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: da2140a2f464f7409f7e23efbb08d65b
       Path: Events\Default Work Unit\Play\Play_Magic_Barrier_Window
-      maxAttenuation: 3
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 100
+      maxDuration: Infinity
+      minDuration: 1.5630158
     - name: Play_Player_Interact
       guid: 5e643cb205584f4eb9d9d369489e5d08
       id: 305502530
@@ -301,9 +301,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: f130d8a9b94efe4e8e84979ed9769f19
       Path: Events\Default Work Unit\Play\Play_Smoke
-      maxAttenuation: 5
+      maxAttenuation: 3
       maxDuration: -1
       minDuration: -1
+    - name: Play_Successful_Combination
+      guid: 4f3c54ab2231714f8dfa5c0cfd2097cf
+      id: 4156768940
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Successful_Combination
+        ObjectType: 3
+        guid: 4f3c54ab2231714f8dfa5c0cfd2097cf
+      Path: Events\Default Work Unit\Play\Play_Successful_Combination
+      maxAttenuation: 0
+      maxDuration: 2.0277324
+      minDuration: 2.0277324
     - name: Play_Torch_Crackling
       guid: 78d91fdeea1b8142b25999ac7f872488
       id: 45744291
@@ -321,9 +341,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 78d91fdeea1b8142b25999ac7f872488
       Path: Events\Default Work Unit\Play\Play_Torch_Crackling
-      maxAttenuation: 5
+      maxAttenuation: 3
       maxDuration: -1
       minDuration: -1
+    - name: Play_Wrong_Combination
+      guid: a8762042325a5749a0b86b63218bcbc9
+      id: 3120915481
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Wrong_Combination
+        ObjectType: 3
+        guid: a8762042325a5749a0b86b63218bcbc9
+      Path: Events\Default Work Unit\Play\Play_Wrong_Combination
+      maxAttenuation: 0
+      maxDuration: 0.9269375
+      minDuration: 0.9269375
     - name: Stop
       guid: 4f13f79ef1514b4bacc865c1d1b744c6
       id: 788884573
@@ -341,28 +381,8 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Stop_Magic_Barrier_Door
-      guid: e6625b4d3b9d29458a6a2580df892a5f
-      id: 2992760128
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 808160a619e7c8428695cc464271bd8b
-      - ElementName: Stop
-        ObjectType: 4
-        guid: 4f13f79ef1514b4bacc865c1d1b744c6
-      - ElementName: Stop_Magic_Barrier_Door
-        ObjectType: 3
-        guid: e6625b4d3b9d29458a6a2580df892a5f
-      Path: Events\Default Work Unit\Stop\Stop_Magic_Barrier_Door
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: Stop_Magic_Barrier_Window
-      guid: 45fc9e55dc04f5458615c8a27fb8ce1e
+      guid: ec72453f92ffeb4a9d9ea700a6d2ee24
       id: 3780008132
       PathAndIcons:
       - ElementName: Events
@@ -376,8 +396,28 @@ MonoBehaviour:
         guid: 4f13f79ef1514b4bacc865c1d1b744c6
       - ElementName: Stop_Magic_Barrier_Window
         ObjectType: 3
-        guid: 45fc9e55dc04f5458615c8a27fb8ce1e
+        guid: ec72453f92ffeb4a9d9ea700a6d2ee24
       Path: Events\Default Work Unit\Stop\Stop_Magic_Barrier_Window
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Player_Interact
+      guid: eba31f7c6b67aa48978c3f3c7797c27b
+      id: 2314554776
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Stop
+        ObjectType: 4
+        guid: 4f13f79ef1514b4bacc865c1d1b744c6
+      - ElementName: Stop_Player_Interact
+        ObjectType: 3
+        guid: eba31f7c6b67aa48978c3f3c7797c27b
+      Path: Events\Default Work Unit\Stop\Stop_Player_Interact
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -507,7 +547,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584833260480110882
+    m_lastTime: -8584833093445244142
     List:
     - name: Coughing
       guid: 370cddc3b7178e4f92bf42edce42c516
@@ -625,6 +665,56 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: MagicBarrierWindow
+      guid: c3e9e627dec074489a48f72d3408ac35
+      id: 510690747
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da2316fc5bf4294f92d829e9d4c1cd54
+      - ElementName: MagicBarrierWindow
+        ObjectType: 11
+        guid: c3e9e627dec074489a48f72d3408ac35
+      Path: Switches\Default Work Unit\MagicBarrierWindow
+      values:
+      - name: Active
+        guid: ae7f36232e5ea44687773b2e86e33c66
+        id: 58138747
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: MagicBarrierWindow
+          ObjectType: 11
+          guid: c3e9e627dec074489a48f72d3408ac35
+        - ElementName: Active
+          ObjectType: 10
+          guid: ae7f36232e5ea44687773b2e86e33c66
+      - name: Inactive
+        guid: 387e8c0d64d4ee41ba59f0f37718b81f
+        id: 3163453698
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: MagicBarrierWindow
+          ObjectType: 11
+          guid: c3e9e627dec074489a48f72d3408ac35
+        - ElementName: Inactive
+          ObjectType: 10
+          guid: 387e8c0d64d4ee41ba59f0f37718b81f
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: PlayerInteractSwitch
       guid: 0ada6f1deab3544a8e9d6c352874436a
       id: 3391040932
@@ -672,6 +762,22 @@ MonoBehaviour:
         - ElementName: Degnition_Torch
           ObjectType: 10
           guid: 5bc8232a1ac63a48a9aba34dc2338d83
+      - name: Dropping_Potion
+        guid: f8df3e7133a45244b48624443150af4a
+        id: 838125300
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Dropping_Potion
+          ObjectType: 10
+          guid: f8df3e7133a45244b48624443150af4a
       - name: Dropping_Torch
         guid: eb1eaf360cc16546985fbc88afad98d8
         id: 3013747789
@@ -688,6 +794,22 @@ MonoBehaviour:
         - ElementName: Dropping_Torch
           ObjectType: 10
           guid: eb1eaf360cc16546985fbc88afad98d8
+      - name: Equipping_Potion
+        guid: b6546f3f9a6def45b976c2f1d463ef67
+        id: 2633107091
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Equipping_Potion
+          ObjectType: 10
+          guid: b6546f3f9a6def45b976c2f1d463ef67
       - name: Equipping_Torch
         guid: 4f08b5b2df9cf3499b4d72a0a9429062
         id: 1070326592
@@ -720,6 +842,22 @@ MonoBehaviour:
         - ElementName: Other_Torch_Interaction
           ObjectType: 10
           guid: 7f16b2464d67a74fa751e3db376dd4e3
+      - name: Using_Potion
+        guid: de73790a9e7d2642a3ac120ee5cc7d4d
+        id: 4110363151
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Using_Potion
+          ObjectType: 10
+          guid: de73790a9e7d2642a3ac120ee5cc7d4d
       - name: Window_Rune_Gone
         guid: 9c095e6bb692094c8dc54e8c7db667c7
         id: 1785219138

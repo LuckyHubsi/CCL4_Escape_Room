@@ -19,9 +19,11 @@ public class PlayerInteraction : MonoBehaviour
     private Torch _pickedUpTorch;
     private Potion _pickedUpPotion;
 
-    //Wwise
-    [SerializeField]
-    private AK.Wwise.Event playerInterActionPlayEvent;
+    //Wwise Cough
+    private float _initialSmokeTimer = 0;
+    private float _smokeTimer = 0;
+    private float _coughCounter = 0;
+    private float _lastCoughTime = 0;
 
     private void Awake()
     {
@@ -35,13 +37,25 @@ public class PlayerInteraction : MonoBehaviour
         {
             Debug.LogError("InteractableNameText not assigned in the Inspector.");
         }
+
+        _lastCoughTime = Time.time;
     }
+
+    private void Start()
+    {
+        _initialSmokeTimer = Mathf.Round(GameManager.instance.GetRemainingSmokeTimer());
+    }
+
+
 
     private void Update()
     {
         HandleInteraction();
         PlayerLineOfSight();
         HandleDroppingItem();
+
+        _smokeTimer = Mathf.Round(GameManager.instance.GetRemainingSmokeTimer());
+        HandleSmokeCough();
     }
 
     private void HandleInteraction()
@@ -66,10 +80,18 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (_playerHoldingItem)
             {
-                if (_carriedTorch != null)
+
+                if (_carriedPotion.isActiveAndEnabled)
                 {
-                    DropItem();
+                    //Wwise
+                    AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Dropping_Potion", gameObject);
+                    AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
                 }
+          
+
+
+                DropItem();
+
             }
         }
     }
@@ -87,7 +109,7 @@ public class PlayerInteraction : MonoBehaviour
 
             // Wwise
             AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Torch", gameObject);
-            playerInterActionPlayEvent.Post(gameObject);
+            AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
 
             return;
         }
@@ -104,6 +126,10 @@ public class PlayerInteraction : MonoBehaviour
 
             Debug.Log("Picked up " + _carriedPotion.potionState + " Potion");
 
+            //Wwise
+            AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Potion", gameObject);
+            AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+
             return;
         }
     }
@@ -114,9 +140,18 @@ public class PlayerInteraction : MonoBehaviour
 
         if (_pickedUpTorch != null)
         {
+            if (_carriedTorch.isActiveAndEnabled)
+            {
+                //Wwise
+                AkSoundEngine.PostEvent("Stop_Player_Interact", gameObject);
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Dropping_Torch", gameObject);
+                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+            }
             _pickedUpTorch.gameObject.SetActive(true);
             _carriedTorch.SetTorchState(Torch.TorchState.Unlit);
             _carriedTorch.gameObject.SetActive(false);
+
+         
         }
 
         if (_pickedUpPotion != null)
@@ -124,12 +159,8 @@ public class PlayerInteraction : MonoBehaviour
             _pickedUpPotion.gameObject.SetActive(true);
             _carriedPotion.SetPotionState(Potion.PotionState.Empty);
             _carriedPotion.gameObject.SetActive(false);
-        }
+        }        
 
-
-        //Wwise
-        AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Dropping_Torch", gameObject);
-        playerInterActionPlayEvent.Post(gameObject);
     }
 
     public Torch GetCarriedTorch()
@@ -153,7 +184,7 @@ public class PlayerInteraction : MonoBehaviour
 
                 //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
-                playerInterActionPlayEvent.Post(gameObject);
+                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             }
             if (_carriedTorch.torchState == Torch.TorchState.Red && torch.torchState == Torch.TorchState.Yellow || _carriedTorch.torchState == Torch.TorchState.Yellow && torch.torchState == Torch.TorchState.Red)
             {
@@ -162,7 +193,7 @@ public class PlayerInteraction : MonoBehaviour
 
                 //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
-                playerInterActionPlayEvent.Post(gameObject);
+                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             }
             if (_carriedTorch.torchState == Torch.TorchState.Yellow && torch.torchState == Torch.TorchState.Blue || _carriedTorch.torchState == Torch.TorchState.Blue && torch.torchState == Torch.TorchState.Yellow)
             {
@@ -171,7 +202,7 @@ public class PlayerInteraction : MonoBehaviour
 
                 //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
-                playerInterActionPlayEvent.Post(gameObject);
+                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             }
 
             if (_carriedTorch.torchState == Torch.TorchState.Unlit)
@@ -183,7 +214,7 @@ public class PlayerInteraction : MonoBehaviour
 
                     //Wwise
                     AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
-                    playerInterActionPlayEvent.Post(gameObject);
+                    AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
                 }
                 if (torch.torchState == Torch.TorchState.Blue)
                 {
@@ -192,7 +223,7 @@ public class PlayerInteraction : MonoBehaviour
 
                     //Wwise
                     AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
-                    playerInterActionPlayEvent.Post(gameObject);
+                    AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
                 }
                 if (torch.torchState == Torch.TorchState.Yellow)
                 {
@@ -201,7 +232,7 @@ public class PlayerInteraction : MonoBehaviour
 
                     //Wwise
                     AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
-                    playerInterActionPlayEvent.Post(gameObject);
+                    AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
                 }
             }
         }
@@ -287,6 +318,23 @@ public class PlayerInteraction : MonoBehaviour
             {
                 interactableNameText.text = "Press 'Q' to drop item";
             }
+        }
+    }
+    //Wwise Coughing Sound
+    private void HandleSmokeCough()
+    {
+        if (_smokeTimer%20 == 0 && Time.time - _lastCoughTime > 1 && _smokeTimer != _initialSmokeTimer )
+        {
+            if(_coughCounter > 0 && _coughCounter < 2)
+            {
+                AkSoundEngine.SetSwitch("Coughing", "Medium", gameObject);
+            } else if(_coughCounter > 1 && _coughCounter < 3)
+            {
+                AkSoundEngine.SetSwitch("Coughing", "Heavy", gameObject);
+            }
+            AkSoundEngine.PostEvent("Play_Coughing", gameObject);
+            _coughCounter++;
+            _lastCoughTime = Time.time;
         }
     }
 }

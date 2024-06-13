@@ -20,9 +20,11 @@ namespace AK
         static const AkUniqueID PLAY_MAGIC_BARRIER_WINDOW = 2862905942U;
         static const AkUniqueID PLAY_PLAYER_INTERACT = 305502530U;
         static const AkUniqueID PLAY_SMOKE = 2555336501U;
+        static const AkUniqueID PLAY_SUCCESSFUL_COMBINATION = 4156768940U;
         static const AkUniqueID PLAY_TORCH_CRACKLING = 45744291U;
-        static const AkUniqueID STOP_MAGIC_BARRIER_DOOR = 2992760128U;
+        static const AkUniqueID PLAY_WRONG_COMBINATION = 3120915481U;
         static const AkUniqueID STOP_MAGIC_BARRIER_WINDOW = 3780008132U;
+        static const AkUniqueID STOP_PLAYER_INTERACT = 2314554776U;
         static const AkUniqueID STOP_SMOKE = 3366263883U;
     } // namespace EVENTS
 
@@ -67,6 +69,17 @@ namespace AK
             } // namespace SWITCH
         } // namespace FOOTSTEPS
 
+        namespace MAGICBARRIERWINDOW
+        {
+            static const AkUniqueID GROUP = 510690747U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ACTIVE = 58138747U;
+                static const AkUniqueID INACTIVE = 3163453698U;
+            } // namespace SWITCH
+        } // namespace MAGICBARRIERWINDOW
+
         namespace PLAYERINTERACTSWITCH
         {
             static const AkUniqueID GROUP = 3391040932U;
@@ -75,9 +88,12 @@ namespace AK
             {
                 static const AkUniqueID COMBINING_TORCH = 805831506U;
                 static const AkUniqueID DEGNITION_TORCH = 1723853725U;
+                static const AkUniqueID DROPPING_POTION = 838125300U;
                 static const AkUniqueID DROPPING_TORCH = 3013747789U;
+                static const AkUniqueID EQUIPPING_POTION = 2633107091U;
                 static const AkUniqueID EQUIPPING_TORCH = 1070326592U;
                 static const AkUniqueID OTHER_TORCH_INTERACTION = 1918408915U;
+                static const AkUniqueID USING_POTION = 4110363151U;
                 static const AkUniqueID WINDOW_RUNE_GONE = 1785219138U;
             } // namespace SWITCH
         } // namespace PLAYERINTERACTSWITCH

@@ -34,6 +34,12 @@
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
+				<SwitchGroup Id="510690747" Name="MagicBarrierWindow">
+					<Switches>
+						<Switch Id="58138747" Name="Active"/>
+						<Switch Id="3163453698" Name="Inactive"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
 						<Switch Id="2058049674" Name="Wood"/>
@@ -50,26 +56,33 @@
 				<SwitchGroup Id="3391040932" Name="PlayerInteractSwitch">
 					<Switches>
 						<Switch Id="805831506" Name="Combining_Torch"/>
+						<Switch Id="838125300" Name="Dropping_Potion"/>
 						<Switch Id="1070326592" Name="Equipping_Torch"/>
 						<Switch Id="1723853725" Name="Degnition_Torch"/>
 						<Switch Id="1785219138" Name="Window_Rune_Gone"/>
 						<Switch Id="1918408915" Name="Other_Torch_Interaction"/>
+						<Switch Id="2633107091" Name="Equipping_Potion"/>
 						<Switch Id="3013747789" Name="Dropping_Torch"/>
+						<Switch Id="4110363151" Name="Using_Potion"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{6795FEA7-7773-835F-D284-953D1B8EF7EA}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B450DDA0-B365-852B-EB85-4DBCD2B875C6}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="71493339" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Combination.wav</ShortName>
-					<CachePath>SFX/Torch Combination_10C4C929.wem</CachePath>
+					<CachePath>SFX/Torch Combination_D582D2CF.wem</CachePath>
+				</File>
+				<File Id="151348559" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Successful Combination.wav</ShortName>
+					<CachePath>SFX/Successful Combination_59D5B0F6.wem</CachePath>
 				</File>
 				<File Id="191815447" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Light.wav</ShortName>
-					<CachePath>SFX/Cough Light_10C4C929.wem</CachePath>
+					<CachePath>SFX/Cough Light_CF3889BD.wem</CachePath>
 				</File>
 				<File Id="201119281" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cauldron.wav</ShortName>
@@ -81,11 +94,15 @@
 				</File>
 				<File Id="296086376" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Magic Barrier Door.wav</ShortName>
-					<CachePath>SFX/Magic Barrier Door_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Magic Barrier Door_C5579977.wem</CachePath>
 				</File>
 				<File Id="340508672" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Window Rune be gone.wav</ShortName>
-					<CachePath>SFX/Window Rune be gone_10C4C929.wem</CachePath>
+					<CachePath>SFX/Window Rune be gone_2A4A185B.wem</CachePath>
+				</File>
+				<File Id="383035874" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Error Sound.wav</ShortName>
+					<CachePath>SFX/Error Sound_AFBE2AAA.wem</CachePath>
 				</File>
 				<File Id="442710542" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_1.wav</ShortName>
@@ -101,31 +118,47 @@
 				</File>
 				<File Id="525695517" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Dropping.wav</ShortName>
-					<CachePath>SFX/Torch Dropping_10C4C929.wem</CachePath>
+					<CachePath>SFX/Torch Dropping_8864B61B.wem</CachePath>
+				</File>
+				<File Id="528654628" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Equipping Potion.wav</ShortName>
+					<CachePath>SFX/Equipping Potion_10C4C929.wem</CachePath>
 				</File>
 				<File Id="573187394" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Equipping.wav</ShortName>
-					<CachePath>SFX/Torch Equipping_10C4C929.wem</CachePath>
+					<CachePath>SFX/Torch Equipping_568AFD1C.wem</CachePath>
 				</File>
 				<File Id="620638536" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Magic Barrier Window.wav</ShortName>
 					<CachePath>SFX/Magic Barrier Window_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="624127175" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Smoke Reset.wav</ShortName>
+					<CachePath>SFX/Smoke Reset_FD768D6C.wem</CachePath>
+				</File>
 				<File Id="632952234" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Smoke.wav</ShortName>
 					<CachePath>SFX/Smoke_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="674036316" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dropping Potion.wav</ShortName>
+					<CachePath>SFX/Dropping Potion_35BDC557.wem</CachePath>
 				</File>
 				<File Id="691056013" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_2.wav.wav</ShortName>
 					<CachePath>SFX/Footsteps_Wood_2.wav_A03D4110.wem</CachePath>
 				</File>
+				<File Id="763857974" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Using Potion.wav</ShortName>
+					<CachePath>SFX/Using Potion_A3B39A14.wem</CachePath>
+				</File>
 				<File Id="891873728" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Degnition.wav</ShortName>
-					<CachePath>SFX/Torch Degnition_10C4C929.wem</CachePath>
+					<CachePath>SFX/Torch Degnition_33189BFB.wem</CachePath>
 				</File>
 				<File Id="911370399" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Medium.wav</ShortName>
-					<CachePath>SFX/Cough Medium_10C4C929.wem</CachePath>
+					<CachePath>SFX/Cough Medium_50DE405B.wem</CachePath>
 				</File>
 				<File Id="942542682" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Grass_1.wav</ShortName>
@@ -141,11 +174,11 @@
 				</File>
 				<File Id="1011679340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Heavy.wav</ShortName>
-					<CachePath>SFX/Cough Heavy_82F549AF.wem</CachePath>
+					<CachePath>SFX/Cough Heavy_E43F235C.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3212638512" Name="Play_Cauldron" MaxAttenuation="5" DurationType="Infinite">
+				<Event Id="3212638512" Name="Play_Cauldron" MaxAttenuation="3" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="201119281"/>
 					</MediaRefs>
@@ -197,10 +230,21 @@
 						<MediaRef Id="296086376"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2862905942" Name="Play_Magic_Barrier_Window" MaxAttenuation="3" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="620638536"/>
-					</MediaRefs>
+				<Event Id="2862905942" Name="Play_Magic_Barrier_Window" MaxAttenuation="100" DurationType="Mixed" DurationMin="1.5630158" DurationMax="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="510690747" Id="3163453698"/>
+							<MediaRefs>
+								<MediaRef Id="340508672"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="510690747" Id="58138747" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="620638536"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="305502530" Name="Play_Player_Interact" DurationType="Mixed" DurationMin="0.4446146" DurationMax="Infinite">
 					<SwitchContainers>
@@ -230,9 +274,15 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="1785219138" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="2633107091"/>
 							<MediaRefs>
-								<MediaRef Id="340508672"/>
+								<MediaRef Id="528654628"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="4110363151" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="763857974"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -241,23 +291,46 @@
 								<MediaRef Id="525695517"/>
 							</MediaRefs>
 						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="838125300"/>
+							<MediaRefs>
+								<MediaRef Id="674036316"/>
+							</MediaRefs>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2555336501" Name="Play_Smoke" MaxAttenuation="5" DurationType="Infinite">
+				<Event Id="2555336501" Name="Play_Smoke" MaxAttenuation="3" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="632952234"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="45744291" Name="Play_Torch_Crackling" MaxAttenuation="5" DurationType="Infinite">
+				<Event Id="4156768940" Name="Play_Successful_Combination" DurationType="OneShot" DurationMin="2.0277324" DurationMax="2.0277324">
+					<MediaRefs>
+						<MediaRef Id="151348559"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="45744291" Name="Play_Torch_Crackling" MaxAttenuation="3" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="215573568"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2992760128" Name="Stop_Magic_Barrier_Door" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3120915481" Name="Play_Wrong_Combination" DurationType="OneShot" DurationMin="0.9269375" DurationMax="0.9269375">
+					<MediaRefs>
+						<MediaRef Id="383035874"/>
+						<MediaRef Id="624127175"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3780008132" Name="Stop_Magic_Barrier_Window" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2314554776" Name="Stop_Player_Interact" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3366263883" Name="Stop_Smoke" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<SwitchGroups>
+				<SwitchGroup Id="510690747" Name="MagicBarrierWindow">
+					<Switches>
+						<Switch Id="58138747" Name="Active"/>
+						<Switch Id="3163453698" Name="Inactive"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
 						<Switch Id="2058049674" Name="Wood"/>
@@ -274,15 +347,18 @@
 				<SwitchGroup Id="3391040932" Name="PlayerInteractSwitch">
 					<Switches>
 						<Switch Id="805831506" Name="Combining_Torch"/>
+						<Switch Id="838125300" Name="Dropping_Potion"/>
 						<Switch Id="1070326592" Name="Equipping_Torch"/>
 						<Switch Id="1723853725" Name="Degnition_Torch"/>
 						<Switch Id="1785219138" Name="Window_Rune_Gone"/>
 						<Switch Id="1918408915" Name="Other_Torch_Interaction"/>
+						<Switch Id="2633107091" Name="Equipping_Potion"/>
 						<Switch Id="3013747789" Name="Dropping_Torch"/>
+						<Switch Id="4110363151" Name="Using_Potion"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{73BE4036-E48E-01F9-94FC-937EB57F0226}</FileHash>
+	<FileHash>{5090168C-28A7-B3B3-A290-4DDF05A8FFC9}</FileHash>
 </SoundBanksInfo>

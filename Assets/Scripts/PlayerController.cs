@@ -56,9 +56,6 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Wwise
-
-    [SerializeField]
-    private AK.Wwise.Event footstepsPlayEvent;
     [SerializeField]
     private float footstepsFrequency = 125;
 
@@ -145,7 +142,7 @@ public class PlayerController : MonoBehaviour
             //Player Movement Sound
             if ((targetVelocity.x != 0 || targetVelocity.z != 0) && !_footstepsIsPlaying)
             {
-                footstepsPlayEvent.Post(gameObject);
+                AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
                 _lastFootstepTime = Time.time;
                 _footstepsIsPlaying = true;
             }

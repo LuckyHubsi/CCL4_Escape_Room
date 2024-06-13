@@ -13,6 +13,11 @@ public class Window : Interactable
         {
             Debug.LogError("PlayerInteraction script not found in the scene.");
         }
+
+        //Wwise
+        AkSoundEngine.SetSwitch("MagicBarrierWindow", "Active", gameObject);
+        AkSoundEngine.PostEvent("Play_Magic_Barrier_Window", gameObject);
+
     }
 
     public override void Interact()
@@ -25,12 +30,20 @@ public class Window : Interactable
 
                 _playerInteraction.DropItem();
 
-                ProgressionManager.instance.SolvePuzzleOne();
-
                 //Wwise
                 AkSoundEngine.PostEvent("Stop_Magic_Barrier_Window", gameObject);
-                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Window_Rune_Gone", gameObject);
-                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+                AkSoundEngine.SetSwitch("MagicBarrierWindow", "Inactive", gameObject);
+                AkSoundEngine.PostEvent("Play_Magic_Barrier_Window", gameObject);
+
+                ProgressionManager.instance.SolvePuzzleOne();
+
+            } else if (_playerInteraction.GetCarriedTorch() != null && _playerInteraction.GetCarriedTorch().torchState != Torch.TorchState.Purple)
+            {
+                _playerInteraction.DropItem();
+
+                //Wwise
+                AkSoundEngine.PostEvent("Play_Wrong_Combination", gameObject);
+
             }
         }
     }

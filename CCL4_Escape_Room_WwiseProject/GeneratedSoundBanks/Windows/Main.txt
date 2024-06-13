@@ -3,51 +3,65 @@ Event	ID	Name			Wwise Object Path	Notes
 	305502530	Play_Player_Interact			\Default Work Unit\Play\Play_Player_Interact	
 	1741894216	Play_Coughing			\Default Work Unit\Play\Play_Coughing	
 	2205790566	Play_Magic_Barrier_Door			\Default Work Unit\Play\Play_Magic_Barrier_Door	
+	2314554776	Stop_Player_Interact			\Default Work Unit\Stop\Stop_Player_Interact	
 	2555336501	Play_Smoke			\Default Work Unit\Play\Play_Smoke	
 	2862905942	Play_Magic_Barrier_Window			\Default Work Unit\Play\Play_Magic_Barrier_Window	
-	2992760128	Stop_Magic_Barrier_Door			\Default Work Unit\Stop\Stop_Magic_Barrier_Door	
+	3120915481	Play_Wrong_Combination			\Default Work Unit\Play\Play_Wrong_Combination	
 	3212638512	Play_Cauldron			\Default Work Unit\Play\Play_Cauldron	
 	3366263883	Stop_Smoke			\Default Work Unit\Stop\Stop_Smoke	
 	3780008132	Stop_Magic_Barrier_Window			\Default Work Unit\Stop\Stop_Magic_Barrier_Window	
 	3854155799	Play_Footsteps			\Default Work Unit\Play\Play_Footsteps	
+	4156768940	Play_Successful_Combination			\Default Work Unit\Play\Play_Successful_Combination	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	510690747	MagicBarrierWindow			\Default Work Unit\MagicBarrierWindow	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2427782015	Coughing			\Default Work Unit\Coughing	
 	3391040932	PlayerInteractSwitch			\Default Work Unit\PlayerInteractSwitch	
 
 Switch	ID	Name	Switch Group			Notes
+	58138747	Active	MagicBarrierWindow			
+	3163453698	Inactive	MagicBarrierWindow			
 	2058049674	Wood	Footsteps			
 	4248645337	Grass	Footsteps			
 	1935470627	Light	Coughing			
 	2732489590	Heavy	Coughing			
 	2849147824	Medium	Coughing			
 	805831506	Combining_Torch	PlayerInteractSwitch			
+	838125300	Dropping_Potion	PlayerInteractSwitch			
 	1070326592	Equipping_Torch	PlayerInteractSwitch			
 	1723853725	Degnition_Torch	PlayerInteractSwitch			
 	1785219138	Window_Rune_Gone	PlayerInteractSwitch			
 	1918408915	Other_Torch_Interaction	PlayerInteractSwitch			
+	2633107091	Equipping_Potion	PlayerInteractSwitch			
 	3013747789	Dropping_Torch	PlayerInteractSwitch			
+	4110363151	Using_Potion	PlayerInteractSwitch			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	71493339	Torch Combination	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Combination_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Combination		143146
-	191815447	Cough Light	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Cough Light_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Coughing\Cough Light		286316
+	71493339	Torch Combination	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Combination_D582D2CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Combination		143146
+	151348559	Successful Combination	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Successful Combination_59D5B0F6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Successful Combination		178942
+	191815447	Cough Light	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Cough Light_CF3889BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Coughing\Cough Light		286316
 	201119281	Cauldron	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Cauldron_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Cauldron		400090
 	215573568	Torch Crackling	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Crackling_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Torch Crackling		591862
-	296086376	Magic Barrier Door	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Magic Barrier Door_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Magic Barrier Door		1079866
-	340508672	Window Rune be gone	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Window Rune be gone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Window Rune be gone		275812
+	296086376	Magic Barrier Door	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Magic Barrier Door_C5579977.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Magic Barrier Door		1079866
+	340508672	Window Rune be gone	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Window Rune be gone_2A4A185B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Magic Barrier Window\Window Rune be gone		275812
+	383035874	Error Sound	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Error Sound_AFBE2AAA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Wrong Combination\Error Sound		56152
 	442710542	Footsteps_Wood_1	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Footsteps_Wood_1_028D8A8F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps Wood\Footsteps_Wood_1		40834
 	466972273	Torch Ignition	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Ignition_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Other Torch Interaction\Torch Ignition		20394
 	467592888	Footsteps_Grass_3	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Footsteps_Grass_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps Grass\Footsteps_Grass_3		67072
-	525695517	Torch Dropping	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Dropping_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Dropping		57688
-	573187394	Torch Equipping	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Equipping_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Equipping		85460
-	620638536	Magic Barrier Window	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Magic Barrier Window_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Magic Barrier Window		608714
+	525695517	Torch Dropping	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Dropping_8864B61B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Dropping		57688
+	528654628	Equipping Potion	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Equipping Potion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Equipping Potion		134176
+	573187394	Torch Equipping	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Equipping_568AFD1C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Equipping		85460
+	620638536	Magic Barrier Window Active	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Magic Barrier Window_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Magic Barrier Window\Magic Barrier Window Active		608714
+	624127175	Smoke Reset	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Smoke Reset_FD768D6C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Wrong Combination\Smoke Reset		130068
 	632952234	Smoke	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Smoke_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Smoke		807012
+	674036316	Dropping Potion	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Dropping Potion_35BDC557.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Dropping Potion		97936
 	691056013	Footsteps_Wood_2_wav	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Footsteps_Wood_2.wav_A03D4110.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps Wood\Footsteps_Wood_2_wav		39628
-	891873728	Torch Degnition	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Degnition_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Degnition		153924
-	911370399	Cough Medium	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Cough Medium_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Coughing\Cough Medium		231988
+	763857974	Using Potion	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Using Potion_A3B39A14.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Using Potion		87518
+	891873728	Torch Degnition	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Degnition_33189BFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Degnition		153924
+	911370399	Cough Medium	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Cough Medium_50DE405B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Coughing\Cough Medium		231988
 	942542682	Footsteps_Grass_1	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Footsteps_Grass_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps Grass\Footsteps_Grass_1		62138
 	969354292	Footsteps_Grass_2	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Footsteps_Grass_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps Grass\Footsteps_Grass_2		75414
 	995375094	Footsteps_Wood_3_wav	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Footsteps_Wood_3.wav_4ED5FF9F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps Wood\Footsteps_Wood_3_wav		40040
-	1011679340	Cough Heavy	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Cough Heavy_82F549AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Coughing\Cough Heavy		196936
+	1011679340	Cough Heavy	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Cough Heavy_E43F235C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Coughing\Cough Heavy		196936
 

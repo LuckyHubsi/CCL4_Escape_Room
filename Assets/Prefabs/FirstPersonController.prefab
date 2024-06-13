@@ -713,10 +713,6 @@ MonoBehaviour:
   crouchKey: 306
   crouchHeightScale: 0.5
   crouchSpeedFactor: 0.75
-  footstepsPlayEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
   footstepsFrequency: 125
 --- !u!114 &3203863652131033656
 MonoBehaviour:
@@ -733,10 +729,6 @@ MonoBehaviour:
   interactableNameText: {fileID: 5811568148064796371}
   _carriedTorch: {fileID: 8401960539496322458}
   _carriedPotion: {fileID: 8133409282977004155}
-  playerInterActionPlayEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!1 &7476392002440549983
 GameObject:
   m_ObjectHideFlags: 0

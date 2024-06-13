@@ -98,6 +98,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Magic Barrier Door" ID="{98FBDB97-51E1-4B78-B87B-1016120974DE}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Magic Barrier Door.wav</AudioFile>
 											<MediaIDList>
@@ -109,47 +112,13 @@
 										<ActiveSource Name="Magic Barrier Door" ID="{98FBDB97-51E1-4B78-B87B-1016120974DE}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Magic Barrier Window" ID="{D6CA0AE6-4364-4DFB-A969-3E603719EAD7}" ShortID="394246111">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-16</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Magic" ID="{5505F332-BFC6-4443-9E59-4D4BDA6D3184}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Magic Barrier Window" ID="{80CCFD92-9845-46F4-AA52-F90832DDE994}">
-											<Language>SFX</Language>
-											<AudioFile>Magic Barrier Window.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="620638536"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Magic Barrier Window" ID="{80CCFD92-9845-46F4-AA52-F90832DDE994}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="Smoke" ID="{83EE040D-475C-41F0-AB00-5B62F13BED5B}" ShortID="963165164">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -177,6 +146,252 @@
 										<ActiveSource Name="Smoke" ID="{D9736F6F-1C8D-42CD-8035-F77B13F7619C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="Wrong Combination" ID="{81FAFD37-8D84-4B4D-BDB2-3040D904591B}" ShortID="951194177">
+									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.25"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Error Sound" ID="{6389AF1E-9600-4501-B52F-F7EF8A631A84}" ShortID="30272944">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Error Sound" ID="{5E3B2BCC-C19B-41D2-A438-3DD0E0BE2F9A}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.127072613803231"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0864299559471365"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Error Sound.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="383035874"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Error Sound" ID="{5E3B2BCC-C19B-41D2-A438-3DD0E0BE2F9A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Smoke Reset" ID="{7BDDDDF0-4622-4652-907C-9F21DE4A25FC}" ShortID="38032164">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-13</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Smoke Reset" ID="{F4014ED7-73D1-405B-BAFB-FBEF32F017EB}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.162226431718062"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Smoke Reset.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="624127175"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Smoke Reset" ID="{F4014ED7-73D1-405B-BAFB-FBEF32F017EB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="Error Sound" ID="{6389AF1E-9600-4501-B52F-F7EF8A631A84}"/>
+										<ItemRef Name="Smoke Reset" ID="{7BDDDDF0-4622-4652-907C-9F21DE4A25FC}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<Sound Name="Successful Combination" ID="{F5E21BDD-0CB2-45B7-B34C-5C7A0D9B8729}" ShortID="536335143">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Player Interact" ID="{ECA32155-0AEB-4042-B028-B36A32B351ED}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Successful Combination" ID="{5F445094-E3D9-4897-84D4-D9260EC5EF76}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.657449808704686"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Successful Combination.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="151348559"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Successful Combination" ID="{5F445094-E3D9-4897-84D4-D9260EC5EF76}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<SwitchContainer Name="Magic Barrier Window" ID="{5C50660F-39EA-4667-B091-DDD16EBA9AA9}" ShortID="222990124">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Magic" ID="{5505F332-BFC6-4443-9E59-4D4BDA6D3184}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Active" ID="{23367FAE-5E2E-46A4-8777-3B2E86E33C66}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="MagicBarrierWindow" ID="{27E6E9C3-C0DE-4874-9A48-F72D3408AC35}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Magic Barrier Window Active" ID="{D6CA0AE6-4364-4DFB-A969-3E603719EAD7}" ShortID="394246111">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="LoopCount" Type="int32" Value="10"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-16</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Magic" ID="{5505F332-BFC6-4443-9E59-4D4BDA6D3184}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Magic Barrier Window" ID="{80CCFD92-9845-46F4-AA52-F90832DDE994}">
+													<Language>SFX</Language>
+													<AudioFile>Magic Barrier Window.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="620638536"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Magic Barrier Window" ID="{80CCFD92-9845-46F4-AA52-F90832DDE994}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Window Rune be gone" ID="{AB3034D5-E7E5-4B8B-8749-765B2A1CDBF2}" ShortID="564415457">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Window" ID="{C6FBF658-1ED6-4D30-B162-386479523916}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player Interact" ID="{ECA32155-0AEB-4042-B028-B36A32B351ED}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Window Rune be gone" ID="{D6DE6ACD-5391-4CE1-8645-1CCEA364E0EF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.256141808265156"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.268535766729599"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Window Rune be gone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="340508672"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Window Rune be gone" ID="{D6DE6ACD-5391-4CE1-8645-1CCEA364E0EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Window Rune be gone" ID="{AB3034D5-E7E5-4B8B-8749-765B2A1CDBF2}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Magic Barrier Window Active" ID="{D6CA0AE6-4364-4DFB-A969-3E603719EAD7}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Inactive" ID="{0D8C7E38-D464-41EE-BA59-F0F37718B81F}"/>
+												<ItemList>
+													<ItemRef Name="Window Rune be gone" ID="{AB3034D5-E7E5-4B8B-8749-765B2A1CDBF2}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Active" ID="{23367FAE-5E2E-46A4-8777-3B2E86E33C66}"/>
+												<ItemList>
+													<ItemRef Name="Magic Barrier Window Active" ID="{D6CA0AE6-4364-4DFB-A969-3E603719EAD7}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Outdoor" ID="{38B9993D-3BA6-4518-ACE8-EC84C0672874}" ShortID="292771165"/>
@@ -409,7 +624,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Window_Rune_Gone" ID="{6B5E099C-92B6-4C09-8DC5-4E8C7DB667C7}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
+									<ObjectRef Name="Using_Potion" ID="{0A7973DE-7D9E-4226-A3AC-120EE5CC7D4D}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Player Interact" ID="{ECA32155-0AEB-4042-B028-B36A32B351ED}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
@@ -528,6 +743,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Torch Degnition" ID="{6F3E5328-76DC-47D3-ADE9-E58AFC88937F}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0557654735682819"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Torch Degnition.wav</AudioFile>
 											<MediaIDList>
@@ -543,7 +763,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-16</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -557,6 +777,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Torch Dropping" ID="{5F63ADC7-CD7B-4792-9605-D80820A8EF4A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0937746211553638"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.102404187519354"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Torch Dropping.wav</AudioFile>
 											<MediaIDList>
@@ -586,6 +811,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Torch Equipping" ID="{4F79FB93-6400-4328-A3E0-44CFD539EC30}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.10655080763583"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0673777165932452"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Torch Equipping.wav</AudioFile>
 											<MediaIDList>
@@ -615,6 +845,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Torch Combination" ID="{0314B601-5047-478C-BA81-E9751C44C892}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.082710627753304"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.192991464757709"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Torch Combination.wav</AudioFile>
 											<MediaIDList>
@@ -626,20 +861,15 @@
 										<ActiveSource Name="Torch Combination" ID="{0314B601-5047-478C-BA81-E9751C44C892}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Window Rune be gone" ID="{AB3034D5-E7E5-4B8B-8749-765B2A1CDBF2}" ShortID="564415457">
+								<Sound Name="Equipping Potion" ID="{1B884E0B-45EA-4C6E-B42E-B0DE634B1FB1}" ShortID="609418702">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Window" ID="{C6FBF658-1ED6-4D30-B162-386479523916}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
 										</Reference>
@@ -648,21 +878,100 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Window Rune be gone" ID="{D6DE6ACD-5391-4CE1-8645-1CCEA364E0EF}">
+										<AudioFileSource Name="Equipping Potion" ID="{47C660F5-122B-4CDE-862D-7204D6C64EAA}">
 											<Language>SFX</Language>
-											<AudioFile>Window Rune be gone.wav</AudioFile>
+											<AudioFile>Equipping Potion.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="340508672"/>
+												<MediaID ID="528654628"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Window Rune be gone" ID="{D6DE6ACD-5391-4CE1-8645-1CCEA364E0EF}" Platform="Linked"/>
+										<ActiveSource Name="Equipping Potion" ID="{47C660F5-122B-4CDE-862D-7204D6C64EAA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dropping Potion" ID="{3C73B138-550B-44F5-AE23-2B189DBBEE24}" ShortID="933036322">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-19</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dropping Potion" ID="{55ACDD5F-4FF1-4E96-9CFE-87F090373A8A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.059129930973858"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.158331385417603"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Dropping Potion.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="674036316"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dropping Potion" ID="{55ACDD5F-4FF1-4E96-9CFE-87F090373A8A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Using Potion" ID="{63789DA1-4D3B-4914-9797-5AA4C9641EF9}" ShortID="831827187">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Cauldron" ID="{D7697C20-014D-4908-BAAD-D5CBDC210E3A}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Player Interact" ID="{ECA32155-0AEB-4042-B028-B36A32B351ED}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Using Potion" ID="{881E9A69-F5D8-4C9E-862E-97A525DD9ABF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.210167841409692"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.203960352422907"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Using Potion.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="763857974"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Using Potion" ID="{881E9A69-F5D8-4C9E-862E-97A525DD9ABF}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Equipping Potion" ID="{1B884E0B-45EA-4C6E-B42E-B0DE634B1FB1}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Dropping Potion" ID="{3C73B138-550B-44F5-AE23-2B189DBBEE24}"/>
+									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Torch Dropping" ID="{6BE42484-6F38-4EA7-8BB8-4D0DADB58FC9}"/>
 									</GroupingBehavior>
@@ -670,13 +979,13 @@
 										<ItemRef Name="Other Torch Interaction" ID="{ADA63D8D-4684-4831-A74C-EBD380EAAF6C}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="Using Potion" ID="{63789DA1-4D3B-4914-9797-5AA4C9641EF9}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="Torch Degnition" ID="{93C97DAD-DDC0-4EBF-9E2D-4EA289EE66C4}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Torch Equipping" ID="{E8AD28B8-3045-44E0-89C7-BFCE7929E593}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="Window Rune be gone" ID="{AB3034D5-E7E5-4B8B-8749-765B2A1CDBF2}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Torch Combination" ID="{78F481FC-19E4-45B2-92AD-7503D388FF69}"/>
@@ -708,15 +1017,27 @@
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Window_Rune_Gone" ID="{6B5E099C-92B6-4C09-8DC5-4E8C7DB667C7}"/>
+										<SwitchRef Name="Equipping_Potion" ID="{3F6F54B6-6D9A-45EF-B976-C2F1D463EF67}"/>
 										<ItemList>
-											<ItemRef Name="Window Rune be gone" ID="{AB3034D5-E7E5-4B8B-8749-765B2A1CDBF2}"/>
+											<ItemRef Name="Equipping Potion" ID="{1B884E0B-45EA-4C6E-B42E-B0DE634B1FB1}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Using_Potion" ID="{0A7973DE-7D9E-4226-A3AC-120EE5CC7D4D}"/>
+										<ItemList>
+											<ItemRef Name="Using Potion" ID="{63789DA1-4D3B-4914-9797-5AA4C9641EF9}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Dropping_Torch" ID="{36AF1EEB-C10C-4665-985F-BC88AFAD98D8}"/>
 										<ItemList>
 											<ItemRef Name="Torch Dropping" ID="{6BE42484-6F38-4EA7-8BB8-4D0DADB58FC9}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Dropping_Potion" ID="{713EDFF8-A433-4452-B486-24443150AF4A}"/>
+										<ItemList>
+											<ItemRef Name="Dropping Potion" ID="{3C73B138-550B-44F5-AE23-2B189DBBEE24}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
@@ -757,6 +1078,8 @@
 									<ChildrenList>
 										<AudioFileSource Name="Cough Heavy" ID="{2F312A42-EA3A-405F-9E4F-EE0900A92EC2}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.249448237885463"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.164471365638767"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimEnd" Type="Real64" Value="1.02520484581498"/>
 											</PropertyList>
@@ -782,6 +1105,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Cough Light" ID="{1B73BCDA-C3FA-4E50-A407-226AE47D7026}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.183878487518355"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.160236967694567"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Cough Light.wav</AudioFile>
 											<MediaIDList>
@@ -804,6 +1132,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Cough Medium" ID="{B1A78AF4-6EF3-461E-BD62-ADAF19F47224}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.29901639133627"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.288375238619677"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Cough Medium.wav</AudioFile>
 											<MediaIDList>

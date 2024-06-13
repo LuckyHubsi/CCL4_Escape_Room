@@ -17,6 +17,9 @@
 						<Switch Name="Dropping_Torch" ID="{36AF1EEB-C10C-4665-985F-BC88AFAD98D8}"/>
 						<Switch Name="Combining_Torch" ID="{EAC36B7E-E396-4E12-9696-FB4A36EDA73A}"/>
 						<Switch Name="Window_Rune_Gone" ID="{6B5E099C-92B6-4C09-8DC5-4E8C7DB667C7}"/>
+						<Switch Name="Equipping_Potion" ID="{3F6F54B6-6D9A-45EF-B976-C2F1D463EF67}"/>
+						<Switch Name="Dropping_Potion" ID="{713EDFF8-A433-4452-B486-24443150AF4A}"/>
+						<Switch Name="Using_Potion" ID="{0A7973DE-7D9E-4226-A3AC-120EE5CC7D4D}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Coughing" ID="{C3DD0C37-17B7-4F8E-92BF-42EDCE42C516}">
@@ -24,6 +27,12 @@
 						<Switch Name="Light" ID="{C9F2DADD-EA9D-4AE1-AA6F-F4B4BFE5E5F2}"/>
 						<Switch Name="Medium" ID="{745B4C18-5AD7-4CB7-B957-DEF313F7E35B}"/>
 						<Switch Name="Heavy" ID="{EB7A254F-246B-430E-AB44-7D3E9B1755AE}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="MagicBarrierWindow" ID="{27E6E9C3-C0DE-4874-9A48-F72D3408AC35}">
+					<ChildrenList>
+						<Switch Name="Active" ID="{23367FAE-5E2E-46A4-8777-3B2E86E33C66}"/>
+						<Switch Name="Inactive" ID="{0D8C7E38-D464-41EE-BA59-F0F37718B81F}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

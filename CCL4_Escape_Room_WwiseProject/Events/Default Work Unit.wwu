@@ -65,7 +65,7 @@
 								<Action Name="" ID="{D0D8D475-2D1A-4D67-82E5-C109F00EA310}" ShortID="185534915">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Magic Barrier Window" ID="{D6CA0AE6-4364-4DFB-A969-3E603719EAD7}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+											<ObjectRef Name="Magic Barrier Window" ID="{5C50660F-39EA-4667-B091-DDD16EBA9AA9}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -93,38 +93,32 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Wrong_Combination" ID="{422076A8-5A32-4957-A0B8-6B63218BCBC9}">
+							<ChildrenList>
+								<Action Name="" ID="{F79063B4-20A0-415C-85DE-CF3A1345BCB7}" ShortID="500427382">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wrong Combination" ID="{81FAFD37-8D84-4B4D-BDB2-3040D904591B}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Successful_Combination" ID="{AB543C4F-3122-4F71-8DFA-5C0CFD2097CF}">
+							<ChildrenList>
+								<Action Name="" ID="{C404ED90-B515-4421-95C2-9696735BC608}" ShortID="231473589">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Successful Combination" ID="{F5E21BDD-0CB2-45B7-B34C-5C7A0D9B8729}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Stop" ID="{9EF7134F-51F1-4B4B-ACC8-65C1D1B744C6}" ShortID="395466208">
 					<ChildrenList>
-						<Event Name="Stop_Magic_Barrier_Window" ID="{559EFC45-04DC-45F5-8615-C8A27FB8CE1E}">
-							<ChildrenList>
-								<Action Name="" ID="{33738046-96CA-4EAA-A966-9E94891B2122}" ShortID="895350800">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Magic Barrier Window" ID="{D6CA0AE6-4364-4DFB-A969-3E603719EAD7}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Stop_Magic_Barrier_Door" ID="{4D5B62E6-9D3B-4529-8A6A-2580DF892A5F}">
-							<ChildrenList>
-								<Action Name="" ID="{4828E06D-9877-4C98-B522-C07065FDD6DE}" ShortID="770846287">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Magic Barrier Door" ID="{809A6E4A-FBD7-47F5-AEE3-74063A9D4689}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Stop_Smoke" ID="{3BD3EB08-14E9-45C2-A0B7-EEEA1BDF03EC}">
 							<ChildrenList>
 								<Action Name="" ID="{C4F1E888-9483-4E02-9CAE-5A46D990CF65}" ShortID="646061996">
@@ -134,6 +128,34 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Smoke" ID="{83EE040D-475C-41F0-AB00-5B62F13BED5B}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Player_Interact" ID="{7C1FA3EB-676B-48AA-978C-3F3C7797C27B}">
+							<ChildrenList>
+								<Action Name="" ID="{60F4ADE8-6613-4F4F-82E0-39358845CCCB}" ShortID="23323496">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player Interact" ID="{EF40D2FC-F813-4249-8FEF-DE25B7AE80CD}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Magic_Barrier_Window" ID="{3F4572EC-FF92-4AEB-9D9E-A700A6D2EE24}">
+							<ChildrenList>
+								<Action Name="" ID="{D6452D06-1C73-450F-8D59-D3D05D58009B}" ShortID="1000911381">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Magic Barrier Window" ID="{5C50660F-39EA-4667-B091-DDD16EBA9AA9}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -27,6 +27,8 @@ public class Cauldron : Interactable
             {
                 AddPotionToCauldron(carriedPotion);
                 _playerInteraction.DropItem();
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Use_Potion", gameObject);
+                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             }
         }
     }
@@ -111,12 +113,16 @@ public class Cauldron : Interactable
             Debug.Log("Correct recipe!");
             // Add any additional logic for a correct recipe here
             _cauldronInventory = new Potion.PotionState[3]; // Clear the inventory
+
+            AkSoundEngine.PostEvent("Play_Successful_Combination", gameObject);
         }
         else
         {
             Debug.Log("Incorrect recipe.");
             // Add any additional logic for an incorrect recipe here
             _cauldronInventory = new Potion.PotionState[3]; // Clear the inventory
+
+            AkSoundEngine.PostEvent("Play_Wrong_Combination", gameObject);
         }
     }
 
