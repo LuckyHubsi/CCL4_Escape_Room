@@ -1,15 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class ProgressionManager : MonoBehaviour
 {
     public static ProgressionManager instance;
-
-    public UnityEvent onPuzzleOneSolved;
-    public UnityEvent onPuzzleTwoSolved;
-    public UnityEvent onPuzzleThreeSolved;
 
     [SerializeField]
     private GameObject barrierOne;
@@ -26,7 +21,6 @@ public class ProgressionManager : MonoBehaviour
 
     private void Awake()
     {
-        // Ensure singleton pattern
         if (instance == null)
         {
             instance = this;
@@ -47,21 +41,18 @@ public class ProgressionManager : MonoBehaviour
     public void SolvePuzzleOne()
     {
         puzzleOneSolved = true;
-        onPuzzleOneSolved?.Invoke();
         UpdateBarriers();
     }
 
     public void SolvePuzzleTwo()
     {
         puzzleTwoSolved = true;
-        onPuzzleTwoSolved?.Invoke();
         UpdateBarriers();
     }
 
     public void SolvePuzzleThree()
     {
         puzzleThreeSolved = true;
-        onPuzzleThreeSolved?.Invoke();
         UpdateBarriers();
     }
 

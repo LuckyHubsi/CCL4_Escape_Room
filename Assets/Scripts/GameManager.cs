@@ -21,6 +21,11 @@ public class GameManager : MonoBehaviour
 
     private float initialSmokeTime; // Store the initial smoke time
 
+    [SerializeField]
+    private GameObject[] torches; // Array of torch game objects
+
+    private TorchData_Loader torchDataLoader; // Instance of TorchData_Loader
+
     private void Awake()
     {
         // Ensure singleton pattern
@@ -37,18 +42,21 @@ public class GameManager : MonoBehaviour
 
         // Initialization that should only happen once
         initialSmokeTime = smokeTime;
+        torchDataLoader = new TorchData_Loader();
     }
 
     private void Start()
     {
         DisableAllOutlines();
+
+        // Load torch data
+        torchDataLoader.LoadTorchData(torches);
     }
 
     private void Update()
     {
         UpdateGameTime();
         UpdateSmokeTime();
-        PuzzleCompletionStatus();
     }
 
     private void UpdateGameTime()
@@ -65,7 +73,7 @@ public class GameManager : MonoBehaviour
 
     private void UpdateSmokeTime()
     {
-        if (!puzzleOneSolved)
+        if (!ProgressionManager.instance.puzzleOneSolved)
         {
             if (smokeTime > 0)
             {
@@ -105,23 +113,6 @@ public class GameManager : MonoBehaviour
         foreach (Outline outline in outlines)
         {
             outline.enabled = false;
-        }
-    }
-
-    private void PuzzleCompletionStatus()
-    {
-        if (puzzleOneSolved)
-        {
-            barrierOne.SetActive(false);
-            barrierMirror.SetActive(false);
-        }
-        if (puzzleTwoSolved)
-        {
-            barrierTwo.SetActive(false);
-        }
-        if (puzzleThreeSolved)
-        {
-            barrierThree.SetActive(false);
         }
     }
 

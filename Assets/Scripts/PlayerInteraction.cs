@@ -46,7 +46,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void HandleInteraction()
     {
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             RaycastHit hit;
             if (Physics.Raycast(_cam.transform.position, _cam.transform.forward, out hit, 2f))
@@ -62,7 +62,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void HandleDroppingItem()
     {
-        if (Input.GetKeyUp(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             if (_playerHoldingItem)
             {

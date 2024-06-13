@@ -25,7 +25,7 @@ public class Window : Interactable
 
                 _playerInteraction.DropItem();
 
-                GameManager.instance.puzzleOneSolved = true;
+                ProgressionManager.instance.SolvePuzzleOne();
 
 /*                //Wwise
                 AkSoundEngine.PostEvent("Stop_Magic_Barrier_Window", gameObject);
