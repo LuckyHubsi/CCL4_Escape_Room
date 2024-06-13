@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Cauldron : Interactable
 {
-    private Potion.PotionState[] _cauldronInventory = new Potion.PotionState[3];
-    private int _currentPotionIndex = 0;
+    private string[] _cauldronInventory = new string[3];
+    private int _currentCauldronInventoryIndex = 0;
+    [SerializeField]
+    private ParticleSystem firePit;
 
     private PlayerInteraction _playerInteraction;
 
@@ -25,25 +27,46 @@ public class Cauldron : Interactable
             Potion carriedPotion = _playerInteraction.GetCarriedPotion();
             if (carriedPotion != null && carriedPotion.isActiveAndEnabled)
             {
-                AddPotionToCauldron(carriedPotion);
+                AddItemToCauldron(carriedPotion.gameObject);
+                _playerInteraction.DropItem();
+            }
+
+            Ingredient carriedIngredient = _playerInteraction.GetCarriedIngredient();
+            if (carriedIngredient != null && carriedIngredient.isActiveAndEnabled)
+            {
+                AddItemToCauldron(carriedIngredient.gameObject);
                 _playerInteraction.DropItem();
             }
         }
     }
 
-    private void AddPotionToCauldron(Potion potion)
+    private void AddItemToCauldron(GameObject item)
     {
-        // Add the potion to the cauldron inventory
-        _cauldronInventory[_currentPotionIndex] = potion.potionState;
+        Potion potion = item.GetComponent<Potion>();
+        Ingredient ingredient = item.GetComponent<Ingredient>();
 
-        Debug.Log("Added " + potion.potionState + " to the cauldron");
-        Debug.Log(_cauldronInventory[_currentPotionIndex]);
+        if (potion != null)
+        {
+            _cauldronInventory[_currentCauldronInventoryIndex] = potion.potionState.ToString();
+            Debug.Log("Added " + potion.potionState + " to the cauldron");
+        }
+        else if (ingredient != null)
+        {
+            _cauldronInventory[_currentCauldronInventoryIndex] = ingredient.ingredientState.ToString();
+            Debug.Log("Added " + ingredient.ingredientState + " to the cauldron");
+        }
+        else
+        {
+            Debug.LogWarning("Item does not have a Potion or Ingredient component.");
+            return; // Exit the method if the item is neither a Potion nor an Ingredient
+        }
 
-        _currentPotionIndex++;
+        Debug.Log(_cauldronInventory[_currentCauldronInventoryIndex]);
 
+        _currentCauldronInventoryIndex++;
 
-        // Check if the cauldron inventory is full (i.e., has 3 potions)
-        if (_currentPotionIndex >= _cauldronInventory.Length)
+        // Check if the cauldron inventory is full (i.e., has 3 items)
+        if (_currentCauldronInventoryIndex >= _cauldronInventory.Length)
         {
             CheckRecipe();
             ClearCauldronInventory();
@@ -53,35 +76,36 @@ public class Cauldron : Interactable
     private void CheckRecipe()
     {
         // Define the correct recipes
-        List<Dictionary<Potion.PotionState, int>> correctRecipes = new List<Dictionary<Potion.PotionState, int>>
-    {
-        new Dictionary<Potion.PotionState, int>
+        List<Dictionary<string, int>> correctRecipes = new List<Dictionary<string, int>>
         {
-            { Potion.PotionState.Red, 1 },
-            { Potion.PotionState.Blue, 1 },
-            { Potion.PotionState.Yellow, 1 }
-        },
-        new Dictionary<Potion.PotionState, int>
-        {
-            { Potion.PotionState.Red, 2 },
-            { Potion.PotionState.Blue, 1 }
-        },
-        // Add more recipes as needed
-    };
+            new Dictionary<string, int>
+            {
+                { "Red", 1 },
+                { "Blue", 1 },
+                { "Yellow", 1 }
+            },
+            new Dictionary<string, int>
+            {
+                { "Tooth_Correct", 1 },
+                { "Eye", 1 },
+                { "BatWing", 1 }
+            },
+            // Add more recipes as needed
+        };
 
         // Count the occurrences of each potion type in the cauldron inventory
-        Dictionary<Potion.PotionState, int> cauldronContents = new Dictionary<Potion.PotionState, int>();
-        foreach (var potionState in _cauldronInventory)
+        Dictionary<string, int> cauldronContents = new Dictionary<string, int>();
+        foreach (var item in _cauldronInventory)
         {
-            if (potionState != Potion.PotionState.Empty)
+            if (!string.IsNullOrEmpty(item))
             {
-                if (cauldronContents.ContainsKey(potionState))
+                if (cauldronContents.ContainsKey(item))
                 {
-                    cauldronContents[potionState]++;
+                    cauldronContents[item]++;
                 }
                 else
                 {
-                    cauldronContents[potionState] = 1;
+                    cauldronContents[item] = 1;
                 }
             }
         }
@@ -110,24 +134,24 @@ public class Cauldron : Interactable
         {
             Debug.Log("Correct recipe!");
             // Add any additional logic for a correct recipe here
-            _cauldronInventory = new Potion.PotionState[3]; // Clear the inventory
         }
         else
         {
             Debug.Log("Incorrect recipe.");
             // Add any additional logic for an incorrect recipe here
-            _cauldronInventory = new Potion.PotionState[3]; // Clear the inventory
         }
-    }
 
+        // Clear the inventory regardless of the result
+        _cauldronInventory = new string[3];
+    }
 
     private void ClearCauldronInventory()
     {
         // Clear the cauldron inventory
         for (int i = 0; i < _cauldronInventory.Length; i++)
         {
-            _cauldronInventory[i] = Potion.PotionState.Empty;
+            _cauldronInventory[i] = "";
         }
-        _currentPotionIndex = 0;
+        _currentCauldronInventoryIndex = 0;
     }
 }

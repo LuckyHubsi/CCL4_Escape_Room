@@ -12,12 +12,15 @@ public class PlayerInteraction : MonoBehaviour
     private Torch _carriedTorch;
     [SerializeField]
     private Potion _carriedPotion;
+    [SerializeField]
+    private Ingredient _carriedIngredient;
 
 
     private Outline _currentOutline;
     private bool _playerHoldingItem = false;
     private Torch _pickedUpTorch;
     private Potion _pickedUpPotion;
+    private Ingredient _pickedUpIngredient;
 
     //Wwise
     [SerializeField]
@@ -106,6 +109,21 @@ public class PlayerInteraction : MonoBehaviour
 
             return;
         }
+
+        Ingredient ingredient = item.GetComponent<Ingredient>();
+        if (ingredient != null && !_playerHoldingItem)
+        {
+            _playerHoldingItem = true;
+
+            _pickedUpIngredient = ingredient;
+            _pickedUpIngredient.gameObject.SetActive(false);
+            _carriedIngredient.gameObject.SetActive(true);
+            _carriedIngredient.ingredientState = ingredient.ingredientState;
+
+            Debug.Log("Picked up " + _carriedIngredient.ingredientState + " Ingredient");
+
+            return;
+        }
     }
 
     public void DropItem()
@@ -126,6 +144,13 @@ public class PlayerInteraction : MonoBehaviour
             _carriedPotion.gameObject.SetActive(false);
         }
 
+        if (_pickedUpIngredient != null)
+        {
+            _pickedUpIngredient.gameObject.SetActive(true);
+            _carriedIngredient.SetIngredientState(Ingredient.IngredientState.Empty);
+            _carriedIngredient.gameObject.SetActive(false);
+        }
+
 
         //Wwise
         AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Dropping_Torch", gameObject);
@@ -140,6 +165,11 @@ public class PlayerInteraction : MonoBehaviour
     public Potion GetCarriedPotion()
     {
         return _carriedPotion;
+    }
+
+    public Ingredient GetCarriedIngredient()
+    {
+        return _carriedIngredient;
     }
 
     public void CombineTorch(Torch torch)
