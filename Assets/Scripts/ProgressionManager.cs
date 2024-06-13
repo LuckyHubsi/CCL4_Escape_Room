@@ -11,7 +11,7 @@ public class ProgressionManager : MonoBehaviour
     [SerializeField]
     private GameObject barrierTwo;
     [SerializeField]
-    private GameObject barrierThree;
+    private GameObject barrierFire;
     [SerializeField]
     private GameObject barrierMirror;
 
@@ -69,7 +69,7 @@ public class ProgressionManager : MonoBehaviour
         }
         if (puzzleThreeSolved)
         {
-            barrierThree.SetActive(false);
+            barrierFire.SetActive(false);
         }
     }
 }
