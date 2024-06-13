@@ -19,6 +19,13 @@
 						<Switch Name="Window_Rune_Gone" ID="{6B5E099C-92B6-4C09-8DC5-4E8C7DB667C7}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Coughing" ID="{C3DD0C37-17B7-4F8E-92BF-42EDCE42C516}">
+					<ChildrenList>
+						<Switch Name="Light" ID="{C9F2DADD-EA9D-4AE1-AA6F-F4B4BFE5E5F2}"/>
+						<Switch Name="Medium" ID="{745B4C18-5AD7-4CB7-B957-DEF313F7E35B}"/>
+						<Switch Name="Heavy" ID="{EB7A254F-246B-430E-AB44-7D3E9B1755AE}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

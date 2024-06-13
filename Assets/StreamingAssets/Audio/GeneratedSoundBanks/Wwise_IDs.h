@@ -14,7 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_CAULDRON = 3212638512U;
-        static const AkUniqueID PLAY_CLICK = 311910498U;
+        static const AkUniqueID PLAY_COUGHING = 1741894216U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_MAGIC_BARRIER_DOOR = 2205790566U;
         static const AkUniqueID PLAY_MAGIC_BARRIER_WINDOW = 2862905942U;
@@ -23,6 +23,7 @@ namespace AK
         static const AkUniqueID PLAY_TORCH_CRACKLING = 45744291U;
         static const AkUniqueID STOP_MAGIC_BARRIER_DOOR = 2992760128U;
         static const AkUniqueID STOP_MAGIC_BARRIER_WINDOW = 3780008132U;
+        static const AkUniqueID STOP_SMOKE = 3366263883U;
     } // namespace EVENTS
 
     namespace STATES
@@ -43,6 +44,18 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace COUGHING
+        {
+            static const AkUniqueID GROUP = 2427782015U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID HEAVY = 2732489590U;
+                static const AkUniqueID LIGHT = 1935470627U;
+                static const AkUniqueID MEDIUM = 2849147824U;
+            } // namespace SWITCH
+        } // namespace COUGHING
+
         namespace FOOTSTEPS
         {
             static const AkUniqueID GROUP = 2385628198U;

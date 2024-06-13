@@ -722,6 +722,134 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<SwitchContainer Name="Coughing" ID="{8EBD8090-F508-4762-940B-2DAD1A8676A4}" ShortID="417059227">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Light" ID="{C9F2DADD-EA9D-4AE1-AA6F-F4B4BFE5E5F2}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Coughing" ID="{C3DD0C37-17B7-4F8E-92BF-42EDCE42C516}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Cough Heavy" ID="{8E05DFCD-A4F4-4481-95FC-38F455AA0DC0}" ShortID="731265280">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cough Heavy" ID="{2F312A42-EA3A-405F-9E4F-EE0900A92EC2}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.02520484581498"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Cough Heavy.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1011679340"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cough Heavy" ID="{2F312A42-EA3A-405F-9E4F-EE0900A92EC2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cough Light" ID="{F2616FE9-8E76-4FC8-ACF9-25311619655E}" ShortID="344742199">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cough Light" ID="{1B73BCDA-C3FA-4E50-A407-226AE47D7026}">
+											<Language>SFX</Language>
+											<AudioFile>Cough Light.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="191815447"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cough Light" ID="{1B73BCDA-C3FA-4E50-A407-226AE47D7026}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cough Medium" ID="{3DC25BC1-4ED7-4665-8CEA-72391AAB3CD6}" ShortID="671580436">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cough Medium" ID="{B1A78AF4-6EF3-461E-BD62-ADAF19F47224}">
+											<Language>SFX</Language>
+											<AudioFile>Cough Medium.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="911370399"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cough Medium" ID="{B1A78AF4-6EF3-461E-BD62-ADAF19F47224}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Cough Medium" ID="{3DC25BC1-4ED7-4665-8CEA-72391AAB3CD6}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Cough Heavy" ID="{8E05DFCD-A4F4-4481-95FC-38F455AA0DC0}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Cough Light" ID="{F2616FE9-8E76-4FC8-ACF9-25311619655E}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Medium" ID="{745B4C18-5AD7-4CB7-B957-DEF313F7E35B}"/>
+										<ItemList>
+											<ItemRef Name="Cough Medium" ID="{3DC25BC1-4ED7-4665-8CEA-72391AAB3CD6}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Heavy" ID="{EB7A254F-246B-430E-AB44-7D3E9B1755AE}"/>
+										<ItemList>
+											<ItemRef Name="Cough Heavy" ID="{8E05DFCD-A4F4-4481-95FC-38F455AA0DC0}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Light" ID="{C9F2DADD-EA9D-4AE1-AA6F-F4B4BFE5E5F2}"/>
+										<ItemList>
+											<ItemRef Name="Cough Light" ID="{F2616FE9-8E76-4FC8-ACF9-25311619655E}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Menu" ID="{2B1B51A7-A0FA-4AB2-89E8-0EDF967A2AC7}" ShortID="845994443">

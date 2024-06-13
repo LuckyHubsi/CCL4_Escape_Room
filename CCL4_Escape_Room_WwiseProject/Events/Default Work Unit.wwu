@@ -82,6 +82,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Coughing" ID="{118DF235-79AD-4B54-A8C9-6E189E507777}">
+							<ChildrenList>
+								<Action Name="" ID="{068A1CC6-F96C-4410-A506-DAAB39DF6C9B}" ShortID="892937192">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Coughing" ID="{8EBD8090-F508-4762-940B-2DAD1A8676A4}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Stop" ID="{9EF7134F-51F1-4B4B-ACC8-65C1D1B744C6}" ShortID="395466208">
@@ -109,6 +120,20 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Magic Barrier Door" ID="{809A6E4A-FBD7-47F5-AEE3-74063A9D4689}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Smoke" ID="{3BD3EB08-14E9-45C2-A0B7-EEEA1BDF03EC}">
+							<ChildrenList>
+								<Action Name="" ID="{C4F1E888-9483-4E02-9CAE-5A46D990CF65}" ShortID="646061996">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Smoke" ID="{83EE040D-475C-41F0-AB00-5B62F13BED5B}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

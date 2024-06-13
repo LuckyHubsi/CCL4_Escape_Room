@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BBEEB974-369C-F77B-6F82-E17B5A182288}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{75D46E2F-11C0-A6A2-088C-F33CDA2FD3AD}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -40,6 +40,13 @@
 						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="2427782015" Name="Coughing">
+					<Switches>
+						<Switch Id="1935470627" Name="Light"/>
+						<Switch Id="2732489590" Name="Heavy"/>
+						<Switch Id="2849147824" Name="Medium"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="3391040932" Name="PlayerInteractSwitch">
 					<Switches>
 						<Switch Id="805831506" Name="Combining_Torch"/>
@@ -52,7 +59,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B3F9A7C2-16F5-99F9-6E21-2E6AE00C548E}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{6795FEA7-7773-835F-D284-953D1B8EF7EA}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -60,9 +67,9 @@
 					<ShortName>Torch Combination.wav</ShortName>
 					<CachePath>SFX/Torch Combination_10C4C929.wem</CachePath>
 				</File>
-				<File Id="93414285" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Click.wav</ShortName>
-					<CachePath>SFX/Click_10C4C929.wem</CachePath>
+				<File Id="191815447" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cough Light.wav</ShortName>
+					<CachePath>SFX/Cough Light_10C4C929.wem</CachePath>
 				</File>
 				<File Id="201119281" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cauldron.wav</ShortName>
@@ -116,6 +123,10 @@
 					<ShortName>Torch Degnition.wav</ShortName>
 					<CachePath>SFX/Torch Degnition_10C4C929.wem</CachePath>
 				</File>
+				<File Id="911370399" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cough Medium.wav</ShortName>
+					<CachePath>SFX/Cough Medium_10C4C929.wem</CachePath>
+				</File>
 				<File Id="942542682" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Grass_1.wav</ShortName>
 					<CachePath>SFX/Footsteps_Grass_1_10C4C929.wem</CachePath>
@@ -128,27 +139,38 @@
 					<ShortName>Footsteps_Wood_3.wav.wav</ShortName>
 					<CachePath>SFX/Footsteps_Wood_3.wav_4ED5FF9F.wem</CachePath>
 				</File>
+				<File Id="1011679340" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cough Heavy.wav</ShortName>
+					<CachePath>SFX/Cough Heavy_82F549AF.wem</CachePath>
+				</File>
 			</Media>
-			<Plugins>
-				<ShareSets>
-					<Plugin Id="4151021112" Name="Click_Pitch" LibName="Wwise Pitch Shifter" LibId="8912899"/>
-				</ShareSets>
-			</Plugins>
 			<Events>
 				<Event Id="3212638512" Name="Play_Cauldron" MaxAttenuation="5" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="201119281"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="311910498" Name="Play_Click" DurationType="OneShot" DurationMin="0.5712925" DurationMax="0.5712925">
-					<MediaRefs>
-						<MediaRef Id="93414285"/>
-					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="4151021112"/>
-						</ShareSets>
-					</PluginRefs>
+				<Event Id="1741894216" Name="Play_Coughing" DurationType="OneShot" DurationMin="1.0252049" DurationMax="1.4907292">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2427782015" Id="2849147824"/>
+							<MediaRefs>
+								<MediaRef Id="911370399"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2427782015" Id="2732489590"/>
+							<MediaRefs>
+								<MediaRef Id="1011679340"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2427782015" Id="1935470627" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="191815447"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="3854155799" Name="Play_Footsteps" DurationType="OneShot" DurationMin="0.41179278" DurationMax="0.7845625">
 					<SwitchContainers>
@@ -233,12 +255,20 @@
 				</Event>
 				<Event Id="2992760128" Name="Stop_Magic_Barrier_Door" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3780008132" Name="Stop_Magic_Barrier_Window" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3366263883" Name="Stop_Smoke" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
 						<Switch Id="2058049674" Name="Wood"/>
 						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2427782015" Name="Coughing">
+					<Switches>
+						<Switch Id="1935470627" Name="Light"/>
+						<Switch Id="2732489590" Name="Heavy"/>
+						<Switch Id="2849147824" Name="Medium"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="3391040932" Name="PlayerInteractSwitch">
@@ -254,5 +284,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9849E7CB-8FEC-024F-3A44-4F5EEA95A954}</FileHash>
+	<FileHash>{73BE4036-E48E-01F9-94FC-937EB57F0226}</FileHash>
 </SoundBanksInfo>
