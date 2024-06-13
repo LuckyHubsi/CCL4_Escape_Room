@@ -21,38 +21,37 @@ public class GameManager : MonoBehaviour
 
     private float initialSmokeTime; // Store the initial smoke time
 
-    #region PuzzleStates
-
-    [SerializeField]
-    private GameObject barrierOne;
-    [SerializeField]
-    private GameObject barrierTwo;
-    [SerializeField]
-    private GameObject barrierThree;
-    [SerializeField]
-    private GameObject barrierMirror;
-
-    public bool puzzleOneSolved = false;
-    public bool puzzleTwoSolved = false;
-    public bool puzzleThreeSolved = false;
-
-    #endregion
-
-    void Start()
+    private void Awake()
     {
-        if (instance != null)
+        // Ensure singleton pattern
+        if (instance == null)
         {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
             return;
         }
 
-        instance = this;
-        DontDestroyOnLoad(this.gameObject);
-
-        DisableAllOutlines();
+        // Initialization that should only happen once
         initialSmokeTime = smokeTime;
     }
 
-    void Update()
+    private void Start()
+    {
+        DisableAllOutlines();
+    }
+
+    private void Update()
+    {
+        UpdateGameTime();
+        UpdateSmokeTime();
+        PuzzleCompletionStatus();
+    }
+
+    private void UpdateGameTime()
     {
         if (gameTime > 0)
         {
@@ -62,7 +61,10 @@ public class GameManager : MonoBehaviour
                 LoadLoseScene();
             }
         }
+    }
 
+    private void UpdateSmokeTime()
+    {
         if (!puzzleOneSolved)
         {
             if (smokeTime > 0)
@@ -80,10 +82,11 @@ public class GameManager : MonoBehaviour
         {
             smokeTime = initialSmokeTime;
             UpdateSmokeOverlay();
-            smokeParticles.Stop();
+            if (smokeParticles.isPlaying)
+            {
+                smokeParticles.Stop();
+            }
         }
-
-        PuzzleCompletionStatus();
     }
 
     private void LoadLoseScene()
