@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cauldron : Interactable
 {
-    private Potion[] _cauldronInventory = new Potion[3];
+    private Potion.PotionState[] _cauldronInventory = new Potion.PotionState[3];
     private int _currentPotionIndex = 0;
 
     private PlayerInteraction _playerInteraction;
@@ -34,8 +34,13 @@ public class Cauldron : Interactable
     private void AddPotionToCauldron(Potion potion)
     {
         // Add the potion to the cauldron inventory
-        _cauldronInventory[_currentPotionIndex] = potion;
+        _cauldronInventory[_currentPotionIndex] = potion.potionState;
+
+        Debug.Log("Added " + potion.potionState + " to the cauldron");
+        Debug.Log(_cauldronInventory[_currentPotionIndex]);
+
         _currentPotionIndex++;
+
 
         // Check if the cauldron inventory is full (i.e., has 3 potions)
         if (_currentPotionIndex >= _cauldronInventory.Length)
@@ -54,7 +59,7 @@ public class Cauldron : Interactable
         bool isRecipeCorrect = true;
         for (int i = 0; i < _cauldronInventory.Length; i++)
         {
-            if (_cauldronInventory[i].potionState != correctRecipe[i])
+            if (_cauldronInventory[i] != correctRecipe[i])
             {
                 isRecipeCorrect = false;
                 break;
@@ -78,7 +83,7 @@ public class Cauldron : Interactable
         // Clear the cauldron inventory
         for (int i = 0; i < _cauldronInventory.Length; i++)
         {
-            _cauldronInventory[i] = null;
+            _cauldronInventory[i] = Potion.PotionState.Empty;
         }
         _currentPotionIndex = 0;
     }
