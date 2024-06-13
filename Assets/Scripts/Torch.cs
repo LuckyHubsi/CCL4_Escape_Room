@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class Torch : Interactable
 {
-    public enum TorchState { Unlit, Red, Blue, Yellow, Purple }
+    public enum TorchState { Unlit, Red, Blue, Yellow, Purple, Green, Orange }
     [SerializeField]
     public TorchState torchState = TorchState.Unlit;
 
     private PlayerInteraction _playerInteraction;
+
+    [SerializeField]
+    private ParticleSystem sparksParticles;
+    [SerializeField]
+    private ParticleSystem fireParticles;
+    [SerializeField]
+    private ParticleSystem allParticles;
 
     private void Start()
     {
@@ -17,6 +24,7 @@ public class Torch : Interactable
         {
             Debug.LogError("PlayerInteraction script not found in the scene.");
         }
+
         UpdateTorchAppearance();
     }
 
@@ -24,7 +32,7 @@ public class Torch : Interactable
     {
         if (torchState == TorchState.Unlit)
         {
-            _playerInteraction.PickUpTorch(this);
+            _playerInteraction.PickUpItem(this.gameObject);
         }
         else
         {
@@ -40,25 +48,49 @@ public class Torch : Interactable
 
     private void UpdateTorchAppearance()
     {
-        // Update the torch's appearance based on its state
-        // For simplicity, you can enable/disable specific child objects or change materials
+        if (sparksParticles == null || fireParticles == null)
+        {
+            return;
+        }
+
+        Color particleColor = Color.white;
+
         switch (torchState)
         {
             case TorchState.Unlit:
-                // Set unlit appearance
-                break;
+                // Set unlit appearance (e.g., disable particle systems)
+                allParticles.Stop(true);
+                return;
             case TorchState.Red:
-                // Set red appearance
+                particleColor = Color.red;
                 break;
             case TorchState.Blue:
-                // Set blue appearance
+                particleColor = Color.blue;
                 break;
             case TorchState.Yellow:
-                // Set blue appearance
+                particleColor = Color.yellow;
                 break;
             case TorchState.Purple:
-                // Set purple appearance
+                particleColor = new Color(0.5f, 0, 0.5f); // Purple
+                break;
+            case TorchState.Green:
+                particleColor = Color.green;
+                break;
+            case TorchState.Orange:
+                particleColor = new Color(1f, 0.5f, 0);
                 break;
         }
+
+        // Set the particle system colors
+        var main1 = sparksParticles.main;
+        main1.startColor = particleColor;
+
+        var main2 = fireParticles.main;
+        main2.startColor = particleColor;
+
+        // Start the particle systems if they are not playing
+        allParticles.Play();
+        sparksParticles.Play();
+        fireParticles.Play();
     }
 }

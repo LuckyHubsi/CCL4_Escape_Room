@@ -1,18 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class TorchData_Loader : MonoBehaviour
+public static class TorchData_Loader
 {
-    public GameObject[] torches; // Reference to the torch game objects in the scene
-
-    private void Start()
-    {
-        LoadTorchData();
-    }
-
-    public void LoadTorchData()
+    public static void LoadTorchData(GameObject[] torches)
     {
         string filePath = Path.Combine(Application.dataPath, "Data", "torchData.json");
 
@@ -42,9 +34,8 @@ public class TorchData_Loader : MonoBehaviour
         }
     }
 
-
     // Map color string to TorchState enum
-    Torch.TorchState TorchStateFromString(string color)
+  private static  Torch.TorchState TorchStateFromString(string color)
     {
         switch (color.ToLower())
         {

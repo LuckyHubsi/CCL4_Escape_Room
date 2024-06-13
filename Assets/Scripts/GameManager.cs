@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,20 +10,53 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float gameTime = 300f; // Game duration in seconds
 
-    void Start()
+    [SerializeField]
+    private float smokeTime = 60f; // Smoke duration in seconds
+
+    [SerializeField]
+    private RawImage smokeOverlay; // UI Image for smoke effect
+
+    [SerializeField]
+    private ParticleSystem smokeParticles;
+
+    private float initialSmokeTime; // Store the initial smoke time
+
+    [SerializeField]
+    private GameObject[] torches; // Array of torch game objects
+
+    private void Awake()
     {
-        if (instance != null)
+        // Ensure singleton pattern
+        if (instance == null)
         {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
             return;
         }
 
-        instance = this;
-        DontDestroyOnLoad(this.gameObject);
-
-        DisableAllOutlines();
+        // Initialization that should only happen once
+        initialSmokeTime = smokeTime;
     }
 
-    void Update()
+    private void Start()
+    {
+        DisableAllOutlines();
+
+        // Load torch data
+        TorchData_Loader.LoadTorchData(torches);
+    }
+
+    private void Update()
+    {
+        UpdateGameTime();
+        UpdateSmokeTime();
+    }
+
+    private void UpdateGameTime()
     {
         if (gameTime > 0)
         {
@@ -34,12 +68,38 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void UpdateSmokeTime()
+    {
+        if (!ProgressionManager.instance.puzzleOneSolved)
+        {
+            if (smokeTime > 0)
+            {
+                smokeTime -= Time.deltaTime;
+                UpdateSmokeOverlay();
+
+                if (smokeTime <= 0)
+                {
+                    LoadLoseScene();
+                }
+            }
+        }
+        else
+        {
+            smokeTime = initialSmokeTime;
+            UpdateSmokeOverlay();
+            if (smokeParticles.isPlaying)
+            {
+                smokeParticles.Stop();
+            }
+        }
+    }
+
     private void LoadLoseScene()
     {
         ScenesManager.Instance.LoadScene(ScenesManager.Scene.Lose);
     }
 
-    public float GetRemainingTime()
+    public float GetRemainingGameTime()
     {
         return Mathf.Max(gameTime, 0);
     }
@@ -51,5 +111,13 @@ public class GameManager : MonoBehaviour
         {
             outline.enabled = false;
         }
+    }
+
+    private void UpdateSmokeOverlay()
+    {
+        float alpha = Mathf.Clamp01(1 - (smokeTime / initialSmokeTime));
+        Color color = smokeOverlay.color;
+        color.a = alpha;
+        smokeOverlay.color = color;
     }
 }

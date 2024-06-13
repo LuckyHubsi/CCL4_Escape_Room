@@ -22,13 +22,15 @@ public class Window : Interactable
             if (_playerInteraction.GetCarriedTorch() != null && _playerInteraction.GetCarriedTorch().torchState == Torch.TorchState.Purple)
             {
                 Debug.Log("Window Interacted while Torch is Purple.");
-                _playerInteraction.DropTorch();
 
-                //Wwise
+                _playerInteraction.DropItem();
+
+                ProgressionManager.instance.SolvePuzzleOne();
+
+/*                //Wwise
                 AkSoundEngine.PostEvent("Stop_Magic_Barrier_Window", gameObject);
-
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Window_Rune_Gone", gameObject);
-                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);*/
             }
         }
     }

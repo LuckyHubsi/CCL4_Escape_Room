@@ -6,12 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody _rb;
 
-    [Header("Wwise")]
-    public AK.Wwise.Event footstepsPlayEvent;
-    private bool footstepsIsPlaying = false;
-    private float lastFootstepTime = 0;
-    public float footstepsFrequency = 125;
-
     #region Camera Controls
 
     [SerializeField]
@@ -61,6 +55,18 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
+    /*#region Wwise
+
+    [SerializeField]
+    private AK.Wwise.Event footstepsPlayEvent;
+    [SerializeField]
+    private float footstepsFrequency = 125;
+
+    private bool _footstepsIsPlaying = false;
+    private float _lastFootstepTime = 0;
+
+    #endregion*/
+
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
@@ -84,8 +90,8 @@ public class PlayerController : MonoBehaviour
             _crosshair.gameObject.SetActive(false);
         }
 
-        //Wwise
-        lastFootstepTime = Time.time;
+/*        //Wwise
+        _lastFootstepTime = Time.time;*/
     }
 
     private void Update()
@@ -136,17 +142,17 @@ public class PlayerController : MonoBehaviour
 
             _rb.AddForce(velocityChange, ForceMode.VelocityChange);
 
-            //Player Movement Sound
-            if((targetVelocity.x != 0 || targetVelocity.z != 0) && !footstepsIsPlaying)
+/*            //Player Movement Sound
+            if ((targetVelocity.x != 0 || targetVelocity.z != 0) && !_footstepsIsPlaying)
             {
                 footstepsPlayEvent.Post(gameObject);
-                lastFootstepTime = Time.time;
-                footstepsIsPlaying = true;
-            } else if(movementSpeed > 0 && Time.time - lastFootstepTime > footstepsFrequency / movementSpeed*Time.deltaTime) {
-                footstepsIsPlaying = false;
+                _lastFootstepTime = Time.time;
+                _footstepsIsPlaying = true;
             }
-
-
+            else if (movementSpeed > 0 && Time.time - _lastFootstepTime > footstepsFrequency / movementSpeed * Time.deltaTime)
+            {
+                _footstepsIsPlaying = false;
+            }*/
         }
     }
 
