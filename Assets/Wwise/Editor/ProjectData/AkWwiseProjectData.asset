@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: eafcec529750d349a35cb8b6f9ea10d9
     GuidInternal: 
-    m_lastTime: -8584835028405314936
+    m_lastTime: -8584833281971746275
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: d9f972ba25cf1e478f1e6084a932fd25
     GuidInternal: 
-    m_lastTime: -8584834844036270770
+    m_lastTime: -8584833281973124609
     List:
     - name: Footsteps
       guid: 6cf78b42ec8bac438feac9f25d2b72ce
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584833264187535413
+    m_lastTime: -8584833260480110882
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584833264187551637
+    m_lastTime: -8584833260481209134
     List:
     - name: Play
       guid: 30991119ca5a7848a1b6564065a14ca6
@@ -184,6 +184,26 @@ MonoBehaviour:
       maxAttenuation: 5
       maxDuration: -1
       minDuration: -1
+    - name: Play_Coughing
+      guid: 35f28d11ad79544ba8c96e189e507777
+      id: 1741894216
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Coughing
+        ObjectType: 3
+        guid: 35f28d11ad79544ba8c96e189e507777
+      Path: Events\Default Work Unit\Play\Play_Coughing
+      maxAttenuation: 0
+      maxDuration: 1.4907292
+      minDuration: 1.0252049
     - name: Play_Footsteps
       guid: 996a1ea91a45d949943ff3ce19ca8a99
       id: 3854155799
@@ -393,7 +413,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2ade91069170c24cacce4a5ec4fe9c51
     GuidInternal: 
-    m_lastTime: -8584835028406676602
+    m_lastTime: -8584833281974094602
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -407,7 +427,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 8a8572cf7ed26d4a9bb72b0afc0090bd
     GuidInternal: 
-    m_lastTime: -8584835028405314936
+    m_lastTime: -8584833281971776265
     List:
     - name: Ignition
       guid: 7e190f52fb906347bd8bea2bfb02043c
@@ -487,7 +507,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584833264187628602
+    m_lastTime: -8584833260480110882
     List:
     - name: Coughing
       guid: 370cddc3b7178e4f92bf42edce42c516
@@ -731,7 +751,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: b736530e3cb3e4468df3369e8cb9b587
     GuidInternal: 
-    m_lastTime: -8584835028405314936
+    m_lastTime: -8584833281971756268
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000002a000000
