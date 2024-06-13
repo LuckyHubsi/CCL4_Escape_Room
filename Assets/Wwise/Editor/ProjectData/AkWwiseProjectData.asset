@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584834173232955625
+    m_lastTime: -8584833264187535413
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584834173234982149
+    m_lastTime: -8584833264187551637
     List:
     - name: Play
       guid: 30991119ca5a7848a1b6564065a14ca6
@@ -361,6 +361,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_Smoke
+      guid: 08ebd33be914c245a0b7eeea1bdf03ec
+      id: 3366263883
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Stop
+        ObjectType: 4
+        guid: 4f13f79ef1514b4bacc865c1d1b744c6
+      - ElementName: Stop_Smoke
+        ObjectType: 3
+        guid: 08ebd33be914c245a0b7eeea1bdf03ec
+      Path: Events\Default Work Unit\Stop\Stop_Smoke
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -467,8 +487,74 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584834844035886688
+    m_lastTime: -8584833264187628602
     List:
+    - name: Coughing
+      guid: 370cddc3b7178e4f92bf42edce42c516
+      id: 2427782015
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da2316fc5bf4294f92d829e9d4c1cd54
+      - ElementName: Coughing
+        ObjectType: 11
+        guid: 370cddc3b7178e4f92bf42edce42c516
+      Path: Switches\Default Work Unit\Coughing
+      values:
+      - name: Heavy
+        guid: 4f257aeb6b240e43ab447d3e9b1755ae
+        id: 2732489590
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: Coughing
+          ObjectType: 11
+          guid: 370cddc3b7178e4f92bf42edce42c516
+        - ElementName: Heavy
+          ObjectType: 10
+          guid: 4f257aeb6b240e43ab447d3e9b1755ae
+      - name: Light
+        guid: dddaf2c99deae14aaa6ff4b4bfe5e5f2
+        id: 1935470627
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: Coughing
+          ObjectType: 11
+          guid: 370cddc3b7178e4f92bf42edce42c516
+        - ElementName: Light
+          ObjectType: 10
+          guid: dddaf2c99deae14aaa6ff4b4bfe5e5f2
+      - name: Medium
+        guid: 184c5b74d75ab74cb957def313f7e35b
+        id: 2849147824
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: Coughing
+          ObjectType: 11
+          guid: 370cddc3b7178e4f92bf42edce42c516
+        - ElementName: Medium
+          ObjectType: 10
+          guid: 184c5b74d75ab74cb957def313f7e35b
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Footsteps
       guid: 9f02de8251667045bec3886992fe671c
       id: 2385628198
@@ -648,7 +734,7 @@ MonoBehaviour:
     m_lastTime: -8584835028405314936
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000002a000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000002a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

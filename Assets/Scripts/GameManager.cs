@@ -24,6 +24,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject[] torches; // Array of torch game objects
 
+    [SerializeField]
+    private GameObject smokeRef; // Reference to smoke gameobject for sound
+
     private void Awake()
     {
         // Ensure singleton pattern
@@ -90,6 +93,7 @@ public class GameManager : MonoBehaviour
             if (smokeParticles.isPlaying)
             {
                 smokeParticles.Stop();
+                AkSoundEngine.PostEvent("Stop_Smoke", smokeRef);
             }
         }
     }
