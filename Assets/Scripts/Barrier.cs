@@ -20,8 +20,6 @@ public class Barrier : Interactable
 
         //Wwise
         AkSoundEngine.SetSwitch("MagicBarrierWindow", "Active", gameObject);
-        AkSoundEngine.PostEvent("Play_Magic_Barrier_Window", gameObject);
-
     }
 
     public override void Interact()
@@ -46,13 +44,10 @@ public class Barrier : Interactable
                 AkSoundEngine.SetSwitch("MagicBarrierWindow", "Inactive", gameObject);
                 AkSoundEngine.PostEvent("Play_Magic_Barrier_Window", gameObject);
             }
-/*            else if (_playerInteraction.GetCarriedTorch() != null && _playerInteraction.GetCarriedTorch().torchState != Torch.TorchState.Purple && barrierType == BarrierType.BarrierWindow)
+            else 
             {
-                _playerInteraction.DropItem();
-
-                //Wwise
-                AkSoundEngine.PostEvent("Play_Wrong_Combination", gameObject);
-            }*/
+               _playerInteraction.DropItem();
+            }
         }
     }
 }
