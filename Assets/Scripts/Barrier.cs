@@ -44,10 +44,6 @@ public class Barrier : Interactable
                 AkSoundEngine.SetSwitch("MagicBarrierWindow", "Inactive", gameObject);
                 AkSoundEngine.PostEvent("Play_Magic_Barrier_Window", gameObject);
             }
-            else 
-            {
-               _playerInteraction.DropItem();
-            }
         }
     }
 }
