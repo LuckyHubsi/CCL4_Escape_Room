@@ -64,6 +64,10 @@ public class Cauldron : Interactable
         {
             _cauldronInventory[_currentCauldronInventoryIndex] = potion.potionState.ToString();
             Debug.Log("Added " + potion.potionState + " to the cauldron");
+
+            //Wwise
+            AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Using_Potion", gameObject);
+            AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
         }
         else
         {
@@ -89,6 +93,9 @@ public class Cauldron : Interactable
                 Debug.Log("Correct recipe Potion!");
                 _firePit.SetFirePitState("Unlit");
 
+                //Wwise
+                AkSoundEngine.PostEvent("Play_Successful_Combination", gameObject);
+
                 ProgressionManager.instance.SolvePuzzleTwo();
             }
             else if (isRecipeIngredientsCorrect && _firePit.GetFirePitState() == "Orange")
@@ -96,11 +103,17 @@ public class Cauldron : Interactable
                 _lastCorrectRecipe = "Recipe Ingredient";
                 Debug.Log("Correct recipe Ingredient!");
                 _firePit.SetFirePitState("Unlit");
+
+                //Wwise
+                AkSoundEngine.PostEvent("Play_Successful_Combination", gameObject);
             }
             else
             {
                 Debug.Log("Incorrect recipe.");
                 _firePit.SetFirePitState("Unlit");
+
+                //Wwise
+                AkSoundEngine.PostEvent("Play_Wrong_Combination", gameObject);
             }
 
             ClearCauldronInventory();
