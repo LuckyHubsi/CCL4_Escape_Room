@@ -52,6 +52,9 @@ public class Cauldron : Interactable
                 carriedBucket.SetBucketState(Bucket.BucketState.Filled);
 
                 Debug.Log("Filled Bucket");
+
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Waterbucket", gameObject);
+                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             }
 
         }

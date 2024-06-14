@@ -662,6 +662,9 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Drop_Bucket" ID="{25269A0C-6742-4135-A210-6C3F8C6E06FA}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Player Interact" ID="{ECA32155-0AEB-4042-B028-B36A32B351ED}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
 								</Reference>
@@ -1091,6 +1094,153 @@
 										<ActiveSource Name="Equipping Waterbucket" ID="{71436ADD-E6A9-49FD-B4F6-C9B9540F730A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Equip Key" ID="{F216B6C1-1CAF-43EC-B171-831AF4D98F7F}" ShortID="376380565">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Equip Key" ID="{84FF7B79-7DCB-4599-B1A0-94916F93BA87}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.11696320754717"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.086427358490566"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Equip Key.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="456015311"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Equip Key" ID="{84FF7B79-7DCB-4599-B1A0-94916F93BA87}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Use Key" ID="{06C288F9-5F9D-45FB-8A81-6C779685DCD0}" ShortID="963857624">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Pitch Shifter (Custom)" ID="{0B407555-967F-4654-946B-54077EB49E9C}" ShortID="460064358" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+													<PropertyList>
+														<Property Name="FilterFrequency" Type="Real32" Value="500"/>
+														<Property Name="FilterType" Type="int32" Value="5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Use Key" ID="{08B8260F-5C72-4115-9881-4518931822B3}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.262404913522013"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.170950117924528"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Use Key.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="753759525"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Use Key" ID="{08B8260F-5C72-4115-9881-4518931822B3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Drop Bucket" ID="{593B194A-5B57-4F95-B7E4-8B7C6907403C}" ShortID="27141135">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Drop Bucket" ID="{87F55CE4-F97A-41CA-9053-0A5722152408}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.203181603773585"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.299934748427673"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Drop Bucket.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="173809254"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Drop Bucket" ID="{87F55CE4-F97A-41CA-9053-0A5722152408}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Equip Bucket" ID="{AFF7D4F1-37F8-4683-A485-62B1B93A8133}" ShortID="651726873">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Equip Bucket" ID="{D1247483-37DE-4C86-A2A0-28951AE9296C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.41007983490566"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.239606033805031"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Equip Bucket.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="602293721"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Equip Bucket" ID="{D1247483-37DE-4C86-A2A0-28951AE9296C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
@@ -1099,6 +1249,9 @@
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Dropping Potion" ID="{3C73B138-550B-44F5-AE23-2B189DBBEE24}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Drop Bucket" ID="{593B194A-5B57-4F95-B7E4-8B7C6907403C}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Torch Dropping" ID="{6BE42484-6F38-4EA7-8BB8-4D0DADB58FC9}"/>
@@ -1122,10 +1275,31 @@
 										<ItemRef Name="Torch Equipping" ID="{E8AD28B8-3045-44E0-89C7-BFCE7929E593}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="Equip Key" ID="{F216B6C1-1CAF-43EC-B171-831AF4D98F7F}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Equip Bucket" ID="{AFF7D4F1-37F8-4683-A485-62B1B93A8133}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Use Key" ID="{06C288F9-5F9D-45FB-8A81-6C779685DCD0}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="Torch Combination" ID="{78F481FC-19E4-45B2-92AD-7503D388FF69}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Drop_Bucket" ID="{25269A0C-6742-4135-A210-6C3F8C6E06FA}"/>
+										<ItemList>
+											<ItemRef Name="Drop Bucket" ID="{593B194A-5B57-4F95-B7E4-8B7C6907403C}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Use_Key" ID="{1A549124-E1CC-4488-AAA7-DFCE946D69BA}"/>
+										<ItemList>
+											<ItemRef Name="Use Key" ID="{06C288F9-5F9D-45FB-8A81-6C779685DCD0}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Equipping_Waterbucket" ID="{5384BB38-C3AB-4279-8A44-585B127C5BC7}"/>
 										<ItemList>
@@ -1145,6 +1319,12 @@
 										</ItemList>
 									</Grouping>
 									<Grouping>
+										<SwitchRef Name="Equip_Bucket" ID="{A466425C-B84B-46C2-AA4D-28F316544B95}"/>
+										<ItemList>
+											<ItemRef Name="Equip Bucket" ID="{AFF7D4F1-37F8-4683-A485-62B1B93A8133}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
 										<SwitchRef Name="Combining_Torch" ID="{EAC36B7E-E396-4E12-9696-FB4A36EDA73A}"/>
 										<ItemList>
 											<ItemRef Name="Torch Combination" ID="{78F481FC-19E4-45B2-92AD-7503D388FF69}"/>
@@ -1154,6 +1334,12 @@
 										<SwitchRef Name="Other_Torch_Interaction" ID="{46B2167F-674D-4FA7-A751-E3DB376DD4E3}"/>
 										<ItemList>
 											<ItemRef Name="Other Torch Interaction" ID="{ADA63D8D-4684-4831-A74C-EBD380EAAF6C}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Equipping_Key" ID="{229FE480-4492-46A4-A58B-9F3F19EBFD13}"/>
+										<ItemList>
+											<ItemRef Name="Equip Key" ID="{F216B6C1-1CAF-43EC-B171-831AF4D98F7F}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>

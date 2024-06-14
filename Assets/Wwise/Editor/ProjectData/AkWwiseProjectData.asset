@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584832288519872300
+    m_lastTime: -8584832277222792887
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584832288519923706
+    m_lastTime: -8584832277223960349
     List:
     - name: Play
       guid: 30991119ca5a7848a1b6564065a14ca6
@@ -283,7 +283,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Play\Play_Player_Interact
       maxAttenuation: 0
       maxDuration: Infinity
-      minDuration: 0.4446146
+      minDuration: 0.289
     - name: Play_Smoke
       guid: f130d8a9b94efe4e8e84979ed9769f19
       id: 2555336501
@@ -501,74 +501,8 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 8a8572cf7ed26d4a9bb72b0afc0090bd
     GuidInternal: 
-    m_lastTime: -8584832460042311213
-    List:
-    - name: Ignition
-      guid: 7e190f52fb906347bd8bea2bfb02043c
-      id: 1572296608
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 8a8572cf7ed26d4a9bb72b0afc0090bd
-      - ElementName: Ignition
-        ObjectType: 9
-        guid: 7e190f52fb906347bd8bea2bfb02043c
-      Path: States\Default Work Unit\Ignition
-      values:
-      - name: False
-        guid: b407f2f3bd4c714b8c76d626af6c9ecf
-        id: 2452206122
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 8a8572cf7ed26d4a9bb72b0afc0090bd
-        - ElementName: Ignition
-          ObjectType: 9
-          guid: 7e190f52fb906347bd8bea2bfb02043c
-        - ElementName: False
-          ObjectType: 8
-          guid: b407f2f3bd4c714b8c76d626af6c9ecf
-      - name: None
-        guid: d9be2076b4aabb439f8dd90354b2941a
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 8a8572cf7ed26d4a9bb72b0afc0090bd
-        - ElementName: Ignition
-          ObjectType: 9
-          guid: 7e190f52fb906347bd8bea2bfb02043c
-        - ElementName: None
-          ObjectType: 8
-          guid: d9be2076b4aabb439f8dd90354b2941a
-      - name: True
-        guid: d890e9e7c6f68e46977a1836dce4401f
-        id: 3053630529
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 8a8572cf7ed26d4a9bb72b0afc0090bd
-        - ElementName: Ignition
-          ObjectType: 9
-          guid: 7e190f52fb906347bd8bea2bfb02043c
-        - ElementName: True
-          ObjectType: 8
-          guid: d890e9e7c6f68e46977a1836dce4401f
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
+    m_lastTime: -8584832236367074036
+    List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -581,7 +515,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584832279251847264
+    m_lastTime: -8584832239388526738
     List:
     - name: Coughing
       guid: 370cddc3b7178e4f92bf42edce42c516
@@ -796,6 +730,22 @@ MonoBehaviour:
         - ElementName: Degnition_Torch
           ObjectType: 10
           guid: 5bc8232a1ac63a48a9aba34dc2338d83
+      - name: Drop_Bucket
+        guid: 0c9a262542673541a2106c3f8c6e06fa
+        id: 3643606539
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Drop_Bucket
+          ObjectType: 10
+          guid: 0c9a262542673541a2106c3f8c6e06fa
       - name: Dropping_Potion
         guid: f8df3e7133a45244b48624443150af4a
         id: 838125300
@@ -828,6 +778,38 @@ MonoBehaviour:
         - ElementName: Dropping_Torch
           ObjectType: 10
           guid: eb1eaf360cc16546985fbc88afad98d8
+      - name: Equip_Bucket
+        guid: 5c4266a44bb8c246aa4d28f316544b95
+        id: 3166695468
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Equip_Bucket
+          ObjectType: 10
+          guid: 5c4266a44bb8c246aa4d28f316544b95
+      - name: Equipping_Key
+        guid: 80e49f229244a446a58b9f3f19ebfd13
+        id: 3147764383
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Equipping_Key
+          ObjectType: 10
+          guid: 80e49f229244a446a58b9f3f19ebfd13
       - name: Equipping_Potion
         guid: b6546f3f9a6def45b976c2f1d463ef67
         id: 2633107091
@@ -892,6 +874,22 @@ MonoBehaviour:
         - ElementName: Other_Torch_Interaction
           ObjectType: 10
           guid: 7f16b2464d67a74fa751e3db376dd4e3
+      - name: Use_Key
+        guid: 2491541acce18844aaa7dfce946d69ba
+        id: 3782926630
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Use_Key
+          ObjectType: 10
+          guid: 2491541acce18844aaa7dfce946d69ba
       - name: Using_Potion
         guid: de73790a9e7d2642a3ac120ee5cc7d4d
         id: 4110363151

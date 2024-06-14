@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F36A701D-4B90-E2D5-9E06-547F3C6EEF9C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DCC813CC-8ED0-F7CE-3FEF-F91D9B6DA89E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -27,15 +27,6 @@
 			<GameParameters>
 				<GameParameter Id="46447142" Name="Smoke_Intensity"/>
 			</GameParameters>
-			<StateGroups>
-				<StateGroup Id="1572296608" Name="Ignition">
-					<States>
-						<State Id="748895195" Name="None"/>
-						<State Id="2452206122" Name="False"/>
-						<State Id="3053630529" Name="True"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="510690747" Name="MagicBarrierWindow">
 					<Switches>
@@ -66,13 +57,17 @@
 						<Switch Id="2633107091" Name="Equipping_Potion"/>
 						<Switch Id="3013747789" Name="Dropping_Torch"/>
 						<Switch Id="3048428183" Name="Using_Water"/>
+						<Switch Id="3147764383" Name="Equipping_Key"/>
+						<Switch Id="3166695468" Name="Equip_Bucket"/>
 						<Switch Id="3481100345" Name="Equipping_Waterbucket"/>
+						<Switch Id="3643606539" Name="Drop_Bucket"/>
+						<Switch Id="3782926630" Name="Use_Key"/>
 						<Switch Id="4110363151" Name="Using_Potion"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{914E8691-B2EE-E537-F1FE-102509582500}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{778B217E-E859-6040-5D22-DAF05E62BCBD}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -83,6 +78,10 @@
 				<File Id="151348559" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Successful Combination.wav</ShortName>
 					<CachePath>SFX/Successful Combination_59D5B0F6.wem</CachePath>
+				</File>
+				<File Id="173809254" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drop Bucket.wav</ShortName>
+					<CachePath>SFX/Drop Bucket_E8BD1932.wem</CachePath>
 				</File>
 				<File Id="191815447" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Light.wav</ShortName>
@@ -106,7 +105,7 @@
 				</File>
 				<File Id="381718829" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Using Water.wav</ShortName>
-					<CachePath>SFX/Using Water_8B08B572.wem</CachePath>
+					<CachePath>SFX/Using Water_19454D2A.wem</CachePath>
 				</File>
 				<File Id="383035874" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Error Sound.wav</ShortName>
@@ -115,6 +114,10 @@
 				<File Id="442710542" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_1.wav</ShortName>
 					<CachePath>SFX/Footsteps_Wood_1_028D8A8F.wem</CachePath>
+				</File>
+				<File Id="456015311" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Equip Key.wav</ShortName>
+					<CachePath>SFX/Equip Key_9484F5B7.wem</CachePath>
 				</File>
 				<File Id="466972273" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Ignition.wav</ShortName>
@@ -136,6 +139,10 @@
 					<ShortName>Torch Equipping.wav</ShortName>
 					<CachePath>SFX/Torch Equipping_5BE1B41A.wem</CachePath>
 				</File>
+				<File Id="602293721" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Equip Bucket.wav</ShortName>
+					<CachePath>SFX/Equip Bucket_2899DAF8.wem</CachePath>
+				</File>
 				<File Id="620638536" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Magic Barrier Window.wav</ShortName>
 					<CachePath>SFX/Magic Barrier Window_D79FB2B7.wem</CachePath>
@@ -156,13 +163,17 @@
 					<ShortName>Footsteps_Wood_2.wav.wav</ShortName>
 					<CachePath>SFX/Footsteps_Wood_2.wav_A03D4110.wem</CachePath>
 				</File>
+				<File Id="753759525" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Use Key.wav</ShortName>
+					<CachePath>SFX/Use Key_67F7136D.wem</CachePath>
+				</File>
 				<File Id="763857974" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Using Potion.wav</ShortName>
 					<CachePath>SFX/Using Potion_2909CEE1.wem</CachePath>
 				</File>
 				<File Id="804788596" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equipping Waterbucket.wav</ShortName>
-					<CachePath>SFX/Equipping Waterbucket_1B089FA6.wem</CachePath>
+					<CachePath>SFX/Equipping Waterbucket_2E2184AD.wem</CachePath>
 				</File>
 				<File Id="891873728" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Degnition.wav</ShortName>
@@ -193,6 +204,11 @@
 					<CachePath>SFX/Equipping Waterbucket_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="460064358" Name="Pitch Shifter (Custom)" LibName="Wwise Pitch Shifter" LibId="8912899"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="3212638512" Name="Play_Cauldron" MaxAttenuation="3" DurationType="Infinite">
 					<MediaRefs>
@@ -262,8 +278,25 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="305502530" Name="Play_Player_Interact" DurationType="Mixed" DurationMin="0.4446146" DurationMax="Infinite">
+				<Event Id="305502530" Name="Play_Player_Interact" DurationType="Mixed" DurationMin="0.289" DurationMax="Infinite">
 					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="3643606539" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="173809254"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="3782926630"/>
+							<MediaRefs>
+								<MediaRef Id="753759525"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="460064358"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="3481100345"/>
 							<MediaRefs>
@@ -283,6 +316,12 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="3166695468"/>
+							<MediaRefs>
+								<MediaRef Id="602293721"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="805831506"/>
 							<MediaRefs>
 								<MediaRef Id="71493339"/>
@@ -294,6 +333,12 @@
 								<MediaRef Id="215573568"/>
 								<MediaRef Id="466972273"/>
 								<MediaRef Id="1067262667"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="3147764383"/>
+							<MediaRefs>
+								<MediaRef Id="456015311"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -387,12 +432,16 @@
 						<Switch Id="2633107091" Name="Equipping_Potion"/>
 						<Switch Id="3013747789" Name="Dropping_Torch"/>
 						<Switch Id="3048428183" Name="Using_Water"/>
+						<Switch Id="3147764383" Name="Equipping_Key"/>
+						<Switch Id="3166695468" Name="Equip_Bucket"/>
 						<Switch Id="3481100345" Name="Equipping_Waterbucket"/>
+						<Switch Id="3643606539" Name="Drop_Bucket"/>
+						<Switch Id="3782926630" Name="Use_Key"/>
 						<Switch Id="4110363151" Name="Using_Potion"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{68F55E12-20EF-73AB-C4E4-1431EC0B2E3B}</FileHash>
+	<FileHash>{F67D7953-D42A-8076-B5F4-F3C7C845532B}</FileHash>
 </SoundBanksInfo>

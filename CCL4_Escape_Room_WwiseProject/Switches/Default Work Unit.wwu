@@ -21,6 +21,10 @@
 						<Switch Name="Using_Potion" ID="{0A7973DE-7D9E-4226-A3AC-120EE5CC7D4D}"/>
 						<Switch Name="Using_Water" ID="{00E864E8-0B2D-4B9B-8FC4-49E88946BC54}"/>
 						<Switch Name="Equipping_Waterbucket" ID="{5384BB38-C3AB-4279-8A44-585B127C5BC7}"/>
+						<Switch Name="Use_Key" ID="{1A549124-E1CC-4488-AAA7-DFCE946D69BA}"/>
+						<Switch Name="Equipping_Key" ID="{229FE480-4492-46A4-A58B-9F3F19EBFD13}"/>
+						<Switch Name="Equip_Bucket" ID="{A466425C-B84B-46C2-AA4D-28F316544B95}"/>
+						<Switch Name="Drop_Bucket" ID="{25269A0C-6742-4135-A210-6C3F8C6E06FA}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Coughing" ID="{C3DD0C37-17B7-4F8E-92BF-42EDCE42C516}">
