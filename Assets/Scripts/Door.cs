@@ -21,6 +21,9 @@ public class Door : Interactable
         {
             if (_playerInteraction.GetCarriedKey() != null && _playerInteraction.GetCarriedKey().keyState == Key.KeyState.Active)
             {
+                //Wwise
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Use_Key", gameObject);
+                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
                 ScenesManager.Instance.LoadSceneAsync();
             }
         }

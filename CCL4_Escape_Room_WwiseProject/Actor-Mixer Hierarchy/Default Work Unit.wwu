@@ -663,7 +663,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Drop_Bucket" ID="{25269A0C-6742-4135-A210-6C3F8C6E06FA}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
+									<ObjectRef Name="Drop_Key" ID="{1542AA95-5946-403F-BEB9-9940418A3BA5}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Player Interact" ID="{ECA32155-0AEB-4042-B028-B36A32B351ED}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
@@ -1241,6 +1241,40 @@
 										<ActiveSource Name="Equip Bucket" ID="{D1247483-37DE-4C86-A2A0-28951AE9296C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Drop Key" ID="{281DABBE-4605-4E51-9F45-4ACF474071FA}" ShortID="957775367">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Drop Key" ID="{DE9EDCF0-BA62-4331-9DDC-1AF6638161D4}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.386393455188679"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.351072169811321"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Drop Key.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="879798572"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Drop Key" ID="{DE9EDCF0-BA62-4331-9DDC-1AF6638161D4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
@@ -1273,6 +1307,9 @@
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Torch Equipping" ID="{E8AD28B8-3045-44E0-89C7-BFCE7929E593}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Drop Key" ID="{281DABBE-4605-4E51-9F45-4ACF474071FA}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Equip Key" ID="{F216B6C1-1CAF-43EC-B171-831AF4D98F7F}"/>
@@ -1340,6 +1377,12 @@
 										<SwitchRef Name="Equipping_Key" ID="{229FE480-4492-46A4-A58B-9F3F19EBFD13}"/>
 										<ItemList>
 											<ItemRef Name="Equip Key" ID="{F216B6C1-1CAF-43EC-B171-831AF4D98F7F}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Drop_Key" ID="{1542AA95-5946-403F-BEB9-9940418A3BA5}"/>
+										<ItemList>
+											<ItemRef Name="Drop Key" ID="{281DABBE-4605-4E51-9F45-4ACF474071FA}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>

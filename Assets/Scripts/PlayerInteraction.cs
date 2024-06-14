@@ -184,6 +184,11 @@ public class PlayerInteraction : MonoBehaviour
             _carriedKey.keyState = key.keyState;
 
             Debug.Log("Picked up " + _carriedKey.keyState + " Key");
+
+            //Wwise
+            AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Key", gameObject);
+            AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+            
         }
     }
 
@@ -234,6 +239,11 @@ public class PlayerInteraction : MonoBehaviour
 
         if (_pickedUpKey != null)
         {
+            if (_carriedKey.isActiveAndEnabled)
+            {
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Drop_Key", gameObject);
+                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+            }
             _pickedUpKey.gameObject.SetActive(true);
             _carriedKey.SetKeyState(Key.KeyState.inActive);
             _carriedKey.gameObject.SetActive(false);

@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584832277222792887
+    m_lastTime: -8584832203981353546
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584832277223960349
+    m_lastTime: -8584832203981333550
     List:
     - name: Play
       guid: 30991119ca5a7848a1b6564065a14ca6
@@ -461,6 +461,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_Torch_Crackling
+      guid: 4b8418bc5d63614eba9d59123eadba3d
+      id: 642243045
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Stop
+        ObjectType: 4
+        guid: 4f13f79ef1514b4bacc865c1d1b744c6
+      - ElementName: Stop_Torch_Crackling
+        ObjectType: 3
+        guid: 4b8418bc5d63614eba9d59123eadba3d
+      Path: Events\Default Work Unit\Stop\Stop_Torch_Crackling
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -501,7 +521,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 8a8572cf7ed26d4a9bb72b0afc0090bd
     GuidInternal: 
-    m_lastTime: -8584832236367074036
+    m_lastTime: -8584832220148504412
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -515,7 +535,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584832239388526738
+    m_lastTime: -8584832216328821912
     List:
     - name: Coughing
       guid: 370cddc3b7178e4f92bf42edce42c516
@@ -746,6 +766,22 @@ MonoBehaviour:
         - ElementName: Drop_Bucket
           ObjectType: 10
           guid: 0c9a262542673541a2106c3f8c6e06fa
+      - name: Drop_Key
+        guid: 95aa421546593f40beb99940418a3ba5
+        id: 1807111158
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Drop_Key
+          ObjectType: 10
+          guid: 95aa421546593f40beb99940418a3ba5
       - name: Dropping_Potion
         guid: f8df3e7133a45244b48624443150af4a
         id: 838125300
