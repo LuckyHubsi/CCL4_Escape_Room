@@ -124,7 +124,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="Torch" ID="{BD58D00A-70FB-4517-A35E-1C662A14361D}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+											<ObjectRef Name="Smoke" ID="{14BCDD5F-06FC-4479-BFF3-E319D7F5B23D}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
@@ -142,6 +142,45 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{FA413E5C-A625-4F16-A322-1E86CFAB94A4}" ShortID="870875026">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Smoke_Intensity" ID="{96822607-D08C-4488-A710-F9219DF248FE}" WorkUnitID="{0691DE2A-7091-4CC2-ACCE-4A5EC4FE9C51}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{F826DB8E-22F7-47DF-9487-5C054FE6E3A1}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>5.95247</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Smoke" ID="{D9736F6F-1C8D-42CD-8035-F77B13F7619C}" Platform="Linked"/>
 									</ActiveSourceList>

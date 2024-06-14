@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0691DE2A-7091-4CC2-ACCE-4A5EC4FE9C51}" SchemaVersion="110">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{0691DE2A-7091-4CC2-ACCE-4A5EC4FE9C51}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0691DE2A-7091-4CC2-ACCE-4A5EC4FE9C51}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Smoke_Intensity" ID="{96822607-D08C-4488-A710-F9219DF248FE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

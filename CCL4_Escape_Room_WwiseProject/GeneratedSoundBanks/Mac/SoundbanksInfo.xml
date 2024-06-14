@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4FD7E958-9D25-49C5-54BB-94C530DDE424}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F36A701D-4B90-E2D5-9E06-547F3C6EEF9C}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -24,6 +24,9 @@
 				<Bus Id="2607556080" Name="Menu"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="46447142" Name="Smoke_Intensity"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1572296608" Name="Ignition">
 					<States>
@@ -68,13 +71,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B450DDA0-B365-852B-EB85-4DBCD2B875C6}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B734A9C2-5C78-E505-EA3D-9341CA53EC23}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="71493339" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Combination.wav</ShortName>
-					<CachePath>SFX/Torch Combination_D582D2CF.wem</CachePath>
+					<CachePath>SFX/Torch Combination_7E67330B.wem</CachePath>
 				</File>
 				<File Id="151348559" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Successful Combination.wav</ShortName>
@@ -82,7 +85,7 @@
 				</File>
 				<File Id="191815447" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Light.wav</ShortName>
-					<CachePath>SFX/Cough Light_CF3889BD.wem</CachePath>
+					<CachePath>SFX/Cough Light_BC160F9A.wem</CachePath>
 				</File>
 				<File Id="201119281" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cauldron.wav</ShortName>
@@ -98,11 +101,11 @@
 				</File>
 				<File Id="340508672" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Window Rune be gone.wav</ShortName>
-					<CachePath>SFX/Window Rune be gone_2A4A185B.wem</CachePath>
+					<CachePath>SFX/Window Rune be gone_765DD1BB.wem</CachePath>
 				</File>
 				<File Id="383035874" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Error Sound.wav</ShortName>
-					<CachePath>SFX/Error Sound_AFBE2AAA.wem</CachePath>
+					<CachePath>SFX/Error Sound_BDC2C1B8.wem</CachePath>
 				</File>
 				<File Id="442710542" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_1.wav</ShortName>
@@ -118,7 +121,7 @@
 				</File>
 				<File Id="525695517" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Dropping.wav</ShortName>
-					<CachePath>SFX/Torch Dropping_8864B61B.wem</CachePath>
+					<CachePath>SFX/Torch Dropping_397B475D.wem</CachePath>
 				</File>
 				<File Id="528654628" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equipping Potion.wav</ShortName>
@@ -126,7 +129,7 @@
 				</File>
 				<File Id="573187394" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Equipping.wav</ShortName>
-					<CachePath>SFX/Torch Equipping_568AFD1C.wem</CachePath>
+					<CachePath>SFX/Torch Equipping_5BE1B41A.wem</CachePath>
 				</File>
 				<File Id="620638536" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Magic Barrier Window.wav</ShortName>
@@ -134,7 +137,7 @@
 				</File>
 				<File Id="624127175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Smoke Reset.wav</ShortName>
-					<CachePath>SFX/Smoke Reset_FD768D6C.wem</CachePath>
+					<CachePath>SFX/Smoke Reset_0208F59F.wem</CachePath>
 				</File>
 				<File Id="632952234" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Smoke.wav</ShortName>
@@ -142,7 +145,7 @@
 				</File>
 				<File Id="674036316" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dropping Potion.wav</ShortName>
-					<CachePath>SFX/Dropping Potion_35BDC557.wem</CachePath>
+					<CachePath>SFX/Dropping Potion_BBBE5E8C.wem</CachePath>
 				</File>
 				<File Id="691056013" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_2.wav.wav</ShortName>
@@ -150,15 +153,15 @@
 				</File>
 				<File Id="763857974" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Using Potion.wav</ShortName>
-					<CachePath>SFX/Using Potion_A3B39A14.wem</CachePath>
+					<CachePath>SFX/Using Potion_2909CEE1.wem</CachePath>
 				</File>
 				<File Id="891873728" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Degnition.wav</ShortName>
-					<CachePath>SFX/Torch Degnition_33189BFB.wem</CachePath>
+					<CachePath>SFX/Torch Degnition_1485660C.wem</CachePath>
 				</File>
 				<File Id="911370399" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Medium.wav</ShortName>
-					<CachePath>SFX/Cough Medium_50DE405B.wem</CachePath>
+					<CachePath>SFX/Cough Medium_28D35CF5.wem</CachePath>
 				</File>
 				<File Id="942542682" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Grass_1.wav</ShortName>
@@ -174,7 +177,7 @@
 				</File>
 				<File Id="1011679340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Heavy.wav</ShortName>
-					<CachePath>SFX/Cough Heavy_E43F235C.wem</CachePath>
+					<CachePath>SFX/Cough Heavy_8680685E.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -299,7 +302,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2555336501" Name="Play_Smoke" MaxAttenuation="3" DurationType="Infinite">
+				<Event Id="2555336501" Name="Play_Smoke" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="632952234"/>
 					</MediaRefs>
@@ -324,6 +327,9 @@
 				<Event Id="2314554776" Name="Stop_Player_Interact" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3366263883" Name="Stop_Smoke" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="46447142" Name="Smoke_Intensity"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="510690747" Name="MagicBarrierWindow">
 					<Switches>
@@ -360,5 +366,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{57329E99-F716-E500-6C82-7084056359D4}</FileHash>
+	<FileHash>{2F31CA09-1E1F-069F-AB78-440774728228}</FileHash>
 </SoundBanksInfo>

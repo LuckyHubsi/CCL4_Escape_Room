@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private GameObject smokeRef; // Reference to smoke gameobject for sound
+    [SerializeField]
+    private AK.Wwise.RTPC _smokeTimeVolumeRTPC;
 
     private void Awake()
     {
@@ -51,6 +53,8 @@ public class GameManager : MonoBehaviour
 
         // Load torch data
         TorchData_Loader.LoadTorchData(torches);
+
+        _smokeTimeVolumeRTPC.SetGlobalValue(0);
     }
 
     private void Update()
@@ -78,6 +82,7 @@ public class GameManager : MonoBehaviour
             if (smokeTime > 0)
             {
                 smokeTime -= Time.deltaTime;
+                _smokeTimeVolumeRTPC.SetGlobalValue(Mathf.Round(100 - (smokeTime / initialSmokeTime * 100)));
                 UpdateSmokeOverlay();
 
                 if (smokeTime <= 0)
