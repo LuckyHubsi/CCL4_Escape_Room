@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584833074524077495
+    m_lastTime: -8584833054016131407
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584833074524123192
+    m_lastTime: -8584833054017384996
     List:
     - name: Play
       guid: 30991119ca5a7848a1b6564065a14ca6
@@ -301,7 +301,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: f130d8a9b94efe4e8e84979ed9769f19
       Path: Events\Default Work Unit\Play\Play_Smoke
-      maxAttenuation: 3
+      maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
     - name: Play_Successful_Combination
@@ -453,8 +453,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2ade91069170c24cacce4a5ec4fe9c51
     GuidInternal: 
-    m_lastTime: -8584833281974094602
-    List: []
+    m_lastTime: -8584832573229051518
+    List:
+    - name: Smoke_Intensity
+      guid: 072682968cd08844a710f9219df248fe
+      id: 46447142
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2ade91069170c24cacce4a5ec4fe9c51
+      - ElementName: Smoke_Intensity
+        ObjectType: 13
+        guid: 072682968cd08844a710f9219df248fe
+      Path: Game Parameters\Default Work Unit\Smoke_Intensity
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -547,7 +561,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584833093445244142
+    m_lastTime: -8584833054016118888
     List:
     - name: Coughing
       guid: 370cddc3b7178e4f92bf42edce42c516
@@ -892,7 +906,7 @@ MonoBehaviour:
     m_lastTime: -8584833281971756268
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000002a000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000190000001a0000002a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
