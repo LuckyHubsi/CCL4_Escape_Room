@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1351709339044585284, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
       propertyPath: m_RootOrder
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1351709339044585284, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60,7 +60,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_PickUp Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3181877485082800921, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
+    - {fileID: 5313801374636083446, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
