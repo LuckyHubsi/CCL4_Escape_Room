@@ -66,6 +66,7 @@ public class ProgressionManager : MonoBehaviour
         if (puzzleTwoSolved)
         {
             barrierDoor.SetActive(false);
+            AkSoundEngine.PostEvent("Stop_Magic_Barrier_Door", barrierDoor);
         }
         if (puzzleThreeSolved)
         {

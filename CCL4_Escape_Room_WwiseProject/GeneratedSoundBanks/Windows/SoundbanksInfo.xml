@@ -71,7 +71,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B734A9C2-5C78-E505-EA3D-9341CA53EC23}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{81A066B2-F3BB-6434-E12E-49BF54467E14}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -323,6 +323,7 @@
 						<MediaRef Id="624127175"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2992760128" Name="Stop_Magic_Barrier_Door" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3780008132" Name="Stop_Magic_Barrier_Window" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2314554776" Name="Stop_Player_Interact" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3366263883" Name="Stop_Smoke" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -366,5 +367,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A847A3FC-642A-1662-6FA5-A19265617D55}</FileHash>
+	<FileHash>{623BA34C-0836-8470-EE7B-104F49B56DBE}</FileHash>
 </SoundBanksInfo>

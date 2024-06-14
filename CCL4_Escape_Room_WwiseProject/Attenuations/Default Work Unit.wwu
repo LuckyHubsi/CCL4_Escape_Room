@@ -463,7 +463,7 @@
 				</Attenuation>
 				<Attenuation Name="Smoke" ID="{14BCDD5F-06FC-4479-BFF3-E319D7F5B23D}" ShortID="94581543">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="20"/>
+						<Property Name="RadiusMax" Type="Real64" Value="10"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -479,7 +479,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>10</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

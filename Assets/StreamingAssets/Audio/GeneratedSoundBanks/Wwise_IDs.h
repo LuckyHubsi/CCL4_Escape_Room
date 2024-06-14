@@ -23,6 +23,7 @@ namespace AK
         static const AkUniqueID PLAY_SUCCESSFUL_COMBINATION = 4156768940U;
         static const AkUniqueID PLAY_TORCH_CRACKLING = 45744291U;
         static const AkUniqueID PLAY_WRONG_COMBINATION = 3120915481U;
+        static const AkUniqueID STOP_MAGIC_BARRIER_DOOR = 2992760128U;
         static const AkUniqueID STOP_MAGIC_BARRIER_WINDOW = 3780008132U;
         static const AkUniqueID STOP_PLAYER_INTERACT = 2314554776U;
         static const AkUniqueID STOP_SMOKE = 3366263883U;

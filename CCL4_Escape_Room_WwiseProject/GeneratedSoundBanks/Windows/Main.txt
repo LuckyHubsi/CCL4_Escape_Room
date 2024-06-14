@@ -6,6 +6,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2314554776	Stop_Player_Interact			\Default Work Unit\Stop\Stop_Player_Interact	
 	2555336501	Play_Smoke			\Default Work Unit\Play\Play_Smoke	
 	2862905942	Play_Magic_Barrier_Window			\Default Work Unit\Play\Play_Magic_Barrier_Window	
+	2992760128	Stop_Magic_Barrier_Door			\Default Work Unit\Stop\Stop_Magic_Barrier_Door	
 	3120915481	Play_Wrong_Combination			\Default Work Unit\Play\Play_Wrong_Combination	
 	3212638512	Play_Cauldron			\Default Work Unit\Play\Play_Cauldron	
 	3366263883	Stop_Smoke			\Default Work Unit\Stop\Stop_Smoke	

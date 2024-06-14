@@ -161,6 +161,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_Magic_Barrier_Door" ID="{CAB3BC32-C696-49D2-982E-65AE6DB5BFC2}">
+							<ChildrenList>
+								<Action Name="" ID="{212BCB1C-DE69-460C-A908-57146AD2E504}" ShortID="599107972">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Magic Barrier Door" ID="{809A6E4A-FBD7-47F5-AEE3-74063A9D4689}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
