@@ -25,6 +25,7 @@
 						<Switch Name="Equipping_Key" ID="{229FE480-4492-46A4-A58B-9F3F19EBFD13}"/>
 						<Switch Name="Equip_Bucket" ID="{A466425C-B84B-46C2-AA4D-28F316544B95}"/>
 						<Switch Name="Drop_Bucket" ID="{25269A0C-6742-4135-A210-6C3F8C6E06FA}"/>
+						<Switch Name="Drop_Key" ID="{1542AA95-5946-403F-BEB9-9940418A3BA5}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Coughing" ID="{C3DD0C37-17B7-4F8E-92BF-42EDCE42C516}">

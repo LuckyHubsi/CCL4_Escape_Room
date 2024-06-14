@@ -53,6 +53,7 @@
 						<Switch Id="838125300" Name="Dropping_Potion"/>
 						<Switch Id="1070326592" Name="Equipping_Torch"/>
 						<Switch Id="1723853725" Name="Degnition_Torch"/>
+						<Switch Id="1807111158" Name="Drop_Key"/>
 						<Switch Id="1918408915" Name="Other_Torch_Interaction"/>
 						<Switch Id="2633107091" Name="Equipping_Potion"/>
 						<Switch Id="3013747789" Name="Dropping_Torch"/>
@@ -67,7 +68,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{778B217E-E859-6040-5D22-DAF05E62BCBD}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{243405BB-98BD-521F-2EFD-E274238DDB59}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -81,7 +82,7 @@
 				</File>
 				<File Id="173809254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drop Bucket.wav</ShortName>
-					<CachePath>SFX/Drop Bucket_E8BD1932.wem</CachePath>
+					<CachePath>SFX/Drop Bucket_AC693120.wem</CachePath>
 				</File>
 				<File Id="191815447" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Light.wav</ShortName>
@@ -117,7 +118,7 @@
 				</File>
 				<File Id="456015311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equip Key.wav</ShortName>
-					<CachePath>SFX/Equip Key_9484F5B7.wem</CachePath>
+					<CachePath>SFX/Equip Key_83B75240.wem</CachePath>
 				</File>
 				<File Id="466972273" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Ignition.wav</ShortName>
@@ -141,7 +142,7 @@
 				</File>
 				<File Id="602293721" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equip Bucket.wav</ShortName>
-					<CachePath>SFX/Equip Bucket_2899DAF8.wem</CachePath>
+					<CachePath>SFX/Equip Bucket_B7FB03BD.wem</CachePath>
 				</File>
 				<File Id="620638536" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Magic Barrier Window.wav</ShortName>
@@ -165,7 +166,7 @@
 				</File>
 				<File Id="753759525" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Use Key.wav</ShortName>
-					<CachePath>SFX/Use Key_67F7136D.wem</CachePath>
+					<CachePath>SFX/Use Key_E9C98881.wem</CachePath>
 				</File>
 				<File Id="763857974" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Using Potion.wav</ShortName>
@@ -174,6 +175,10 @@
 				<File Id="804788596" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equipping Waterbucket.wav</ShortName>
 					<CachePath>SFX/Equipping Waterbucket_2E2184AD.wem</CachePath>
+				</File>
+				<File Id="879798572" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drop Key.wav</ShortName>
+					<CachePath>SFX/Drop Key_358CB6D9.wem</CachePath>
 				</File>
 				<File Id="891873728" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Degnition.wav</ShortName>
@@ -281,7 +286,7 @@
 				<Event Id="305502530" Name="Play_Player_Interact" DurationType="Mixed" DurationMin="0.289" DurationMax="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="3643606539" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="3643606539"/>
 							<MediaRefs>
 								<MediaRef Id="173809254"/>
 							</MediaRefs>
@@ -342,6 +347,12 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="1807111158" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="879798572"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="2633107091"/>
 							<MediaRefs>
 								<MediaRef Id="528654628"/>
@@ -398,6 +409,7 @@
 				<Event Id="3780008132" Name="Stop_Magic_Barrier_Window" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2314554776" Name="Stop_Player_Interact" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3366263883" Name="Stop_Smoke" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="642243045" Name="Stop_Torch_Crackling" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="46447142" Name="Smoke_Intensity"/>
@@ -428,6 +440,7 @@
 						<Switch Id="838125300" Name="Dropping_Potion"/>
 						<Switch Id="1070326592" Name="Equipping_Torch"/>
 						<Switch Id="1723853725" Name="Degnition_Torch"/>
+						<Switch Id="1807111158" Name="Drop_Key"/>
 						<Switch Id="1918408915" Name="Other_Torch_Interaction"/>
 						<Switch Id="2633107091" Name="Equipping_Potion"/>
 						<Switch Id="3013747789" Name="Dropping_Torch"/>
@@ -443,5 +456,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B3C09C74-16D5-5DFC-CF2B-B19721737E99}</FileHash>
+	<FileHash>{1275B5CD-EBA2-94F0-21C0-66EF4C1D3218}</FileHash>
 </SoundBanksInfo>

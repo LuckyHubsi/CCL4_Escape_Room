@@ -19,6 +19,8 @@ public class ProgressionManager : MonoBehaviour
     public bool puzzleTwoSolved = false;
     public bool puzzleThreeSolved = false;
 
+    private bool puzzleThreeAudioBool = false;
+
     private void Awake()
     {
         if (instance == null)
@@ -68,13 +70,17 @@ public class ProgressionManager : MonoBehaviour
             barrierDoor.SetActive(false);
             AkSoundEngine.PostEvent("Stop_Magic_Barrier_Door", barrierDoor);
         }
-        if (puzzleThreeSolved)
+        if (puzzleThreeSolved && !puzzleThreeAudioBool)
         {
             //Wwise
             AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Using_Water", barrierFire);
             AkSoundEngine.PostEvent("Play_Player_Interact", barrierFire);
 
+            AkSoundEngine.PostEvent("Stop_Torch_Crackling", barrierFire);
+
             barrierFire.SetActive(false);
+
+            puzzleThreeAudioBool = true;
         }
     }
 }

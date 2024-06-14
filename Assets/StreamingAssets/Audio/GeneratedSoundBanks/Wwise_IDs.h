@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID STOP_MAGIC_BARRIER_WINDOW = 3780008132U;
         static const AkUniqueID STOP_PLAYER_INTERACT = 2314554776U;
         static const AkUniqueID STOP_SMOKE = 3366263883U;
+        static const AkUniqueID STOP_TORCH_CRACKLING = 642243045U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -74,6 +75,7 @@ namespace AK
                 static const AkUniqueID COMBINING_TORCH = 805831506U;
                 static const AkUniqueID DEGNITION_TORCH = 1723853725U;
                 static const AkUniqueID DROP_BUCKET = 3643606539U;
+                static const AkUniqueID DROP_KEY = 1807111158U;
                 static const AkUniqueID DROPPING_POTION = 838125300U;
                 static const AkUniqueID DROPPING_TORCH = 3013747789U;
                 static const AkUniqueID EQUIP_BUCKET = 3166695468U;

@@ -175,6 +175,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_Torch_Crackling" ID="{BC18844B-635D-4E61-BA9D-59123EADBA3D}">
+							<ChildrenList>
+								<Action Name="" ID="{A0505727-15FE-483E-AE78-005D583C31EE}" ShortID="717069525">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Torch Crackling" ID="{D8CD20A4-CCE2-4C12-91BA-B599F65AD4F6}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
