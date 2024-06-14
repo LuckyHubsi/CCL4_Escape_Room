@@ -29,22 +29,6 @@ namespace AK
         static const AkUniqueID STOP_SMOKE = 3366263883U;
     } // namespace EVENTS
 
-    namespace STATES
-    {
-        namespace IGNITION
-        {
-            static const AkUniqueID GROUP = 1572296608U;
-
-            namespace STATE
-            {
-                static const AkUniqueID FALSE = 2452206122U;
-                static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID TRUE = 3053630529U;
-            } // namespace STATE
-        } // namespace IGNITION
-
-    } // namespace STATES
-
     namespace SWITCHES
     {
         namespace COUGHING
@@ -89,12 +73,16 @@ namespace AK
             {
                 static const AkUniqueID COMBINING_TORCH = 805831506U;
                 static const AkUniqueID DEGNITION_TORCH = 1723853725U;
+                static const AkUniqueID DROP_BUCKET = 3643606539U;
                 static const AkUniqueID DROPPING_POTION = 838125300U;
                 static const AkUniqueID DROPPING_TORCH = 3013747789U;
+                static const AkUniqueID EQUIP_BUCKET = 3166695468U;
+                static const AkUniqueID EQUIPPING_KEY = 3147764383U;
                 static const AkUniqueID EQUIPPING_POTION = 2633107091U;
                 static const AkUniqueID EQUIPPING_TORCH = 1070326592U;
                 static const AkUniqueID EQUIPPING_WATERBUCKET = 3481100345U;
                 static const AkUniqueID OTHER_TORCH_INTERACTION = 1918408915U;
+                static const AkUniqueID USE_KEY = 3782926630U;
                 static const AkUniqueID USING_POTION = 4110363151U;
                 static const AkUniqueID USING_WATER = 3048428183U;
             } // namespace SWITCH
