@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &263635602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2970507618933848275, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
+  m_PrefabInstance: {fileID: 853555370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &306895917 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4157752828229184655, guid: 429276f856ebc094da6d050765b0e57d, type: 3}
@@ -981,7 +986,7 @@ PrefabInstance:
     - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: smokeRef
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 263635602}
     - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: smokeOverlay
       value: 
@@ -1002,6 +1007,10 @@ PrefabInstance:
       propertyPath: torches.Array.data[2]
       value: 
       objectReference: {fileID: 1926236974}
+    - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
+      propertyPath: _smokeTimeVolumeRTPC.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: fbf54fef85f08dc43a73b65eb68bed25, type: 2}
     - target: {fileID: 1097276529604619404, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: m_RootOrder
       value: 1
