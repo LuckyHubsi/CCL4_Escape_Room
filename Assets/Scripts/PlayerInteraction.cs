@@ -166,6 +166,11 @@ public class PlayerInteraction : MonoBehaviour
             _carriedBucket.bucketState = bucket.bucketState;
 
             Debug.Log("Picked up " + _carriedBucket.bucketState + " Bucket");
+
+            //Wwise
+            AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equip_Bucket", gameObject);
+            AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+
         }
 
         Key key = item.GetComponent<Key>();
@@ -217,6 +222,11 @@ public class PlayerInteraction : MonoBehaviour
 
         if (_pickedUpBucket != null)
         {
+            if (_carriedBucket.isActiveAndEnabled)
+            {
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Drop_Bucket", gameObject);
+                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+            }
             _pickedUpBucket.gameObject.SetActive(true);
             _carriedBucket.SetBucketState(Bucket.BucketState.Empty);
             _carriedBucket.gameObject.SetActive(false);
@@ -229,10 +239,6 @@ public class PlayerInteraction : MonoBehaviour
             _carriedKey.gameObject.SetActive(false);
         }
 
-
-        //Wwise
-        AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Dropping_Torch", gameObject);
-        playerInterActionPlayEvent.Post(gameObject);
     }
 
     public Torch GetCarriedTorch()

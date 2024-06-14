@@ -70,6 +70,10 @@ public class ProgressionManager : MonoBehaviour
         }
         if (puzzleThreeSolved)
         {
+            //Wwise
+            AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Using_Water", barrierFire);
+            AkSoundEngine.PostEvent("Play_Player_Interact", barrierFire);
+
             barrierFire.SetActive(false);
         }
     }
