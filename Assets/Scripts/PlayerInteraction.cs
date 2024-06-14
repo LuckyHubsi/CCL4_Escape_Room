@@ -228,11 +228,6 @@ public class PlayerInteraction : MonoBehaviour
             _carriedKey.SetKeyState(Key.KeyState.inActive);
             _carriedKey.gameObject.SetActive(false);
         }
-
-
-        //Wwise
-        AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Dropping_Torch", gameObject);
-        playerInterActionPlayEvent.Post(gameObject);
     }
 
     public Torch GetCarriedTorch()
