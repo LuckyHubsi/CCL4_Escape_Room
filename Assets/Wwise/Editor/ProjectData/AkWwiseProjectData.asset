@@ -581,7 +581,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584832460042311213
+    m_lastTime: -8584832279251847264
     List:
     - name: Coughing
       guid: 370cddc3b7178e4f92bf42edce42c516
@@ -860,6 +860,22 @@ MonoBehaviour:
         - ElementName: Equipping_Torch
           ObjectType: 10
           guid: 4f08b5b2df9cf3499b4d72a0a9429062
+      - name: Equipping_Waterbucket
+        guid: 38bb8453abc379428a44585b127c5bc7
+        id: 3481100345
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Equipping_Waterbucket
+          ObjectType: 10
+          guid: 38bb8453abc379428a44585b127c5bc7
       - name: Other_Torch_Interaction
         guid: 7f16b2464d67a74fa751e3db376dd4e3
         id: 1918408915
@@ -892,9 +908,9 @@ MonoBehaviour:
         - ElementName: Using_Potion
           ObjectType: 10
           guid: de73790a9e7d2642a3ac120ee5cc7d4d
-      - name: Window_Rune_Gone
-        guid: 9c095e6bb692094c8dc54e8c7db667c7
-        id: 1785219138
+      - name: Using_Water
+        guid: e864e8002d0b9b4b8fc449e88946bc54
+        id: 3048428183
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -905,9 +921,9 @@ MonoBehaviour:
         - ElementName: PlayerInteractSwitch
           ObjectType: 11
           guid: 0ada6f1deab3544a8e9d6c352874436a
-        - ElementName: Window_Rune_Gone
+        - ElementName: Using_Water
           ObjectType: 10
-          guid: 9c095e6bb692094c8dc54e8c7db667c7
+          guid: e864e8002d0b9b4b8fc449e88946bc54
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []

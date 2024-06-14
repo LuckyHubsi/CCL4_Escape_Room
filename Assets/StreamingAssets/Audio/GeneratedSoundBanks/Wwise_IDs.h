@@ -93,9 +93,10 @@ namespace AK
                 static const AkUniqueID DROPPING_TORCH = 3013747789U;
                 static const AkUniqueID EQUIPPING_POTION = 2633107091U;
                 static const AkUniqueID EQUIPPING_TORCH = 1070326592U;
+                static const AkUniqueID EQUIPPING_WATERBUCKET = 3481100345U;
                 static const AkUniqueID OTHER_TORCH_INTERACTION = 1918408915U;
                 static const AkUniqueID USING_POTION = 4110363151U;
-                static const AkUniqueID WINDOW_RUNE_GONE = 1785219138U;
+                static const AkUniqueID USING_WATER = 3048428183U;
             } // namespace SWITCH
         } // namespace PLAYERINTERACTSWITCH
 

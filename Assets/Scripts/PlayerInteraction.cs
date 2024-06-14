@@ -28,10 +28,6 @@ public class PlayerInteraction : MonoBehaviour
     private Bucket _pickedUpBucket;
     private Key _pickedUpKey;
 
-    //Wwise
-    [SerializeField]
-    private AK.Wwise.Event playerInterActionPlayEvent;
-
     //Wwise Cough
     private float _initialSmokeTimer = 0;
     private float _smokeTimer = 0;

@@ -16,10 +16,11 @@
 						<Switch Name="Degnition_Torch" ID="{2A23C85B-C61A-483A-A9AB-A34DC2338D83}"/>
 						<Switch Name="Dropping_Torch" ID="{36AF1EEB-C10C-4665-985F-BC88AFAD98D8}"/>
 						<Switch Name="Combining_Torch" ID="{EAC36B7E-E396-4E12-9696-FB4A36EDA73A}"/>
-						<Switch Name="Window_Rune_Gone" ID="{6B5E099C-92B6-4C09-8DC5-4E8C7DB667C7}"/>
 						<Switch Name="Equipping_Potion" ID="{3F6F54B6-6D9A-45EF-B976-C2F1D463EF67}"/>
 						<Switch Name="Dropping_Potion" ID="{713EDFF8-A433-4452-B486-24443150AF4A}"/>
 						<Switch Name="Using_Potion" ID="{0A7973DE-7D9E-4226-A3AC-120EE5CC7D4D}"/>
+						<Switch Name="Using_Water" ID="{00E864E8-0B2D-4B9B-8FC4-49E88946BC54}"/>
+						<Switch Name="Equipping_Waterbucket" ID="{5384BB38-C3AB-4279-8A44-585B127C5BC7}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Coughing" ID="{C3DD0C37-17B7-4F8E-92BF-42EDCE42C516}">

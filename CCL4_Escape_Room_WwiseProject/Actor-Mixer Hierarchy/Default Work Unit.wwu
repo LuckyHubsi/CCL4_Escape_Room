@@ -662,9 +662,6 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
 								</Reference>
-								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Using_Potion" ID="{0A7973DE-7D9E-4226-A3AC-120EE5CC7D4D}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
-								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Player Interact" ID="{ECA32155-0AEB-4042-B028-B36A32B351ED}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
 								</Reference>
@@ -756,6 +753,28 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="Torch Ignition" ID="{964946DE-AE22-4A4D-97BB-D56216DFFC29}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Equipping Waterbucket" ID="{52A889B9-FD92-4F29-9E60-E60306954861}" ShortID="1039898023">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Equipping Waterbucket" ID="{2D8A6FCD-3803-4A89-8CDB-9026EBA6C8C3}">
+													<Language>SFX</Language>
+													<AudioFile>Equipping Waterbucket.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1067262667"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Equipping Waterbucket" ID="{2D8A6FCD-3803-4A89-8CDB-9026EBA6C8C3}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1002,6 +1021,76 @@
 										<ActiveSource Name="Using Potion" ID="{881E9A69-F5D8-4C9E-862E-97A525DD9ABF}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Using Water" ID="{926ADAAE-475F-47BF-BB39-6D4911C92DA5}" ShortID="971833417">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Using Water" ID="{9DF1A002-6581-4BC3-8DCF-07542ECFC624}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.04691939858491"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.42107615959119"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.55793708726415"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Using Water.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="381718829"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Using Water" ID="{9DF1A002-6581-4BC3-8DCF-07542ECFC624}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Equipping Waterbucket" ID="{572CF59F-3461-44A3-B719-895B3E35CA11}" ShortID="948762449">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Equipping Waterbucket" ID="{71436ADD-E6A9-49FD-B4F6-C9B9540F730A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.149334198113208"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.25319213836478"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.00122908805031446"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Equipping Waterbucket.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="804788596"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Equipping Waterbucket" ID="{71436ADD-E6A9-49FD-B4F6-C9B9540F730A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
@@ -1018,10 +1107,16 @@
 										<ItemRef Name="Other Torch Interaction" ID="{ADA63D8D-4684-4831-A74C-EBD380EAAF6C}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="Equipping Waterbucket" ID="{572CF59F-3461-44A3-B719-895B3E35CA11}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="Using Potion" ID="{63789DA1-4D3B-4914-9797-5AA4C9641EF9}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Torch Degnition" ID="{93C97DAD-DDC0-4EBF-9E2D-4EA289EE66C4}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Using Water" ID="{926ADAAE-475F-47BF-BB39-6D4911C92DA5}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Torch Equipping" ID="{E8AD28B8-3045-44E0-89C7-BFCE7929E593}"/>
@@ -1031,6 +1126,12 @@
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Equipping_Waterbucket" ID="{5384BB38-C3AB-4279-8A44-585B127C5BC7}"/>
+										<ItemList>
+											<ItemRef Name="Equipping Waterbucket" ID="{572CF59F-3461-44A3-B719-895B3E35CA11}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Equipping_Torch" ID="{B2B5084F-9CDF-49F3-9B4D-72A0A9429062}"/>
 										<ItemList>
@@ -1065,6 +1166,12 @@
 										<SwitchRef Name="Using_Potion" ID="{0A7973DE-7D9E-4226-A3AC-120EE5CC7D4D}"/>
 										<ItemList>
 											<ItemRef Name="Using Potion" ID="{63789DA1-4D3B-4914-9797-5AA4C9641EF9}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Using_Water" ID="{00E864E8-0B2D-4B9B-8FC4-49E88946BC54}"/>
+										<ItemList>
+											<ItemRef Name="Using Water" ID="{926ADAAE-475F-47BF-BB39-6D4911C92DA5}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
