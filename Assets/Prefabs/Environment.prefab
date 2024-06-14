@@ -1256,6 +1256,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5313801374636083446, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
+      propertyPath: isStaticObject
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5325502087521403670, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
       propertyPath: m_Name
       value: Torch_West
@@ -1447,6 +1451,10 @@ PrefabInstance:
     - target: {fileID: 4452419397984696702, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313801374636083446, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
+      propertyPath: isStaticObject
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5325502087521403670, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
       propertyPath: m_Name
@@ -2898,6 +2906,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7335418474910620642, guid: ef18a7b6713544343a01f95fe842c307, type: 3}
+      propertyPath: isStaticObject
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3143,6 +3155,10 @@ PrefabInstance:
     - target: {fileID: 4452419397984696702, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313801374636083446, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
+      propertyPath: isStaticObject
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5325502087521403670, guid: 6f6697a405d82054284b74cf6a030fa4, type: 3}
       propertyPath: m_Name
