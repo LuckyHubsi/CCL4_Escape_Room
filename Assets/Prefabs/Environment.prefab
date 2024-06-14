@@ -1574,6 +1574,22 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 2166561901446654504, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166561901446654504, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
+      propertyPath: isStaticObject
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166561901446654504, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
+      propertyPath: m_positionOffsetData.KeepMe
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166561901446654504, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
+      propertyPath: m_positionOffsetData.positionOffset.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2764974884054230566, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -1596,15 +1612,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3154003546388581802, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6730771
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3154003546388581802, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.67499995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3154003546388581802, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.1153846
+      value: -0.786
       objectReference: {fileID: 0}
     - target: {fileID: 3154003546388581802, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1658,6 +1674,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7272719423297090658, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272719423297090658, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7748551927137061429, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -1681,13 +1705,48 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5220454495732771682, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8634126840096407685}
   m_SourcePrefab: {fileID: 100100000, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
 --- !u!4 &1190271337677267882 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3154003546388581802, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
   m_PrefabInstance: {fileID: 4269963278018768384}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8301034948517381474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5220454495732771682, guid: 3ac13179207f1cf439dac6cc09b04bcf, type: 3}
+  m_PrefabInstance: {fileID: 4269963278018768384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &8634126840096407685
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8301034948517381474}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &4703054715997450292
 PrefabInstance:
   m_ObjectHideFlags: 0
