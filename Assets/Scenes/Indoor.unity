@@ -991,10 +991,6 @@ PrefabInstance:
       propertyPath: torches.Array.data[2]
       value: 
       objectReference: {fileID: 1926236974}
-    - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
-      propertyPath: _smokeTimeVolumeRTPC.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: fbf54fef85f08dc43a73b65eb68bed25, type: 2}
     - target: {fileID: 1097276529604619404, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: m_RootOrder
       value: 1
