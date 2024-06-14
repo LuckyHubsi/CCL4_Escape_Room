@@ -7,9 +7,9 @@ public class ProgressionManager : MonoBehaviour
     public static ProgressionManager instance;
 
     [SerializeField]
-    private GameObject barrierOne;
+    private GameObject barrierWindow;
     [SerializeField]
-    private GameObject barrierTwo;
+    private GameObject barrierDoor;
     [SerializeField]
     private GameObject barrierFire;
     [SerializeField]
@@ -60,12 +60,12 @@ public class ProgressionManager : MonoBehaviour
     {
         if (puzzleOneSolved)
         {
-            barrierOne.SetActive(false);
+            barrierWindow.SetActive(false);
             barrierMirror.SetActive(false);
         }
         if (puzzleTwoSolved)
         {
-            barrierTwo.SetActive(false);
+            barrierDoor.SetActive(false);
         }
         if (puzzleThreeSolved)
         {

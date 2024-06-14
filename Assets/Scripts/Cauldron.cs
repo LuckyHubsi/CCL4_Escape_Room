@@ -6,8 +6,8 @@ public class Cauldron : Interactable
 {
     private string[] _cauldronInventory = new string[3];
     private int _currentCauldronInventoryIndex = 0;
-    [SerializeField]
-    private ParticleSystem firePit;
+
+    private FirePit _firePit;
 
     private PlayerInteraction _playerInteraction;
 
@@ -19,6 +19,12 @@ public class Cauldron : Interactable
         if (_playerInteraction == null)
         {
             Debug.LogError("PlayerInteraction script not found in the scene.");
+        }
+
+        _firePit = FindObjectOfType<FirePit>();
+        if (_firePit == null)
+        {
+            Debug.LogError("FirePit script not found in the scene.");
         }
     }
 
@@ -39,6 +45,15 @@ public class Cauldron : Interactable
                 AddItemToCauldron(carriedIngredient.gameObject);
                 _playerInteraction.DropItem();
             }
+
+            Bucket carriedBucket = _playerInteraction.GetCarriedBucket();
+            if (carriedBucket != null && carriedBucket.isActiveAndEnabled && carriedBucket.bucketState == Bucket.BucketState.Empty && _lastCorrectRecipe == "Recipe Ingredient")
+            {
+                carriedBucket.SetBucketState(Bucket.BucketState.Filled);
+
+                Debug.Log("Filled Bucket");
+            }
+
         }
     }
 
@@ -68,19 +83,24 @@ public class Cauldron : Interactable
             bool isRecipePotionsCorrect = CheckRecipePotions();
             bool isRecipeIngredientsCorrect = CheckRecipeIngredients();
 
-            if (isRecipePotionsCorrect)
+            if (isRecipePotionsCorrect && _firePit.GetFirePitState() == "Green")
             {
                 _lastCorrectRecipe = "Recipe Potion";
                 Debug.Log("Correct recipe Potion!");
+                _firePit.SetFirePitState("Unlit");
+
+                ProgressionManager.instance.SolvePuzzleTwo();
             }
-            else if (isRecipeIngredientsCorrect)
+            else if (isRecipeIngredientsCorrect && _firePit.GetFirePitState() == "Orange")
             {
                 _lastCorrectRecipe = "Recipe Ingredient";
                 Debug.Log("Correct recipe Ingredient!");
+                _firePit.SetFirePitState("Unlit");
             }
             else
             {
                 Debug.Log("Incorrect recipe.");
+                _firePit.SetFirePitState("Unlit");
             }
 
             ClearCauldronInventory();
@@ -113,7 +133,7 @@ public class Cauldron : Interactable
 
     private bool IsRecipeCorrect(Dictionary<string, int> recipe)
     {
-        // Count the occurrences of each potion type in the cauldron inventory
+        // Count the occurrences of each item type in the cauldron inventory
         Dictionary<string, int> cauldronContents = new Dictionary<string, int>();
         foreach (var item in _cauldronInventory)
         {
