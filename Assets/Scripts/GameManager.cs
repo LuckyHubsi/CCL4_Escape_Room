@@ -60,7 +60,10 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         UpdateGameTime();
-        UpdateSmokeTime();
+        if (smokeParticles != null)
+        {
+            UpdateSmokeTime();
+        }
     }
 
     private void UpdateGameTime()

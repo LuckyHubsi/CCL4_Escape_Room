@@ -21,6 +21,7 @@ public class Door : Interactable
         {
             if (_playerInteraction.GetCarriedKey() != null && _playerInteraction.GetCarriedKey().keyState == Key.KeyState.Active)
             {
+                Debug.Log("SESAME OPEN");
                 ScenesManager.Instance.LoadSceneAsync();
             }
         }

@@ -2020,7 +2020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7088917696780836474, guid: bd96442871d0d85478b025aa55193ba6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7697187192999806997, guid: bd96442871d0d85478b025aa55193ba6, type: 3}
       propertyPath: m_RootOrder
@@ -2217,6 +2217,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4151711158881012487}
     m_Modifications:
+    - target: {fileID: 1484562177941155168, guid: cd2d956c40fb14848938d145e8beaf0c, type: 3}
+      propertyPath: keyState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6253223215708338839, guid: cd2d956c40fb14848938d145e8beaf0c, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.11830059
