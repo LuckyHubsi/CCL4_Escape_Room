@@ -6,7 +6,7 @@ public static class TorchData_Loader
 {
     public static void LoadTorchData(GameObject[] torches)
     {
-        string filePath = Path.Combine(Application.dataPath, "Data", "torchData.json");
+        string filePath = Path.Combine(Application.streamingAssetsPath, "JSON", "torchData.json");
 
         if (File.Exists(filePath))
         {
