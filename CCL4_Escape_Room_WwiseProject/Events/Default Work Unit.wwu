@@ -126,6 +126,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Book_Page_Turn" ID="{ABE95C48-3D8A-4158-B25E-620D5F97BA64}">
+							<ChildrenList>
+								<Action Name="" ID="{DBDBE555-69C6-4935-9FC3-2D12351A43A3}" ShortID="791086551">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Book Page Turn" ID="{8FD6FF7C-8323-42C9-AB6B-8F6F8E2F4D69}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Stop" ID="{9EF7134F-51F1-4B4B-ACC8-65C1D1B744C6}" ShortID="395466208">
@@ -195,6 +206,20 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Torch Crackling" ID="{D8CD20A4-CCE2-4C12-91BA-B599F65AD4F6}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_White_Noise" ID="{B61087B4-AE2E-4EA0-B074-3556030228BB}">
+							<ChildrenList>
+								<Action Name="" ID="{115630A2-817A-4F90-99AE-D1AB32DAD23B}" ShortID="374001521">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="White Noise" ID="{68A226AC-6885-4C8F-B2AF-841DE142D63C}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

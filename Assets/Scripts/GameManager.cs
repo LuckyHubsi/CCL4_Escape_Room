@@ -62,6 +62,9 @@ public class GameManager : MonoBehaviour
         PotionData_Loader.LoadPotionhData(potions);
 
         _smokeTimeVolumeRTPC.SetGlobalValue(0);
+
+        //Wwise
+        AkSoundEngine.PostEvent("Play_White_Noise", smokeRef);
     }
 
     private void Update()
@@ -116,6 +119,8 @@ public class GameManager : MonoBehaviour
     private void LoadLoseScene()
     {
         ScenesManager.Instance.LoadScene(ScenesManager.Scene.Lose);
+        //Wwise
+        AkSoundEngine.PostEvent("Stop_White_Noise", smokeRef);
     }
 
     public float GetRemainingGameTime()

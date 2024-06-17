@@ -15,6 +15,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3366263883	Stop_Smoke			\Default Work Unit\Stop\Stop_Smoke	
 	3780008132	Stop_Magic_Barrier_Window			\Default Work Unit\Stop\Stop_Magic_Barrier_Window	
 	3854155799	Play_Footsteps			\Default Work Unit\Play\Play_Footsteps	
+	3995502072	Stop_White_Noise			\Default Work Unit\Stop\Stop_White_Noise	
 	4156768940	Play_Successful_Combination			\Default Work Unit\Play\Play_Successful_Combination	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -74,7 +75,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	525695517	Torch Dropping	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Torch Dropping_397B475D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Dropping		57688
 	528654628	Equipping Potion	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Equipping Potion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Equipping Potion		134176
 	573187394	Torch Equipping	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Torch Equipping_5BE1B41A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Equipping		85460
-	573619884	Book Page Turn	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Book Page Turn_5A2857BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Book Page Turn		148868
+	573619884	Book Page Turn	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Book Page Turn_B96B80F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Book Page Turn		148868
 	602293721	Equip Bucket	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Equip Bucket_B7FB03BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Equip Bucket		80038
 	624127175	Smoke Reset	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Smoke Reset_0208F59F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Wrong Combination\Smoke Reset		130068
 	632952234	Smoke	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Smoke_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Smoke		807012

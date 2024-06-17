@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584829615478792247
+    m_lastTime: -8584829605100442873
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584829615479820520
+    m_lastTime: -8584829605142091576
     List:
     - name: Play
       guid: 30991119ca5a7848a1b6564065a14ca6
@@ -164,6 +164,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Book_Page_Turn
+      guid: 485ce9ab8a3d5841b25e620d5f97ba64
+      id: 344332797
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Book_Page_Turn
+        ObjectType: 3
+        guid: 485ce9ab8a3d5841b25e620d5f97ba64
+      Path: Events\Default Work Unit\Play\Play_Book_Page_Turn
+      maxAttenuation: 0
+      maxDuration: 0.84337866
+      minDuration: 0.84337866
     - name: Play_Cauldron
       guid: 383bbdeb89ad6b48a000444a1d0ea575
       id: 3212638512
@@ -498,6 +518,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4b8418bc5d63614eba9d59123eadba3d
       Path: Events\Default Work Unit\Stop\Stop_Torch_Crackling
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_White_Noise
+      guid: b48710b62eaea04eb0743556030228bb
+      id: 3995502072
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Stop
+        ObjectType: 4
+        guid: 4f13f79ef1514b4bacc865c1d1b744c6
+      - ElementName: Stop_White_Noise
+        ObjectType: 3
+        guid: b48710b62eaea04eb0743556030228bb
+      Path: Events\Default Work Unit\Stop\Stop_White_Noise
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

@@ -30,6 +30,7 @@ namespace AK
         static const AkUniqueID STOP_PLAYER_INTERACT = 2314554776U;
         static const AkUniqueID STOP_SMOKE = 3366263883U;
         static const AkUniqueID STOP_TORCH_CRACKLING = 642243045U;
+        static const AkUniqueID STOP_WHITE_NOISE = 3995502072U;
     } // namespace EVENTS
 
     namespace SWITCHES

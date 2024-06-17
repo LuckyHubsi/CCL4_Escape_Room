@@ -68,7 +68,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9C1052D8-A609-E69E-A3F9-91F45671E4FA}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0CC0FD0F-DFD5-33F8-6EFD-A8B95497BE58}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -146,7 +146,7 @@
 				</File>
 				<File Id="573619884" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Book Page Turn.wav</ShortName>
-					<CachePath>SFX/Book Page Turn_5A2857BE.wem</CachePath>
+					<CachePath>SFX/Book Page Turn_B96B80F3.wem</CachePath>
 				</File>
 				<File Id="602293721" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equip Bucket.wav</ShortName>
@@ -436,6 +436,7 @@
 				<Event Id="2314554776" Name="Stop_Player_Interact" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3366263883" Name="Stop_Smoke" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="642243045" Name="Stop_Torch_Crackling" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3995502072" Name="Stop_White_Noise" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="46447142" Name="Smoke_Intensity"/>
@@ -482,5 +483,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{90CB8F38-4DDE-5D77-1C4C-1BDEEF7775CE}</FileHash>
+	<FileHash>{CA1A2D0F-F52D-8716-30F6-782C2BE73F52}</FileHash>
 </SoundBanksInfo>

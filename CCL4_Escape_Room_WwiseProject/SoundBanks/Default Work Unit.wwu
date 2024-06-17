@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Magic_Barrier_Window" ID="{A24021DA-64F4-40F7-9F7E-23EFBB08D65B}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_White_Noise" ID="{1A15E235-0100-40F8-8225-E8CA7E237BCC}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Book_Page_Turn" ID="{ABE95C48-3D8A-4158-B25E-620D5F97BA64}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Torch_Crackling" ID="{DE1FD978-1BEA-4281-B259-99AC7F872488}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Smoke" ID="{3BD3EB08-14E9-45C2-A0B7-EEEA1BDF03EC}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Cauldron" ID="{EBBD3B38-AD89-486B-A000-444A1D0EA575}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
@@ -19,6 +20,7 @@
 						<ObjectRef Name="Play_Coughing" ID="{118DF235-79AD-4B54-A8C9-6E189E507777}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Interact" ID="{B23C645E-5805-4E4F-B9D9-D369489E5D08}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Torch_Crackling" ID="{BC18844B-635D-4E61-BA9D-59123EADBA3D}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_White_Noise" ID="{B61087B4-AE2E-4EA0-B074-3556030228BB}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Smoke" ID="{A9D830F1-4EB9-4EFE-8E84-979ED9769F19}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Successful_Combination" ID="{AB543C4F-3122-4F71-8DFA-5C0CFD2097CF}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

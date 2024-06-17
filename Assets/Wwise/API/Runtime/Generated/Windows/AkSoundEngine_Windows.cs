@@ -370,7 +370,7 @@ public partial class AkSoundEngine {
 
   public static void StopPlayingID(uint in_playingID, int in_uTransitionDuration) { AkSoundEnginePINVOKE.CSharp_StopPlayingID__SWIG_1(in_playingID, in_uTransitionDuration); }
 
-  public static void StopPlayingID(uint in_playingID) { AkSoundEnginePINVOKE.CSharp_StopPlayingID__SWIG_2(in_playingID); }
+  public static void StopPlayingID(string v, uint in_playingID) { AkSoundEnginePINVOKE.CSharp_StopPlayingID__SWIG_2(in_playingID); }
 
   public static void ExecuteActionOnPlayingID(AkActionOnEventType in_ActionType, uint in_playingID, int in_uTransitionDuration, AkCurveInterpolation in_eFadeCurve) { AkSoundEnginePINVOKE.CSharp_ExecuteActionOnPlayingID__SWIG_0((int)in_ActionType, in_playingID, in_uTransitionDuration, (int)in_eFadeCurve); }
 
