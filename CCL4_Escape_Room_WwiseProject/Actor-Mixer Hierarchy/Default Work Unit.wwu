@@ -75,43 +75,6 @@
 										<ActiveSource Name="Cauldron" ID="{303415E7-3111-4464-BDFF-5EC480D78637}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Magic Barrier Door" ID="{809A6E4A-FBD7-47F5-AEE3-74063A9D4689}" ShortID="604805437">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-13</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Magic" ID="{5505F332-BFC6-4443-9E59-4D4BDA6D3184}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Magic Barrier Door" ID="{98FBDB97-51E1-4B78-B87B-1016120974DE}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Magic Barrier Door.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="296086376"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Magic Barrier Door" ID="{98FBDB97-51E1-4B78-B87B-1016120974DE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="Smoke" ID="{83EE040D-475C-41F0-AB00-5B62F13BED5B}" ShortID="963165164">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -331,41 +294,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Magic Barrier Window Active" ID="{D6CA0AE6-4364-4DFB-A969-3E603719EAD7}" ShortID="394246111">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="LoopCount" Type="int32" Value="10"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-16</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="Magic" ID="{5505F332-BFC6-4443-9E59-4D4BDA6D3184}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Magic Barrier Window" ID="{80CCFD92-9845-46F4-AA52-F90832DDE994}">
-													<Language>SFX</Language>
-													<AudioFile>Magic Barrier Window.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="620638536"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Magic Barrier Window" ID="{80CCFD92-9845-46F4-AA52-F90832DDE994}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="Window Rune be gone" ID="{AB3034D5-E7E5-4B8B-8749-765B2A1CDBF2}" ShortID="564415457">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -405,14 +333,63 @@
 												<ActiveSource Name="Window Rune be gone" ID="{D6DE6ACD-5391-4CE1-8645-1CCEA364E0EF}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="Magic Barrier" ID="{07EDA248-1167-4CF9-8DF9-F043407060DF}" ShortID="722430369">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>430</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-20</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Pitch Shifter (Custom)" ID="{C6AD0EAD-FEE6-4A98-B412-7DCA505D5F87}" ShortID="984784017" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+															<PropertyList>
+																<Property Name="FilterFrequency" Type="Real32" Value="98"/>
+																<Property Name="FilterType" Type="int32" Value="4"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Magic Barrier" ID="{F6966F37-6CFA-41D0-84F4-2A86A163ABC8}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Magic Barrier.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="335979049"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Magic Barrier" ID="{F6966F37-6CFA-41D0-84F4-2A86A163ABC8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="Window Rune be gone" ID="{AB3034D5-E7E5-4B8B-8749-765B2A1CDBF2}"/>
+												<ItemRef Name="Magic Barrier" ID="{07EDA248-1167-4CF9-8DF9-F043407060DF}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="Magic Barrier Window Active" ID="{D6CA0AE6-4364-4DFB-A969-3E603719EAD7}"/>
+												<ItemRef Name="Window Rune be gone" ID="{AB3034D5-E7E5-4B8B-8749-765B2A1CDBF2}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
@@ -425,12 +402,89 @@
 											<Grouping>
 												<SwitchRef Name="Active" ID="{23367FAE-5E2E-46A4-8777-3B2E86E33C66}"/>
 												<ItemList>
-													<ItemRef Name="Magic Barrier Window Active" ID="{D6CA0AE6-4364-4DFB-A969-3E603719EAD7}"/>
+													<ItemRef Name="Magic Barrier" ID="{07EDA248-1167-4CF9-8DF9-F043407060DF}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
+								<Sound Name="White Noise" ID="{68A226AC-6885-4C8F-B2AF-841DE142D63C}" ShortID="941720834">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-60</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="White Noise" ID="{68DBA4B5-6EBB-41CC-86E7-E2522CFD0F08}">
+											<Language>SFX</Language>
+											<AudioFile>White Noise.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="483194744"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="White Noise" ID="{68DBA4B5-6EBB-41CC-86E7-E2522CFD0F08}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Magic Barrier Door" ID="{F4DA4826-18D7-412D-A38F-4C349AA1C66D}" ShortID="949986352">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Magic" ID="{5505F332-BFC6-4443-9E59-4D4BDA6D3184}" WorkUnitID="{9D69BD6D-2E2B-401F-B14A-89A9E144ABDC}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Pitch Shifter (Custom)" ID="{C6773378-04D1-40E3-9A39-D84D38D121C9}" ShortID="1061798779" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+													<PropertyList>
+														<Property Name="FilterFrequency" Type="Real32" Value="98"/>
+														<Property Name="FilterType" Type="int32" Value="4"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Magic Barrier" ID="{EE7AEBA5-7D07-4840-A668-BD92A928CD05}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Magic Barrier.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="335979049"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Magic Barrier" ID="{EE7AEBA5-7D07-4840-A668-BD92A928CD05}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Outdoor" ID="{38B9993D-3BA6-4518-ACE8-EC84C0672874}" ShortID="292771165"/>

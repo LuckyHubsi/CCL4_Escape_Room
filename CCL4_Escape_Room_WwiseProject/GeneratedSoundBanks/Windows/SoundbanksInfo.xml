@@ -68,7 +68,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{243405BB-98BD-521F-2EFD-E274238DDB59}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FBF7D096-B1DC-CC2E-DAF9-82976594F778}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -96,9 +96,9 @@
 					<ShortName>Torch Crackling.wav</ShortName>
 					<CachePath>SFX/Torch Crackling_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="296086376" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Magic Barrier Door.wav</ShortName>
-					<CachePath>SFX/Magic Barrier Door_C5579977.wem</CachePath>
+				<File Id="335979049" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Magic Barrier.wav</ShortName>
+					<CachePath>SFX/Magic Barrier_C5579977.wem</CachePath>
 				</File>
 				<File Id="340508672" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Window Rune be gone.wav</ShortName>
@@ -128,6 +128,10 @@
 					<ShortName>Footsteps_Grass_3.wav</ShortName>
 					<CachePath>SFX/Footsteps_Grass_3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="483194744" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>White Noise.wav</ShortName>
+					<CachePath>SFX/White Noise_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="525695517" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Dropping.wav</ShortName>
 					<CachePath>SFX/Torch Dropping_397B475D.wem</CachePath>
@@ -143,10 +147,6 @@
 				<File Id="602293721" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equip Bucket.wav</ShortName>
 					<CachePath>SFX/Equip Bucket_B7FB03BD.wem</CachePath>
-				</File>
-				<File Id="620638536" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Magic Barrier Window.wav</ShortName>
-					<CachePath>SFX/Magic Barrier Window_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="624127175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Smoke Reset.wav</ShortName>
@@ -178,7 +178,7 @@
 				</File>
 				<File Id="879798572" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drop Key.wav</ShortName>
-					<CachePath>SFX/Drop Key_358CB6D9.wem</CachePath>
+					<CachePath>SFX/Drop Key_CE58C8FA.wem</CachePath>
 				</File>
 				<File Id="891873728" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Degnition.wav</ShortName>
@@ -212,6 +212,8 @@
 			<Plugins>
 				<Custom>
 					<Plugin Id="460064358" Name="Pitch Shifter (Custom)" LibName="Wwise Pitch Shifter" LibId="8912899"/>
+					<Plugin Id="984784017" Name="Pitch Shifter (Custom)" LibName="Wwise Pitch Shifter" LibId="8912899"/>
+					<Plugin Id="1061798779" Name="Pitch Shifter (Custom)" LibName="Wwise Pitch Shifter" LibId="8912899"/>
 				</Custom>
 			</Plugins>
 			<Events>
@@ -264,8 +266,13 @@
 				</Event>
 				<Event Id="2205790566" Name="Play_Magic_Barrier_Door" MaxAttenuation="3" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="296086376"/>
+						<MediaRef Id="335979049"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1061798779"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 				<Event Id="2862905942" Name="Play_Magic_Barrier_Window" MaxAttenuation="100" DurationType="Mixed" DurationMin="1.5630158" DurationMax="Infinite">
 					<SwitchContainers>
@@ -278,8 +285,13 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="510690747" Id="58138747" Default="true"/>
 							<MediaRefs>
-								<MediaRef Id="620638536"/>
+								<MediaRef Id="335979049"/>
 							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="984784017"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -399,6 +411,11 @@
 						<MediaRef Id="215573568"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2214627026" Name="Play_White_Noise" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="483194744"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3120915481" Name="Play_Wrong_Combination" DurationType="OneShot" DurationMin="0.9269375" DurationMax="0.9269375">
 					<MediaRefs>
 						<MediaRef Id="383035874"/>
@@ -456,5 +473,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1275B5CD-EBA2-94F0-21C0-66EF4C1D3218}</FileHash>
+	<FileHash>{51B23630-15B4-AD84-C4E8-F86C3CA682D5}</FileHash>
 </SoundBanksInfo>

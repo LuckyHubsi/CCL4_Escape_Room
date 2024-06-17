@@ -54,7 +54,7 @@
 								<Action Name="" ID="{8E361B4E-2EFD-4D00-ADDC-B906051DD400}" ShortID="793428151">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Magic Barrier Door" ID="{809A6E4A-FBD7-47F5-AEE3-74063A9D4689}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+											<ObjectRef Name="Magic Barrier Door" ID="{F4DA4826-18D7-412D-A38F-4C349AA1C66D}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -110,6 +110,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Successful Combination" ID="{F5E21BDD-0CB2-45B7-B34C-5C7A0D9B8729}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_White_Noise" ID="{1A15E235-0100-40F8-8225-E8CA7E237BCC}">
+							<ChildrenList>
+								<Action Name="" ID="{1D1F7B3C-08AA-4B23-940E-B4E195565D6D}" ShortID="300186130">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="White Noise" ID="{68A226AC-6885-4C8F-B2AF-841DE142D63C}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

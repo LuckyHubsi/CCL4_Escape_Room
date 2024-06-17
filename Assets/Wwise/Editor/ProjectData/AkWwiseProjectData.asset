@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584832187440955090
+    m_lastTime: -8584829625111335924
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584832187442668261
+    m_lastTime: -8584829618500430034
     List:
     - name: Play
       guid: 30991119ca5a7848a1b6564065a14ca6
@@ -344,6 +344,26 @@ MonoBehaviour:
       maxAttenuation: 3
       maxDuration: -1
       minDuration: -1
+    - name: Play_White_Noise
+      guid: 35e2151a0001f8408225e8ca7e237bcc
+      id: 2214627026
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_White_Noise
+        ObjectType: 3
+        guid: 35e2151a0001f8408225e8ca7e237bcc
+      Path: Events\Default Work Unit\Play\Play_White_Noise
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Wrong_Combination
       guid: a8762042325a5749a0b86b63218bcbc9
       id: 3120915481
@@ -521,7 +541,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 8a8572cf7ed26d4a9bb72b0afc0090bd
     GuidInternal: 
-    m_lastTime: -8584832187440945063
+    m_lastTime: -8584832187252796797
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -535,7 +555,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584832187440935060
+    m_lastTime: -8584832187252796797
     List:
     - name: Coughing
       guid: 370cddc3b7178e4f92bf42edce42c516
