@@ -68,7 +68,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FBF7D096-B1DC-CC2E-DAF9-82976594F778}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9C1052D8-A609-E69E-A3F9-91F45671E4FA}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -144,6 +144,10 @@
 					<ShortName>Torch Equipping.wav</ShortName>
 					<CachePath>SFX/Torch Equipping_5BE1B41A.wem</CachePath>
 				</File>
+				<File Id="573619884" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Book Page Turn.wav</ShortName>
+					<CachePath>SFX/Book Page Turn_5A2857BE.wem</CachePath>
+				</File>
 				<File Id="602293721" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equip Bucket.wav</ShortName>
 					<CachePath>SFX/Equip Bucket_B7FB03BD.wem</CachePath>
@@ -217,6 +221,11 @@
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="344332797" Name="Play_Book_Page_Turn" DurationType="OneShot" DurationMin="0.84337866" DurationMax="0.84337866">
+					<MediaRefs>
+						<MediaRef Id="573619884"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3212638512" Name="Play_Cauldron" MaxAttenuation="3" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="201119281"/>
@@ -473,5 +482,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{51B23630-15B4-AD84-C4E8-F86C3CA682D5}</FileHash>
+	<FileHash>{A081C5D1-9FCC-7BBC-E5C9-2C1CF0100F78}</FileHash>
 </SoundBanksInfo>

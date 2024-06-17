@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	45744291	Play_Torch_Crackling			\Default Work Unit\Play\Play_Torch_Crackling	
 	305502530	Play_Player_Interact			\Default Work Unit\Play\Play_Player_Interact	
+	344332797	Play_Book_Page_Turn			\Default Work Unit\Play\Play_Book_Page_Turn	
 	642243045	Stop_Torch_Crackling			\Default Work Unit\Stop\Stop_Torch_Crackling	
 	1741894216	Play_Coughing			\Default Work Unit\Play\Play_Coughing	
 	2205790566	Play_Magic_Barrier_Door			\Default Work Unit\Play\Play_Magic_Barrier_Door	
@@ -73,6 +74,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	525695517	Torch Dropping	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Dropping_397B475D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Dropping		57688
 	528654628	Equipping Potion	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Equipping Potion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Equipping Potion		134176
 	573187394	Torch Equipping	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Torch Equipping_5BE1B41A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Equipping		85460
+	573619884	Book Page Turn	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Book Page Turn_5A2857BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Book Page Turn		148868
 	602293721	Equip Bucket	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Equip Bucket_B7FB03BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Equip Bucket		80038
 	624127175	Smoke Reset	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Smoke Reset_0208F59F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Wrong Combination\Smoke Reset		130068
 	632952234	Smoke	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Windows\SFX\Smoke_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Smoke		807012

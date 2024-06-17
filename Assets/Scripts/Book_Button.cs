@@ -11,7 +11,7 @@ public class Book_Button : Interactable
     {
         if (gameObject.CompareTag("NextButton"))
         {
-            book.NextPage();
+            book.NextPage();            
         }
         else if (gameObject.CompareTag("PrevButton"))
         {

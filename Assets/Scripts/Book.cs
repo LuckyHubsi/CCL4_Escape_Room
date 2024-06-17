@@ -31,6 +31,7 @@ public class Book : Interactable
             _currentPageIndex++;
             _currentMat = pages[_currentPageIndex];
             UpdatePage();
+            AkSoundEngine.PostEvent("Play_Book_Page_Turn", gameObject);
         }
     }
 
@@ -41,6 +42,7 @@ public class Book : Interactable
             _currentPageIndex--;
             _currentMat = pages[_currentPageIndex];
             UpdatePage();
+            AkSoundEngine.PostEvent("Play_Book_Page_Turn", gameObject);
         }
     }
 
