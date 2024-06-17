@@ -29,6 +29,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private AK.Wwise.RTPC _smokeTimeVolumeRTPC;
 
+    [SerializeField]
+    private AnimationCurve smokeAlphaCurve;
+
     private void Awake()
     {
         // Ensure singleton pattern
@@ -132,7 +135,8 @@ public class GameManager : MonoBehaviour
 
     private void UpdateSmokeOverlay()
     {
-        float alpha = Mathf.Clamp01(1 - (smokeTime / initialSmokeTime));
+        var progressT = 1 - (smokeTime / initialSmokeTime);
+        float alpha = smokeAlphaCurve.Evaluate(progressT);
         Color color = smokeOverlay.color;
         color.a = alpha;
         smokeOverlay.color = color;
