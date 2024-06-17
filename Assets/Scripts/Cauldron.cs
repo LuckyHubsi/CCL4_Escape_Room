@@ -90,7 +90,7 @@ public class Cauldron : Interactable
             bool isRecipePotionsCorrect = CheckRecipePotions();
             bool isRecipeIngredientsCorrect = CheckRecipeIngredients();
 
-            if (isRecipePotionsCorrect && _firePit.GetFirePitState() == "Green")
+            if (isRecipePotionsCorrect && _firePit.GetFirePitState() == "Orange")
             {
                 _lastCorrectRecipe = "Recipe Potion";
                 Debug.Log("Correct recipe Potion!");
@@ -101,7 +101,7 @@ public class Cauldron : Interactable
 
                 ProgressionManager.instance.SolvePuzzleTwo();
             }
-            else if (isRecipeIngredientsCorrect && _firePit.GetFirePitState() == "Orange")
+            else if (isRecipeIngredientsCorrect && _firePit.GetFirePitState() == "Green")
             {
                 _lastCorrectRecipe = "Recipe Ingredient";
                 Debug.Log("Correct recipe Ingredient!");
@@ -128,8 +128,8 @@ public class Cauldron : Interactable
         Dictionary<string, int> correctRecipe = new Dictionary<string, int>
         {
             { "Red", 1 },
-            { "Blue", 1 },
-            { "Yellow", 1 }
+            { "Orange", 1 },
+            { "Purple", 1 }
         };
 
         return IsRecipeCorrect(correctRecipe);
