@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645233, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -375,6 +375,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
+--- !u!1 &853555371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7517207734060292506, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
+  m_PrefabInstance: {fileID: 853555370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &853555372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7864311567699039719, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
+  m_PrefabInstance: {fileID: 853555370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &996147421 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4912966084187547898, guid: a0b1e68e197873a4b941bd645b878a44, type: 3}
@@ -386,11 +396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1067178735 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9145488363373809831, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
-  m_PrefabInstance: {fileID: 853555370}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1135827528
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,11 +712,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 668407617007539744, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
   m_PrefabInstance: {fileID: 853555370}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1927745774 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8906594048921607386, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
-  m_PrefabInstance: {fileID: 853555370}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1981391140 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3098538122001299093, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
@@ -817,11 +817,11 @@ PrefabInstance:
     - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: potions.Array.data[4]
       value: 
-      objectReference: {fileID: 1927745774}
+      objectReference: {fileID: 853555372}
     - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: potions.Array.data[5]
       value: 
-      objectReference: {fileID: 1067178735}
+      objectReference: {fileID: 853555371}
     - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: torches.Array.data[0]
       value: 
