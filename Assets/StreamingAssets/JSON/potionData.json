@@ -1,0 +1,10 @@
+{
+  "potions": [
+    { "color": "red" },
+    { "color": "blue" },
+    { "color": "yellow" },
+    { "color": "purple" },
+    { "color": "green" },
+    { "color": "orange" }
+  ]
+}
