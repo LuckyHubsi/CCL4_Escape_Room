@@ -31,7 +31,9 @@ public class PlayerController : MonoBehaviour
 
     private float _rotationY = 0.0f;
     private float _rotationX = 0.0f;
-    private Image _crosshair;
+
+    [SerializeField]
+    private Image crosshair;
 
     #endregion
 
@@ -67,7 +69,6 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
-        _crosshair = GetComponentInChildren<Image>();
         _originalScale = transform.localScale;
 
         cam.fieldOfView = fov;
@@ -79,12 +80,12 @@ public class PlayerController : MonoBehaviour
 
         if (showCrosshair)
         {
-            _crosshair.sprite = crosshairSprite;
-            _crosshair.color = crosshairTint;
+            crosshair.sprite = crosshairSprite;
+            crosshair.color = crosshairTint;
         }
         else
         {
-            _crosshair.gameObject.SetActive(false);
+            crosshair.gameObject.SetActive(false);
         }
 
        //Wwise
