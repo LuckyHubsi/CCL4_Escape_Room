@@ -123,19 +123,9 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &82428573 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7160053284264720668, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
-  m_PrefabInstance: {fileID: 853555370}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &85472420 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7701940972737470281, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
-  m_PrefabInstance: {fileID: 853555370}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &193134009 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5085428633218503989, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
   m_PrefabInstance: {fileID: 853555370}
   m_PrefabAsset: {fileID: 0}
 --- !u!20 &194190914 stripped
@@ -689,11 +679,11 @@ PrefabInstance:
     - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: potions.Array.data[4]
       value: 
-      objectReference: {fileID: 193134009}
+      objectReference: {fileID: 0}
     - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: potions.Array.data[5]
       value: 
-      objectReference: {fileID: 82428573}
+      objectReference: {fileID: 0}
     - target: {fileID: 369707875611474991, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: torches.Array.data[0]
       value: 
