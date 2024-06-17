@@ -38,7 +38,7 @@ Transform:
   - {fileID: 4865737887707237210}
   - {fileID: 5113639444355401511}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3356840
 MeshFilter:
@@ -508,6 +508,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 456840}
     m_Modifications:
+    - target: {fileID: 933625014812749972, guid: af6c6c0518b9c884fb763883ff2cd285, type: 3}
+      propertyPath: potionState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4628036867121581377, guid: af6c6c0518b9c884fb763883ff2cd285, type: 3}
       propertyPath: m_RootOrder
       value: -1
