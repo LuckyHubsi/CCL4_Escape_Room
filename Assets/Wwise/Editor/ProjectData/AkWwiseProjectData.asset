@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584829583450560304
+    m_lastTime: -8584829580948153030
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584829583450541295
+    m_lastTime: -8584829580950907613
     List:
     - name: Play
       guid: 30991119ca5a7848a1b6564065a14ca6
@@ -221,7 +221,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: de10a84d8b173941b5fcf0ae0f637307
       Path: Events\Default Work Unit\Play\Play_Cat
-      maxAttenuation: 3
+      maxAttenuation: 4
       maxDuration: -1
       minDuration: -1
     - name: Play_Cauldron

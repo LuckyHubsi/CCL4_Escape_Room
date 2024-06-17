@@ -119,8 +119,10 @@ public class GameManager : MonoBehaviour
     private void LoadLoseScene()
     {
         ScenesManager.Instance.LoadScene(ScenesManager.Scene.Lose);
+     
         //Wwise
-        AkSoundEngine.PostEvent("Stop_White_Noise", smokeRef);
+        AkSoundEngine.StopAll();
+
     }
 
     public float GetRemainingGameTime()
