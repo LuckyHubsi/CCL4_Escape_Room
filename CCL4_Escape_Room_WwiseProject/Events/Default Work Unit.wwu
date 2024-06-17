@@ -137,6 +137,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Cat" ID="{4DA810DE-178B-4139-B5FC-F0AE0F637307}">
+							<ChildrenList>
+								<Action Name="" ID="{9BEB5BB0-D8FA-4E04-9FA1-85DCE4F57C9C}" ShortID="944424018">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cat" ID="{3382F338-6FC5-4315-8484-69647A2DF0DC}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Birb" ID="{CB5246DD-1552-4C42-9956-9AB844B53A56}">
+							<ChildrenList>
+								<Action Name="" ID="{02B2FA3F-F2D2-4812-AAC2-58AB470CC6A4}" ShortID="491531049">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Birb" ID="{6CA8C2C7-65B7-4217-B0BF-0243ADE8AE7A}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Stop" ID="{9EF7134F-51F1-4B4B-ACC8-65C1D1B744C6}" ShortID="395466208">

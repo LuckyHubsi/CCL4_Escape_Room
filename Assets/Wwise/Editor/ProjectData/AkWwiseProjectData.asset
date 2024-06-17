@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584829605100442873
+    m_lastTime: -8584829583450560304
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584829605142091576
+    m_lastTime: -8584829583450541295
     List:
     - name: Play
       guid: 30991119ca5a7848a1b6564065a14ca6
@@ -162,6 +162,26 @@ MonoBehaviour:
         guid: 30991119ca5a7848a1b6564065a14ca6
       Path: Events\Default Work Unit\Play
       maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Birb
+      guid: dd4652cb5215424c99569ab844b53a56
+      id: 1844467877
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Birb
+        ObjectType: 3
+        guid: dd4652cb5215424c99569ab844b53a56
+      Path: Events\Default Work Unit\Play\Play_Birb
+      maxAttenuation: 2
       maxDuration: -1
       minDuration: -1
     - name: Play_Book_Page_Turn
@@ -184,6 +204,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.84337866
       minDuration: 0.84337866
+    - name: Play_Cat
+      guid: de10a84d8b173941b5fcf0ae0f637307
+      id: 2690797150
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Cat
+        ObjectType: 3
+        guid: de10a84d8b173941b5fcf0ae0f637307
+      Path: Events\Default Work Unit\Play\Play_Cat
+      maxAttenuation: 3
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Cauldron
       guid: 383bbdeb89ad6b48a000444a1d0ea575
       id: 3212638512

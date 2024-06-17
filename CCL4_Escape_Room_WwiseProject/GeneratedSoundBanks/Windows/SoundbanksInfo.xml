@@ -68,10 +68,14 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0CC0FD0F-DFD5-33F8-6EFD-A8B95497BE58}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{F7B76384-E08A-E7A2-576B-BC1B5C30FBC5}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="12446834" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cat Purr 4.wav</ShortName>
+					<CachePath>SFX/Cat Purr 4_84F3FD63.wem</CachePath>
+				</File>
 				<File Id="71493339" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Combination.wav</ShortName>
 					<CachePath>SFX/Torch Combination_7E67330B.wem</CachePath>
@@ -88,6 +92,10 @@
 					<ShortName>Cough Light.wav</ShortName>
 					<CachePath>SFX/Cough Light_BC160F9A.wem</CachePath>
 				</File>
+				<File Id="195846651" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cat Purr 2.wav</ShortName>
+					<CachePath>SFX/Cat Purr 2_4EA05F48.wem</CachePath>
+				</File>
 				<File Id="201119281" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cauldron.wav</ShortName>
 					<CachePath>SFX/Cauldron_D79FB2B7.wem</CachePath>
@@ -95,6 +103,14 @@
 				<File Id="215573568" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Crackling.wav</ShortName>
 					<CachePath>SFX/Torch Crackling_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="261649340" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cat Purr 5.wav</ShortName>
+					<CachePath>SFX/Cat Purr 5_3CD8C5D8.wem</CachePath>
+				</File>
+				<File Id="319361733" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cat Purr 1.wav</ShortName>
+					<CachePath>SFX/Cat Purr 1_3B6A1DBD.wem</CachePath>
 				</File>
 				<File Id="335979049" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Magic Barrier.wav</ShortName>
@@ -152,6 +168,10 @@
 					<ShortName>Equip Bucket.wav</ShortName>
 					<CachePath>SFX/Equip Bucket_B7FB03BD.wem</CachePath>
 				</File>
+				<File Id="617338295" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bird - Pajaro 1.wav</ShortName>
+					<CachePath>SFX/Bird - Pajaro 1_9741ED6B.wem</CachePath>
+				</File>
 				<File Id="624127175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Smoke Reset.wav</ShortName>
 					<CachePath>SFX/Smoke Reset_0208F59F.wem</CachePath>
@@ -159,6 +179,10 @@
 				<File Id="632952234" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Smoke.wav</ShortName>
 					<CachePath>SFX/Smoke_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="642073495" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bird - Pajaro 3.wav</ShortName>
+					<CachePath>SFX/Bird - Pajaro 3_8CDB5A3A.wem</CachePath>
 				</File>
 				<File Id="674036316" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dropping Potion.wav</ShortName>
@@ -172,6 +196,10 @@
 					<ShortName>Use Key.wav</ShortName>
 					<CachePath>SFX/Use Key_E9C98881.wem</CachePath>
 				</File>
+				<File Id="762033562" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bird - Pajaro 3(2).wav</ShortName>
+					<CachePath>SFX/Bird - Pajaro 3(2)_E96BEAAE.wem</CachePath>
+				</File>
 				<File Id="763857974" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Using Potion.wav</ShortName>
 					<CachePath>SFX/Using Potion_2909CEE1.wem</CachePath>
@@ -179,6 +207,10 @@
 				<File Id="804788596" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equipping Waterbucket.wav</ShortName>
 					<CachePath>SFX/Equipping Waterbucket_2E2184AD.wem</CachePath>
+				</File>
+				<File Id="851999931" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cat Purr 3.wav</ShortName>
+					<CachePath>SFX/Cat Purr 3_229A4409.wem</CachePath>
 				</File>
 				<File Id="879798572" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drop Key.wav</ShortName>
@@ -221,9 +253,25 @@
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="1844467877" Name="Play_Birb" MaxAttenuation="2" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="617338295"/>
+						<MediaRef Id="642073495"/>
+						<MediaRef Id="762033562"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="344332797" Name="Play_Book_Page_Turn" DurationType="OneShot" DurationMin="0.84337866" DurationMax="0.84337866">
 					<MediaRefs>
 						<MediaRef Id="573619884"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2690797150" Name="Play_Cat" MaxAttenuation="4" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="12446834"/>
+						<MediaRef Id="195846651"/>
+						<MediaRef Id="261649340"/>
+						<MediaRef Id="319361733"/>
+						<MediaRef Id="851999931"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3212638512" Name="Play_Cauldron" MaxAttenuation="3" DurationType="Infinite">
@@ -483,5 +531,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B629305A-73D5-5C66-63F6-B7DE218A0713}</FileHash>
+	<FileHash>{E7E3F305-45C0-6C2E-5EB9-A6C26EA64E5F}</FileHash>
 </SoundBanksInfo>

@@ -13,7 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BIRB = 1844467877U;
         static const AkUniqueID PLAY_BOOK_PAGE_TURN = 344332797U;
+        static const AkUniqueID PLAY_CAT = 2690797150U;
         static const AkUniqueID PLAY_CAULDRON = 3212638512U;
         static const AkUniqueID PLAY_COUGHING = 1741894216U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
