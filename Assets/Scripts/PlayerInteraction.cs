@@ -129,7 +129,7 @@ public class PlayerInteraction : MonoBehaviour
             _pickedUpPotion = potion;
             _pickedUpPotion.gameObject.SetActive(false);
             _carriedPotion.gameObject.SetActive(true);
-            _carriedPotion.potionState = potion.potionState;
+            _carriedPotion.SetPotionState(potion.potionState);
 
             Debug.Log("Picked up " + _carriedPotion.potionState + " Potion");
 
@@ -148,7 +148,7 @@ public class PlayerInteraction : MonoBehaviour
             _pickedUpIngredient = ingredient;
             _pickedUpIngredient.gameObject.SetActive(false);
             _carriedIngredient.gameObject.SetActive(true);
-            _carriedIngredient.ingredientState = ingredient.ingredientState;
+            _carriedIngredient.SetIngredientState(ingredient.ingredientState);
 
             Debug.Log("Picked up " + _carriedIngredient.ingredientState + " Ingredient");
 
@@ -163,7 +163,7 @@ public class PlayerInteraction : MonoBehaviour
             _pickedUpBucket = bucket;
             _pickedUpBucket.gameObject.SetActive(false);
             _carriedBucket.gameObject.SetActive(true);
-            _carriedBucket.bucketState = bucket.bucketState;
+            _carriedBucket.SetBucketState(bucket.bucketState);
 
             Debug.Log("Picked up " + _carriedBucket.bucketState + " Bucket");
 
@@ -181,7 +181,7 @@ public class PlayerInteraction : MonoBehaviour
             _pickedUpKey = key;
             _pickedUpKey.gameObject.SetActive(false);
             _carriedKey.gameObject.SetActive(true);
-            _carriedKey.keyState = key.keyState;
+            _carriedKey.SetKeyState(key.keyState);
 
             Debug.Log("Picked up " + _carriedKey.keyState + " Key");
 

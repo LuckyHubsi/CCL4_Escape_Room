@@ -194,7 +194,7 @@ Transform:
   m_Children:
   - {fileID: 5934073346278338917}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6778610680151993630
 MeshFilter:
@@ -318,6 +318,7 @@ MonoBehaviour:
   showCrosshair: 1
   crosshairSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   crosshairTint: {r: 1, g: 1, b: 1, a: 1}
+  crosshair: {fileID: 0}
   canMove: 1
   movementSpeed: 5
   allowCrouch: 1
@@ -397,6 +398,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6849601557178144523, guid: 9683a6f006d402942b1d05b96131269b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130141435258903493, guid: 9683a6f006d402942b1d05b96131269b, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:

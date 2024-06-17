@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 7740039565781668787}
   - component: {fileID: 4124342553468483201}
   - component: {fileID: 4380109152403822009}
-  - component: {fileID: 3670982947074166393}
   - component: {fileID: 7184836894625238785}
   m_Layer: 0
   m_Name: Potion
@@ -59,14 +58,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8130141435258903493}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.53729963, y: 0, z: 0, w: 0.8433914}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 80, y: 80, z: 80}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6849601557178144523}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -65, y: 0, z: 0}
 --- !u!33 &4124342553468483201
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -74,7 +73,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8130141435258903493}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 621515191993185766, guid: 3406b12beb646354fae1ecff9414d951, type: 3}
 --- !u!23 &4380109152403822009
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -95,7 +94,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c657d4bbe05db9c44a2e3a7c97575f7a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -117,27 +116,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3670982947074166393
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8130141435258903493}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7184836894625238785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,3 +129,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potionState: 0
+  matRed: {fileID: 2100000, guid: be080675270dd4f449d22ea3b782301c, type: 2}
+  matBlue: {fileID: 2100000, guid: c657d4bbe05db9c44a2e3a7c97575f7a, type: 2}
+  matYellow: {fileID: 2100000, guid: 1fec2194c5959e342b3c08ab8a23ded5, type: 2}
+  matPurple: {fileID: 2100000, guid: 4ae89a93c688343419c55f13ac7214c2, type: 2}
+  matGreen: {fileID: 2100000, guid: 8135ef4256c1ed0439ec426280d1bff1, type: 2}
+  matOrange: {fileID: 2100000, guid: 93de530a41c0fc742b44773f9c53e329, type: 2}
