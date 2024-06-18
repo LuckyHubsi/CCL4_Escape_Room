@@ -58,8 +58,8 @@ public class GameManager : MonoBehaviour
         DisableAllOutlines();
 
         // Load json data
-        TorchData_Loader.LoadTorchData(torches);
-        PotionData_Loader.LoadPotionhData(potions);
+        if (torches != null) TorchData_Loader.LoadTorchData(torches);
+        if (potions != null) PotionData_Loader.LoadPotionhData(potions);
 
         _smokeTimeVolumeRTPC.SetGlobalValue(0);
 
