@@ -18,6 +18,8 @@ public class PlayerInteraction : MonoBehaviour
     private Bucket _carriedBucket;
     [SerializeField]
     private Key _carriedKey;
+    [SerializeField]
+    private Runestone _carriedRunestone;
 
 
     private Outline _currentOutline;
@@ -27,6 +29,7 @@ public class PlayerInteraction : MonoBehaviour
     private Ingredient _pickedUpIngredient;
     private Bucket _pickedUpBucket;
     private Key _pickedUpKey;
+    private Runestone _pickedUpRunestone;
 
     //Wwise Cough
     private float _initialSmokeTimer = 0;
@@ -190,6 +193,25 @@ public class PlayerInteraction : MonoBehaviour
             AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             
         }
+
+        Runestone runestone = item.GetComponent<Runestone>();
+        if (runestone != null && !_playerHoldingItem)
+        {
+            _playerHoldingItem = true;
+
+            _pickedUpRunestone = runestone;
+            _pickedUpRunestone.gameObject.SetActive(false);
+            _carriedRunestone.gameObject.SetActive(true);
+            _carriedRunestone.SetRunestoneState(runestone.runestoneState);
+
+            Debug.Log("Picked up " + _carriedRunestone.runestoneState + " Runestone");
+
+            //Wwise
+            //AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Potion", gameObject);
+            //AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+
+            return;
+        }
     }
 
     public void DropItem()
@@ -249,6 +271,13 @@ public class PlayerInteraction : MonoBehaviour
             _carriedKey.gameObject.SetActive(false);
         }
 
+        if (_pickedUpRunestone != null)
+        {
+            _pickedUpRunestone.gameObject.SetActive(true);
+            _carriedRunestone.SetRunestoneState(Runestone.RunestoneState.Blank);
+            _carriedRunestone.gameObject.SetActive(false);
+        }
+
     }
 
     public Torch GetCarriedTorch()
@@ -274,6 +303,11 @@ public class PlayerInteraction : MonoBehaviour
     public Key GetCarriedKey()
     {
         return _carriedKey;
+    }
+
+    public Runestone GetCarriedRunestone()
+    {
+        return _carriedRunestone;
     }
 
     public void CombineTorch(Torch torch)
