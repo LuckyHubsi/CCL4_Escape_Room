@@ -36,7 +36,7 @@ This shader has NOT been tested on any other PC configuration except the followi
 ____________________________________________________________________________________________________________________________________________
 */
 
-Shader "Ultimate 10+ Shaders/Force Field"
+Shader "Ultimate 10+ Shaders/Force Field Outside"
 {
     Properties
     {
@@ -107,7 +107,7 @@ Shader "Ultimate 10+ Shaders/Force Field"
                 output.uv = TRANSFORM_TEX(vert.uv, _MainTex);
 
                 viewDir = normalize(ObjSpaceViewDir(vert.vertex));
-                output.rim = 1 - saturate(dot(viewDir, vert.normal));
+                output.rim = 0.2 - saturate(dot(viewDir, vert.normal));
 
                 output.uv += _ScrollDirection * _Time.y;
 
