@@ -159,6 +159,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Door_Closed" ID="{E638C898-2E82-40A4-888B-7512FAE874E0}">
+							<ChildrenList>
+								<Action Name="" ID="{8125B63F-6C0B-4F72-A14E-1318CD7E4BDC}" ShortID="923940143">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Door Closed" ID="{8C7A6851-A729-42A1-B6DB-45B0AEA7C523}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Stop" ID="{9EF7134F-51F1-4B4B-ACC8-65C1D1B744C6}" ShortID="395466208">

@@ -964,6 +964,40 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<Sound Name="Door Closed" ID="{8C7A6851-A729-42A1-B6DB-45B0AEA7C523}" ShortID="651503215">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Door Closing" ID="{6728184D-7030-414D-A050-00317BE2CA51}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0778793042452831"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.18214394654088"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Door Closing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1023023070"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Door Closing" ID="{6728184D-7030-414D-A050-00317BE2CA51}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Outdoor" ID="{38B9993D-3BA6-4518-ACE8-EC84C0672874}" ShortID="292771165"/>

@@ -27,6 +27,10 @@ public class Door : Interactable
                 AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
                 ScenesManager.Instance.LoadSceneAsync();
             }
+            else
+            {
+                AkSoundEngine.PostEvent("Play_Door_Closed", gameObject);
+            }
         }
     }
 }

@@ -68,13 +68,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{F7B76384-E08A-E7A2-576B-BC1B5C30FBC5}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8D69816A-CB50-A277-11C9-3E8F110251FB}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="12446834" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 4.wav</ShortName>
-					<CachePath>SFX/Cat Purr 4_84F3FD63.wem</CachePath>
+					<CachePath>SFX/Cat Purr 4_D0DBD871.wem</CachePath>
 				</File>
 				<File Id="71493339" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Combination.wav</ShortName>
@@ -94,7 +94,7 @@
 				</File>
 				<File Id="195846651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 2.wav</ShortName>
-					<CachePath>SFX/Cat Purr 2_4EA05F48.wem</CachePath>
+					<CachePath>SFX/Cat Purr 2_D143E6EF.wem</CachePath>
 				</File>
 				<File Id="201119281" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cauldron.wav</ShortName>
@@ -106,11 +106,11 @@
 				</File>
 				<File Id="261649340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 5.wav</ShortName>
-					<CachePath>SFX/Cat Purr 5_3CD8C5D8.wem</CachePath>
+					<CachePath>SFX/Cat Purr 5_B472098D.wem</CachePath>
 				</File>
 				<File Id="319361733" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 1.wav</ShortName>
-					<CachePath>SFX/Cat Purr 1_3B6A1DBD.wem</CachePath>
+					<CachePath>SFX/Cat Purr 1_08E51AC2.wem</CachePath>
 				</File>
 				<File Id="335979049" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Magic Barrier.wav</ShortName>
@@ -170,7 +170,7 @@
 				</File>
 				<File Id="617338295" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bird - Pajaro 1.wav</ShortName>
-					<CachePath>SFX/Bird - Pajaro 1_9741ED6B.wem</CachePath>
+					<CachePath>SFX/Bird - Pajaro 1_8C8E88AD.wem</CachePath>
 				</File>
 				<File Id="624127175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Smoke Reset.wav</ShortName>
@@ -182,7 +182,7 @@
 				</File>
 				<File Id="642073495" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bird - Pajaro 3.wav</ShortName>
-					<CachePath>SFX/Bird - Pajaro 3_8CDB5A3A.wem</CachePath>
+					<CachePath>SFX/Bird - Pajaro 3_CAC41FE3.wem</CachePath>
 				</File>
 				<File Id="674036316" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dropping Potion.wav</ShortName>
@@ -198,7 +198,7 @@
 				</File>
 				<File Id="762033562" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bird - Pajaro 3(2).wav</ShortName>
-					<CachePath>SFX/Bird - Pajaro 3(2)_E96BEAAE.wem</CachePath>
+					<CachePath>SFX/Bird - Pajaro 3(2)_0664B09D.wem</CachePath>
 				</File>
 				<File Id="763857974" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Using Potion.wav</ShortName>
@@ -210,7 +210,7 @@
 				</File>
 				<File Id="851999931" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 3.wav</ShortName>
-					<CachePath>SFX/Cat Purr 3_229A4409.wem</CachePath>
+					<CachePath>SFX/Cat Purr 3_F9B04E36.wem</CachePath>
 				</File>
 				<File Id="879798572" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drop Key.wav</ShortName>
@@ -239,6 +239,10 @@
 				<File Id="1011679340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Heavy.wav</ShortName>
 					<CachePath>SFX/Cough Heavy_8680685E.wem</CachePath>
+				</File>
+				<File Id="1023023070" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Door Closing.wav</ShortName>
+					<CachePath>SFX/Door Closing_62437495.wem</CachePath>
 				</File>
 				<File Id="1067262667" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equipping Waterbucket.wav</ShortName>
@@ -300,6 +304,11 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="828587345" Name="Play_Door_Closed" DurationType="OneShot" DurationMin="0.45110416" DurationMax="0.45110416">
+					<MediaRefs>
+						<MediaRef Id="1023023070"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="3854155799" Name="Play_Footsteps" DurationType="OneShot" DurationMin="0.41179278" DurationMax="0.7845625">
 					<SwitchContainers>
@@ -531,5 +540,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E7E3F305-45C0-6C2E-5EB9-A6C26EA64E5F}</FileHash>
+	<FileHash>{1B4A61E2-F299-91A7-210D-1FDC18E5128F}</FileHash>
 </SoundBanksInfo>

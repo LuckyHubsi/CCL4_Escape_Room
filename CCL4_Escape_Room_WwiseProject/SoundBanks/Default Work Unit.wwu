@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{70738921-B883-4353-B99D-E2C50AEC4784}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Door_Closed" ID="{E638C898-2E82-40A4-888B-7512FAE874E0}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Magic_Barrier_Window" ID="{A24021DA-64F4-40F7-9F7E-23EFBB08D65B}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_White_Noise" ID="{1A15E235-0100-40F8-8225-E8CA7E237BCC}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Cat" ID="{4DA810DE-178B-4139-B5FC-F0AE0F637307}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>

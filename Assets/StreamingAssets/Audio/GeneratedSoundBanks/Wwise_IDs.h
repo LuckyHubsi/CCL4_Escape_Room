@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID PLAY_CAT = 2690797150U;
         static const AkUniqueID PLAY_CAULDRON = 3212638512U;
         static const AkUniqueID PLAY_COUGHING = 1741894216U;
+        static const AkUniqueID PLAY_DOOR_CLOSED = 828587345U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_MAGIC_BARRIER_DOOR = 2205790566U;
         static const AkUniqueID PLAY_MAGIC_BARRIER_WINDOW = 2862905942U;

@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584829580948153030
+    m_lastTime: -8584829073171129766
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584829580950907613
+    m_lastTime: -8584829073171104766
     List:
     - name: Play
       guid: 30991119ca5a7848a1b6564065a14ca6
@@ -264,6 +264,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.4907292
       minDuration: 1.0252049
+    - name: Play_Door_Closed
+      guid: 98c838e6822ea440888b7512fae874e0
+      id: 828587345
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Door_Closed
+        ObjectType: 3
+        guid: 98c838e6822ea440888b7512fae874e0
+      Path: Events\Default Work Unit\Play\Play_Door_Closed
+      maxAttenuation: 0
+      maxDuration: 0.45110416
+      minDuration: 0.45110416
     - name: Play_Footsteps
       guid: 996a1ea91a45d949943ff3ce19ca8a99
       id: 3854155799
