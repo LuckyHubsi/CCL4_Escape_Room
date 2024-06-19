@@ -28,6 +28,12 @@
 				<GameParameter Id="46447142" Name="Smoke_Intensity"/>
 			</GameParameters>
 			<SwitchGroups>
+				<SwitchGroup Id="153465979" Name="Barrier_Bubble">
+					<Switches>
+						<Switch Id="58138747" Name="Active"/>
+						<Switch Id="3163453698" Name="Inactive"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="510690747" Name="MagicBarrierWindow">
 					<Switches>
 						<Switch Id="58138747" Name="Active"/>
@@ -55,7 +61,10 @@
 						<Switch Id="1723853725" Name="Degnition_Torch"/>
 						<Switch Id="1807111158" Name="Drop_Key"/>
 						<Switch Id="1918408915" Name="Other_Torch_Interaction"/>
+						<Switch Id="2232939158" Name="Equip_Rune"/>
+						<Switch Id="2497281497" Name="Drop_Rune"/>
 						<Switch Id="2633107091" Name="Equipping_Potion"/>
+						<Switch Id="2802362441" Name="Use_Rune"/>
 						<Switch Id="3013747789" Name="Dropping_Torch"/>
 						<Switch Id="3048428183" Name="Using_Water"/>
 						<Switch Id="3147764383" Name="Equipping_Key"/>
@@ -68,10 +77,14 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8D69816A-CB50-A277-11C9-3E8F110251FB}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B4132D2F-72BA-815D-015C-D00871D11A61}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="11086415" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bubble.wav</ShortName>
+					<CachePath>SFX/Bubble_6356C085.wem</CachePath>
+				</File>
 				<File Id="12446834" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 4.wav</ShortName>
 					<CachePath>SFX/Cat Purr 4_D0DBD871.wem</CachePath>
@@ -104,9 +117,21 @@
 					<ShortName>Torch Crackling.wav</ShortName>
 					<CachePath>SFX/Torch Crackling_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="232548541" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Barrier Disappearing.wav</ShortName>
+					<CachePath>SFX/Barrier Disappearing_F0F9EF3E.wem</CachePath>
+				</File>
 				<File Id="261649340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 5.wav</ShortName>
 					<CachePath>SFX/Cat Purr 5_B472098D.wem</CachePath>
+				</File>
+				<File Id="265545411" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Use Rune.wav</ShortName>
+					<CachePath>SFX/Use Rune_10C4C929.wem</CachePath>
+				</File>
+				<File Id="296639955" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>crows.wav</ShortName>
+					<CachePath>SFX/crows_10C4C929.wem</CachePath>
 				</File>
 				<File Id="319361733" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 1.wav</ShortName>
@@ -208,6 +233,10 @@
 					<ShortName>Equipping Waterbucket.wav</ShortName>
 					<CachePath>SFX/Equipping Waterbucket_2E2184AD.wem</CachePath>
 				</File>
+				<File Id="847711322" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Crows at Dawn 2.wav</ShortName>
+					<CachePath>SFX/Crows at Dawn 2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="851999931" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 3.wav</ShortName>
 					<CachePath>SFX/Cat Purr 3_F9B04E36.wem</CachePath>
@@ -236,13 +265,29 @@
 					<ShortName>Footsteps_Wood_3.wav.wav</ShortName>
 					<CachePath>SFX/Footsteps_Wood_3.wav_4ED5FF9F.wem</CachePath>
 				</File>
+				<File Id="1007169636" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Nature.wav</ShortName>
+					<CachePath>SFX/Nature_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1011679340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Heavy.wav</ShortName>
 					<CachePath>SFX/Cough Heavy_8680685E.wem</CachePath>
 				</File>
 				<File Id="1023023070" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Door Closing.wav</ShortName>
-					<CachePath>SFX/Door Closing_62437495.wem</CachePath>
+					<CachePath>SFX/Door Closing_13C9B9C2.wem</CachePath>
+				</File>
+				<File Id="1033319075" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pickup Rune.wav</ShortName>
+					<CachePath>SFX/Pickup Rune_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1035015651" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drop Rune.wav</ShortName>
+					<CachePath>SFX/Drop Rune_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1060044343" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bubble Start.wav</ShortName>
+					<CachePath>SFX/Bubble Start_772D41CF.wem</CachePath>
 				</File>
 				<File Id="1067262667" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equipping Waterbucket.wav</ShortName>
@@ -257,6 +302,23 @@
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="1497197744" Name="Play_Barrier_Bubble" DurationType="Mixed" DurationMin="3.4669583" DurationMax="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="153465979" Id="3163453698"/>
+							<MediaRefs>
+								<MediaRef Id="232548541"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="153465979" Id="58138747" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="11086415"/>
+								<MediaRef Id="1060044343"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="1844467877" Name="Play_Birb" MaxAttenuation="2" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="617338295"/>
@@ -304,6 +366,16 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="1519828894" Name="Play_Crows_1" MaxAttenuation="10" DurationType="OneShot" DurationMin="5.816583" DurationMax="5.816583">
+					<MediaRefs>
+						<MediaRef Id="296639955"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1519828893" Name="Play_Crows_2" MaxAttenuation="10" DurationType="OneShot" DurationMin="4.770104" DurationMax="4.770104">
+					<MediaRefs>
+						<MediaRef Id="847711322"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="828587345" Name="Play_Door_Closed" DurationType="OneShot" DurationMin="0.45110416" DurationMax="0.45110416">
 					<MediaRefs>
@@ -361,7 +433,12 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="305502530" Name="Play_Player_Interact" DurationType="Mixed" DurationMin="0.289" DurationMax="Infinite">
+				<Event Id="1360368683" Name="Play_Nature" DurationType="OneShot" DurationMin="12.500313" DurationMax="12.500313">
+					<MediaRefs>
+						<MediaRef Id="1007169636"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="305502530" Name="Play_Player_Interact" DurationType="Mixed" DurationMin="0.14135417" DurationMax="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="3643606539"/>
@@ -425,15 +502,33 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="1807111158" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="1807111158"/>
 							<MediaRefs>
 								<MediaRef Id="879798572"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="2497281497" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="1035015651"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="2802362441"/>
+							<MediaRefs>
+								<MediaRef Id="265545411"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="2633107091"/>
 							<MediaRefs>
 								<MediaRef Id="528654628"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="2232939158"/>
+							<MediaRefs>
+								<MediaRef Id="1033319075"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -499,6 +594,12 @@
 				<GameParameter Id="46447142" Name="Smoke_Intensity"/>
 			</GameParameters>
 			<SwitchGroups>
+				<SwitchGroup Id="153465979" Name="Barrier_Bubble">
+					<Switches>
+						<Switch Id="58138747" Name="Active"/>
+						<Switch Id="3163453698" Name="Inactive"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="510690747" Name="MagicBarrierWindow">
 					<Switches>
 						<Switch Id="58138747" Name="Active"/>
@@ -526,7 +627,10 @@
 						<Switch Id="1723853725" Name="Degnition_Torch"/>
 						<Switch Id="1807111158" Name="Drop_Key"/>
 						<Switch Id="1918408915" Name="Other_Torch_Interaction"/>
+						<Switch Id="2232939158" Name="Equip_Rune"/>
+						<Switch Id="2497281497" Name="Drop_Rune"/>
 						<Switch Id="2633107091" Name="Equipping_Potion"/>
+						<Switch Id="2802362441" Name="Use_Rune"/>
 						<Switch Id="3013747789" Name="Dropping_Torch"/>
 						<Switch Id="3048428183" Name="Using_Water"/>
 						<Switch Id="3147764383" Name="Equipping_Key"/>
@@ -540,5 +644,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1B4A61E2-F299-91A7-210D-1FDC18E5128F}</FileHash>
+	<FileHash>{B37A6457-9194-279B-E989-74D6004AD405}</FileHash>
 </SoundBanksInfo>

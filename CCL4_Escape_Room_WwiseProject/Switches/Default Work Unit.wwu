@@ -26,6 +26,9 @@
 						<Switch Name="Equip_Bucket" ID="{A466425C-B84B-46C2-AA4D-28F316544B95}"/>
 						<Switch Name="Drop_Bucket" ID="{25269A0C-6742-4135-A210-6C3F8C6E06FA}"/>
 						<Switch Name="Drop_Key" ID="{1542AA95-5946-403F-BEB9-9940418A3BA5}"/>
+						<Switch Name="Use_Rune" ID="{4A96889C-0E98-4CE5-B53B-CCCBB9E19FD9}"/>
+						<Switch Name="Equip_Rune" ID="{5F8D02D0-AFD7-4F76-A67A-37B13C4C6A48}"/>
+						<Switch Name="Drop_Rune" ID="{6755E999-496C-411C-8131-8592260CE627}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Coughing" ID="{C3DD0C37-17B7-4F8E-92BF-42EDCE42C516}">
@@ -39,6 +42,12 @@
 					<ChildrenList>
 						<Switch Name="Active" ID="{23367FAE-5E2E-46A4-8777-3B2E86E33C66}"/>
 						<Switch Name="Inactive" ID="{0D8C7E38-D464-41EE-BA59-F0F37718B81F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Barrier_Bubble" ID="{41A389F7-D4F5-4582-8A81-58BAA015E933}">
+					<ChildrenList>
+						<Switch Name="Active" ID="{C36CD7DE-D24B-43EB-8ACF-8B1F16271900}"/>
+						<Switch Name="Inactive" ID="{21E3033B-D2CA-4CED-A1BF-4EE98A0C1B05}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

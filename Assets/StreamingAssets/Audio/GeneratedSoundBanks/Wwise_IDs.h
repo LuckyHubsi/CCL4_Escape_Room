@@ -13,15 +13,19 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BARRIER_BUBBLE = 1497197744U;
         static const AkUniqueID PLAY_BIRB = 1844467877U;
         static const AkUniqueID PLAY_BOOK_PAGE_TURN = 344332797U;
         static const AkUniqueID PLAY_CAT = 2690797150U;
         static const AkUniqueID PLAY_CAULDRON = 3212638512U;
         static const AkUniqueID PLAY_COUGHING = 1741894216U;
+        static const AkUniqueID PLAY_CROWS_1 = 1519828894U;
+        static const AkUniqueID PLAY_CROWS_2 = 1519828893U;
         static const AkUniqueID PLAY_DOOR_CLOSED = 828587345U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_MAGIC_BARRIER_DOOR = 2205790566U;
         static const AkUniqueID PLAY_MAGIC_BARRIER_WINDOW = 2862905942U;
+        static const AkUniqueID PLAY_NATURE = 1360368683U;
         static const AkUniqueID PLAY_PLAYER_INTERACT = 305502530U;
         static const AkUniqueID PLAY_SMOKE = 2555336501U;
         static const AkUniqueID PLAY_SUCCESSFUL_COMBINATION = 4156768940U;
@@ -38,6 +42,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace BARRIER_BUBBLE
+        {
+            static const AkUniqueID GROUP = 153465979U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ACTIVE = 58138747U;
+                static const AkUniqueID INACTIVE = 3163453698U;
+            } // namespace SWITCH
+        } // namespace BARRIER_BUBBLE
+
         namespace COUGHING
         {
             static const AkUniqueID GROUP = 2427782015U;
@@ -82,15 +97,18 @@ namespace AK
                 static const AkUniqueID DEGNITION_TORCH = 1723853725U;
                 static const AkUniqueID DROP_BUCKET = 3643606539U;
                 static const AkUniqueID DROP_KEY = 1807111158U;
+                static const AkUniqueID DROP_RUNE = 2497281497U;
                 static const AkUniqueID DROPPING_POTION = 838125300U;
                 static const AkUniqueID DROPPING_TORCH = 3013747789U;
                 static const AkUniqueID EQUIP_BUCKET = 3166695468U;
+                static const AkUniqueID EQUIP_RUNE = 2232939158U;
                 static const AkUniqueID EQUIPPING_KEY = 3147764383U;
                 static const AkUniqueID EQUIPPING_POTION = 2633107091U;
                 static const AkUniqueID EQUIPPING_TORCH = 1070326592U;
                 static const AkUniqueID EQUIPPING_WATERBUCKET = 3481100345U;
                 static const AkUniqueID OTHER_TORCH_INTERACTION = 1918408915U;
                 static const AkUniqueID USE_KEY = 3782926630U;
+                static const AkUniqueID USE_RUNE = 2802362441U;
                 static const AkUniqueID USING_POTION = 4110363151U;
                 static const AkUniqueID USING_WATER = 3048428183U;
             } // namespace SWITCH

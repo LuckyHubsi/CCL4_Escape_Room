@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584829073171129766
+    m_lastTime: -8584828083155491183
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,8 +145,48 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584829073171104766
+    m_lastTime: -8584828083155510969
     List:
+    - name: Indoor
+      guid: 383a1dc50b2d9d45888aaa1ef481ec3b
+      id: 340398852
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
+      Path: Events\Default Work Unit\Play\Indoor
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Outdoor
+      guid: 7d9f6a8b2ace5e40987bba1b306c6c52
+      id: 144697359
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Outdoor
+        ObjectType: 4
+        guid: 7d9f6a8b2ace5e40987bba1b306c6c52
+      Path: Events\Default Work Unit\Play\Outdoor
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play
       guid: 30991119ca5a7848a1b6564065a14ca6
       id: 1256202815
@@ -164,6 +204,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Barrier_Bubble
+      guid: 30a0bd209e43904f853fc51abe5e5c7f
+      id: 1497197744
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Outdoor
+        ObjectType: 4
+        guid: 7d9f6a8b2ace5e40987bba1b306c6c52
+      - ElementName: Play_Barrier_Bubble
+        ObjectType: 3
+        guid: 30a0bd209e43904f853fc51abe5e5c7f
+      Path: Events\Default Work Unit\Play\Outdoor\Play_Barrier_Bubble
+      maxAttenuation: 0
+      maxDuration: Infinity
+      minDuration: 3.4669583
     - name: Play_Birb
       guid: dd4652cb5215424c99569ab844b53a56
       id: 1844467877
@@ -197,10 +260,13 @@ MonoBehaviour:
       - ElementName: Play
         ObjectType: 4
         guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
       - ElementName: Play_Book_Page_Turn
         ObjectType: 3
         guid: 485ce9ab8a3d5841b25e620d5f97ba64
-      Path: Events\Default Work Unit\Play\Play_Book_Page_Turn
+      Path: Events\Default Work Unit\Play\Indoor\Play_Book_Page_Turn
       maxAttenuation: 0
       maxDuration: 0.84337866
       minDuration: 0.84337866
@@ -217,10 +283,13 @@ MonoBehaviour:
       - ElementName: Play
         ObjectType: 4
         guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
       - ElementName: Play_Cat
         ObjectType: 3
         guid: de10a84d8b173941b5fcf0ae0f637307
-      Path: Events\Default Work Unit\Play\Play_Cat
+      Path: Events\Default Work Unit\Play\Indoor\Play_Cat
       maxAttenuation: 4
       maxDuration: -1
       minDuration: -1
@@ -237,10 +306,13 @@ MonoBehaviour:
       - ElementName: Play
         ObjectType: 4
         guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
       - ElementName: Play_Cauldron
         ObjectType: 3
         guid: 383bbdeb89ad6b48a000444a1d0ea575
-      Path: Events\Default Work Unit\Play\Play_Cauldron
+      Path: Events\Default Work Unit\Play\Indoor\Play_Cauldron
       maxAttenuation: 3
       maxDuration: -1
       minDuration: -1
@@ -257,13 +329,62 @@ MonoBehaviour:
       - ElementName: Play
         ObjectType: 4
         guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
       - ElementName: Play_Coughing
         ObjectType: 3
         guid: 35f28d11ad79544ba8c96e189e507777
-      Path: Events\Default Work Unit\Play\Play_Coughing
+      Path: Events\Default Work Unit\Play\Indoor\Play_Coughing
       maxAttenuation: 0
       maxDuration: 1.4907292
       minDuration: 1.0252049
+    - name: Play_Crows_1
+      guid: e2dbe08e1eabdf4eaf4c059620f3855a
+      id: 1519828894
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Outdoor
+        ObjectType: 4
+        guid: 7d9f6a8b2ace5e40987bba1b306c6c52
+      - ElementName: Play_Crows_1
+        ObjectType: 3
+        guid: e2dbe08e1eabdf4eaf4c059620f3855a
+      Path: Events\Default Work Unit\Play\Outdoor\Play_Crows_1
+      maxAttenuation: 10
+      maxDuration: 5.816583
+      minDuration: 5.816583
+    - name: Play_Crows_2
+      guid: 7189324e21e49e448805ee96791538b1
+      id: 1519828893
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Outdoor
+        ObjectType: 4
+        guid: 7d9f6a8b2ace5e40987bba1b306c6c52
+      - ElementName: Play_Crows_2
+        ObjectType: 3
+        guid: 7189324e21e49e448805ee96791538b1
+      Path: Events\Default Work Unit\Play\Outdoor\Play_Crows_2
+      maxAttenuation: 10
+      maxDuration: 4.770104
+      minDuration: 4.770104
     - name: Play_Door_Closed
       guid: 98c838e6822ea440888b7512fae874e0
       id: 828587345
@@ -277,10 +398,13 @@ MonoBehaviour:
       - ElementName: Play
         ObjectType: 4
         guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
       - ElementName: Play_Door_Closed
         ObjectType: 3
         guid: 98c838e6822ea440888b7512fae874e0
-      Path: Events\Default Work Unit\Play\Play_Door_Closed
+      Path: Events\Default Work Unit\Play\Indoor\Play_Door_Closed
       maxAttenuation: 0
       maxDuration: 0.45110416
       minDuration: 0.45110416
@@ -317,10 +441,13 @@ MonoBehaviour:
       - ElementName: Play
         ObjectType: 4
         guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
       - ElementName: Play_Magic_Barrier_Door
         ObjectType: 3
         guid: b04cdb182e920a4abbc0b8417feb7780
-      Path: Events\Default Work Unit\Play\Play_Magic_Barrier_Door
+      Path: Events\Default Work Unit\Play\Indoor\Play_Magic_Barrier_Door
       maxAttenuation: 3
       maxDuration: -1
       minDuration: -1
@@ -337,13 +464,39 @@ MonoBehaviour:
       - ElementName: Play
         ObjectType: 4
         guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
       - ElementName: Play_Magic_Barrier_Window
         ObjectType: 3
         guid: da2140a2f464f7409f7e23efbb08d65b
-      Path: Events\Default Work Unit\Play\Play_Magic_Barrier_Window
+      Path: Events\Default Work Unit\Play\Indoor\Play_Magic_Barrier_Window
       maxAttenuation: 100
       maxDuration: Infinity
       minDuration: 1.5630158
+    - name: Play_Nature
+      guid: e885bcdcbdd92544841c1d2a824359bc
+      id: 1360368683
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Outdoor
+        ObjectType: 4
+        guid: 7d9f6a8b2ace5e40987bba1b306c6c52
+      - ElementName: Play_Nature
+        ObjectType: 3
+        guid: e885bcdcbdd92544841c1d2a824359bc
+      Path: Events\Default Work Unit\Play\Outdoor\Play_Nature
+      maxAttenuation: 0
+      maxDuration: 12.500313
+      minDuration: 12.500313
     - name: Play_Player_Interact
       guid: 5e643cb205584f4eb9d9d369489e5d08
       id: 305502530
@@ -363,7 +516,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Play\Play_Player_Interact
       maxAttenuation: 0
       maxDuration: Infinity
-      minDuration: 0.289
+      minDuration: 0.14135417
     - name: Play_Smoke
       guid: f130d8a9b94efe4e8e84979ed9769f19
       id: 2555336501
@@ -377,10 +530,13 @@ MonoBehaviour:
       - ElementName: Play
         ObjectType: 4
         guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
       - ElementName: Play_Smoke
         ObjectType: 3
         guid: f130d8a9b94efe4e8e84979ed9769f19
-      Path: Events\Default Work Unit\Play\Play_Smoke
+      Path: Events\Default Work Unit\Play\Indoor\Play_Smoke
       maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
@@ -417,10 +573,13 @@ MonoBehaviour:
       - ElementName: Play
         ObjectType: 4
         guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
       - ElementName: Play_Torch_Crackling
         ObjectType: 3
         guid: 78d91fdeea1b8142b25999ac7f872488
-      Path: Events\Default Work Unit\Play\Play_Torch_Crackling
+      Path: Events\Default Work Unit\Play\Indoor\Play_Torch_Crackling
       maxAttenuation: 3
       maxDuration: -1
       minDuration: -1
@@ -437,10 +596,13 @@ MonoBehaviour:
       - ElementName: Play
         ObjectType: 4
         guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
       - ElementName: Play_White_Noise
         ObjectType: 3
         guid: 35e2151a0001f8408225e8ca7e237bcc
-      Path: Events\Default Work Unit\Play\Play_White_Noise
+      Path: Events\Default Work Unit\Play\Indoor\Play_White_Noise
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -655,8 +817,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584832187252796797
+    m_lastTime: -8584828086874711265
     List:
+    - name: Barrier_Bubble
+      guid: f789a341f5d482458a8158baa015e933
+      id: 153465979
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: da2316fc5bf4294f92d829e9d4c1cd54
+      - ElementName: Barrier_Bubble
+        ObjectType: 11
+        guid: f789a341f5d482458a8158baa015e933
+      Path: Switches\Default Work Unit\Barrier_Bubble
+      values:
+      - name: Active
+        guid: ded76cc34bd2eb438acf8b1f16271900
+        id: 58138747
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: Barrier_Bubble
+          ObjectType: 11
+          guid: f789a341f5d482458a8158baa015e933
+        - ElementName: Active
+          ObjectType: 10
+          guid: ded76cc34bd2eb438acf8b1f16271900
+      - name: Inactive
+        guid: 3b03e321cad2ed4ca1bf4ee98a0c1b05
+        id: 3163453698
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: Barrier_Bubble
+          ObjectType: 11
+          guid: f789a341f5d482458a8158baa015e933
+        - ElementName: Inactive
+          ObjectType: 10
+          guid: 3b03e321cad2ed4ca1bf4ee98a0c1b05
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Coughing
       guid: 370cddc3b7178e4f92bf42edce42c516
       id: 2427782015
@@ -902,6 +1114,22 @@ MonoBehaviour:
         - ElementName: Drop_Key
           ObjectType: 10
           guid: 95aa421546593f40beb99940418a3ba5
+      - name: Drop_Rune
+        guid: 99e955676c491c4181318592260ce627
+        id: 2497281497
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Drop_Rune
+          ObjectType: 10
+          guid: 99e955676c491c4181318592260ce627
       - name: Dropping_Potion
         guid: f8df3e7133a45244b48624443150af4a
         id: 838125300
@@ -950,6 +1178,22 @@ MonoBehaviour:
         - ElementName: Equip_Bucket
           ObjectType: 10
           guid: 5c4266a44bb8c246aa4d28f316544b95
+      - name: Equip_Rune
+        guid: d0028d5fd7af764fa67a37b13c4c6a48
+        id: 2232939158
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Equip_Rune
+          ObjectType: 10
+          guid: d0028d5fd7af764fa67a37b13c4c6a48
       - name: Equipping_Key
         guid: 80e49f229244a446a58b9f3f19ebfd13
         id: 3147764383
@@ -1046,6 +1290,22 @@ MonoBehaviour:
         - ElementName: Use_Key
           ObjectType: 10
           guid: 2491541acce18844aaa7dfce946d69ba
+      - name: Use_Rune
+        guid: 9c88964a980ee54cb53bcccbb9e19fd9
+        id: 2802362441
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Use_Rune
+          ObjectType: 10
+          guid: 9c88964a980ee54cb53bcccbb9e19fd9
       - name: Using_Potion
         guid: de73790a9e7d2642a3ac120ee5cc7d4d
         id: 4110363151
@@ -1096,7 +1356,7 @@ MonoBehaviour:
     m_lastTime: -8584832341628823966
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000190000001a0000002a000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000190000001a0000002a000000730000007400000075000000584e0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
