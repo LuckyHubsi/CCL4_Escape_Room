@@ -11,6 +11,8 @@
 						<ObjectRef Name="Play_Cat" ID="{4DA810DE-178B-4139-B5FC-F0AE0F637307}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Book_Page_Turn" ID="{ABE95C48-3D8A-4158-B25E-620D5F97BA64}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Torch_Crackling" ID="{DE1FD978-1BEA-4281-B259-99AC7F872488}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Nature" ID="{DCBC85E8-D9BD-4425-841C-1D2A824359BC}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Crows_2" ID="{4E328971-E421-449E-8805-EE96791538B1}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Smoke" ID="{3BD3EB08-14E9-45C2-A0B7-EEEA1BDF03EC}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Cauldron" ID="{EBBD3B38-AD89-486B-A000-444A1D0EA575}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Player_Interact" ID="{7C1FA3EB-676B-48AA-978C-3F3C7797C27B}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
@@ -24,8 +26,10 @@
 						<ObjectRef Name="Play_Player_Interact" ID="{B23C645E-5805-4E4F-B9D9-D369489E5D08}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Torch_Crackling" ID="{BC18844B-635D-4E61-BA9D-59123EADBA3D}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_White_Noise" ID="{B61087B4-AE2E-4EA0-B074-3556030228BB}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Crows_1" ID="{8EE0DBE2-AB1E-4EDF-AF4C-059620F3855A}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Smoke" ID="{A9D830F1-4EB9-4EFE-8E84-979ED9769F19}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Successful_Combination" ID="{AB543C4F-3122-4F71-8DFA-5C0CFD2097CF}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Barrier_Bubble" ID="{20BDA030-439E-4F90-853F-C51ABE5E5C7F}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

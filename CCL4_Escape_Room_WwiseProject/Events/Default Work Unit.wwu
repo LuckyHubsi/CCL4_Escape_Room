@@ -5,17 +5,6 @@
 			<ChildrenList>
 				<Folder Name="Play" ID="{19119930-5ACA-4878-A1B6-564065A14CA6}" ShortID="857188229">
 					<ChildrenList>
-						<Event Name="Play_Torch_Crackling" ID="{DE1FD978-1BEA-4281-B259-99AC7F872488}">
-							<ChildrenList>
-								<Action Name="" ID="{FBE8953E-DFFD-420E-91C8-0788C77D4B7C}" ShortID="354551076">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Torch Crackling" ID="{D8CD20A4-CCE2-4C12-91BA-B599F65AD4F6}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Player_Interact" ID="{B23C645E-5805-4E4F-B9D9-D369489E5D08}">
 							<ChildrenList>
 								<Action Name="" ID="{E2C88C50-B0FA-4F2C-B8B7-41F0AA863014}" ShortID="125653789">
@@ -27,67 +16,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Cauldron" ID="{EBBD3B38-AD89-486B-A000-444A1D0EA575}">
-							<ChildrenList>
-								<Action Name="" ID="{E828C1DB-DCD4-43C2-AABD-E9C0C7783E36}" ShortID="730295402">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Cauldron" ID="{80E91274-6F2C-45C4-875E-1780CB537C57}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Footsteps" ID="{A91E6A99-451A-49D9-943F-F3CE19CA8A99}">
 							<ChildrenList>
 								<Action Name="" ID="{A659F16E-8157-444E-B82C-7DF29E227BF8}" ShortID="121598998">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Footsteps" ID="{EFC36215-A6E9-4EBF-B92D-74A5018638D4}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Magic_Barrier_Door" ID="{18DB4CB0-922E-4A0A-BBC0-B8417FEB7780}">
-							<ChildrenList>
-								<Action Name="" ID="{8E361B4E-2EFD-4D00-ADDC-B906051DD400}" ShortID="793428151">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Magic Barrier Door" ID="{F4DA4826-18D7-412D-A38F-4C349AA1C66D}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Magic_Barrier_Window" ID="{A24021DA-64F4-40F7-9F7E-23EFBB08D65B}">
-							<ChildrenList>
-								<Action Name="" ID="{D0D8D475-2D1A-4D67-82E5-C109F00EA310}" ShortID="185534915">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Magic Barrier Window" ID="{5C50660F-39EA-4667-B091-DDD16EBA9AA9}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Smoke" ID="{A9D830F1-4EB9-4EFE-8E84-979ED9769F19}">
-							<ChildrenList>
-								<Action Name="" ID="{E5A41C2C-9265-4052-87FF-BBF14F9471F5}" ShortID="452218785">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Smoke" ID="{83EE040D-475C-41F0-AB00-5B62F13BED5B}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Coughing" ID="{118DF235-79AD-4B54-A8C9-6E189E507777}">
-							<ChildrenList>
-								<Action Name="" ID="{068A1CC6-F96C-4410-A506-DAAB39DF6C9B}" ShortID="892937192">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Coughing" ID="{8EBD8090-F508-4762-940B-2DAD1A8676A4}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -115,39 +49,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_White_Noise" ID="{1A15E235-0100-40F8-8225-E8CA7E237BCC}">
-							<ChildrenList>
-								<Action Name="" ID="{1D1F7B3C-08AA-4B23-940E-B4E195565D6D}" ShortID="300186130">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="White Noise" ID="{68A226AC-6885-4C8F-B2AF-841DE142D63C}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Book_Page_Turn" ID="{ABE95C48-3D8A-4158-B25E-620D5F97BA64}">
-							<ChildrenList>
-								<Action Name="" ID="{DBDBE555-69C6-4935-9FC3-2D12351A43A3}" ShortID="791086551">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Book Page Turn" ID="{8FD6FF7C-8323-42C9-AB6B-8F6F8E2F4D69}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Cat" ID="{4DA810DE-178B-4139-B5FC-F0AE0F637307}">
-							<ChildrenList>
-								<Action Name="" ID="{9BEB5BB0-D8FA-4E04-9FA1-85DCE4F57C9C}" ShortID="944424018">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Cat" ID="{3382F338-6FC5-4315-8484-69647A2DF0DC}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Birb" ID="{CB5246DD-1552-4C42-9956-9AB844B53A56}">
 							<ChildrenList>
 								<Action Name="" ID="{02B2FA3F-F2D2-4812-AAC2-58AB470CC6A4}" ShortID="491531049">
@@ -159,17 +60,168 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Door_Closed" ID="{E638C898-2E82-40A4-888B-7512FAE874E0}">
+						<Folder Name="Indoor" ID="{C51D3A38-2D0B-459D-888A-AA1EF481EC3B}" ShortID="722597160">
 							<ChildrenList>
-								<Action Name="" ID="{8125B63F-6C0B-4F72-A14E-1318CD7E4BDC}" ShortID="923940143">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Door Closed" ID="{8C7A6851-A729-42A1-B6DB-45B0AEA7C523}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Play_Book_Page_Turn" ID="{ABE95C48-3D8A-4158-B25E-620D5F97BA64}">
+									<ChildrenList>
+										<Action Name="" ID="{DBDBE555-69C6-4935-9FC3-2D12351A43A3}" ShortID="791086551">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Book Page Turn" ID="{8FD6FF7C-8323-42C9-AB6B-8F6F8E2F4D69}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Coughing" ID="{118DF235-79AD-4B54-A8C9-6E189E507777}">
+									<ChildrenList>
+										<Action Name="" ID="{068A1CC6-F96C-4410-A506-DAAB39DF6C9B}" ShortID="892937192">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Coughing" ID="{8EBD8090-F508-4762-940B-2DAD1A8676A4}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Cauldron" ID="{EBBD3B38-AD89-486B-A000-444A1D0EA575}">
+									<ChildrenList>
+										<Action Name="" ID="{E828C1DB-DCD4-43C2-AABD-E9C0C7783E36}" ShortID="730295402">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Cauldron" ID="{80E91274-6F2C-45C4-875E-1780CB537C57}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Door_Closed" ID="{E638C898-2E82-40A4-888B-7512FAE874E0}">
+									<ChildrenList>
+										<Action Name="" ID="{8125B63F-6C0B-4F72-A14E-1318CD7E4BDC}" ShortID="923940143">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door Closed" ID="{8C7A6851-A729-42A1-B6DB-45B0AEA7C523}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Magic_Barrier_Window" ID="{A24021DA-64F4-40F7-9F7E-23EFBB08D65B}">
+									<ChildrenList>
+										<Action Name="" ID="{D0D8D475-2D1A-4D67-82E5-C109F00EA310}" ShortID="185534915">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Magic Barrier Window" ID="{5C50660F-39EA-4667-B091-DDD16EBA9AA9}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Magic_Barrier_Door" ID="{18DB4CB0-922E-4A0A-BBC0-B8417FEB7780}">
+									<ChildrenList>
+										<Action Name="" ID="{8E361B4E-2EFD-4D00-ADDC-B906051DD400}" ShortID="793428151">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Magic Barrier Door" ID="{F4DA4826-18D7-412D-A38F-4C349AA1C66D}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Smoke" ID="{A9D830F1-4EB9-4EFE-8E84-979ED9769F19}">
+									<ChildrenList>
+										<Action Name="" ID="{E5A41C2C-9265-4052-87FF-BBF14F9471F5}" ShortID="452218785">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Smoke" ID="{83EE040D-475C-41F0-AB00-5B62F13BED5B}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Torch_Crackling" ID="{DE1FD978-1BEA-4281-B259-99AC7F872488}">
+									<ChildrenList>
+										<Action Name="" ID="{FBE8953E-DFFD-420E-91C8-0788C77D4B7C}" ShortID="354551076">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Torch Crackling" ID="{D8CD20A4-CCE2-4C12-91BA-B599F65AD4F6}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_White_Noise" ID="{1A15E235-0100-40F8-8225-E8CA7E237BCC}">
+									<ChildrenList>
+										<Action Name="" ID="{1D1F7B3C-08AA-4B23-940E-B4E195565D6D}" ShortID="300186130">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="White Noise" ID="{68A226AC-6885-4C8F-B2AF-841DE142D63C}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Cat" ID="{4DA810DE-178B-4139-B5FC-F0AE0F637307}">
+									<ChildrenList>
+										<Action Name="" ID="{9BEB5BB0-D8FA-4E04-9FA1-85DCE4F57C9C}" ShortID="944424018">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Cat" ID="{3382F338-6FC5-4315-8484-69647A2DF0DC}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
+						</Folder>
+						<Folder Name="Outdoor" ID="{8B6A9F7D-CE2A-405E-987B-BA1B306C6C52}" ShortID="98842857">
+							<ChildrenList>
+								<Event Name="Play_Barrier_Bubble" ID="{20BDA030-439E-4F90-853F-C51ABE5E5C7F}">
+									<ChildrenList>
+										<Action Name="" ID="{A287B4F3-910E-449B-A5A1-A633937DBDCD}" ShortID="689014108">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Barrier Bubble" ID="{5377D5B1-71C7-4F98-AB1E-A61AA4B86D4C}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Crows_2" ID="{4E328971-E421-449E-8805-EE96791538B1}">
+									<ChildrenList>
+										<Action Name="" ID="{8978384F-1EBC-42BF-AA86-01530F0C75E9}" ShortID="268334072">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Crows 2" ID="{97E54475-637F-4C5D-8F61-B50EAE30D270}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Crows_1" ID="{8EE0DBE2-AB1E-4EDF-AF4C-059620F3855A}">
+									<ChildrenList>
+										<Action Name="" ID="{DB266D53-2650-42D8-B310-C3B5A7AC4148}" ShortID="583760758">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Crows 1" ID="{E995FA19-B5E3-44E8-B9BD-776E73F71ABB}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Nature" ID="{DCBC85E8-D9BD-4425-841C-1D2A824359BC}">
+									<ChildrenList>
+										<Action Name="" ID="{A113B4B2-9611-4FB2-86C6-7385F94F48C0}" ShortID="1015499295">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Nature" ID="{66437753-E4FA-4D43-B7B5-6D61A8522970}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Stop" ID="{9EF7134F-51F1-4B4B-ACC8-65C1D1B744C6}" ShortID="395466208">
