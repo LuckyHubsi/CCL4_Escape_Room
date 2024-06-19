@@ -1124,7 +1124,8 @@ PrefabInstance:
       propertyPath: mirror
       value: 
       objectReference: {fileID: 323503244}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3688514951802708864, guid: 3f0dd8812e074994db39115676a235e2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
