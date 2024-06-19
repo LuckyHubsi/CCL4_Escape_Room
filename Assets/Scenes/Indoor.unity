@@ -199,6 +199,11 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!1 &323503244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2732394018765684902, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
+  m_PrefabInstance: {fileID: 853555370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &557840610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3871599388355522886, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
@@ -322,6 +327,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3098538122001299093, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3786118602706364108, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
       propertyPath: m_Name
       value: Environment
@@ -1111,6 +1120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Witch_Room
       objectReference: {fileID: 0}
+    - target: {fileID: 7356095020104649827, guid: 3f0dd8812e074994db39115676a235e2, type: 3}
+      propertyPath: mirror
+      value: 
+      objectReference: {fileID: 323503244}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
