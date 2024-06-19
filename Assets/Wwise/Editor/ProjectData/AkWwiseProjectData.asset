@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584828033942177017
+    m_lastTime: -8584828023839111817
     List:
     - name: Indoor
       guid: 383a1dc50b2d9d45888aaa1ef481ec3b
@@ -817,7 +817,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584828078334537228
+    m_lastTime: -8584828023839056696
     List:
     - name: Barrier_Bubble
       guid: f789a341f5d482458a8158baa015e933
@@ -1274,6 +1274,22 @@ MonoBehaviour:
         - ElementName: Other_Torch_Interaction
           ObjectType: 10
           guid: 7f16b2464d67a74fa751e3db376dd4e3
+      - name: Use_Ingredient
+        guid: 8f72ce2feb7cc342b05c9376e2e9c3ff
+        id: 2399429676
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: da2316fc5bf4294f92d829e9d4c1cd54
+        - ElementName: PlayerInteractSwitch
+          ObjectType: 11
+          guid: 0ada6f1deab3544a8e9d6c352874436a
+        - ElementName: Use_Ingredient
+          ObjectType: 10
+          guid: 8f72ce2feb7cc342b05c9376e2e9c3ff
       - name: Use_Key
         guid: 2491541acce18844aaa7dfce946d69ba
         id: 3782926630

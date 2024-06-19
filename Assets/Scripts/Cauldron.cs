@@ -79,6 +79,10 @@ public class Cauldron : Interactable
             {
                 _cauldronInventory[_currentCauldronInventoryIndex] = ingredient.ingredientState.ToString();
                 Debug.Log("Added " + ingredient.ingredientState + " to the cauldron");
+
+                //Wwise
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Use_Ingredient", gameObject);
+                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             }
         }
 

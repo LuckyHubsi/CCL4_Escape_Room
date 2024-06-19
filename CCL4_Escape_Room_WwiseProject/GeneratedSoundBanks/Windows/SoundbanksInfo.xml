@@ -62,6 +62,7 @@
 						<Switch Id="1807111158" Name="Drop_Key"/>
 						<Switch Id="1918408915" Name="Other_Torch_Interaction"/>
 						<Switch Id="2232939158" Name="Equip_Rune"/>
+						<Switch Id="2399429676" Name="Use_Ingredient"/>
 						<Switch Id="2497281497" Name="Drop_Rune"/>
 						<Switch Id="2633107091" Name="Equipping_Potion"/>
 						<Switch Id="2802362441" Name="Use_Rune"/>
@@ -77,7 +78,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{3A6BC90E-F943-F895-AA33-CDD7C85D3D44}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0CB162DD-7760-8579-1E36-01B680DC7CD6}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -92,6 +93,10 @@
 				<File Id="71493339" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Combination.wav</ShortName>
 					<CachePath>SFX/Torch Combination_7E67330B.wem</CachePath>
+				</File>
+				<File Id="122319696" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Waterbucket.wav</ShortName>
+					<CachePath>SFX/Waterbucket_889D1A8C.wem</CachePath>
 				</File>
 				<File Id="151348559" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Successful Combination.wav</ShortName>
@@ -460,7 +465,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="3481100345"/>
 							<MediaRefs>
-								<MediaRef Id="804788596"/>
+								<MediaRef Id="122319696"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -502,13 +507,19 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="2399429676" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="804788596"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="1807111158"/>
 							<MediaRefs>
 								<MediaRef Id="879798572"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="2497281497" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="3391040932" Id="2497281497"/>
 							<MediaRefs>
 								<MediaRef Id="1035015651"/>
 							</MediaRefs>
@@ -628,6 +639,7 @@
 						<Switch Id="1807111158" Name="Drop_Key"/>
 						<Switch Id="1918408915" Name="Other_Torch_Interaction"/>
 						<Switch Id="2232939158" Name="Equip_Rune"/>
+						<Switch Id="2399429676" Name="Use_Ingredient"/>
 						<Switch Id="2497281497" Name="Drop_Rune"/>
 						<Switch Id="2633107091" Name="Equipping_Potion"/>
 						<Switch Id="2802362441" Name="Use_Rune"/>
@@ -644,5 +656,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C3EC19EB-3150-C767-DB7B-E7060F9FB11E}</FileHash>
+	<FileHash>{C6376A05-0059-56E9-3600-219F27E88DAC}</FileHash>
 </SoundBanksInfo>

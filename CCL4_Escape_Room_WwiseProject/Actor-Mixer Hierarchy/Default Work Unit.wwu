@@ -1731,7 +1731,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Drop_Rune" ID="{6755E999-496C-411C-8131-8592260CE627}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
+									<ObjectRef Name="Use_Ingredient" ID="{2FCE728F-7CEB-42C3-B05C-9376E2E9C3FF}" WorkUnitID="{FC1623DA-F45B-4F29-92D8-29E9D4C1CD54}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Player Interact" ID="{ECA32155-0AEB-4042-B028-B36A32B351ED}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
@@ -2127,7 +2127,7 @@
 										<ActiveSource Name="Using Water" ID="{9DF1A002-6581-4BC3-8DCF-07542ECFC624}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Equipping Waterbucket" ID="{572CF59F-3461-44A3-B719-895B3E35CA11}" ShortID="948762449">
+								<Sound Name="Using Ingredient" ID="{572CF59F-3461-44A3-B719-895B3E35CA11}" ShortID="948762449">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -2409,11 +2409,48 @@
 										<ActiveSource Name="Use Rune" ID="{0AAA4C47-D1EA-4904-8885-3B855EDE90BD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Waterbucket" ID="{5A2A4318-4CC4-4601-BFDC-9A3688000C36}" ShortID="653655340">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Waterbucket" ID="{03E12FF8-7F1B-4F1F-BC87-DD3F29C022A0}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.129161772798742"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.289680738993711"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Waterbucket.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="122319696"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Waterbucket" ID="{03E12FF8-7F1B-4F1F-BC87-DD3F29C022A0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="Equipping Potion" ID="{1B884E0B-45EA-4C6E-B42E-B0DE634B1FB1}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Waterbucket" ID="{5A2A4318-4CC4-4601-BFDC-9A3688000C36}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Dropping Potion" ID="{3C73B138-550B-44F5-AE23-2B189DBBEE24}"/>
@@ -2431,7 +2468,7 @@
 										<ItemRef Name="Other Torch Interaction" ID="{ADA63D8D-4684-4831-A74C-EBD380EAAF6C}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Equipping Waterbucket" ID="{572CF59F-3461-44A3-B719-895B3E35CA11}"/>
+										<ItemRef Name="Using Ingredient" ID="{572CF59F-3461-44A3-B719-895B3E35CA11}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Using Potion" ID="{63789DA1-4D3B-4914-9797-5AA4C9641EF9}"/>
@@ -2483,7 +2520,7 @@
 									<Grouping>
 										<SwitchRef Name="Equipping_Waterbucket" ID="{5384BB38-C3AB-4279-8A44-585B127C5BC7}"/>
 										<ItemList>
-											<ItemRef Name="Equipping Waterbucket" ID="{572CF59F-3461-44A3-B719-895B3E35CA11}"/>
+											<ItemRef Name="Waterbucket" ID="{5A2A4318-4CC4-4601-BFDC-9A3688000C36}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
@@ -2520,6 +2557,12 @@
 										<SwitchRef Name="Equipping_Key" ID="{229FE480-4492-46A4-A58B-9F3F19EBFD13}"/>
 										<ItemList>
 											<ItemRef Name="Equip Key" ID="{F216B6C1-1CAF-43EC-B171-831AF4D98F7F}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Use_Ingredient" ID="{2FCE728F-7CEB-42C3-B05C-9376E2E9C3FF}"/>
+										<ItemList>
+											<ItemRef Name="Using Ingredient" ID="{572CF59F-3461-44A3-B719-895B3E35CA11}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>

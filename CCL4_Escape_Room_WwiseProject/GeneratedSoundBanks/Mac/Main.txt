@@ -49,6 +49,7 @@ Switch	ID	Name	Switch Group			Notes
 	1807111158	Drop_Key	PlayerInteractSwitch			
 	1918408915	Other_Torch_Interaction	PlayerInteractSwitch			
 	2232939158	Equip_Rune	PlayerInteractSwitch			
+	2399429676	Use_Ingredient	PlayerInteractSwitch			
 	2497281497	Drop_Rune	PlayerInteractSwitch			
 	2633107091	Equipping_Potion	PlayerInteractSwitch			
 	2802362441	Use_Rune	PlayerInteractSwitch			
@@ -73,6 +74,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	11086415	Bubble	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Bubble_66B4C4E5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Outdoor\Barrier Bubble\Barrier Bubble Active\Bubble		433904
 	12446834	Cat Purr 4	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Cat Purr 4_D0DBD871.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Cat\Cat Purr 4		642624
 	71493339	Torch Combination	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Torch Combination_7E67330B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Combination		143146
+	122319696	Waterbucket	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Waterbucket_889D1A8C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Waterbucket		76070
 	151348559	Successful Combination	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Successful Combination_59D5B0F6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Successful Combination		178942
 	173809254	Drop Bucket	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Drop Bucket_AC693120.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Drop Bucket		98552
 	191815447	Cough Light	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Cough Light_BC160F9A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Coughing\Cough Light		286316
@@ -107,7 +109,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	753759525	Use Key	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Use Key_E9C98881.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Use Key		71684
 	762033562	Bird - Pajaro 3(2)	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Bird - Pajaro 3(2)_0664B09D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Birb\Bird - Pajaro 3(2)		118320
 	763857974	Using Potion	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Using Potion_2909CEE1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Using Potion		87518
-	804788596	Equipping Waterbucket	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Equipping Waterbucket_2E2184AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Equipping Waterbucket		124932
+	804788596	Using Ingredient	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Equipping Waterbucket_2E2184AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Using Ingredient		124932
 	847711322	Crows 2	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Crows at Dawn 2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Outdoor\Crows 2		915956
 	851999931	Cat Purr 3	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Cat Purr 3_F9B04E36.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Cat\Cat Purr 3		588724
 	879798572	Drop Key	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Drop Key_CE58C8FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Drop Key		109014

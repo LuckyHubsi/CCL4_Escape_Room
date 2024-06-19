@@ -107,6 +107,7 @@ namespace AK
                 static const AkUniqueID EQUIPPING_TORCH = 1070326592U;
                 static const AkUniqueID EQUIPPING_WATERBUCKET = 3481100345U;
                 static const AkUniqueID OTHER_TORCH_INTERACTION = 1918408915U;
+                static const AkUniqueID USE_INGREDIENT = 2399429676U;
                 static const AkUniqueID USE_KEY = 3782926630U;
                 static const AkUniqueID USE_RUNE = 2802362441U;
                 static const AkUniqueID USING_POTION = 4110363151U;

@@ -29,6 +29,7 @@
 						<Switch Name="Use_Rune" ID="{4A96889C-0E98-4CE5-B53B-CCCBB9E19FD9}"/>
 						<Switch Name="Equip_Rune" ID="{5F8D02D0-AFD7-4F76-A67A-37B13C4C6A48}"/>
 						<Switch Name="Drop_Rune" ID="{6755E999-496C-411C-8131-8592260CE627}"/>
+						<Switch Name="Use_Ingredient" ID="{2FCE728F-7CEB-42C3-B05C-9376E2E9C3FF}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Coughing" ID="{C3DD0C37-17B7-4F8E-92BF-42EDCE42C516}">

@@ -112,6 +112,12 @@ public class PlayerInteraction : MonoBehaviour
                     AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Dropping_Potion", gameObject);
                     AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
                 }
+                else if (_carriedIngredient.isActiveAndEnabled)
+                {
+                    //Wwise
+                    AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Dropping_Potion", gameObject);
+                    AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+                }
 
                 DropItem();
                 
@@ -169,6 +175,10 @@ public class PlayerInteraction : MonoBehaviour
 
             Debug.Log("Picked up " + _carriedIngredient.ingredientState + " Ingredient");
 
+            //Wwise
+            AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Potion", gameObject);
+            AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+
             return;
         }
 
@@ -221,7 +231,7 @@ public class PlayerInteraction : MonoBehaviour
             Debug.Log("Picked up " + _carriedRunestone.runestoneState + " Runestone");
 
             //Wwise
-            //AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Potion", gameObject);
+            //AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equip_Rune", gameObject);
             //AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
 
             return;
