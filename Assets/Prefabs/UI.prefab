@@ -406,6 +406,7 @@ GameObject:
   - component: {fileID: 6234135491215853651}
   - component: {fileID: 5127099024778665210}
   - component: {fileID: 1028225462544207028}
+  - component: {fileID: 8690914109285891688}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -430,7 +431,7 @@ RectTransform:
   - {fileID: 8303465476993179954}
   - {fileID: 2330214876297322756}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -500,3 +501,16 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8690914109285891688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7857973745226202462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d19fec4b5f55d499105df28bd46d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 2190011735076130711}

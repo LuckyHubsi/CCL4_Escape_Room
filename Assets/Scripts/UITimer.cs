@@ -3,8 +3,25 @@ using UnityEngine.UI;
 
 public class UITimer : MonoBehaviour
 {
+    public static UITimer instance;
+
     [SerializeField]
     private Text timerText;
+
+    private void Awake()
+    {
+        // Ensure singleton pattern
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
 
     private void Update()
     {

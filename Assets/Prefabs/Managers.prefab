@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 369707875611474991}
   - component: {fileID: 4754519824826493436}
   - component: {fileID: 1891748839213915624}
-  - component: {fileID: 6281855113401386420}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -48,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e6d9ec8b31f9e4bb19a75f4f7bd75f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 300
-  smokeTime: 60
+  gameTime: 900
+  smokeTime: 180
   smokeOverlay: {fileID: 0}
   smokeParticles: {fileID: 0}
   torches:
@@ -142,19 +141,6 @@ MonoBehaviour:
   puzzleOneSolved: 0
   puzzleTwoSolved: 0
   puzzleThreeSolved: 0
---- !u!114 &6281855113401386420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7351528757383434643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6d19fec4b5f55d499105df28bd46d83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
 --- !u!1001 &7229091429486964930
 PrefabInstance:
   m_ObjectHideFlags: 0
