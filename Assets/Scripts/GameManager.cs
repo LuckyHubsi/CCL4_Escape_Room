@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        else
+/*        else
         {
             smokeTime = initialSmokeTime;
             UpdateSmokeOverlay();
@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
                 smokeParticles.Stop();
                 AkSoundEngine.PostEvent("Stop_Smoke", smokeRef);
             }
-        }
+        }*/
     }
 
     private void LoadLoseScene()
