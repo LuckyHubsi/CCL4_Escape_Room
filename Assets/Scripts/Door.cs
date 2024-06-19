@@ -25,6 +25,8 @@ public class Door : Interactable
                 //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Use_Key", gameObject);
                 AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+
+                _playerInteraction.DropItem();
                 ScenesManager.Instance.LoadSceneAsync();
             }
             else

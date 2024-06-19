@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
+    public static PlayerInteraction instance;
+
     private Camera _cam;
     [SerializeField]
     private Text interactableNameText;
@@ -39,6 +41,18 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Awake()
     {
+        // Ensure singleton pattern
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         _cam = GetComponentInChildren<Camera>();
         if (_cam == null)
         {
