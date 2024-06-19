@@ -276,7 +276,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Magic Barrier Door" ID="{809A6E4A-FBD7-47F5-AEE3-74063A9D4689}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+											<ObjectRef Name="Magic Barrier Door" ID="{F4DA4826-18D7-412D-A38F-4C349AA1C66D}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
