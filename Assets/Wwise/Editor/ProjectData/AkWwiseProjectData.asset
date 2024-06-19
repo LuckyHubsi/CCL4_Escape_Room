@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584828083155491183
+    m_lastTime: -8584828078334537228
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584828083155510969
+    m_lastTime: -8584828033942177017
     List:
     - name: Indoor
       guid: 383a1dc50b2d9d45888aaa1ef481ec3b
@@ -224,7 +224,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 30a0bd209e43904f853fc51abe5e5c7f
       Path: Events\Default Work Unit\Play\Outdoor\Play_Barrier_Bubble
-      maxAttenuation: 0
+      maxAttenuation: 5
       maxDuration: Infinity
       minDuration: 3.4669583
     - name: Play_Birb
@@ -360,8 +360,8 @@ MonoBehaviour:
         guid: e2dbe08e1eabdf4eaf4c059620f3855a
       Path: Events\Default Work Unit\Play\Outdoor\Play_Crows_1
       maxAttenuation: 10
-      maxDuration: 5.816583
-      minDuration: 5.816583
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Crows_2
       guid: 7189324e21e49e448805ee96791538b1
       id: 1519828893
@@ -383,8 +383,8 @@ MonoBehaviour:
         guid: 7189324e21e49e448805ee96791538b1
       Path: Events\Default Work Unit\Play\Outdoor\Play_Crows_2
       maxAttenuation: 10
-      maxDuration: 4.770104
-      minDuration: 4.770104
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Door_Closed
       guid: 98c838e6822ea440888b7512fae874e0
       id: 828587345
@@ -817,7 +817,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584828086874711265
+    m_lastTime: -8584828078334537228
     List:
     - name: Barrier_Bubble
       guid: f789a341f5d482458a8158baa015e933
@@ -1356,7 +1356,7 @@ MonoBehaviour:
     m_lastTime: -8584832341628823966
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000190000001a0000002a000000730000007400000075000000584e0000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000190000001a0000001e0000002a000000730000007400000075000000584e0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
