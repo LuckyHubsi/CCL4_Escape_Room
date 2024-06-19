@@ -1,9 +1,34 @@
 fileFormatVersion: 2
-guid: 1b70b35915ce97f4b8cbd2e001c19725
+guid: abef8b5891b844542a9c58b61ff6e02f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CapLabelHA
+    second: {fileID: 2100000, guid: 621fffdc40e2f074d8f474517ce88518, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrogTongue
+    second: {fileID: 2100000, guid: ad8081dbca9f5e64fbc9149030b80a82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GlassJar
+    second: {fileID: 2100000, guid: 65d243c3b810389459831597ac17cf59, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CapLabelFrog
+    second: {fileID: 2800000, guid: cbd97a461da21fc49a0fd372a8bb21db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FrogTongue
+    second: {fileID: 2800000, guid: 3007ff197b63c714d9d4dff5022b4d65, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

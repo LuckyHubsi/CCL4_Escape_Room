@@ -3,7 +3,32 @@ guid: 3f3acc81914dc81499f846c1995f0824
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cauldron Legs
+    second: {fileID: 2100000, guid: 4d9f8790f5467084fb49d93dcfbf0330, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cauldron_Deco
+    second: {fileID: 2100000, guid: 88ce36d7c8c48d4409fa513fe5a7a4eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Holders
+    second: {fileID: 2100000, guid: 3c31b114496f74348839a80c4cb06dc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pot
+    second: {fileID: 2100000, guid: 9507fdf29706f0d40a4657dc48f1d226, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PotContent
+    second: {fileID: 2100000, guid: 845c737da6882c04cac74125ec49f45c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

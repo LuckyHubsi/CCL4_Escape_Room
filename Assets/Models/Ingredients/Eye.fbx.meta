@@ -1,9 +1,34 @@
 fileFormatVersion: 2
-guid: 9d951cdde08072e479bd065cbab35f89
+guid: 1585429787c14034cb9c3817eb54f7d9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CapLabelHA
+    second: {fileID: 2100000, guid: f038ed5bddf4c4a40b2c216d0133a240, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eye
+    second: {fileID: 2100000, guid: ce37f814aedaa3d45bd7dd0e3cba4ee2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GlassJar
+    second: {fileID: 2100000, guid: 65d243c3b810389459831597ac17cf59, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CapLabelEye
+    second: {fileID: 2800000, guid: e86d24bdfdb19da48829ff4704da6bf3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Eye
+    second: {fileID: 2800000, guid: 9de4814d5bda7f043b784e0c51f7f63f, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
