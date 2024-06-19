@@ -107,7 +107,7 @@ Shader "Ultimate 10+ Shaders/Force Field Outside"
                 output.uv = TRANSFORM_TEX(vert.uv, _MainTex);
 
                 viewDir = normalize(ObjSpaceViewDir(vert.vertex));
-                output.rim = 0.2 - saturate(dot(viewDir, vert.normal));
+                output.rim = 0.33 - saturate(dot(viewDir, vert.normal));
 
                 output.uv += _ScrollDirection * _Time.y;
 
