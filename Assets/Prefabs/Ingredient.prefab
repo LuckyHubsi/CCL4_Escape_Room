@@ -118,9 +118,19 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5033282561549728345}
   m_SourcePrefab: {fileID: 100100000, guid: c8a29da8e01303b4aa6f9a94a5e0b2d8, type: 3}
+--- !u!1 &5593880253797245543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2184592556732454733, guid: c8a29da8e01303b4aa6f9a94a5e0b2d8, type: 3}
+  m_PrefabInstance: {fileID: 6048421363254310186}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6087448680105071297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c8a29da8e01303b4aa6f9a94a5e0b2d8, type: 3}
+  m_PrefabInstance: {fileID: 6048421363254310186}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6524477211187690143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 683375457178030005, guid: c8a29da8e01303b4aa6f9a94a5e0b2d8, type: 3}
   m_PrefabInstance: {fileID: 6048421363254310186}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &6859306584064198779 stripped
@@ -141,6 +151,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientState: 0
+  matLid_Bat: {fileID: 2100000, guid: 37b7dc2f305f11145aa16de0aeaacad2, type: 2}
+  matLid_Eye: {fileID: 2100000, guid: f038ed5bddf4c4a40b2c216d0133a240, type: 2}
+  matLid_Tongue: {fileID: 2100000, guid: 621fffdc40e2f074d8f474517ce88518, type: 2}
+  matLid_ToothWrong1: {fileID: 2100000, guid: 1e567692f5e224c47906381b05230478, type: 2}
+  matLid_ToothWrong2: {fileID: 2100000, guid: 674fc32a00988ad43a9cd8f08ccf15b3, type: 2}
+  matLid_ToothRight: {fileID: 2100000, guid: 91b11591cd4b04045bb8010c22a5eb60, type: 2}
+  mat_Bat: {fileID: 2100000, guid: ae6c14d9a338a834b8506ee9a6ac43b2, type: 2}
+  mat_Eye: {fileID: 2100000, guid: ce37f814aedaa3d45bd7dd0e3cba4ee2, type: 2}
+  mat_Tongue: {fileID: 2100000, guid: ad8081dbca9f5e64fbc9149030b80a82, type: 2}
+  mat_Tooth: {fileID: 2100000, guid: 986a882c5c10e194d9e74c9c61406a01, type: 2}
+  bat: {fileID: -101908515258028662, guid: c8a29da8e01303b4aa6f9a94a5e0b2d8, type: 3}
+  eye: {fileID: -695388640154688594, guid: 1585429787c14034cb9c3817eb54f7d9, type: 3}
+  tongue: {fileID: -5657891690349177999, guid: abef8b5891b844542a9c58b61ff6e02f, type: 3}
+  tooth: {fileID: -3929213157567206641, guid: b94097ad404a0984fb4ef8708a61d82b, type: 3}
+  lid: {fileID: 6524477211187690143}
+  item: {fileID: 5593880253797245543}
 --- !u!114 &6585840244679395679
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ingredient : Interactable
 {
-    public enum IngredientState { Empty, BatWing, Eye, FroshTongue, Tooth_Wrong, Tooth_Correct }
+    public enum IngredientState { Empty, BatWing, Eye, FroshTongue, Tooth_Wrong1, Tooth_Wrong2, Tooth_Correct }
     [SerializeField]
     public IngredientState ingredientState = IngredientState.Empty;
 
@@ -39,6 +39,11 @@ public class Ingredient : Interactable
     [SerializeField]
     private Mesh tooth;
 
+    [SerializeField]
+    private GameObject lid;
+    [SerializeField]
+    private GameObject item;
+
     private PlayerInteraction _playerInteraction;
 
     private void Start()
@@ -58,6 +63,7 @@ public class Ingredient : Interactable
     public void SetIngredientState(IngredientState newState)
     {
         ingredientState = newState;
+        UpdateIngredientAppearance();
     }
 
     private void UpdateIngredientAppearance()
@@ -67,19 +73,34 @@ public class Ingredient : Interactable
             case IngredientState.Empty:
                 return;
             case IngredientState.BatWing:
-                this.gameObject.GetComponent<Renderer>().material = matRed;
+                lid.GetComponent<Renderer>().material = matLid_Bat;
+                item.GetComponent<MeshFilter>().mesh = bat;
+                item.GetComponent<Renderer>().material = mat_Bat;
                 break;
             case IngredientState.Eye:
-                this.gameObject.GetComponent<Renderer>().material = matBlue;
+                lid.GetComponent<Renderer>().material = matLid_Eye;
+                item.GetComponent<MeshFilter>().mesh = eye;
+                item.GetComponent<Renderer>().material = mat_Eye; 
                 break;
             case IngredientState.FroshTongue:
-                this.gameObject.GetComponent<Renderer>().material = matYellow;
+                lid.GetComponent<Renderer>().material = matLid_Tongue;
+                item.GetComponent<MeshFilter>().mesh = tongue;
+                item.GetComponent<Renderer>().material = mat_Tongue; 
                 break;
-            case IngredientState.Tooth_Wrong:
-                this.gameObject.GetComponent<Renderer>().material = matPurple;
+            case IngredientState.Tooth_Wrong1:
+                lid.GetComponent<Renderer>().material = matLid_ToothWrong1;
+                item.GetComponent<MeshFilter>().mesh = tooth;
+                item.GetComponent<Renderer>().material = mat_Tooth; 
+                break;
+            case IngredientState.Tooth_Wrong2:
+                lid.GetComponent<Renderer>().material = matLid_ToothWrong2;
+                item.GetComponent<MeshFilter>().mesh = tooth;
+                item.GetComponent<Renderer>().material = mat_Tooth;
                 break;
             case IngredientState.Tooth_Correct:
-                this.gameObject.GetComponent<Renderer>().material = matGreen;
+                lid.GetComponent<Renderer>().material = matLid_ToothRight;
+                item.GetComponent<MeshFilter>().mesh = tooth;
+                item.GetComponent<Renderer>().material = mat_Tooth;
                 break;
         }
     }

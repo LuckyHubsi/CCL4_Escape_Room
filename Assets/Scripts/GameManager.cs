@@ -28,6 +28,9 @@ public class GameManager : MonoBehaviour
     private GameObject[] potions; // Array of potion game objects
 
     [SerializeField]
+    private GameObject[] ingredients; // Array of ingredients game objects
+
+    [SerializeField]
     private GameObject smokeRef; // Reference to smoke gameobject for sound
     [SerializeField]
     private AK.Wwise.RTPC _smokeTimeVolumeRTPC;
@@ -60,6 +63,7 @@ public class GameManager : MonoBehaviour
         // Load json data
         if (torches != null) TorchData_Loader.LoadTorchData(torches);
         if (potions != null) PotionData_Loader.LoadPotionhData(potions);
+        if (ingredients != null) IngredientData_Loader.LoadIngredientData(ingredients);
 
         _smokeTimeVolumeRTPC.SetGlobalValue(0);
 

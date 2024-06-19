@@ -1,0 +1,10 @@
+{
+  "ingredients": [
+    { "type": "tooth_correct" },
+    { "type": "batwing" },
+    { "type": "eye" },
+    { "type": "froshtongue" },
+    { "type": "tooth_wrong1" },
+    { "type": "tooth_wrong2" }
+  ]
+}
