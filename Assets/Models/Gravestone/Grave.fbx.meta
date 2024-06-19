@@ -3,7 +3,32 @@ guid: e86e28832643c7d4cb782e559c316045
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dirt
+    second: {fileID: 2100000, guid: d6451ec0f30899a48b5c9dadaf2570f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GraveDeco
+    second: {fileID: 2100000, guid: 0c3e0032c988a994a9275ec81428994e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gravestone
+    second: {fileID: 2100000, guid: 23589000c6282a348987be8baf5aef41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gravestone.001
+    second: {fileID: 2100000, guid: 87272071be47ceb49a4005052068d330, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GravestoneOrange
+    second: {fileID: 2100000, guid: 4637dc1792046ec4c9a60749f2cc47b8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
