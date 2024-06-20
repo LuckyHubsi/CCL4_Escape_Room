@@ -51,6 +51,7 @@ public class ScenesManager : MonoBehaviour
     public void LoadMenu() {
         // we use Unity's SceneManager class to load a scene by name or build index (can be found in build settings menu)
         SceneManager.LoadScene((int)Scene.Main_Menu);
+        
         //SceneManager.LoadScene(Scene.UIScene.ToString());
     }
 
