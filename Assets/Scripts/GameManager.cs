@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+
         // Ensure singleton pattern
         if (instance == null)
         {
@@ -54,12 +55,13 @@ public class GameManager : MonoBehaviour
 
         // Initialization that should only happen once
         initialSmokeTime = smokeTime;
+
+        DisableAllOutlines();
+
     }
 
     private void Start()
     {
-        DisableAllOutlines();
-
         // Load json data
         if (torches != null) TorchData_Loader.LoadTorchData(torches);
         if (potions != null) PotionData_Loader.LoadPotionhData(potions);
