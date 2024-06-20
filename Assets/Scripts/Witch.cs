@@ -14,13 +14,19 @@ public class WitchBehavior : MonoBehaviour
     public int currentWitchState = 0;
 
     private float idleTimeRandom;
-    private float pouringAnimationDuration;
+    private float pouringAnimationDuration = 4.542f;
     private float walkTime = 2f; // This time is used to calculate the speed
     private float teleportBackTime;
     private float walkSpeed = 1.5f; // Adjust the speed to match the walking animation
     private Quaternion initialRotation; // Store the initial rotation
-    private float idleAnimationDuration; // Duration of the idle animation
+    private float idleAnimationDuration = 3; // Duration of the idle animation
     private WitchManager witchManager; // Reference to the WitchManager
+
+    [SerializeField]
+    private Material[] matPotion;
+
+    [SerializeField]
+    private GameObject potion;
 
     private void Start()
     {
@@ -29,47 +35,36 @@ public class WitchBehavior : MonoBehaviour
         initialRotation = transform.rotation; // Store the initial rotation
         witchManager = FindObjectOfType<WitchManager>(); // Get the WitchManager
         StartCoroutine(WitchCycle());
-
-        // Get the duration of the idle animation
-        AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
-        foreach (AnimationClip clip in clips)
-        {
-            if (clip.name == "RIG-Armature|Idle")
-            {
-                idleAnimationDuration = clip.length;
-                break;
-            }
-
-            if (clip.name == "RIG-Armature|Pouring")
-            {
-                pouringAnimationDuration = clip.length;
-                Debug.Log(pouringAnimationDuration);
-                break;
-            }
-        }
     }
 
     private IEnumerator WitchCycle()
     {
         while (true)
         {
+            // Randomly select and assign a material from the matPotion array
+            if (matPotion.Length > 0)
+            {
+                Material randomMaterial = matPotion[Random.Range(0, matPotion.Length)];
+                potion.GetComponent<Renderer>().material = randomMaterial;
+            }
+
             // Pouring animation
             animator.Play("Pouring");
             currentWitchState = 1;
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(pouringAnimationDuration);
 
             // Idle animation near the cauldron
             animator.Play("Idle");
-            idleTimeRandom = Random.Range(3f, 5f);
+            //idleTimeRandom = Random.Range(3f, 5f);
             currentWitchState = 2;
-            yield return new WaitForSeconds(idleTimeRandom);
+            yield return new WaitForSeconds(idleAnimationDuration);
 
             yield return StartCoroutine(Transition(0.25f));
 
             // Teleport to walk start point and walk to end point
             TeleportToPosition(walkStartPoint.position);
             transform.rotation = Quaternion.LookRotation(walkEndPoint.position - walkStartPoint.position); // Face the end point
-            //animator.Play("Walking");
+            animator.Play("Walking");
             currentWitchState = 3;
             yield return StartCoroutine(WalkToPosition(walkEndPoint.position));
 
