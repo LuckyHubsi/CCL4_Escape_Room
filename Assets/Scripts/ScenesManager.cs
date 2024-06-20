@@ -51,16 +51,19 @@ public class ScenesManager : MonoBehaviour
     public void LoadMenu() {
         // we use Unity's SceneManager class to load a scene by name or build index (can be found in build settings menu)
         SceneManager.LoadScene((int)Scene.Main_Menu);
-        
+        AkSoundEngine.StopAll();
+
         //SceneManager.LoadScene(Scene.UIScene.ToString());
     }
 
     public void LoadScene(Scene scene) {
         SceneManager.LoadScene(scene.ToString());
+        AkSoundEngine.StopAll();
     }
 
     public void LoadNextScene() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        AkSoundEngine.StopAll();
     }
 
     // unity can load scenes asynchronously
@@ -68,6 +71,8 @@ public class ScenesManager : MonoBehaviour
     // Needs to be marked as "async" !!!
     public async void LoadSceneAsync()
     {
+        AkSoundEngine.StopAll();
+
         target = 0f;
         progressBar.fillAmount = 0f;
 
