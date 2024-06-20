@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6481623579201653581}
   - component: {fileID: 7476719661544177156}
   - component: {fileID: 6784588658967836114}
+  - component: {fileID: 8550586952254423062}
   m_Layer: 0
   m_Name: Runestone
   m_TagString: Untagged
@@ -105,6 +106,28 @@ MonoBehaviour:
   matOrange: {fileID: 2100000, guid: 92cd302ab1320234a8db5fb6acc49e02, type: 2}
   matTurquoise: {fileID: 2100000, guid: d50132f302742a740b6e5b7de216a92f, type: 2}
   matPink: {fileID: 2100000, guid: 2a0a6cb053656584aa68f2aec4fcc6c0, type: 2}
+--- !u!64 &8550586952254423062
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5382944738495554553}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -915661510970944972, guid: d5cc032a4b7702341aaf46d1581f0a87, type: 3}
 --- !u!1 &6944082349481835929
 GameObject:
   m_ObjectHideFlags: 0

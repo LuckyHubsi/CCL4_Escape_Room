@@ -172,28 +172,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5382944738495554553, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
   m_PrefabInstance: {fileID: 5868321437121087166}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &395605633
-MeshCollider:
+--- !u!114 &395605634
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395605631}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -915661510970944972, guid: d5cc032a4b7702341aaf46d1581f0a87, type: 3}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1157929773
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,6 +988,10 @@ PrefabInstance:
       propertyPath: runestoneState
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6784588658967836114, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: runestoneState
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6944082349481835929, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_Name
       value: Runestone
@@ -1002,5 +1002,5 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5382944738495554553, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 395605633}
+      addedObject: {fileID: 395605634}
   m_SourcePrefab: {fileID: 100100000, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}

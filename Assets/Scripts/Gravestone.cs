@@ -20,6 +20,8 @@ public class Gravestone : Interactable
         if (_playerInteraction.GetCarriedRunestone().runestoneState == this.gameObject.GetComponentInChildren<Runestone>(true).runestoneState)
         {
             this.gameObject.GetComponentInChildren<Runestone>(true).gameObject.SetActive(true);
+            _playerInteraction.DropItem();
+            _playerInteraction.GetPickedUpRunestone().gameObject.SetActive(false);
         }
     }
 }

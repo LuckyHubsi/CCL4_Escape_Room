@@ -334,6 +334,11 @@ public class PlayerInteraction : MonoBehaviour
         return _carriedRunestone;
     }
 
+    public Runestone GetPickedUpRunestone()
+    {
+        return _pickedUpRunestone;
+    }
+
     public void CombineTorch(Torch torch)
     {
         if (_playerHoldingItem && !_carriedPotion.gameObject.activeSelf)
