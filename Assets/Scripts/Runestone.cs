@@ -44,11 +44,6 @@ public class Runestone : Interactable
         {
             _playerInteraction.PickUpItem(this.gameObject);
         }
-        else
-        {
-            SetRunestoneState(_playerInteraction.GetCarriedRunestone().runestoneState);
-        }
-
     }
 
     public void SetRunestoneState(RunestoneState newState)

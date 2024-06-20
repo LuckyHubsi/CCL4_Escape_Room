@@ -297,6 +297,18 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.32
       objectReference: {fileID: 0}
@@ -336,6 +348,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7952922495136637648, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cd99fc78895e6e4985d8a98bc7d2fff, type: 2}
+    - target: {fileID: 8454118793439145847, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: runestoneState
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 9219098200671081330, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_Name
       value: Gravestone (7)
@@ -361,6 +381,18 @@ PrefabInstance:
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -402,6 +434,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7952922495136637648, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae52acd98a90d9748ac66a227f0dbc4a, type: 2}
+    - target: {fileID: 8454118793439145847, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: runestoneState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9219098200671081330, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_Name
       value: Gravestone (4)
@@ -427,6 +467,18 @@ PrefabInstance:
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -468,6 +520,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7952922495136637648, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6a13c591a020ed44b29cb15577a5c3f, type: 2}
+    - target: {fileID: 8454118793439145847, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: runestoneState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9219098200671081330, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_Name
       value: Gravestone (3)
@@ -493,6 +553,18 @@ PrefabInstance:
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -534,6 +606,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8454118793439145847, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: runestoneState
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9219098200671081330, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_Name
       value: Gravestone (1)
@@ -559,6 +635,18 @@ PrefabInstance:
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -600,6 +688,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7952922495136637648, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 54b0ee835511ccf4487b29786a4202ff, type: 2}
+    - target: {fileID: 8454118793439145847, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: runestoneState
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9219098200671081330, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_Name
       value: Gravestone (2)
@@ -625,6 +721,18 @@ PrefabInstance:
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -666,6 +774,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7952922495136637648, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0d94f0fa8bad427459aa2d3bf91c03ea, type: 2}
+    - target: {fileID: 8454118793439145847, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: runestoneState
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9219098200671081330, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_Name
       value: Gravestone (5)
@@ -691,6 +807,18 @@ PrefabInstance:
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -732,6 +860,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7952922495136637648, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a29710d2fa053a14a8031ae23730bea5, type: 2}
+    - target: {fileID: 8454118793439145847, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: runestoneState
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9219098200671081330, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_Name
       value: Gravestone (6)
@@ -757,6 +893,18 @@ PrefabInstance:
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -797,6 +945,14 @@ PrefabInstance:
     - target: {fileID: 690843384185830859, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7952922495136637648, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b25ff282f455c984ca6c8e622b92bcbd, type: 2}
+    - target: {fileID: 8454118793439145847, guid: 51636620a211afe419867eba65ea27db, type: 3}
+      propertyPath: runestoneState
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9219098200671081330, guid: 51636620a211afe419867eba65ea27db, type: 3}
       propertyPath: m_Name
