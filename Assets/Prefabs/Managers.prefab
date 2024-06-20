@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 369707875611474991}
   - component: {fileID: 4754519824826493436}
   - component: {fileID: 1891748839213915624}
+  - component: {fileID: 1196663393539367407}
   m_Layer: 0
   m_Name: Managers
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 3135413419359875613}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &369707875611474991
 MonoBehaviour:
@@ -56,6 +57,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   potions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  ingredients:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -141,6 +149,45 @@ MonoBehaviour:
   puzzleOneSolved: 0
   puzzleTwoSolved: 0
   puzzleThreeSolved: 0
+--- !u!114 &1196663393539367407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7351528757383434643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b74bcb3e83193449874ec22844f7c09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  witch: {fileID: 0}
+  detectionBox: {fileID: 0}
+  susMeterOverlay: {fileID: 0}
+  susAlphaCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.0000000013969839
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &7229091429486964930
 PrefabInstance:
   m_ObjectHideFlags: 0
