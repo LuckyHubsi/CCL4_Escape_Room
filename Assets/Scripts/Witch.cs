@@ -13,8 +13,8 @@ public class WitchBehavior : MonoBehaviour
     public bool isWatching; // Boolean to control watching state
     public int currentWitchState = 0;
 
-    private float idleTime;
-    private float pouringTime = 3f;
+    private float idleTimeRandom;
+    private float pouringAnimationDuration;
     private float walkTime = 2f; // This time is used to calculate the speed
     private float teleportBackTime;
     private float walkSpeed = 1.5f; // Adjust the speed to match the walking animation
@@ -37,7 +37,13 @@ public class WitchBehavior : MonoBehaviour
             if (clip.name == "RIG-Armature|Idle")
             {
                 idleAnimationDuration = clip.length;
-                Debug.Log(idleAnimationDuration);
+                break;
+            }
+
+            if (clip.name == "RIG-Armature|Pouring")
+            {
+                pouringAnimationDuration = clip.length;
+                Debug.Log(pouringAnimationDuration);
                 break;
             }
         }
@@ -50,27 +56,27 @@ public class WitchBehavior : MonoBehaviour
             // Pouring animation
             animator.Play("Pouring");
             currentWitchState = 1;
-            yield return new WaitForSeconds(pouringTime);
+            yield return new WaitForSeconds(5f);
 
             // Idle animation near the cauldron
             animator.Play("Idle");
-            idleTime = Random.Range(3f, 5f);
+            idleTimeRandom = Random.Range(3f, 5f);
             currentWitchState = 2;
-            yield return new WaitForSeconds(idleTime);
+            yield return new WaitForSeconds(idleTimeRandom);
 
             yield return StartCoroutine(Transition(0.25f));
 
             // Teleport to walk start point and walk to end point
             TeleportToPosition(walkStartPoint.position);
             transform.rotation = Quaternion.LookRotation(walkEndPoint.position - walkStartPoint.position); // Face the end point
-            animator.Play("Walking");
+            //animator.Play("Walking");
             currentWitchState = 3;
             yield return StartCoroutine(WalkToPosition(walkEndPoint.position));
 
             // Idle animation after walking for at least 3 seconds
             animator.Play("Idle");
             currentWitchState = 4;
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(idleAnimationDuration);
 
             // Continue idling while isWatching is true
             while (isWatching)
