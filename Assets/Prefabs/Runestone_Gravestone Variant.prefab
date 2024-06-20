@@ -52,6 +52,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2204401479491812035, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: matRed
+      value: 
+      objectReference: {fileID: 2100000, guid: 7925e9be9cc5c7e4eb5ddffd12d22c71, type: 2}
+    - target: {fileID: 2204401479491812035, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: matBlue
+      value: 
+      objectReference: {fileID: 2100000, guid: 7a54704f0aea56640af2b9713e9a1fb0, type: 2}
+    - target: {fileID: 2204401479491812035, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: matGreen
+      value: 
+      objectReference: {fileID: 2100000, guid: 77c1d13a4774829458d527bb40191d4d, type: 2}
+    - target: {fileID: 2204401479491812035, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: matOrange
+      value: 
+      objectReference: {fileID: 2100000, guid: 92cd302ab1320234a8db5fb6acc49e02, type: 2}
+    - target: {fileID: 2204401479491812035, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: matPurple
+      value: 
+      objectReference: {fileID: 2100000, guid: 1774c1d2b6b2afe488c32fdf05101c25, type: 2}
+    - target: {fileID: 2204401479491812035, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: matYellow
+      value: 
+      objectReference: {fileID: 2100000, guid: 23c29171336dcc544b08fb062ebc5c42, type: 2}
     - target: {fileID: 3739568007878975473, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_Enabled
       value: 0

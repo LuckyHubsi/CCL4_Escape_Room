@@ -174,8 +174,6 @@ GameObject:
   - component: {fileID: 8268984553204645709}
   - component: {fileID: 3310774305476351785}
   - component: {fileID: 3203863652131033656}
-  - component: {fileID: 1677034065748415098}
-  - component: {fileID: 607361111153017403}
   m_Layer: 0
   m_Name: FirstPersonController
   m_TagString: Player
@@ -197,7 +195,7 @@ Transform:
   m_Children:
   - {fileID: 5934073346278338917}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6778610680151993630
 MeshFilter:
@@ -347,63 +345,7 @@ MonoBehaviour:
   _carriedIngredient: {fileID: 6456187757124682312}
   _carriedBucket: {fileID: 8215177561344091671}
   _carriedKey: {fileID: 5183417684947558102}
-  _carriedRunestone: {fileID: 1925949258302625409}
---- !u!114 &1677034065748415098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6040238142305137278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dc9a2c06b4291e46ae25fd93c73d604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
---- !u!114 &607361111153017403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6040238142305137278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09e479cc77bdf1e40bdd0eb40909a9cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 42fda90c4f254264f8c854c39882de7a, type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
-  multiPositionArray: []
+  _carriedRunestone: {fileID: 0}
 --- !u!1001 &1398939090203145594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -639,6 +581,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4992508347958585159, guid: d1d391948963c9d498f1d5ad91541f02, type: 3}
+      propertyPath: runestoneState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7578466290031722202, guid: d1d391948963c9d498f1d5ad91541f02, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -664,17 +610,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1d391948963c9d498f1d5ad91541f02, type: 3}
---- !u!114 &1925949258302625409 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3412551735795356925, guid: d1d391948963c9d498f1d5ad91541f02, type: 3}
-  m_PrefabInstance: {fileID: 3882535108484760188}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d284d22514497447b979209eabb5349, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &3619799565824164702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 566773619429441826, guid: d1d391948963c9d498f1d5ad91541f02, type: 3}
