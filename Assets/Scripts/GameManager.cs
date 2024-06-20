@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void LoadLoseScene()
+    public void LoadLoseScene()
     {
         ScenesManager.Instance.LoadScene(ScenesManager.Scene.Lose);
      
