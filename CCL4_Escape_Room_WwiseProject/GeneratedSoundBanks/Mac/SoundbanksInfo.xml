@@ -78,13 +78,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0CB162DD-7760-8579-1E36-01B680DC7CD6}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{541C450E-8972-E1D9-85D5-7BC700834437}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="11086415" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble.wav</ShortName>
-					<CachePath>SFX/Bubble_66B4C4E5.wem</CachePath>
+					<CachePath>SFX/Bubble_8F2C2AD8.wem</CachePath>
 				</File>
 				<File Id="12446834" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 4.wav</ShortName>
@@ -96,7 +96,7 @@
 				</File>
 				<File Id="122319696" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Waterbucket.wav</ShortName>
-					<CachePath>SFX/Waterbucket_889D1A8C.wem</CachePath>
+					<CachePath>SFX/Waterbucket_C9567E5E.wem</CachePath>
 				</File>
 				<File Id="151348559" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Successful Combination.wav</ShortName>
@@ -292,7 +292,7 @@
 				</File>
 				<File Id="1060044343" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble Start.wav</ShortName>
-					<CachePath>SFX/Bubble Start_3B3F9E4B.wem</CachePath>
+					<CachePath>SFX/Bubble Start_7671A9F1.wem</CachePath>
 				</File>
 				<File Id="1067262667" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equipping Waterbucket.wav</ShortName>
@@ -656,5 +656,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DE5D5C06-7D97-3B2C-7947-B577B4322AAF}</FileHash>
+	<FileHash>{8E10FE25-3506-BD32-A813-F00A8FADC544}</FileHash>
 </SoundBanksInfo>

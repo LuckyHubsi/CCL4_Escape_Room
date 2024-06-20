@@ -1368,6 +1368,7 @@
 										<RandomSequenceContainer Name="Barrier Bubble Active" ID="{80C9F658-ACEA-45CF-8231-D4E2B399BAE4}" ShortID="983370974">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 											</PropertyList>
@@ -1398,9 +1399,12 @@
 													<ChildrenList>
 														<AudioFileSource Name="Bubble" ID="{2841193A-C7B3-4553-869D-77136C5CD242}">
 															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="34.272"/>
+																<Property Name="CrossfadeShape" Type="int16" Value="4"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0072162421383648"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.032"/>
+																<Property Name="LoopEnd" Type="Real64" Value="6.26910248427673"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="3.16679716981132"/>
-																<Property Name="TrimEnd" Type="Real64" Value="5.42619996686668"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Bubble.wav</AudioFile>
@@ -1426,7 +1430,7 @@
 														<AudioFileSource Name="Bubble Start" ID="{87F1F1EC-E525-4C9F-8D1A-FC9001F55106}">
 															<PropertyList>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="10.5315137578616"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.26633771619493"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Bubble Start.wav</AudioFile>

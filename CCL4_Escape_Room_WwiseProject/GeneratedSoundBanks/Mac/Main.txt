@@ -71,10 +71,10 @@ Effect plug-ins	ID	Name	Type				Notes
 	1061798779	Pitch Shifter (Custom)	Wwise Pitch Shifter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	11086415	Bubble	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Bubble_66B4C4E5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Outdoor\Barrier Bubble\Barrier Bubble Active\Bubble		433904
+	11086415	Bubble	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Bubble_8F2C2AD8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Outdoor\Barrier Bubble\Barrier Bubble Active\Bubble		1213904
 	12446834	Cat Purr 4	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Cat Purr 4_D0DBD871.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Cat\Cat Purr 4		642624
 	71493339	Torch Combination	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Torch Combination_7E67330B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Torch Combination		143146
-	122319696	Waterbucket	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Waterbucket_889D1A8C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Waterbucket		76070
+	122319696	Waterbucket	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Waterbucket_C9567E5E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Waterbucket		76070
 	151348559	Successful Combination	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Successful Combination_59D5B0F6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Successful Combination		178942
 	173809254	Drop Bucket	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Drop Bucket_AC693120.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Drop Bucket		98552
 	191815447	Cough Light	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Cough Light_BC160F9A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Coughing\Cough Light		286316
@@ -123,6 +123,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1023023070	Door Closed	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Door Closing_13C9B9C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Indoor\Door Closed		43402
 	1033319075	Pickup Rune	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Pickup Rune_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Pickup Rune		31044
 	1035015651	Drop Rune	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Drop Rune_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Drop Rune		13666
-	1060044343	Bubble Start	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Bubble Start_3B3F9E4B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Outdoor\Barrier Bubble\Barrier Bubble Active\Bubble Start		2022148
+	1060044343	Bubble Start	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Bubble Start_7671A9F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Outdoor\Barrier Bubble\Barrier Bubble Active\Bubble Start		819232
 	1067262667	Equipping Waterbucket	C:\Users\leona\OneDrive\Documents\Github\CCL4_Escape_Room\CCL4_Escape_Room_WwiseProject\.cache\Mac\SFX\Equipping Waterbucket_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player Interact\Other Torch Interaction\Equipping Waterbucket		125168
 
