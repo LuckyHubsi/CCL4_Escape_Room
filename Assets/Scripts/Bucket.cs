@@ -8,6 +8,9 @@ public class Bucket : Interactable
     [SerializeField]
     public BucketState bucketState = BucketState.Empty;
 
+    [SerializeField]
+    private GameObject liquid;
+
     private PlayerInteraction _playerInteraction;
 
     private void Start()
@@ -17,6 +20,8 @@ public class Bucket : Interactable
         {
             Debug.LogError("PlayerInteraction script not found in the scene.");
         }
+
+        SetBucketState(BucketState.Empty);
     }
 
     public override void Interact()
@@ -27,5 +32,14 @@ public class Bucket : Interactable
     public void SetBucketState(BucketState newState)
     {
         bucketState = newState;
+
+        if (bucketState == BucketState.Empty)
+        {
+            liquid.SetActive(false);
+        }
+        else
+        {
+            liquid.SetActive(true);
+        }
     }
 }

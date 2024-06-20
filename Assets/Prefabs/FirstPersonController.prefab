@@ -195,7 +195,7 @@ Transform:
   m_Children:
   - {fileID: 5934073346278338917}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6778610680151993630
 MeshFilter:
@@ -343,7 +343,7 @@ MonoBehaviour:
   _carriedTorch: {fileID: 8401960539496322458}
   _carriedPotion: {fileID: 8133409282977004155}
   _carriedIngredient: {fileID: 6456187757124682312}
-  _carriedBucket: {fileID: 6936921554363152616}
+  _carriedBucket: {fileID: 8215177561344091671}
   _carriedKey: {fileID: 5183417684947558102}
   _carriedRunestone: {fileID: 1925949258302625409}
 --- !u!1001 &1398939090203145594
@@ -630,6 +630,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5108301795317281480}
     m_Modifications:
+    - target: {fileID: 682378753448596023, guid: a96e704fd4533d54bb965015c6cbf79d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2424240150210895429, guid: a96e704fd4533d54bb965015c6cbf79d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767517981503430880, guid: a96e704fd4533d54bb965015c6cbf79d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7822618393700191962, guid: a96e704fd4533d54bb965015c6cbf79d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -678,7 +690,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bucket_Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9040126445559928130, guid: a96e704fd4533d54bb965015c6cbf79d, type: 3}
+    - {fileID: 7149309836166775811, guid: a96e704fd4533d54bb965015c6cbf79d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -688,9 +702,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7822618393700191962, guid: a96e704fd4533d54bb965015c6cbf79d, type: 3}
   m_PrefabInstance: {fileID: 6681532804314319911}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6936921554363152616 stripped
+--- !u!114 &8215177561344091671 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4394800516938773711, guid: a96e704fd4533d54bb965015c6cbf79d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3367494982300265008, guid: a96e704fd4533d54bb965015c6cbf79d, type: 3}
   m_PrefabInstance: {fileID: 6681532804314319911}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
