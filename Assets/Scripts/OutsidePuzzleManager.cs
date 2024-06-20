@@ -34,7 +34,6 @@ public class OutsidePuzzleManager : MonoBehaviour
     // Function to call when all GameObjects are active
     private void OnAllGameObjectsActive()
     {
-        Debug.Log("All GameObjects are active!");
-        // Place your desired function call here
+        ScenesManager.Instance.LoadScene(ScenesManager.Scene.Win);
     }
 }

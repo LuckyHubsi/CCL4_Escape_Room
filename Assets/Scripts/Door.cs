@@ -28,6 +28,7 @@ public class Door : Interactable
 
                 _playerInteraction.DropItem();
                 ScenesManager.Instance.LoadSceneAsync();
+                ProgressionManager.instance.SolvePuzzleOne();
             }
             else
             {

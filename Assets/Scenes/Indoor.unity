@@ -880,6 +880,10 @@ PrefabInstance:
       propertyPath: barrierWindow
       value: 
       objectReference: {fileID: 1209178526}
+    - target: {fileID: 1891748839213915624, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
+      propertyPath: puzzleOneSolved
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7351528757383434643, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: m_Name
       value: Managers
