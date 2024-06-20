@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DCC813CC-8ED0-F7CE-3FEF-F91D9B6DA89E}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{47D49997-B247-A0D2-9E69-57CAD66257BD}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -19,6 +19,7 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="416503422" Name="Scary Violin"/>
 				<Bus Id="493210468" Name="Player Interact"/>
 				<Bus Id="2385628198" Name="Footsteps"/>
 				<Bus Id="2607556080" Name="Menu"/>
@@ -26,6 +27,7 @@
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="46447142" Name="Smoke_Intensity"/>
+				<GameParameter Id="2116405118" Name="Sus_Meter"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="153465979" Name="Barrier_Bubble">
@@ -78,13 +80,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{541C450E-8972-E1D9-85D5-7BC700834437}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A2E42013-A31D-2F06-BBAB-EB70A7FA69AC}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="11086415" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble.wav</ShortName>
-					<CachePath>SFX/Bubble_8F2C2AD8.wem</CachePath>
+					<CachePath>SFX/Bubble_2183739D.wem</CachePath>
 				</File>
 				<File Id="12446834" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 4.wav</ShortName>
@@ -105,6 +107,10 @@
 				<File Id="173809254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drop Bucket.wav</ShortName>
 					<CachePath>SFX/Drop Bucket_AC693120.wem</CachePath>
+				</File>
+				<File Id="185202754" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Scary Violins.wav</ShortName>
+					<CachePath>SFX/Scary Violins_2C7BD0E7.wem</CachePath>
 				</File>
 				<File Id="191815447" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Light.wav</ShortName>
@@ -194,6 +200,10 @@
 					<ShortName>Book Page Turn.wav</ShortName>
 					<CachePath>SFX/Book Page Turn_B96B80F3.wem</CachePath>
 				</File>
+				<File Id="592559004" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Witch death 3.wav</ShortName>
+					<CachePath>SFX/Witch death 3_10C4C929.wem</CachePath>
+				</File>
 				<File Id="602293721" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equip Bucket.wav</ShortName>
 					<CachePath>SFX/Equip Bucket_B7FB03BD.wem</CachePath>
@@ -237,6 +247,10 @@
 				<File Id="804788596" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equipping Waterbucket.wav</ShortName>
 					<CachePath>SFX/Equipping Waterbucket_2E2184AD.wem</CachePath>
+				</File>
+				<File Id="835449167" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Witch death 1.wav</ShortName>
+					<CachePath>SFX/Witch death 1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="847711322" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Crows at Dawn 2.wav</ShortName>
@@ -292,7 +306,11 @@
 				</File>
 				<File Id="1060044343" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble Start.wav</ShortName>
-					<CachePath>SFX/Bubble Start_7671A9F1.wem</CachePath>
+					<CachePath>SFX/Bubble Start_C5741C50.wem</CachePath>
+				</File>
+				<File Id="1064676308" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Witch death 2.wav</ShortName>
+					<CachePath>SFX/Witch death 2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1067262667" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equipping Waterbucket.wav</ShortName>
@@ -568,6 +586,11 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1087241933" Name="Play_Scary_Violins" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="185202754"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2555336501" Name="Play_Smoke" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="632952234"/>
@@ -588,6 +611,13 @@
 						<MediaRef Id="483194744"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4294261068" Name="Play_Witch_death" DurationType="OneShot" DurationMin="1.8812292" DurationMax="2.3775">
+					<MediaRefs>
+						<MediaRef Id="592559004"/>
+						<MediaRef Id="835449167"/>
+						<MediaRef Id="1064676308"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3120915481" Name="Play_Wrong_Combination" DurationType="OneShot" DurationMin="0.9269375" DurationMax="0.9269375">
 					<MediaRefs>
 						<MediaRef Id="383035874"/>
@@ -603,6 +633,7 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="46447142" Name="Smoke_Intensity"/>
+				<GameParameter Id="2116405118" Name="Sus_Meter"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="153465979" Name="Barrier_Bubble">
@@ -656,5 +687,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8E10FE25-3506-BD32-A813-F00A8FADC544}</FileHash>
+	<FileHash>{30263ACC-6CF0-42B9-BAC3-2A4537180770}</FileHash>
 </SoundBanksInfo>

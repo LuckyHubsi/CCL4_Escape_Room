@@ -998,6 +998,166 @@
 										<ActiveSource Name="Door Closing" ID="{6728184D-7030-414D-A050-00317BE2CA51}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="Witch death" ID="{719FFE21-E8CB-41A3-960A-C21832BCE8DC}" ShortID="125499871">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Witch death 1" ID="{4C023B13-9A6E-4E5F-B4CA-12AE74D2D3C8}" ShortID="832813057">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Witch death 1" ID="{3F1DD3F7-DCDD-45A0-84E8-53E9429AB3DC}">
+													<Language>SFX</Language>
+													<AudioFile>Witch death 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="835449167"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Witch death 1" ID="{3F1DD3F7-DCDD-45A0-84E8-53E9429AB3DC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Witch death 2" ID="{5F431920-3B14-40BA-8D49-C4A47F3E809B}" ShortID="772122003">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Witch death 2" ID="{2180126C-1BCC-4B6E-A314-D1BEFC7166EA}">
+													<Language>SFX</Language>
+													<AudioFile>Witch death 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1064676308"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Witch death 2" ID="{2180126C-1BCC-4B6E-A314-D1BEFC7166EA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Witch death 3" ID="{1A0218FB-AF3A-4E65-A5D0-0D8B2DC90BFB}" ShortID="146209265">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Witch death 3" ID="{8676D499-FBC6-4FB7-A75A-9B769A38EA17}">
+													<Language>SFX</Language>
+													<AudioFile>Witch death 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="592559004"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Witch death 3" ID="{8676D499-FBC6-4FB7-A75A-9B769A38EA17}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Scary Violins" ID="{886A48FF-0AC2-4488-97BD-7320B78543AE}" ShortID="893422736">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Scary Violin" ID="{7B0F1066-2911-47F4-AF32-D0B8E7E99B88}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Scary Violins" ID="{4DF43526-6BC0-4299-A7E3-120E5ADFA810}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="78.449"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0618708922955975"/>
+												<Property Name="LoopEnd" Type="Real64" Value="5.90023327437107"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Scary Violins.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="185202754"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{F58F97DD-ADEB-41C5-9649-5B608FC525B9}" ShortID="24264065">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Sus_Meter" ID="{96408E87-4713-480F-A7F1-0923CE1AD7A5}" WorkUnitID="{0691DE2A-7091-4CC2-ACCE-4A5EC4FE9C51}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{84872622-399F-447C-9B43-7DC3BB6E132D}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Scary Violins" ID="{4DF43526-6BC0-4299-A7E3-120E5ADFA810}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Outdoor" ID="{38B9993D-3BA6-4518-ACE8-EC84C0672874}" ShortID="292771165">

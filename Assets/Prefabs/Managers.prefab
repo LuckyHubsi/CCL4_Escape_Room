@@ -188,6 +188,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  _susVolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 949ac6a3b2ec7a44ebeba7653583df64, type: 2}
 --- !u!1001 &7229091429486964930
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: d9f972ba25cf1e478f1e6084a932fd25
     GuidInternal: 
-    m_lastTime: -8584829153617464933
+    m_lastTime: -8584827183899693176
     List:
     - name: Footsteps
       guid: 6cf78b42ec8bac438feac9f25d2b72ce
@@ -105,6 +105,20 @@ MonoBehaviour:
         ObjectType: 2
         guid: 5521a3eceb0a4240b028b36a32b351ed
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Player Interact
+    - name: Scary Violin
+      guid: 66100f7b1129f447af32d0b8e7e99b88
+      id: 416503422
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d9f972ba25cf1e478f1e6084a932fd25
+      - ElementName: Scary Violin
+        ObjectType: 2
+        guid: 66100f7b1129f447af32d0b8e7e99b88
+      Path: Master-Mixer Hierarchy\Default Work Unit\Scary Violin
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -775,7 +789,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2ade91069170c24cacce4a5ec4fe9c51
     GuidInternal: 
-    m_lastTime: -8584829153620173115
+    m_lastTime: -8584827196165153677
     List:
     - name: Smoke_Intensity
       guid: 072682968cd08844a710f9219df248fe
@@ -791,6 +805,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 072682968cd08844a710f9219df248fe
       Path: Game Parameters\Default Work Unit\Smoke_Intensity
+    - name: Sus_Meter
+      guid: 878e409613470f48a7f10923ce1ad7a5
+      id: 2116405118
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2ade91069170c24cacce4a5ec4fe9c51
+      - ElementName: Sus_Meter
+        ObjectType: 13
+        guid: 878e409613470f48a7f10923ce1ad7a5
+      Path: Game Parameters\Default Work Unit\Sus_Meter
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -1372,7 +1400,7 @@ MonoBehaviour:
     m_lastTime: -8584829153603778057
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000190000001a0000001e0000002a000000730000007400000075000000584e0000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000190000001a0000001e000000200000002a000000730000007400000075000000584e0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

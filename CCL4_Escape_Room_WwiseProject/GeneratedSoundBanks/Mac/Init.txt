@@ -1,4 +1,8 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2116405118	Sus_Meter			\Default Work Unit\Sus_Meter	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	416503422	Scary Violin			\Default Work Unit\Scary Violin	
 	493210468	Player Interact			\Default Work Unit\Master Audio Bus\Player Interact	
 	2385628198	Footsteps			\Default Work Unit\Master Audio Bus\Footsteps	
 	2607556080	Menu			\Default Work Unit\Master Audio Bus\Menu	

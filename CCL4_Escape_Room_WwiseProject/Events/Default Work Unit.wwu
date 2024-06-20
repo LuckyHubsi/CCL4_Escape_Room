@@ -172,6 +172,28 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_Scary_Violins" ID="{824BB9AA-B6FB-4AC1-9201-43B5F8879BEB}">
+									<ChildrenList>
+										<Action Name="" ID="{90EB7880-DF34-4844-9F0F-1775240BE1AF}" ShortID="980320866">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Scary Violins" ID="{886A48FF-0AC2-4488-97BD-7320B78543AE}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Witch_death" ID="{53B8A448-23E1-480D-986B-8D7EE3D84707}">
+									<ChildrenList>
+										<Action Name="" ID="{C64CAD0A-E6DD-4F8A-BB4B-A3101385CB53}" ShortID="218209772">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Witch death" ID="{719FFE21-E8CB-41A3-960A-C21832BCE8DC}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Outdoor" ID="{8B6A9F7D-CE2A-405E-987B-BA1B306C6C52}" ShortID="98842857">

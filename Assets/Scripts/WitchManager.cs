@@ -18,9 +18,13 @@ public class WitchManager : MonoBehaviour
     [SerializeField]
     private AnimationCurve susAlphaCurve;
 
+    [SerializeField]
+    private AK.Wwise.RTPC _susVolumeRTPC;
+
     private void Start()
     {
         susMeter = _initialSusMeter;
+        _susVolumeRTPC.SetGlobalValue(0);
     }
 
     private void Update()
@@ -32,6 +36,7 @@ public class WitchManager : MonoBehaviour
                 witch.isWatching = true; // Continue watching
                // Debug.Log("Witch is watching");
                 susMeter -= Time.deltaTime;
+                _susVolumeRTPC.SetGlobalValue(Mathf.Round(100 - (susMeter / _initialSusMeter * 100)));
                 if (susMeter <= 0)
                 {
                     GameManager.instance.LoadLoseScene();
@@ -43,6 +48,7 @@ public class WitchManager : MonoBehaviour
         else if (!playerInBox)
         {
             if(susMeter <= _initialSusMeter){susMeter += Time.deltaTime*calmDownMeter;}
+            _susVolumeRTPC.SetGlobalValue(Mathf.Round(100 - (susMeter / _initialSusMeter * 100)));
         }
         UpdateSusMeterOverlay();
     }

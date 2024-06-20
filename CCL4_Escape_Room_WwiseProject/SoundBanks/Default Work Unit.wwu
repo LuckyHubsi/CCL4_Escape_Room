@@ -14,12 +14,14 @@
 						<ObjectRef Name="Play_Nature" ID="{DCBC85E8-D9BD-4425-841C-1D2A824359BC}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Crows_2" ID="{4E328971-E421-449E-8805-EE96791538B1}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Smoke" ID="{3BD3EB08-14E9-45C2-A0B7-EEEA1BDF03EC}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Witch_death" ID="{53B8A448-23E1-480D-986B-8D7EE3D84707}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Cauldron" ID="{EBBD3B38-AD89-486B-A000-444A1D0EA575}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Player_Interact" ID="{7C1FA3EB-676B-48AA-978C-3F3C7797C27B}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Wrong_Combination" ID="{422076A8-5A32-4957-A0B8-6B63218BCBC9}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Magic_Barrier_Door" ID="{CAB3BC32-C696-49D2-982E-65AE6DB5BFC2}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps" ID="{A91E6A99-451A-49D9-943F-F3CE19CA8A99}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Magic_Barrier_Door" ID="{18DB4CB0-922E-4A0A-BBC0-B8417FEB7780}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Scary_Violins" ID="{824BB9AA-B6FB-4AC1-9201-43B5F8879BEB}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Magic_Barrier_Window" ID="{3F4572EC-FF92-4AEB-9D9E-A700A6D2EE24}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Coughing" ID="{118DF235-79AD-4B54-A8C9-6E189E507777}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Birb" ID="{CB5246DD-1552-4C42-9956-9AB844B53A56}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>

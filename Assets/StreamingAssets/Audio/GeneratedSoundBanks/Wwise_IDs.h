@@ -27,10 +27,12 @@ namespace AK
         static const AkUniqueID PLAY_MAGIC_BARRIER_WINDOW = 2862905942U;
         static const AkUniqueID PLAY_NATURE = 1360368683U;
         static const AkUniqueID PLAY_PLAYER_INTERACT = 305502530U;
+        static const AkUniqueID PLAY_SCARY_VIOLINS = 1087241933U;
         static const AkUniqueID PLAY_SMOKE = 2555336501U;
         static const AkUniqueID PLAY_SUCCESSFUL_COMBINATION = 4156768940U;
         static const AkUniqueID PLAY_TORCH_CRACKLING = 45744291U;
         static const AkUniqueID PLAY_WHITE_NOISE = 2214627026U;
+        static const AkUniqueID PLAY_WITCH_DEATH = 4294261068U;
         static const AkUniqueID PLAY_WRONG_COMBINATION = 3120915481U;
         static const AkUniqueID STOP_MAGIC_BARRIER_DOOR = 2992760128U;
         static const AkUniqueID STOP_MAGIC_BARRIER_WINDOW = 3780008132U;
@@ -120,6 +122,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID SMOKE_INTENSITY = 46447142U;
+        static const AkUniqueID SUS_METER = 2116405118U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -134,6 +137,7 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MENU = 2607556080U;
         static const AkUniqueID PLAYER_INTERACT = 493210468U;
+        static const AkUniqueID SCARY_VIOLIN = 416503422U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

@@ -22,6 +22,52 @@
 						<Bus Name="Player Interact" ID="{ECA32155-0AEB-4042-B028-B36A32B351ED}"/>
 						<Bus Name="Menu" ID="{CB742730-1959-4ACC-B6E0-552A544D2B99}"/>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{1DE3618E-ABC5-47B5-B19B-23870C525612}" ShortID="295891854">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Sus_Meter" ID="{96408E87-4713-480F-A7F1-0923CE1AD7A5}" WorkUnitID="{0691DE2A-7091-4CC2-ACCE-4A5EC4FE9C51}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{09992102-E253-48DD-8DF5-5DDFD805AEE8}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-21.4213</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+				<Bus Name="Scary Violin" ID="{7B0F1066-2911-47F4-AF32-D0B8E7E99B88}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{A996ADFA-AAB4-43A4-822D-5753FDF32AEF}" WorkUnitID="{285A2066-F6BD-49FF-90B1-2DCDBE239D7E}"/>
+						</Reference>
+					</ReferenceList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
