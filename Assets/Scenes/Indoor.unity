@@ -1075,6 +1075,10 @@ PrefabInstance:
       propertyPath: mirror
       value: 
       objectReference: {fileID: 323503244}
+    - target: {fileID: 4897566780465845963, guid: 3f0dd8812e074994db39115676a235e2, type: 3}
+      propertyPath: field of view
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 5093313639572907955, guid: 3f0dd8812e074994db39115676a235e2, type: 3}
       propertyPath: mirror
       value: 
