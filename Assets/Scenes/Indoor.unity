@@ -302,18 +302,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 530222183173751193, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2b10e3e819d0ff342a838da3220f4be2, type: 2}
     - target: {fileID: 3786118602706364108, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
       propertyPath: m_Name
       value: Environment
       objectReference: {fileID: 0}
-    - target: {fileID: 4091305171663733988, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2b10e3e819d0ff342a838da3220f4be2, type: 2}
     - target: {fileID: 4306268035952448757, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
       propertyPath: witchManager
       value: 
@@ -361,10 +353,6 @@ PrefabInstance:
     - target: {fileID: 7762075214034225780, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7894058452040458801, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
