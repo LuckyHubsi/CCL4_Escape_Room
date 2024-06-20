@@ -244,6 +244,39 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Play_Main_Menu_Sound" ID="{E283B1C8-2499-4678-9245-642B4A29B9D1}">
+							<ChildrenList>
+								<Action Name="" ID="{C290AE0C-CF26-44DC-804D-5C138632BE95}" ShortID="624838465">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main Menu Sound" ID="{1575ACE2-4B9F-409C-8246-E605AA44057D}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Lose" ID="{2581001E-B3AD-4C5B-A835-C555E2158C21}">
+							<ChildrenList>
+								<Action Name="" ID="{FB3FE5C1-6C2E-4ADD-A8FC-892225B699F6}" ShortID="635700506">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lose" ID="{E8BDFB52-CE50-43A0-A470-39AFFFA5C3C7}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Win" ID="{5148798D-9993-40C8-A6D1-85813DC3CD95}">
+							<ChildrenList>
+								<Action Name="" ID="{5883F89B-DFC8-47BA-B1E4-E84928578329}" ShortID="90551142">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Win" ID="{B50841C6-4335-414E-954A-591C5EC810A7}" WorkUnitID="{1D8A35E4-55CD-443B-98A4-503AE76B8C2E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Stop" ID="{9EF7134F-51F1-4B4B-ACC8-65C1D1B744C6}" ShortID="395466208">
