@@ -131,7 +131,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584827176437938772
+    m_lastTime: -8584826883688077436
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -159,7 +159,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584827176442523611
+    m_lastTime: -8584826883688124444
     List:
     - name: Indoor
       guid: 383a1dc50b2d9d45888aaa1ef481ec3b
@@ -442,6 +442,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.7845625
       minDuration: 0.41179278
+    - name: Play_Lose
+      guid: 1e008125adb35b4ca835c555e2158c21
+      id: 3796466245
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Lose
+        ObjectType: 3
+        guid: 1e008125adb35b4ca835c555e2158c21
+      Path: Events\Default Work Unit\Play\Play_Lose
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Magic_Barrier_Door
       guid: b04cdb182e920a4abbc0b8417feb7780
       id: 2205790566
@@ -488,6 +508,26 @@ MonoBehaviour:
       maxAttenuation: 100
       maxDuration: Infinity
       minDuration: 1.5630158
+    - name: Play_Main_Menu_Sound
+      guid: c8b183e2992478469245642b4a29b9d1
+      id: 1897602333
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Main_Menu_Sound
+        ObjectType: 3
+        guid: c8b183e2992478469245642b4a29b9d1
+      Path: Events\Default Work Unit\Play\Play_Main_Menu_Sound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Nature
       guid: e885bcdcbdd92544841c1d2a824359bc
       id: 1360368683
@@ -640,6 +680,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 35e2151a0001f8408225e8ca7e237bcc
       Path: Events\Default Work Unit\Play\Indoor\Play_White_Noise
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Win
+      guid: 8d7948519399c840a6d185813dc3cd95
+      id: 2955987680
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Play_Win
+        ObjectType: 3
+        guid: 8d7948519399c840a6d185813dc3cd95
+      Path: Events\Default Work Unit\Play\Play_Win
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1446,7 +1506,7 @@ MonoBehaviour:
     m_lastTime: -8584829153603778057
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000190000001a0000001e000000200000002a000000730000007400000075000000584e0000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000190000001a0000001e0000002a0000004e0000004f00000050000000730000007400000075000000584e0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

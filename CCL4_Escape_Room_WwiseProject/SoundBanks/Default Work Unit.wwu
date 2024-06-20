@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{70738921-B883-4353-B99D-E2C50AEC4784}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Door_Closed" ID="{E638C898-2E82-40A4-888B-7512FAE874E0}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Win" ID="{5148798D-9993-40C8-A6D1-85813DC3CD95}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Magic_Barrier_Window" ID="{A24021DA-64F4-40F7-9F7E-23EFBB08D65B}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_White_Noise" ID="{1A15E235-0100-40F8-8225-E8CA7E237BCC}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Cat" ID="{4DA810DE-178B-4139-B5FC-F0AE0F637307}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
@@ -14,6 +15,7 @@
 						<ObjectRef Name="Play_Nature" ID="{DCBC85E8-D9BD-4425-841C-1D2A824359BC}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Crows_2" ID="{4E328971-E421-449E-8805-EE96791538B1}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Smoke" ID="{3BD3EB08-14E9-45C2-A0B7-EEEA1BDF03EC}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Main_Menu_Sound" ID="{E283B1C8-2499-4678-9245-642B4A29B9D1}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Witch_death" ID="{53B8A448-23E1-480D-986B-8D7EE3D84707}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Cauldron" ID="{EBBD3B38-AD89-486B-A000-444A1D0EA575}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Player_Interact" ID="{7C1FA3EB-676B-48AA-978C-3F3C7797C27B}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
@@ -25,6 +27,7 @@
 						<ObjectRef Name="Stop_Magic_Barrier_Window" ID="{3F4572EC-FF92-4AEB-9D9E-A700A6D2EE24}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Coughing" ID="{118DF235-79AD-4B54-A8C9-6E189E507777}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Birb" ID="{CB5246DD-1552-4C42-9956-9AB844B53A56}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Lose" ID="{2581001E-B3AD-4C5B-A835-C555E2158C21}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Interact" ID="{B23C645E-5805-4E4F-B9D9-D369489E5D08}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Torch_Crackling" ID="{BC18844B-635D-4E61-BA9D-59123EADBA3D}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_White_Noise" ID="{B61087B4-AE2E-4EA0-B074-3556030228BB}" WorkUnitID="{A6608180-E719-42C8-8695-CC464271BD8B}" Origin="Manual" Filter="7"/>

@@ -80,241 +80,265 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A2E42013-A31D-2F06-BBAB-EB70A7FA69AC}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7F54A922-8E50-71D3-ECD3-A8E9C906755F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="11086415" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble.wav</ShortName>
-					<CachePath>SFX/Bubble_2183739D.wem</CachePath>
+					<CachePath>SFX/Bubble_80BA784D.wem</CachePath>
 				</File>
 				<File Id="12446834" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 4.wav</ShortName>
-					<CachePath>SFX/Cat Purr 4_D0DBD871.wem</CachePath>
+					<CachePath>SFX/Cat Purr 4_8D55DB41.wem</CachePath>
 				</File>
 				<File Id="71493339" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Combination.wav</ShortName>
-					<CachePath>SFX/Torch Combination_7E67330B.wem</CachePath>
+					<CachePath>SFX/Torch Combination_CAFA147B.wem</CachePath>
 				</File>
 				<File Id="122319696" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Waterbucket.wav</ShortName>
-					<CachePath>SFX/Waterbucket_C9567E5E.wem</CachePath>
+					<CachePath>SFX/Waterbucket_8AAD770E.wem</CachePath>
+				</File>
+				<File Id="133497815" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Win.wav</ShortName>
+					<CachePath>SFX/Win_6EF5E680.wem</CachePath>
 				</File>
 				<File Id="151348559" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Successful Combination.wav</ShortName>
-					<CachePath>SFX/Successful Combination_59D5B0F6.wem</CachePath>
+					<CachePath>SFX/Successful Combination_EF962546.wem</CachePath>
 				</File>
 				<File Id="173809254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drop Bucket.wav</ShortName>
-					<CachePath>SFX/Drop Bucket_AC693120.wem</CachePath>
+					<CachePath>SFX/Drop Bucket_09281C50.wem</CachePath>
 				</File>
 				<File Id="185202754" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Scary Violins.wav</ShortName>
-					<CachePath>SFX/Scary Violins_2C7BD0E7.wem</CachePath>
+					<CachePath>SFX/Scary Violins_0F3AA465.wem</CachePath>
 				</File>
 				<File Id="191815447" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Light.wav</ShortName>
-					<CachePath>SFX/Cough Light_BC160F9A.wem</CachePath>
+					<CachePath>SFX/Cough Light_B73162CA.wem</CachePath>
 				</File>
 				<File Id="195846651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 2.wav</ShortName>
-					<CachePath>SFX/Cat Purr 2_D143E6EF.wem</CachePath>
+					<CachePath>SFX/Cat Purr 2_01F03CBF.wem</CachePath>
 				</File>
 				<File Id="201119281" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cauldron.wav</ShortName>
-					<CachePath>SFX/Cauldron_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Cauldron_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="215573568" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Crackling.wav</ShortName>
-					<CachePath>SFX/Torch Crackling_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Torch Crackling_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="232548541" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Barrier Disappearing.wav</ShortName>
-					<CachePath>SFX/Barrier Disappearing_BF8C0392.wem</CachePath>
+					<CachePath>SFX/Barrier Disappearing_C48F55C2.wem</CachePath>
 				</File>
 				<File Id="261649340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 5.wav</ShortName>
-					<CachePath>SFX/Cat Purr 5_B472098D.wem</CachePath>
+					<CachePath>SFX/Cat Purr 5_F2B33CDD.wem</CachePath>
 				</File>
 				<File Id="265545411" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Use Rune.wav</ShortName>
-					<CachePath>SFX/Use Rune_10C4C929.wem</CachePath>
+					<CachePath>SFX/Use Rune_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="296639955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crows.wav</ShortName>
-					<CachePath>SFX/crows_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/crows_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="319361733" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 1.wav</ShortName>
-					<CachePath>SFX/Cat Purr 1_08E51AC2.wem</CachePath>
+					<CachePath>SFX/Cat Purr 1_4550ED92.wem</CachePath>
 				</File>
 				<File Id="335979049" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Magic Barrier.wav</ShortName>
-					<CachePath>SFX/Magic Barrier_C5579977.wem</CachePath>
+					<CachePath>SFX/Magic Barrier_18A59087.wem</CachePath>
 				</File>
 				<File Id="340508672" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Window Rune be gone.wav</ShortName>
-					<CachePath>SFX/Window Rune be gone_765DD1BB.wem</CachePath>
+					<CachePath>SFX/Window Rune be gone_7A324F8B.wem</CachePath>
+				</File>
+				<File Id="342181342" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Main Menu3.wav</ShortName>
+					<CachePath>SFX/Main Menu3_B3E51A6F.wem</CachePath>
+				</File>
+				<File Id="363745209" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Main Menu1.wav</ShortName>
+					<CachePath>SFX/Main Menu1_A2907113.wem</CachePath>
 				</File>
 				<File Id="381718829" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Using Water.wav</ShortName>
-					<CachePath>SFX/Using Water_19454D2A.wem</CachePath>
+					<CachePath>SFX/Using Water_568A6B5A.wem</CachePath>
 				</File>
 				<File Id="383035874" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Error Sound.wav</ShortName>
-					<CachePath>SFX/Error Sound_BDC2C1B8.wem</CachePath>
+					<CachePath>SFX/Error Sound_F9F61388.wem</CachePath>
 				</File>
 				<File Id="442710542" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_1.wav</ShortName>
-					<CachePath>SFX/Footsteps_Wood_1_028D8A8F.wem</CachePath>
+					<CachePath>SFX/Footsteps_Wood_1_9A9188FF.wem</CachePath>
 				</File>
 				<File Id="456015311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equip Key.wav</ShortName>
-					<CachePath>SFX/Equip Key_83B75240.wem</CachePath>
+					<CachePath>SFX/Equip Key_A47F7450.wem</CachePath>
 				</File>
 				<File Id="466972273" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Ignition.wav</ShortName>
-					<CachePath>SFX/Torch Ignition_10C4C929.wem</CachePath>
+					<CachePath>SFX/Torch Ignition_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="467592888" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Grass_3.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass_3_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Grass_3_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="483194744" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>White Noise.wav</ShortName>
-					<CachePath>SFX/White Noise_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/White Noise_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="485561138" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Main Menu4.wav</ShortName>
+					<CachePath>SFX/Main Menu4_37FCF6C2.wem</CachePath>
 				</File>
 				<File Id="525695517" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Dropping.wav</ShortName>
-					<CachePath>SFX/Torch Dropping_397B475D.wem</CachePath>
+					<CachePath>SFX/Torch Dropping_41738F2D.wem</CachePath>
 				</File>
 				<File Id="528654628" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equipping Potion.wav</ShortName>
-					<CachePath>SFX/Equipping Potion_10C4C929.wem</CachePath>
+					<CachePath>SFX/Equipping Potion_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="573187394" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Equipping.wav</ShortName>
-					<CachePath>SFX/Torch Equipping_5BE1B41A.wem</CachePath>
+					<CachePath>SFX/Torch Equipping_272944AA.wem</CachePath>
 				</File>
 				<File Id="573619884" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Book Page Turn.wav</ShortName>
-					<CachePath>SFX/Book Page Turn_B96B80F3.wem</CachePath>
+					<CachePath>SFX/Book Page Turn_AF5B04C3.wem</CachePath>
 				</File>
 				<File Id="592559004" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Witch death 3.wav</ShortName>
-					<CachePath>SFX/Witch death 3_10C4C929.wem</CachePath>
+					<CachePath>SFX/Witch death 3_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="602293721" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equip Bucket.wav</ShortName>
-					<CachePath>SFX/Equip Bucket_B7FB03BD.wem</CachePath>
+					<CachePath>SFX/Equip Bucket_1373D6AD.wem</CachePath>
 				</File>
 				<File Id="617338295" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bird - Pajaro 1.wav</ShortName>
-					<CachePath>SFX/Bird - Pajaro 1_8C8E88AD.wem</CachePath>
+					<CachePath>SFX/Bird - Pajaro 1_0989AB9D.wem</CachePath>
 				</File>
 				<File Id="624127175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Smoke Reset.wav</ShortName>
-					<CachePath>SFX/Smoke Reset_0208F59F.wem</CachePath>
+					<CachePath>SFX/Smoke Reset_B325DCCF.wem</CachePath>
 				</File>
 				<File Id="632952234" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Smoke.wav</ShortName>
-					<CachePath>SFX/Smoke_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Smoke_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="642073495" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bird - Pajaro 3.wav</ShortName>
-					<CachePath>SFX/Bird - Pajaro 3_CAC41FE3.wem</CachePath>
+					<CachePath>SFX/Bird - Pajaro 3_629838B3.wem</CachePath>
 				</File>
 				<File Id="674036316" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dropping Potion.wav</ShortName>
-					<CachePath>SFX/Dropping Potion_BBBE5E8C.wem</CachePath>
+					<CachePath>SFX/Dropping Potion_D838D4BC.wem</CachePath>
 				</File>
 				<File Id="691056013" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_2.wav.wav</ShortName>
-					<CachePath>SFX/Footsteps_Wood_2.wav_A03D4110.wem</CachePath>
+					<CachePath>SFX/Footsteps_Wood_2.wav_0C612760.wem</CachePath>
+				</File>
+				<File Id="751703882" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Lose.wav</ShortName>
+					<CachePath>SFX/Lose_A995026E.wem</CachePath>
 				</File>
 				<File Id="753759525" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Use Key.wav</ShortName>
-					<CachePath>SFX/Use Key_E9C98881.wem</CachePath>
+					<CachePath>SFX/Use Key_150874B1.wem</CachePath>
+				</File>
+				<File Id="758387717" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Main Menu2.wav</ShortName>
+					<CachePath>SFX/Main Menu2_45EA4C23.wem</CachePath>
 				</File>
 				<File Id="762033562" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bird - Pajaro 3(2).wav</ShortName>
-					<CachePath>SFX/Bird - Pajaro 3(2)_0664B09D.wem</CachePath>
+					<CachePath>SFX/Bird - Pajaro 3(2)_DC3F33ED.wem</CachePath>
 				</File>
 				<File Id="763857974" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Using Potion.wav</ShortName>
-					<CachePath>SFX/Using Potion_2909CEE1.wem</CachePath>
+					<CachePath>SFX/Using Potion_5E12B191.wem</CachePath>
 				</File>
 				<File Id="804788596" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equipping Waterbucket.wav</ShortName>
-					<CachePath>SFX/Equipping Waterbucket_2E2184AD.wem</CachePath>
+					<CachePath>SFX/Equipping Waterbucket_AC16F3FD.wem</CachePath>
 				</File>
 				<File Id="835449167" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Witch death 1.wav</ShortName>
-					<CachePath>SFX/Witch death 1_10C4C929.wem</CachePath>
+					<CachePath>SFX/Witch death 1_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="847711322" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Crows at Dawn 2.wav</ShortName>
-					<CachePath>SFX/Crows at Dawn 2_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Crows at Dawn 2_9EDFC787.wem</CachePath>
 				</File>
 				<File Id="851999931" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cat Purr 3.wav</ShortName>
-					<CachePath>SFX/Cat Purr 3_F9B04E36.wem</CachePath>
+					<CachePath>SFX/Cat Purr 3_684D9F06.wem</CachePath>
 				</File>
 				<File Id="879798572" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drop Key.wav</ShortName>
-					<CachePath>SFX/Drop Key_CE58C8FA.wem</CachePath>
+					<CachePath>SFX/Drop Key_7C9ACCCA.wem</CachePath>
 				</File>
 				<File Id="891873728" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Torch Degnition.wav</ShortName>
-					<CachePath>SFX/Torch Degnition_1485660C.wem</CachePath>
+					<CachePath>SFX/Torch Degnition_AAE793FC.wem</CachePath>
 				</File>
 				<File Id="911370399" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Medium.wav</ShortName>
-					<CachePath>SFX/Cough Medium_28D35CF5.wem</CachePath>
+					<CachePath>SFX/Cough Medium_976B6225.wem</CachePath>
 				</File>
 				<File Id="942542682" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Grass_1.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass_1_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Grass_1_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="969354292" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Grass_2.wav</ShortName>
-					<CachePath>SFX/Footsteps_Grass_2_10C4C929.wem</CachePath>
+					<CachePath>SFX/Footsteps_Grass_2_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="995375094" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Wood_3.wav.wav</ShortName>
-					<CachePath>SFX/Footsteps_Wood_3.wav_4ED5FF9F.wem</CachePath>
+					<CachePath>SFX/Footsteps_Wood_3.wav_0532E1EF.wem</CachePath>
 				</File>
 				<File Id="1007169636" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Nature.wav</ShortName>
-					<CachePath>SFX/Nature_10C4C929.wem</CachePath>
+					<CachePath>SFX/Nature_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1011679340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cough Heavy.wav</ShortName>
-					<CachePath>SFX/Cough Heavy_8680685E.wem</CachePath>
+					<CachePath>SFX/Cough Heavy_2124354E.wem</CachePath>
 				</File>
 				<File Id="1023023070" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Door Closing.wav</ShortName>
-					<CachePath>SFX/Door Closing_13C9B9C2.wem</CachePath>
+					<CachePath>SFX/Door Closing_49C69DF2.wem</CachePath>
 				</File>
 				<File Id="1033319075" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Pickup Rune.wav</ShortName>
-					<CachePath>SFX/Pickup Rune_10C4C929.wem</CachePath>
+					<CachePath>SFX/Pickup Rune_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1035015651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drop Rune.wav</ShortName>
-					<CachePath>SFX/Drop Rune_10C4C929.wem</CachePath>
+					<CachePath>SFX/Drop Rune_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1060044343" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble Start.wav</ShortName>
-					<CachePath>SFX/Bubble Start_C5741C50.wem</CachePath>
+					<CachePath>SFX/Bubble Start_E3664E80.wem</CachePath>
 				</File>
 				<File Id="1064676308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Witch death 2.wav</ShortName>
-					<CachePath>SFX/Witch death 2_10C4C929.wem</CachePath>
+					<CachePath>SFX/Witch death 2_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="1067262667" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Equipping Waterbucket.wav</ShortName>
-					<CachePath>SFX/Equipping Waterbucket_10C4C929.wem</CachePath>
+					<CachePath>SFX/Equipping Waterbucket_3F75BDB9.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -425,6 +449,11 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3796466245" Name="Play_Lose" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="751703882"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2205790566" Name="Play_Magic_Barrier_Door" MaxAttenuation="3" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="335979049"/>
@@ -455,6 +484,14 @@
 							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="1897602333" Name="Play_Main_Menu_Sound" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="342181342"/>
+						<MediaRef Id="363745209"/>
+						<MediaRef Id="485561138"/>
+						<MediaRef Id="758387717"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="1360368683" Name="Play_Nature" DurationType="OneShot" DurationMin="12.500313" DurationMax="12.500313">
 					<MediaRefs>
@@ -611,6 +648,11 @@
 						<MediaRef Id="483194744"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2955987680" Name="Play_Win" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="133497815"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4294261068" Name="Play_Witch_death" DurationType="OneShot" DurationMin="1.8812292" DurationMax="2.3775">
 					<MediaRefs>
 						<MediaRef Id="592559004"/>
@@ -687,5 +729,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{30263ACC-6CF0-42B9-BAC3-2A4537180770}</FileHash>
+	<FileHash>{26183ABC-DFA9-2039-1316-049A44E411E2}</FileHash>
 </SoundBanksInfo>

@@ -23,8 +23,10 @@ namespace AK
         static const AkUniqueID PLAY_CROWS_2 = 1519828893U;
         static const AkUniqueID PLAY_DOOR_CLOSED = 828587345U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_LOSE = 3796466245U;
         static const AkUniqueID PLAY_MAGIC_BARRIER_DOOR = 2205790566U;
         static const AkUniqueID PLAY_MAGIC_BARRIER_WINDOW = 2862905942U;
+        static const AkUniqueID PLAY_MAIN_MENU_SOUND = 1897602333U;
         static const AkUniqueID PLAY_NATURE = 1360368683U;
         static const AkUniqueID PLAY_PLAYER_INTERACT = 305502530U;
         static const AkUniqueID PLAY_SCARY_VIOLINS = 1087241933U;
@@ -32,6 +34,7 @@ namespace AK
         static const AkUniqueID PLAY_SUCCESSFUL_COMBINATION = 4156768940U;
         static const AkUniqueID PLAY_TORCH_CRACKLING = 45744291U;
         static const AkUniqueID PLAY_WHITE_NOISE = 2214627026U;
+        static const AkUniqueID PLAY_WIN = 2955987680U;
         static const AkUniqueID PLAY_WITCH_DEATH = 4294261068U;
         static const AkUniqueID PLAY_WRONG_COMBINATION = 3120915481U;
         static const AkUniqueID STOP_MAGIC_BARRIER_DOOR = 2992760128U;
