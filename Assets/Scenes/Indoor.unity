@@ -230,6 +230,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8103736466701487436, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
   m_PrefabInstance: {fileID: 853555370}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &487843640 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1196663393539367407, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
+  m_PrefabInstance: {fileID: 1076249464394986567}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b74bcb3e83193449874ec22844f7c09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &557840610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3871599388355522886, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
@@ -371,6 +382,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4306268035952448757, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
+      propertyPath: witchManager
+      value: 
+      objectReference: {fileID: 487843640}
     - target: {fileID: 7762075214034225780, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
       propertyPath: m_RootOrder
       value: 4
