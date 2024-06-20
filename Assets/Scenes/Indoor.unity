@@ -128,6 +128,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7701940972737470281, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
   m_PrefabInstance: {fileID: 853555370}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &137314171 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2315344547272681152, guid: 3f0dd8812e074994db39115676a235e2, type: 3}
+  m_PrefabInstance: {fileID: 8339447366517741460}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4431dbbdfb2f1ff4a96ad45e6f2e6de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &194190914 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2915654660282732038, guid: 429276f856ebc094da6d050765b0e57d, type: 3}
@@ -434,6 +445,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1037454984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7154209355109834189, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
+  m_PrefabInstance: {fileID: 853555370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1135827528
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +647,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1055100369711563062, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
   m_PrefabInstance: {fileID: 853555370}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1266415411 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5969493740180086156, guid: a0b1e68e197873a4b941bd645b878a44, type: 3}
+  m_PrefabInstance: {fileID: 1214257223}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1307657835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7894058452040458801, guid: 41b55b2eac5225843b8f8d3030336310, type: 3}
@@ -957,6 +984,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1196663393539367407, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
+      propertyPath: witch
+      value: 
+      objectReference: {fileID: 137314171}
+    - target: {fileID: 1196663393539367407, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
+      propertyPath: detectionBox
+      value: 
+      objectReference: {fileID: 1037454984}
+    - target: {fileID: 1196663393539367407, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
+      propertyPath: susMeterOverlay
+      value: 
+      objectReference: {fileID: 1266415411}
     - target: {fileID: 1891748839213915624, guid: b7fc10d2fc5b8ac41a003cca561240ca, type: 3}
       propertyPath: barrierDoor
       value: 
