@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: d9f972ba25cf1e478f1e6084a932fd25
     GuidInternal: 
-    m_lastTime: -8584827183899693176
+    m_lastTime: -8584827176438706691
     List:
     - name: Footsteps
       guid: 6cf78b42ec8bac438feac9f25d2b72ce
@@ -131,7 +131,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584827436565803968
+    m_lastTime: -8584827176437938772
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -159,7 +159,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584827436574204095
+    m_lastTime: -8584827176442523611
     List:
     - name: Indoor
       guid: 383a1dc50b2d9d45888aaa1ef481ec3b
@@ -531,6 +531,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: Infinity
       minDuration: 0.14135417
+    - name: Play_Scary_Violins
+      guid: aab94b82fbb6c14a920143b5f8879beb
+      id: 1087241933
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
+      - ElementName: Play_Scary_Violins
+        ObjectType: 3
+        guid: aab94b82fbb6c14a920143b5f8879beb
+      Path: Events\Default Work Unit\Play\Indoor\Play_Scary_Violins
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Smoke
       guid: f130d8a9b94efe4e8e84979ed9769f19
       id: 2555336501
@@ -620,6 +643,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Witch_death
+      guid: 48a4b853e1230d48986b8d7ee3d84707
+      id: 4294261068
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 808160a619e7c8428695cc464271bd8b
+      - ElementName: Play
+        ObjectType: 4
+        guid: 30991119ca5a7848a1b6564065a14ca6
+      - ElementName: Indoor
+        ObjectType: 4
+        guid: 383a1dc50b2d9d45888aaa1ef481ec3b
+      - ElementName: Play_Witch_death
+        ObjectType: 3
+        guid: 48a4b853e1230d48986b8d7ee3d84707
+      Path: Events\Default Work Unit\Play\Indoor\Play_Witch_death
+      maxAttenuation: 0
+      maxDuration: 2.3775
+      minDuration: 1.8812292
     - name: Play_Wrong_Combination
       guid: a8762042325a5749a0b86b63218bcbc9
       id: 3120915481
@@ -789,7 +835,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2ade91069170c24cacce4a5ec4fe9c51
     GuidInternal: 
-    m_lastTime: -8584827196165153677
+    m_lastTime: -8584827176442453986
     List:
     - name: Smoke_Intensity
       guid: 072682968cd08844a710f9219df248fe
