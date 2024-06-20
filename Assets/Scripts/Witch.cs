@@ -10,6 +10,7 @@ public class WitchBehavior : MonoBehaviour
     public Material matTransition;
     public Material matMirror;
     public GameObject mirror;
+    public bool isWatching; // Boolean to control watching state
 
     private float idleTime;
     private float pouringTime = 3f;
@@ -17,13 +18,28 @@ public class WitchBehavior : MonoBehaviour
     private float teleportBackTime;
     private float walkSpeed = 1.5f; // Adjust the speed to match the walking animation
     private Quaternion initialRotation; // Store the initial rotation
+    private float idleAnimationDuration; // Duration of the idle animation
+    private WitchManager witchManager; // Reference to the WitchManager
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         teleportBackTime = Random.Range(1f, 5f);
         initialRotation = transform.rotation; // Store the initial rotation
+        witchManager = FindObjectOfType<WitchManager>(); // Get the WitchManager
         StartCoroutine(WitchCycle());
+
+        // Get the duration of the idle animation
+        AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
+        foreach (AnimationClip clip in clips)
+        {
+            if (clip.name == "RIG-Armature|Idle")
+            {
+                idleAnimationDuration = clip.length;
+                Debug.Log(idleAnimationDuration);
+                break;
+            }
+        }
     }
 
     private IEnumerator WitchCycle()
@@ -48,10 +64,15 @@ public class WitchBehavior : MonoBehaviour
 
             yield return StartCoroutine(WalkToPosition(walkEndPoint.position));
 
-            // Idle animation after walking
+            // Idle animation after walking for at least 3 seconds
             animator.Play("Idle");
-            idleTime = Random.Range(1f, 5f); // Random idle time
-            yield return new WaitForSeconds(idleTime);
+            yield return new WaitForSeconds(3f);
+
+            // Continue idling while isWatching is true
+            while (isWatching)
+            {
+                yield return null;
+            }
 
             yield return StartCoroutine(Transition(0.25f));
 
