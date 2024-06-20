@@ -886,6 +886,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3203863652131033656, guid: 429276f856ebc094da6d050765b0e57d, type: 3}
+      propertyPath: _carriedRunestone
+      value: 
+      objectReference: {fileID: 5066568121546115896}
+    - target: {fileID: 3203863652131033656, guid: 429276f856ebc094da6d050765b0e57d, type: 3}
       propertyPath: interactableNameText
       value: 
       objectReference: {fileID: 1506502355}
@@ -946,6 +950,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 429276f856ebc094da6d050765b0e57d, type: 3}
+--- !u!114 &5066568121546115896 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9063553823279238701, guid: 429276f856ebc094da6d050765b0e57d, type: 3}
+  m_PrefabInstance: {fileID: 5066568121546115895}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d284d22514497447b979209eabb5349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5209056665978762112
 PrefabInstance:
   m_ObjectHideFlags: 0
