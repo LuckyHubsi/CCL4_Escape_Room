@@ -2530,6 +2530,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Pickup Rune" ID="{C24414C6-A5CE-40AC-9903-20EA0BD78DC0}" ShortID="776309989">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>

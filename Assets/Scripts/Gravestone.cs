@@ -19,6 +19,10 @@ public class Gravestone : Interactable
     {
         if (_playerInteraction.GetCarriedRunestone().runestoneState == this.gameObject.GetComponentInChildren<Runestone>(true).runestoneState)
         {
+            //Wwise
+            AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Use_Rune", gameObject);
+            AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+            
             this.gameObject.GetComponentInChildren<Runestone>(true).gameObject.SetActive(true);
             _playerInteraction.DropItem();
             _playerInteraction.GetPickedUpRunestone().gameObject.SetActive(false);

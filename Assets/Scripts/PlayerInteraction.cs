@@ -231,8 +231,8 @@ public class PlayerInteraction : MonoBehaviour
             Debug.Log("Picked up " + _carriedRunestone.runestoneState + " Runestone");
 
             //Wwise
-            //AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equip_Rune", gameObject);
-            //AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+            AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equip_Rune", gameObject);
+            AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
 
             return;
         }
@@ -297,6 +297,12 @@ public class PlayerInteraction : MonoBehaviour
 
         if (_pickedUpRunestone != null)
         {
+            if (_carriedRunestone.isActiveAndEnabled)
+            {
+                AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Drop_Rune", gameObject);
+                AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
+            }
+
             _pickedUpRunestone.gameObject.SetActive(true);
             _carriedRunestone.SetRunestoneState(Runestone.RunestoneState.Blank);
             _carriedRunestone.gameObject.SetActive(false);
