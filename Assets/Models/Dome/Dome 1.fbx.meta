@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b9513c3bb67f31142a3b19d091caa54a
+guid: 8cbbdd1411fee114a97dc628b68855ad
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lambert2
-    second: {fileID: 2100000, guid: 0fe287af48a23664784534e3044821f0, type: 2}
+      name: Dome
+    second: {fileID: 2100000, guid: 5fa5ac59fe32fcf4bac01051491738b5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

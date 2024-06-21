@@ -167,7 +167,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 38ef880d641ad014a9b6993f943e7a1e, type: 2}
+  - {fileID: 2100000, guid: d6451ec0f30899a48b5c9dadaf2570f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -627,12 +627,28 @@ PrefabInstance:
       value: Runestone (6)
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 31.64
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.z
       value: -26.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -735,12 +751,28 @@ PrefabInstance:
       value: Runestone (3)
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -49.5
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.z
       value: 11.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -933,12 +965,28 @@ PrefabInstance:
       value: Runestone (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.39
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.z
       value: -28.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1131,12 +1179,28 @@ PrefabInstance:
       value: Runestone (7)
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.89
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.z
       value: 21.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1329,12 +1393,28 @@ PrefabInstance:
       value: Runestone (4)
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -55.23
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.z
       value: -20.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1566,8 +1646,20 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1284539475426982049, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284539475426982049, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284539475426982049, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284539475426982049, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.0023558
+      value: 5.29
       objectReference: {fileID: 0}
     - target: {fileID: 1284539475426982049, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1575,7 +1667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1284539475426982049, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.689035
+      value: 11.779
       objectReference: {fileID: 0}
     - target: {fileID: 1284539475426982049, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1618,12 +1710,28 @@ PrefabInstance:
       value: Runestone (5)
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -28.76
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.z
       value: 11.412
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1796,6 +1904,18 @@ PrefabInstance:
       value: Runestone
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.772
       objectReference: {fileID: 0}
@@ -1806,6 +1926,10 @@ PrefabInstance:
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.z
       value: -61.167
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1908,12 +2032,28 @@ PrefabInstance:
       value: Runestone (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.24
       objectReference: {fileID: 0}
     - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
       propertyPath: m_LocalPosition.z
       value: -65.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307038514724553018, guid: 90e4ebbb54e21524b809136eb6769b34, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
