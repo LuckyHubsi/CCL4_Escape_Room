@@ -22,15 +22,13 @@ public class Door : Interactable
             if (_playerInteraction.GetCarriedKey() != null && _playerInteraction.GetCarriedKey().keyState == Key.KeyState.Active)
             {
                 Debug.Log("SESAME OPEN");
+                WitchManager.instance.playerInBox = false;
                 //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Use_Key", gameObject);
                 AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
-
                 _playerInteraction.DropItem();
                 ScenesManager.Instance.LoadSceneAsync();
                 ProgressionManager.instance.SolvePuzzleOne();
-
-                WitchManager.instance.PlayerExitedBox();
 
             }
             else

@@ -20,6 +20,8 @@ public class Barrier : Interactable
 
         //Wwise
         AkSoundEngine.SetSwitch("MagicBarrierWindow", "Active", gameObject);
+        AkSoundEngine.PostEvent("Play_Magic_Barrier_Window", gameObject);
+
     }
 
     public override void Interact()

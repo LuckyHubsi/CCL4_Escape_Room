@@ -10,10 +10,12 @@ public class WitchManager : MonoBehaviour
     private WitchBehavior witch;
     [SerializeField]
     private GameObject detectionBox;
-    private bool playerInBox;
+
+    public bool playerInBox;
+
     private float _initialSusMeter = 10f;
-    private float susMeter;
-    private float calmDownMeter = 5f;
+    private float _susMeter;
+    private float _calmDownMeter = 5f;
 
     [SerializeField]
     private RawImage susMeterOverlay;
@@ -25,7 +27,16 @@ public class WitchManager : MonoBehaviour
 
     private void Start()
     {
-        susMeter = _initialSusMeter;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        _susMeter = _initialSusMeter;
         _susVolumeRTPC.SetGlobalValue(0);
     }
 
@@ -37,9 +48,9 @@ public class WitchManager : MonoBehaviour
             {
                 witch.isWatching = true; // Continue watching
                // Debug.Log("Witch is watching");
-                susMeter -= Time.deltaTime;
-                _susVolumeRTPC.SetGlobalValue(Mathf.Round(100 - (susMeter / _initialSusMeter * 100)));
-                if (susMeter <= 0)
+                _susMeter -= Time.deltaTime;
+                _susVolumeRTPC.SetGlobalValue(Mathf.Round(100 - (_susMeter / _initialSusMeter * 100)));
+                if (_susMeter <= 0)
                 {
                     GameManager.instance.LoadLoseScene();
                 }
@@ -49,8 +60,12 @@ public class WitchManager : MonoBehaviour
         }
         else if (!playerInBox)
         {
-            if(susMeter <= _initialSusMeter){susMeter += Time.deltaTime*calmDownMeter;}
-            _susVolumeRTPC.SetGlobalValue(Mathf.Round(100 - (susMeter / _initialSusMeter * 100)));
+            if(_susMeter <= _initialSusMeter){_susMeter += Time.deltaTime*_calmDownMeter;}
+            _susVolumeRTPC.SetGlobalValue(Mathf.Round(100 - (_susMeter / _initialSusMeter * 100)));
+        }
+        else
+        {
+            _susMeter = _initialSusMeter;
         }
         UpdateSusMeterOverlay();
     }
@@ -74,10 +89,11 @@ public class WitchManager : MonoBehaviour
 
     private void UpdateSusMeterOverlay()
     {
-        var progressT = 1 - (susMeter / _initialSusMeter);
+        var progressT = 1 - (_susMeter / _initialSusMeter);
         float alpha = susAlphaCurve.Evaluate(progressT);
         Color color = susMeterOverlay.color;
         color.a = alpha;
         susMeterOverlay.color = color;
     }
+
 }

@@ -59,6 +59,7 @@ public class ScenesManager : MonoBehaviour
     public void LoadScene(Scene scene) {
         SceneManager.LoadScene(scene.ToString());
         AkSoundEngine.StopAll();
+
     }
 
     public void LoadNextScene() {
@@ -75,6 +76,7 @@ public class ScenesManager : MonoBehaviour
 
         target = 0f;
         progressBar.fillAmount = 0f;
+
 
         // Start loading the next scene asynchronously
         var scene = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
