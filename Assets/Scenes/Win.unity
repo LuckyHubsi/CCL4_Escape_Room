@@ -342,7 +342,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1781709168}
+      - m_Target: {fileID: 7060997579077240113, guid: 580ceca7709f0a24b957510778b04b7e, type: 3}
         m_TargetAssemblyTypeName: ScenesManager, Assembly-CSharp
         m_MethodName: LoadMenu
         m_Mode: 1
@@ -1116,17 +1116,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 580ceca7709f0a24b957510778b04b7e, type: 3}
---- !u!114 &1781709168 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7060997579077240113, guid: 580ceca7709f0a24b957510778b04b7e, type: 3}
-  m_PrefabInstance: {fileID: 1781709167}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bdda8d29a0750640b10cf3ff9801221, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1781709169 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2298022603144166291, guid: 580ceca7709f0a24b957510778b04b7e, type: 3}
