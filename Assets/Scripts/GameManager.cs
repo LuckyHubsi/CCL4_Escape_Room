@@ -122,10 +122,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+    public void LoadWinScene()
+    {
+        ScenesManager.Instance.LoadScene(ScenesManager.Scene.Win);
+        Cursor.lockState = CursorLockMode.None;
+        //Wwise
+        AkSoundEngine.StopAll();
+
+    }
     public void LoadLoseScene()
     {
         ScenesManager.Instance.LoadScene(ScenesManager.Scene.Lose);
-     
+        Cursor.lockState = CursorLockMode.None;
         //Wwise
         AkSoundEngine.StopAll();
 

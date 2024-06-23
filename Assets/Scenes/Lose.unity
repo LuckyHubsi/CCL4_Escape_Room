@@ -931,6 +931,7 @@ GameObject:
   - component: {fileID: 1914642702}
   - component: {fileID: 1914642701}
   - component: {fileID: 1914642700}
+  - component: {fileID: 1914642703}
   m_Layer: 5
   m_Name: MainMenuBtn
   m_TagString: Untagged
@@ -1003,7 +1004,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2097051373}
+      - m_Target: {fileID: 1914642703}
         m_TargetAssemblyTypeName: ScenesManager, Assembly-CSharp
         m_MethodName: LoadMenu
         m_Mode: 1
@@ -1053,6 +1054,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914642698}
   m_CullTransparentMesh: 1
+--- !u!114 &1914642703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914642698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bdda8d29a0750640b10cf3ff9801221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressBar: {fileID: 0}
 --- !u!1 &2014291828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,17 +1200,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 580ceca7709f0a24b957510778b04b7e, type: 3}
---- !u!114 &2097051373 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7060997579077240113, guid: 580ceca7709f0a24b957510778b04b7e, type: 3}
-  m_PrefabInstance: {fileID: 2097051372}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bdda8d29a0750640b10cf3ff9801221, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2097051374 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2298022603144166291, guid: 580ceca7709f0a24b957510778b04b7e, type: 3}
