@@ -496,7 +496,7 @@ public class PlayerInteraction : MonoBehaviour
     //Wwise Coughing Sound
     private void HandleSmokeCough()
     {
-        if (_smokeTimer % 20 == 0 && Time.time - _lastCoughTime > 1 && _smokeTimer != _initialSmokeTimer)
+        if (_smokeTimer % 60 == 0 && Time.time - _lastCoughTime > 1 && _smokeTimer != _initialSmokeTimer)
         {
             if (_coughCounter > 0 && _coughCounter < 2)
             {

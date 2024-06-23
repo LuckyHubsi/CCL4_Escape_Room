@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class WitchManager : MonoBehaviour
 {
+    public static WitchManager instance;
+
     [SerializeField]
     private WitchBehavior witch;
     [SerializeField]
