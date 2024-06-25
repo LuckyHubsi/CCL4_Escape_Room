@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: eafcec529750d349a35cb8b6f9ea10d9
     GuidInternal: 
-    m_lastTime: -8584829153603768082
+    m_lastTime: -8584822508659244797
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: d9f972ba25cf1e478f1e6084a932fd25
     GuidInternal: 
-    m_lastTime: -8584827176438706691
+    m_lastTime: -8584822508664146896
     List:
     - name: Footsteps
       guid: 6cf78b42ec8bac438feac9f25d2b72ce
@@ -131,7 +131,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d1935ec5cd648442b238ee5c96011cbb
     GuidInternal: 
-    m_lastTime: -8584826834967193106
+    m_lastTime: -8584822508659264798
     List:
     - name: Main
       guid: 2189737083b85343b99de2c50aec4784
@@ -159,7 +159,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 808160a619e7c8428695cc464271bd8b
     GuidInternal: 
-    m_lastTime: -8584826834970169024
+    m_lastTime: -8584822508664436890
     List:
     - name: Indoor
       guid: 383a1dc50b2d9d45888aaa1ef481ec3b
@@ -895,7 +895,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2ade91069170c24cacce4a5ec4fe9c51
     GuidInternal: 
-    m_lastTime: -8584827176442453986
+    m_lastTime: -8584822508664436890
     List:
     - name: Smoke_Intensity
       guid: 072682968cd08844a710f9219df248fe
@@ -937,7 +937,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 8a8572cf7ed26d4a9bb72b0afc0090bd
     GuidInternal: 
-    m_lastTime: -8584829153603854830
+    m_lastTime: -8584822508659254800
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -951,7 +951,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: da2316fc5bf4294f92d829e9d4c1cd54
     GuidInternal: 
-    m_lastTime: -8584827318258195630
+    m_lastTime: -8584822508659254800
     List:
     - name: Barrier_Bubble
       guid: f789a341f5d482458a8158baa015e933
@@ -1503,7 +1503,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: b736530e3cb3e4468df3369e8cb9b587
     GuidInternal: 
-    m_lastTime: -8584829153603778057
+    m_lastTime: -8584822508659244797
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 01000000050000000600000007000000080000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000190000001a0000001e000000230000002a0000004e0000004f00000050000000730000007400000075000000584e0000

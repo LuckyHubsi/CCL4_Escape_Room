@@ -804,7 +804,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9580591}
+      - m_Target: {fileID: 7060997579077240113, guid: 580ceca7709f0a24b957510778b04b7e, type: 3}
         m_TargetAssemblyTypeName: ScenesManager, Assembly-CSharp
         m_MethodName: LoadSceneAsync
         m_Mode: 1
