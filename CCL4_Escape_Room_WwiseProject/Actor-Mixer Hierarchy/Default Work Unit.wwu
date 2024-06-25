@@ -2508,6 +2508,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Drop Rune" ID="{EA5C88E6-5159-46C1-ACA4-743D72DAE3D3}" ShortID="586322131">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
@@ -2569,6 +2576,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Use Rune" ID="{0AAA4C47-D1EA-4904-8885-3B855EDE90BD}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.586977960819234"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Use Rune.wav</AudioFile>
 											<MediaIDList>
@@ -2962,28 +2973,6 @@
 								<ActiveSource Name="Click" ID="{927D73DF-FC7C-48C1-9400-055E43B53ADF}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Main Menu" ID="{A811F7A6-E8D5-4669-B1A5-77F6133944BA}" ShortID="338145308">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E705005B-7A2E-48E7-968E-A206A93429B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BA72F9D9-CF25-471E-8F1E-6084A932FD25}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Main Menu" ID="{ACE3A4B2-EB6A-4394-878B-2F6E4F809B43}">
-									<Language>SFX</Language>
-									<AudioFile>Main Menu.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="653648158"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Main Menu" ID="{ACE3A4B2-EB6A-4394-878B-2F6E4F809B43}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<RandomSequenceContainer Name="Main Menu Sound" ID="{1575ACE2-4B9F-409C-8246-E605AA44057D}" ShortID="254276299">
 							<PropertyList>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
@@ -3123,6 +3112,11 @@
 						<Sound Name="Lose" ID="{E8BDFB52-CE50-43A0-A470-39AFFFA5C3C7}" ShortID="854938070">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -3154,6 +3148,11 @@
 						<Sound Name="Win" ID="{B50841C6-4335-414E-954A-591C5EC810A7}" ShortID="380837605">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

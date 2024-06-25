@@ -80,7 +80,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{59E947AE-CE9C-B30F-F177-46C38D777D04}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{93EA5490-3782-7276-7961-93D3D03CD506}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -142,7 +142,7 @@
 				</File>
 				<File Id="265545411" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Use Rune.wav</ShortName>
-					<CachePath>SFX/Use Rune_3F75BDB9.wem</CachePath>
+					<CachePath>SFX/Use Rune_B170FBDA.wem</CachePath>
 				</File>
 				<File Id="296639955" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crows.wav</ShortName>
@@ -729,5 +729,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D2FEA819-2804-CEA8-1EA4-DBD0FE96D356}</FileHash>
+	<FileHash>{6A661511-3EC9-825A-780C-BA971FC5A2D8}</FileHash>
 </SoundBanksInfo>
