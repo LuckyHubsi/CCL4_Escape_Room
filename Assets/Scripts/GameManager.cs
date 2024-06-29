@@ -32,11 +32,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private GameObject smokeRef; // Reference to smoke gameobject for sound
+
     [SerializeField]
     private AK.Wwise.RTPC _smokeTimeVolumeRTPC;
 
     [SerializeField]
-    private AnimationCurve smokeAlphaCurve;
+    private AnimationCurve smokeAlphaCurve; // Reference to animation curve for more natural smoke build-up
 
     private void Awake()
     {
@@ -117,6 +118,8 @@ public class GameManager : MonoBehaviour
             if (smokeParticles.isPlaying)
             {
                 smokeParticles.Stop();
+
+                //Wwise
                 AkSoundEngine.PostEvent("Stop_Smoke", smokeRef);
             }
         }
@@ -127,6 +130,7 @@ public class GameManager : MonoBehaviour
     {
         ScenesManager.Instance.LoadScene(ScenesManager.Scene.Win);
         Cursor.lockState = CursorLockMode.None;
+
         //Wwise
         AkSoundEngine.StopAll();
 
@@ -135,6 +139,7 @@ public class GameManager : MonoBehaviour
     {
         ScenesManager.Instance.LoadScene(ScenesManager.Scene.Lose);
         Cursor.lockState = CursorLockMode.None;
+
         //Wwise
         AkSoundEngine.StopAll();
 

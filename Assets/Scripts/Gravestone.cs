@@ -15,6 +15,8 @@ public class Gravestone : Interactable
         }
     }
 
+    // Checks if the runestone that the player is carrying has the same runestoneState as the invisible runestone on the gravestone
+    // If yes, set the runestone of the gravestone to active, drop the carried runestone and disable it
     public override void Interact()
     {
         if (_playerInteraction.GetCarriedRunestone().runestoneState == this.gameObject.GetComponentInChildren<Runestone>(true).runestoneState)

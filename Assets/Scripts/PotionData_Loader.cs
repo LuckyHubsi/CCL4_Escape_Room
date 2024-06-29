@@ -4,25 +4,29 @@ using UnityEngine;
 
 public static class PotionData_Loader
 {
+    // Method to load potion data from a JSON file and apply it to the provided potions
     public static void LoadPotionhData(GameObject[] potions)
     {
+        // Construct the file path for the JSON data file
         string filePath = Path.Combine(Application.streamingAssetsPath, "JSON", "potionData.json");
 
         if (File.Exists(filePath))
         {
+            // Read the JSON data from the file
             string dataAsJson = File.ReadAllText(filePath);
+            // Deserialize the JSON data into a list of PotionData
             List<PotionData> potionDataList = JsonUtility.FromJson<PotionDataList>(dataAsJson).potions;
 
-            // Randomize the order of torch data
+            // Randomize the order of potion data
             potionDataList.Shuffle();
 
-            // Set torches to the randomized colors
+            // Set potions to the randomized colors
             for (int i = 0; i < potionDataList.Count; i++)
             {
                 Potion potion = potions[i].GetComponent<Potion>();
                 if (potion != null)
                 {
-                    // Map color string to TorchState enum
+                    // Map color string to PotionState enum
                     Potion.PotionState state = PotionStateFromString(potionDataList[i].color);
                     potion.SetPotionState(state);
                 }
@@ -34,7 +38,7 @@ public static class PotionData_Loader
         }
     }
 
-    // Map color string to TorchState enum
+    // Map color string to PotionState enum
     private static Potion.PotionState PotionStateFromString(string color)
     {
         switch (color.ToLower())

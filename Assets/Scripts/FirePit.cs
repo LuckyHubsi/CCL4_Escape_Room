@@ -8,12 +8,14 @@ public class FirePit : Interactable
 
     private string _firePitState = "Unlit";
 
+    #region Particle Reference
     [SerializeField]
     private ParticleSystem sparksParticles;
     [SerializeField]
     private ParticleSystem fireParticles;
     [SerializeField]
     private ParticleSystem allParticles;
+    #endregion
 
     private void Start()
     {
@@ -26,6 +28,7 @@ public class FirePit : Interactable
         UpdateFirePitAppearance();
     }
 
+    // Sets the color of the firepit to the same as the color of the torch which the player is currently holding
     public override void Interact()
     {
         SetFirePitState(_playerInteraction.GetCarriedTorch().torchState.ToString());
@@ -54,7 +57,7 @@ public class FirePit : Interactable
         switch (_firePitState)
         {
             case "Unlit":
-                // Set unlit appearance (e.g., disable particle systems)
+                // Set unlit appearance (disable particle systems)
                 allParticles.Stop(true);
                 return;
             case "Red":
@@ -73,7 +76,7 @@ public class FirePit : Interactable
                 particleColor = Color.green;
                 break;
             case "Orange":
-                particleColor = new Color(1f, 0.5f, 0);
+                particleColor = new Color(1f, 0.5f, 0); // Orange
                 break;
         }
 

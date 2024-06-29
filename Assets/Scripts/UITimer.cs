@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Script for the timer at the top of the screen
 public class UITimer : MonoBehaviour
 {
     public static UITimer instance;

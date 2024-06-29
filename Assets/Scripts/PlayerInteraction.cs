@@ -158,7 +158,6 @@ public class PlayerInteraction : MonoBehaviour
             AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Torch", gameObject);
             AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
 
-
             return;
         }
 
@@ -171,8 +170,6 @@ public class PlayerInteraction : MonoBehaviour
             _pickedUpPotion.gameObject.SetActive(false);
             _carriedPotion.gameObject.SetActive(true);
             _carriedPotion.SetPotionState(potion.potionState);
-
-            Debug.Log("Picked up " + _carriedPotion.potionState + " Potion");
 
             //Wwise
             AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Potion", gameObject);
@@ -191,8 +188,6 @@ public class PlayerInteraction : MonoBehaviour
             _carriedIngredient.gameObject.SetActive(true);
             _carriedIngredient.SetIngredientState(ingredient.ingredientState);
 
-            Debug.Log("Picked up " + _carriedIngredient.ingredientState + " Ingredient");
-
             //Wwise
             AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Potion", gameObject);
             AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
@@ -210,12 +205,11 @@ public class PlayerInteraction : MonoBehaviour
             _carriedBucket.gameObject.SetActive(true);
             _carriedBucket.SetBucketState(bucket.bucketState);
 
-            Debug.Log("Picked up " + _carriedBucket.bucketState + " Bucket");
-
             //Wwise
             AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equip_Bucket", gameObject);
             AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
 
+            return;
         }
 
         Key key = item.GetComponent<Key>();
@@ -228,12 +222,11 @@ public class PlayerInteraction : MonoBehaviour
             _carriedKey.gameObject.SetActive(true);
             _carriedKey.SetKeyState(key.keyState);
 
-            Debug.Log("Picked up " + _carriedKey.keyState + " Key");
-
             //Wwise
             AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Key", gameObject);
             AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
-            
+
+            return;
         }
 
         Runestone runestone = item.GetComponent<Runestone>();
@@ -245,8 +238,6 @@ public class PlayerInteraction : MonoBehaviour
             _pickedUpRunestone.gameObject.SetActive(false);
             _carriedRunestone.gameObject.SetActive(true);
             _carriedRunestone.SetRunestoneState(runestone.runestoneState);
-
-            Debug.Log("Picked up " + _carriedRunestone.runestoneState + " Runestone");
 
             //Wwise
             AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equip_Rune", gameObject);
@@ -380,7 +371,6 @@ public class PlayerInteraction : MonoBehaviour
             if (_carriedTorch.torchState == Torch.TorchState.Red && torch.torchState == Torch.TorchState.Blue || _carriedTorch.torchState == Torch.TorchState.Blue && torch.torchState == Torch.TorchState.Red)
             {
                 _carriedTorch.SetTorchState(Torch.TorchState.Purple);
-                Debug.Log("Player Torch: Purple");
 
                 //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
@@ -389,7 +379,6 @@ public class PlayerInteraction : MonoBehaviour
             if (_carriedTorch.torchState == Torch.TorchState.Red && torch.torchState == Torch.TorchState.Yellow || _carriedTorch.torchState == Torch.TorchState.Yellow && torch.torchState == Torch.TorchState.Red)
             {
                 _carriedTorch.SetTorchState(Torch.TorchState.Orange);
-                Debug.Log("Player Torch: Orange");
 
                 //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
@@ -398,7 +387,6 @@ public class PlayerInteraction : MonoBehaviour
             if (_carriedTorch.torchState == Torch.TorchState.Yellow && torch.torchState == Torch.TorchState.Blue || _carriedTorch.torchState == Torch.TorchState.Blue && torch.torchState == Torch.TorchState.Yellow)
             {
                 _carriedTorch.SetTorchState(Torch.TorchState.Green);
-                Debug.Log("Player Torch: Purple");
 
                 //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Combining_Torch", gameObject);
@@ -410,7 +398,6 @@ public class PlayerInteraction : MonoBehaviour
                 if (torch.torchState == Torch.TorchState.Red)
                 {
                     _carriedTorch.SetTorchState(Torch.TorchState.Red);
-                    Debug.Log("Player Torch: Red");
 
                     //Wwise
                     AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
@@ -419,7 +406,6 @@ public class PlayerInteraction : MonoBehaviour
                 if (torch.torchState == Torch.TorchState.Blue)
                 {
                     _carriedTorch.SetTorchState(Torch.TorchState.Blue);
-                    Debug.Log("Player Torch: Blue");
 
                     //Wwise
                     AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
@@ -428,7 +414,6 @@ public class PlayerInteraction : MonoBehaviour
                 if (torch.torchState == Torch.TorchState.Yellow)
                 {
                     _carriedTorch.SetTorchState(Torch.TorchState.Yellow);
-                    Debug.Log("Player Torch: Yellow");
 
                     //Wwise
                     AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Other_Torch_Interaction", gameObject);
@@ -535,13 +520,18 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (_coughCounter > 0 && _coughCounter < 2)
             {
+                //Wwise
                 AkSoundEngine.SetSwitch("Coughing", "Medium", gameObject);
             }
             else if (_coughCounter > 1 && _coughCounter < 3)
             {
+                //Wwise
                 AkSoundEngine.SetSwitch("Coughing", "Heavy", gameObject);
             }
+
+            //Wwise
             AkSoundEngine.PostEvent("Play_Coughing", gameObject);
+
             _coughCounter++;
             _lastCoughTime = Time.time;
         }

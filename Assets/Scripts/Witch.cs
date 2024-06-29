@@ -3,21 +3,29 @@ using UnityEngine;
 
 public class WitchBehavior : MonoBehaviour
 {
-    public Animator animator;
-    public Transform cauldronPosition;
-    public Transform walkStartPoint;
-    public Transform walkEndPoint;
-    public Material matTransition;
-    public Material matMirror;
-    public GameObject mirror;
+    #region Reference Objects
+    [SerializeField]
+    private Animator animator;
+    [SerializeField]
+    private Transform cauldronPosition;
+    [SerializeField]
+    private Transform walkStartPoint;
+    [SerializeField]
+    private Transform walkEndPoint;
+    [SerializeField]
+    private Material matTransition;
+    [SerializeField]
+    private Material matMirror;
+    [SerializeField]
+    private GameObject mirror;
+    #endregion
+
     public bool isWatching; // Boolean to control watching state
     public int currentWitchState = 0;
 
-    private float idleTimeRandom;
     private float pouringAnimationDuration = 4.542f;
     private float walkTime = 2f; // This time is used to calculate the speed
     private float teleportBackTime;
-    private float walkSpeed = 1.5f; // Adjust the speed to match the walking animation
     private Quaternion initialRotation; // Store the initial rotation
     private float idleAnimationDuration = 3; // Duration of the idle animation
     private WitchManager witchManager; // Reference to the WitchManager
@@ -55,7 +63,6 @@ public class WitchBehavior : MonoBehaviour
 
             // Idle animation near the cauldron
             animator.Play("Idle");
-            //idleTimeRandom = Random.Range(3f, 5f);
             currentWitchState = 2;
             yield return new WaitForSeconds(idleAnimationDuration);
 

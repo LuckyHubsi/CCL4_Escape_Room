@@ -8,6 +8,7 @@ public class Potion : Interactable
     [SerializeField]
     public PotionState potionState = PotionState.Empty;
 
+    #region Material References
     [SerializeField]
     private Material matRed;
     [SerializeField]
@@ -20,6 +21,7 @@ public class Potion : Interactable
     private Material matGreen;
     [SerializeField]
     private Material matOrange;
+    #endregion
 
     private PlayerInteraction _playerInteraction;
 
@@ -34,6 +36,7 @@ public class Potion : Interactable
         UpdatePotionAppearance();
     }
 
+    // Player gets reference to interacted potion object
     public override void Interact()
     {
         _playerInteraction.PickUpItem(this.gameObject);
@@ -45,6 +48,7 @@ public class Potion : Interactable
         UpdatePotionAppearance();
     }
 
+    // Update potion appearance (material) based on the potion state
     private void UpdatePotionAppearance()
     {
         switch (potionState)

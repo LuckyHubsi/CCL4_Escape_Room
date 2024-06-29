@@ -8,6 +8,7 @@ public class Bucket : Interactable
     [SerializeField]
     public BucketState bucketState = BucketState.Empty;
 
+    // Reference to the "liquid" object in the bucket
     [SerializeField]
     private GameObject liquid;
 
@@ -24,11 +25,13 @@ public class Bucket : Interactable
         SetBucketState(BucketState.Empty);
     }
 
+    // Player gets reference to interacted bucket object
     public override void Interact()
     {
         _playerInteraction.PickUpItem(this.gameObject);
     }
 
+    // Activates/Deactivates liquid object depending on the bucketState
     public void SetBucketState(BucketState newState)
     {
         bucketState = newState;

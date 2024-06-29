@@ -24,7 +24,7 @@ public class Window : Interactable
     {
         if (windowAnimator != null)
         {
-            windowAnimator.SetTrigger("OpenWindow"); // Assuming "OpenWindow" is the trigger for your animation
+            windowAnimator.SetTrigger("OpenWindow");
         }
         else
         {

@@ -8,6 +8,7 @@ public class Ingredient : Interactable
     [SerializeField]
     public IngredientState ingredientState = IngredientState.Empty;
 
+    #region Material Reference for the Jar Lid
     [SerializeField]
     private Material matLid_Bat;
     [SerializeField]
@@ -20,7 +21,9 @@ public class Ingredient : Interactable
     private Material matLid_ToothWrong2;
     [SerializeField]
     private Material matLid_ToothRight;
+    #endregion
 
+    #region Material Reference for the Item inside the Jar
     [SerializeField]
     private Material mat_Bat;
     [SerializeField]
@@ -29,7 +32,9 @@ public class Ingredient : Interactable
     private Material mat_Tongue;
     [SerializeField]
     private Material mat_Tooth;
+    #endregion
 
+    #region Mesh Reference for the Item inside the Jar
     [SerializeField]
     private Mesh bat;
     [SerializeField]
@@ -38,11 +43,14 @@ public class Ingredient : Interactable
     private Mesh tongue;
     [SerializeField]
     private Mesh tooth;
+    #endregion
 
+    #region GameObject References
     [SerializeField]
     private GameObject lid;
     [SerializeField]
     private GameObject item;
+    #endregion
 
     private PlayerInteraction _playerInteraction;
 
@@ -55,6 +63,7 @@ public class Ingredient : Interactable
         }
     }
 
+    // Player gets reference to interacted ingredient object
     public override void Interact()
     {
         _playerInteraction.PickUpItem(this.gameObject);
@@ -66,6 +75,7 @@ public class Ingredient : Interactable
         UpdateIngredientAppearance();
     }
 
+    // Update ingredient appearance (material of lid and item + mesh of item) based on the ingredient state
     private void UpdateIngredientAppearance()
     {
         switch (ingredientState)

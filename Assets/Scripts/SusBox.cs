@@ -2,22 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Helper script to mark the area, in which the Witch can see the player
 public class SusBox : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     [SerializeField]
     private WitchManager witchManager;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {

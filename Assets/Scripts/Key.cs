@@ -19,6 +19,7 @@ public class Key : Interactable
         }
     }
 
+    // Player gets reference to interacted key object
     public override void Interact()
     {
         _playerInteraction.PickUpItem(this.gameObject);

@@ -8,6 +8,7 @@ public class Runestone : Interactable
     [SerializeField]
     public RunestoneState runestoneState = RunestoneState.Blank;
 
+    #region Material References
     [SerializeField]
     private Material matRed;
     [SerializeField]
@@ -24,6 +25,7 @@ public class Runestone : Interactable
     private Material matTurquoise;
     [SerializeField]
     private Material matPink;
+    #endregion
 
     private PlayerInteraction _playerInteraction;
 
@@ -38,6 +40,8 @@ public class Runestone : Interactable
         UpdateRunestoneAppearance();
     }
 
+    // Player gets reference to interacted runestone object as long as the runestone of the player has the "blank" state
+    // (stops the player from picking up another runestone if they are already carrying one)
     public override void Interact()
     {
         if (_playerInteraction.GetCarriedRunestone().runestoneState == Runestone.RunestoneState.Blank)
@@ -52,6 +56,7 @@ public class Runestone : Interactable
         UpdateRunestoneAppearance();
     }
 
+    // Update runestone appearance (material) based on the runestone state
     private void UpdateRunestoneAppearance()
     {
         switch (runestoneState)

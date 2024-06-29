@@ -7,14 +7,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
-/// <summary>
-/// This class is an example of a SceneManager
-/// </summary>
-/// 
-
 public class ScenesManager : MonoBehaviour
 {
-    // creating a singleton instance that can be used in any script without instantiating it first
+    // Creating a singleton instance that can be used in any script without instantiating it first
     public static ScenesManager Instance;
 
     [SerializeField]
@@ -24,7 +19,8 @@ public class ScenesManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance != null && Instance != this) {
+        if (Instance != null && Instance != this) 
+        {
             Destroy(this);
             return;
         }
@@ -33,10 +29,10 @@ public class ScenesManager : MonoBehaviour
         progressBar.fillAmount = 0;
     }
 
-    // creating an enum for all Scenes that we want to use in our build
-    // to access the scenes that are currently in the build go to "File > Build Settings > Scenes in Build"
-    // the names in the enum have to match the names of your scenes
-    public enum Scene { 
+    // Creating an enum for all Scenes that we want to use in our build
+    // (the names in the enum have to match the names of our scenes)
+    public enum Scene 
+    { 
         Main_Menu,
         Indoor,
         Outdoor,
@@ -44,39 +40,46 @@ public class ScenesManager : MonoBehaviour
         Lose
     }
 
-    public void QuitGame() {
+    public void QuitGame() 
+    {
         Application.Quit();
     }
 
-    public void LoadMenu() {
-        // we use Unity's SceneManager class to load a scene by name or build index (can be found in build settings menu)
+    // Method using unity's SceneManager class to load a scene by name or build index
+    public void LoadMenu() 
+    {
         SceneManager.LoadScene((int)Scene.Main_Menu);
-        AkSoundEngine.StopAll();
 
-        //SceneManager.LoadScene(Scene.UIScene.ToString());
+        //Wwise
+        AkSoundEngine.StopAll();
     }
 
-    public void LoadScene(Scene scene) {
+    // Method using unity's SceneManager class to load a scene by using our scene enums
+    public void LoadScene(Scene scene) 
+    {
         SceneManager.LoadScene(scene.ToString());
+        
+        //Wwise
         AkSoundEngine.StopAll();
-
     }
 
-    public void LoadNextScene() {
+    // Method using unity's SceneManager class to load the next scene by increasing the build index
+    public void LoadNextScene() 
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
+        //Wwise
         AkSoundEngine.StopAll();
     }
 
-    // unity can load scenes asynchronously
-    // this allows us to load large scenes in the background while we show a loading screen or continue the game
-    // Needs to be marked as "async" !!!
+    // Method to load a scene asynchronously, if the next scene has lots of things that need to be loaded
+    // (progress bar was planned and kinda included, but never really got used because the loading time is still very short)
     public async void LoadSceneAsync()
     {
         AkSoundEngine.StopAll();
 
         target = 0f;
         progressBar.fillAmount = 0f;
-
 
         // Start loading the next scene asynchronously
         var scene = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
@@ -109,8 +112,6 @@ public class ScenesManager : MonoBehaviour
 
     private void Update()
     {
-        // fill the bar smoothly through the MoveTowards
-        // interpolates between the current fillAmount and the newly calulcated loading percentage in the LoadSceneAsync func
-        // progressBar.fillAmount = Mathf.MoveTowards(progressBar.fillAmount, target, Time.deltaTime * 3);
+
     }
 }

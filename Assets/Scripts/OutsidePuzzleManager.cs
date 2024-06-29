@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Helper script to check if the last puzzle is solved
 public class OutsidePuzzleManager : MonoBehaviour
 {
     [SerializeField]

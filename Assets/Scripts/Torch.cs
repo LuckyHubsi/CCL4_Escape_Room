@@ -10,12 +10,14 @@ public class Torch : Interactable
 
     private PlayerInteraction _playerInteraction;
 
+    #region Particle Reference
     [SerializeField]
     private ParticleSystem sparksParticles;
     [SerializeField]
     private ParticleSystem fireParticles;
     [SerializeField]
     private ParticleSystem allParticles;
+    #endregion
 
     private void Start()
     {
@@ -28,6 +30,9 @@ public class Torch : Interactable
         UpdateTorchAppearance();
     }
 
+    // Checks if the torch the player interacted with is unlit or not
+    // If yes, the player can pick it up
+    // If not, the CombineTorch() function of the player gets called
     public override void Interact()
     {
         if (torchState == TorchState.Unlit)
@@ -46,6 +51,7 @@ public class Torch : Interactable
         UpdateTorchAppearance();
     }
 
+    // Updates torch appearance based on the torch state
     private void UpdateTorchAppearance()
     {
         if (sparksParticles == null || fireParticles == null)
@@ -58,7 +64,7 @@ public class Torch : Interactable
         switch (torchState)
         {
             case TorchState.Unlit:
-                // Set unlit appearance (e.g., disable particle systems)
+                // Set unlit appearance (disable particle systems)
                 allParticles.Stop(true);
                 return;
             case TorchState.Red:
@@ -77,7 +83,7 @@ public class Torch : Interactable
                 particleColor = Color.green;
                 break;
             case TorchState.Orange:
-                particleColor = new Color(1f, 0.5f, 0);
+                particleColor = new Color(1f, 0.5f, 0); // Orange
                 break;
         }
 

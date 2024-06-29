@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Book script, used for the book which acts as a guide to solve the puzzles
 public class Book : Interactable
 {
     [SerializeField]

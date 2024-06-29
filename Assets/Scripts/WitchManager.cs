@@ -47,7 +47,6 @@ public class WitchManager : MonoBehaviour
            if(witch.currentWitchState == 4 && ProgressionManager.instance.puzzleOneSolved)
             {
                 witch.isWatching = true; // Continue watching
-               // Debug.Log("Witch is watching");
                 _susMeter -= Time.deltaTime;
                 _susVolumeRTPC.SetGlobalValue(Mathf.Round(100 - (_susMeter / _initialSusMeter * 100)));
                 if (_susMeter <= 0)

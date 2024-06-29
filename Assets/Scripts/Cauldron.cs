@@ -28,6 +28,9 @@ public class Cauldron : Interactable
         }
     }
 
+    // Checks if the player is carrying a potion/ingredient/bucket 
+    // If potion/ingredient, it gets added to the cauldron inventory
+    // If bucket, it checks if the last correct recipe was the ingredient recipe, which is used to create water to put out the fire in the firepit
     public override void Interact()
     {
         if (_playerInteraction != null)
@@ -51,8 +54,7 @@ public class Cauldron : Interactable
             {
                 carriedBucket.SetBucketState(Bucket.BucketState.Filled);
 
-                Debug.Log("Filled Bucket");
-
+                //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Equipping_Waterbucket", gameObject);
                 AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             }
@@ -66,7 +68,6 @@ public class Cauldron : Interactable
         if (potion != null)
         {
             _cauldronInventory[_currentCauldronInventoryIndex] = potion.potionState.ToString();
-            Debug.Log("Added " + potion.potionState + " to the cauldron");
 
             //Wwise
             AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Using_Potion", gameObject);
@@ -78,7 +79,6 @@ public class Cauldron : Interactable
             if (ingredient != null)
             {
                 _cauldronInventory[_currentCauldronInventoryIndex] = ingredient.ingredientState.ToString();
-                Debug.Log("Added " + ingredient.ingredientState + " to the cauldron");
 
                 //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Use_Ingredient", gameObject);
@@ -88,7 +88,7 @@ public class Cauldron : Interactable
 
         _currentCauldronInventoryIndex++;
 
-        // Check if the cauldron inventory is full (i.e., has 3 items)
+        // Check if the cauldron inventory is full (has 3 items)
         if (_currentCauldronInventoryIndex >= _cauldronInventory.Length)
         {
             bool isRecipePotionsCorrect = CheckRecipePotions();
@@ -97,7 +97,6 @@ public class Cauldron : Interactable
             if (isRecipePotionsCorrect && _firePit.GetFirePitState() == "Orange")
             {
                 _lastCorrectRecipe = "Recipe Potion";
-                Debug.Log("Correct recipe Potion!");
                 _firePit.SetFirePitState("Unlit");
 
                 //Wwise
@@ -108,7 +107,6 @@ public class Cauldron : Interactable
             else if (isRecipeIngredientsCorrect && _firePit.GetFirePitState() == "Green")
             {
                 _lastCorrectRecipe = "Recipe Ingredient";
-                Debug.Log("Correct recipe Ingredient!");
                 _firePit.SetFirePitState("Unlit");
 
                 //Wwise
@@ -116,7 +114,6 @@ public class Cauldron : Interactable
             }
             else
             {
-                Debug.Log("Incorrect recipe.");
                 _firePit.SetFirePitState("Unlit");
 
                 //Wwise

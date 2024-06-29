@@ -2,12 +2,14 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
+// PlayerController to handle the player and camera movement, using the "old/legacy" unity input system
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody _rb;
 
     #region Camera Controls
 
+    // Camera and camera control variables
     [SerializeField]
     private Camera cam;
     [SerializeField]
@@ -29,9 +31,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Color crosshairTint = Color.white;
 
+    // Rotation values for camera movement
     private float _rotationY = 0.0f;
     private float _rotationX = 0.0f;
 
+    // Crosshair UI element
     [SerializeField]
     private Image crosshair;
 
@@ -39,6 +43,7 @@ public class PlayerController : MonoBehaviour
 
     #region Movement Controls
 
+    // Player movement variables
     [SerializeField]
     private bool canMove = true;
     [SerializeField]
@@ -52,6 +57,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float crouchSpeedFactor = 0.5f;
 
+    // Crouch state and original scale for resetting
     private bool _isCrouching = false;
     private Vector3 _originalScale;
 
@@ -63,8 +69,7 @@ public class PlayerController : MonoBehaviour
 
     private bool _footstepsIsPlaying = false;
     private float _lastFootstepTime = 0;
-
-    #endregion*
+    #endregion
 
     private void Awake()
     {
@@ -174,10 +179,12 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Grass"))
         {
+            //WWise
             AkSoundEngine.SetSwitch("Footsteps", "Grass", gameObject);
         }
     }

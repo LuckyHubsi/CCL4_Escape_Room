@@ -33,14 +33,12 @@ public class Barrier : Interactable
         {
             if (_playerInteraction.GetCarriedBucket() != null && _playerInteraction.GetCarriedBucket().bucketState == Bucket.BucketState.Filled && barrierType == BarrierType.BarrierFire)
             {
-                Debug.Log("Barrier Interacted while Bucket is Filled.");
                 ProgressionManager.instance.SolvePuzzleThree();
                 _playerInteraction.DropItem();
             }
 
             if (_playerInteraction.GetCarriedTorch() != null && _playerInteraction.GetCarriedTorch().torchState == Torch.TorchState.Purple && barrierType == BarrierType.BarrierWindow)
             {
-                Debug.Log("Barrier Interacted while Torch is Purple.");
                 ProgressionManager.instance.SolvePuzzleOne();
                 _playerInteraction.DropItem();
 

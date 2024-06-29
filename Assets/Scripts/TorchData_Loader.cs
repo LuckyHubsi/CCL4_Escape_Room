@@ -4,13 +4,17 @@ using UnityEngine;
 
 public static class TorchData_Loader
 {
+    // Method to load torch data from a JSON file and apply it to the provided torches
     public static void LoadTorchData(GameObject[] torches)
     {
+        // Construct the file path for the JSON data file
         string filePath = Path.Combine(Application.streamingAssetsPath, "JSON", "torchData.json");
 
         if (File.Exists(filePath))
         {
+            // Read the JSON data from the file
             string dataAsJson = File.ReadAllText(filePath);
+            // Deserialize the JSON data into a list of TorchData
             List<TorchData> torchDataList = JsonUtility.FromJson<TorchDataList>(dataAsJson).torches;
 
             // Randomize the order of torch data
@@ -35,7 +39,7 @@ public static class TorchData_Loader
     }
 
     // Map color string to TorchState enum
-  private static  Torch.TorchState TorchStateFromString(string color)
+  private static Torch.TorchState TorchStateFromString(string color)
     {
         switch (color.ToLower())
         {
