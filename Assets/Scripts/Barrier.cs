@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Barrier script, used on barriers which block the player from interacting with objects or getting more information for other puzzles
 public class Barrier : Interactable
 {
     private enum BarrierType { BarrierWindow, BarrierFire, BarrierDoor, BarrierMirror };
@@ -21,9 +22,11 @@ public class Barrier : Interactable
         //Wwise
         AkSoundEngine.SetSwitch("MagicBarrierWindow", "Active", gameObject);
         AkSoundEngine.PostEvent("Play_Magic_Barrier_Window", gameObject);
-
     }
 
+    // Handle interaction with player depending on the type of barrier
+    // If it's the BarrierWindow, we check for the correct torch color
+    // If it's the BarrierFire, we check for the correct bucket state
     public override void Interact()
     {
         if (_playerInteraction != null)
