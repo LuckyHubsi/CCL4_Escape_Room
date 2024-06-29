@@ -5,11 +5,16 @@ using UnityEngine.UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
+    // Singleton instance
     public static PlayerInteraction instance;
 
+    #region Components
     private Camera _cam;
     [SerializeField]
     private Text interactableNameText;
+    #endregion
+
+    #region Carrying Items
     [SerializeField]
     private Torch _carriedTorch;
     [SerializeField]
@@ -22,23 +27,30 @@ public class PlayerInteraction : MonoBehaviour
     private Key _carriedKey;
     [SerializeField]
     private Runestone _carriedRunestone;
+    #endregion
 
-
-    private Outline _currentOutline;
+    #region Picked Up Items
     private bool _playerHoldingItem = false;
+
     private Torch _pickedUpTorch;
     private Potion _pickedUpPotion;
     private Ingredient _pickedUpIngredient;
     private Bucket _pickedUpBucket;
     private Key _pickedUpKey;
     private Runestone _pickedUpRunestone;
+    #endregion
 
-    //Wwise Cough
+    // Outline
+    private Outline _currentOutline;
+
+    #region Wwise Variables    
     private float _initialSmokeTimer = 0;
     private float _smokeTimer = 0;
     private float _coughCounter = 0;
     private float _lastCoughTime = 0;
+    #endregion
 
+    #region Unity Methods
     private void Awake()
     {
         // Ensure singleton pattern
@@ -63,6 +75,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             Debug.LogError("InteractableNameText not assigned in the Inspector.");
         }
+
         //Wwise
         _lastCoughTime = Time.time;
     }
@@ -83,7 +96,10 @@ public class PlayerInteraction : MonoBehaviour
         _smokeTimer = Mathf.Round(GameManager.instance.GetRemainingSmokeTimer());
         HandleSmokeCough();
     }
+    #endregion
 
+    #region Interaction Handling
+    // Calls the Interact() function of the object hit by the raycast, if it has an interactable script
     private void HandleInteraction()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -100,6 +116,7 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
+    // Calls the Drop() function
     private void HandleDroppingItem()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -125,6 +142,7 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
+    // Copies attributes of "picked up" item, deactivates it and activates invisible item on player with the copied attributes on it
     public void PickUpItem(GameObject item)
     {
         Torch torch = item.GetComponent<Torch>();
@@ -238,6 +256,7 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
+    // Activates "picked up" item, sets attribute of the item on the player to a "blank/unlit/empty" state and deactivates it
     public void DropItem()
     {
         _playerHoldingItem = false;
@@ -252,7 +271,7 @@ public class PlayerInteraction : MonoBehaviour
                 AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             }
 
-        _pickedUpTorch.gameObject.SetActive(true);
+            _pickedUpTorch.gameObject.SetActive(true);
             _carriedTorch.SetTorchState(Torch.TorchState.Unlit);
             _carriedTorch.gameObject.SetActive(false);
         }
@@ -275,9 +294,11 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (_carriedBucket.isActiveAndEnabled)
             {
+                //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Drop_Bucket", gameObject);
                 AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             }
+
             _pickedUpBucket.gameObject.SetActive(true);
             _carriedBucket.SetBucketState(Bucket.BucketState.Empty);
             _carriedBucket.gameObject.SetActive(false);
@@ -287,9 +308,11 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (_carriedKey.isActiveAndEnabled)
             {
+                //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Drop_Key", gameObject);
                 AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             }
+
             _pickedUpKey.gameObject.SetActive(true);
             _carriedKey.SetKeyState(Key.KeyState.inActive);
             _carriedKey.gameObject.SetActive(false);
@@ -299,6 +322,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (_carriedRunestone.isActiveAndEnabled)
             {
+                //Wwise
                 AkSoundEngine.SetSwitch("PlayerInteractSwitch", "Drop_Rune", gameObject);
                 AkSoundEngine.PostEvent("Play_Player_Interact", gameObject);
             }
@@ -307,9 +331,10 @@ public class PlayerInteraction : MonoBehaviour
             _carriedRunestone.SetRunestoneState(Runestone.RunestoneState.Blank);
             _carriedRunestone.gameObject.SetActive(false);
         }
-
     }
+    #endregion
 
+    #region Getters
     public Torch GetCarriedTorch()
     {
         return _carriedTorch;
@@ -344,7 +369,10 @@ public class PlayerInteraction : MonoBehaviour
     {
         return _pickedUpRunestone;
     }
+    #endregion
 
+    #region Torch Color Combination Logic
+    // Method to change the color of the picked up torch depending on the color of the interacted torch
     public void CombineTorch(Torch torch)
     {
         if (_playerHoldingItem && !_carriedPotion.gameObject.activeSelf)
@@ -409,7 +437,12 @@ public class PlayerInteraction : MonoBehaviour
             }
         }
     }
+    #endregion
 
+    #region Player Line of Sight
+    // Handles the tooltip logic based on the players line of sight via raycast
+    // If the looked at item has an interactable script, it shows the name of the item as tooltip
+    // If the looked at item also has an outline script, it shows different tooltips and the outline as well
     private void PlayerLineOfSight()
     {
         RaycastHit hit;
@@ -492,8 +525,10 @@ public class PlayerInteraction : MonoBehaviour
             }
         }
     }
+    #endregion
 
-    //Wwise Coughing Sound
+    #region Smoke Cough Handling
+    // Plays a cough every minute, they get more intense each time as well
     private void HandleSmokeCough()
     {
         if (_smokeTimer % 60 == 0 && Time.time - _lastCoughTime > 1 && _smokeTimer != _initialSmokeTimer)
@@ -511,4 +546,5 @@ public class PlayerInteraction : MonoBehaviour
             _lastCoughTime = Time.time;
         }
     }
+    #endregion
 }
