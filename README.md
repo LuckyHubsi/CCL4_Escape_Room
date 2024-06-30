@@ -187,7 +187,9 @@ __Others:__
     </tr>
   </tbody>
 </table>
-Art Tasks
+
+### Art Tasks
+
 <table>
   <thead>
     <tr>
@@ -566,7 +568,9 @@ Art Tasks
     </tr>
   </tbody>
 </table>
-Dev Tasks
+
+### Dev Tasks
+
 <table>
   <thead>
     <tr>
