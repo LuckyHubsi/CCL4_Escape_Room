@@ -81,7 +81,9 @@ Your goal is to solve the various puzzles within the hut. Each puzzle you solve 
     - Action (magicking potion into cauldron)
 - Cat
     - Idle (rolling around while sleeping)
-    - Bird (pecking the floor)
+- Bird
+    - Idle (pecking the floor)
+	
 
 ### Code Implementation
 
@@ -154,6 +156,66 @@ __Others:__
 - Lose Music
 - Ominous sound when witch sees player
 - Coughing sound as long as the first puzzle is not solved
+
+
+## Reflection
+
+### Noelle
+1. Struggles
+    -	Initial texturing (setup and organization) issues
+    -	Time balance challenges due to other commitments during CCL
+    - Severe arthritis flare-up towards the end caused limited laptop work
+
+2. Achievements
+    -	Satisfied with Cauldron's design, runes and colors
+    -	Barriers with color-to-transparent gradient, resulting in magical effect
+	- Enhanced knowledge in 3D modeling, animation, and project experience
+
+
+### Michaela
+1. Struggles
+    -	Weight paint for the Witch Character
+    -	Time Management
+    -   Keeping the art style consistent when coordinating all models and assets
+
+2. Achievements
+    -	Nicely textured Spellbook
+    -   Witch design and the idle animation
+    -   Faster Blender Workflow
+
+
+### Marco
+1. Struggles
+    -	Time Management
+    -	Bug Fixing (consumed a lot of time)
+    - Communication
+    - GitHub (lots of merge conflicts at the beginning)
+
+2. Achievements
+    -	Created what we envisioned (MVP)
+    -	Simple and readable code
+	-   No way to break the game completely (hopefully)
+    - Clean GitHub structure and workflow (after spending a whole day to fix everything)
+
+
+### Leonard
+1. Struggles
+    -	Communication with team
+    -	Getting the music fluently into the project without Github conflicts
+
+2. Achievements
+    -	A lot of game audio implemented (over 50 sounds)
+    -   Immersive Audio Experience for the player
+    -   Riddle Creation
+
+
+## Promotional Slogans
+
+1. Noelle: Play Enchanted Escape to escape from this cursed reaity!
+2. Michi: Immerse yourself in the magical challenge of Enchanted Escape and escape the witch's grasp!
+3. Marco: Tired of escaping your problems? How about trying to escape a virtual escape room in Enchanted Escape. Play Now!
+4. Leonard: The game is an escape room experience of all ages that people can enjoy at home!
+
 
 ## Task Distribution
 
@@ -888,72 +950,6 @@ __Others:__
   </tbody>
 </table>
 
-## Reflection
-
-### Noelle
-1. Struggles
-    -	Initial texturing (setup and organization) issues
-    -	Time balance challenges due to other commitments during CCL
-    - Severe arthritis flare-up towards the end caused limited laptop work
-
-
-2. Achievements
-    -	Satisfied with Cauldron's design, runes and colors
-    -	Barriers with color-to-transparent gradient, resulting in magical effect
-	- Enhanced knowledge in 3D modeling, animation, and project experience
-
-
-3. Promotional Slogan
-    - 
-
-### Michaela
-1. Struggles
-    -	Weight paint for the Witch Character
-    -	Time Management
-    -   Keeping the art style consistent when coordinating all models and assets
-
-
-2. Achievements
-    -	Nicely textured Spellbook
-    -   Witch design and the idle animation
-    -   Faster Blender Workflow
-
-
-### Marco
-1. Struggles
-    -	Time Management
-    -	Bug Fixing (consumed a lot of time)
-    - Communication
-    - GitHub (lots of merge conflicts at the beginning)
-
-
-2. Achievements
-    -	Created what we envisioned (MVP)
-    -	Simple and readable code
-	-   No way to break the game completely (hopefully)
-    - Clean GitHub structure and workflow (after spending a whole day to fix everything)
-
-
-### Leonard
-1. Struggles
-    -	Communication with team
-    -	Getting the music fluently into the project without Github conflicts
-
-
-
-2. Achievements
-    -	A lot of game audio implemented (over 50 sounds)
-    -   Immersive Audio Experience for the player
-    -   Riddle Creation
-
-
-
-## Promotional Slogans
-
-1. Noelle: Play Enchanted Escape to escape from this cursed reaity!
-2. Michi: Immerse yourself in the magical challenge of Enchanted Escape and escape the witch's grasp!
-3. Marco: Tired of escaping your problems? How about trying to escape a virtual escape room in Enchanted Escape. Play Now!
-4. Leonard: The game is an escape room experience of all ages that people can enjoy at home!
 
 
 
