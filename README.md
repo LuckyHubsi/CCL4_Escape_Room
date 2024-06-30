@@ -20,7 +20,7 @@
    3. [Dev Tasks](#dev-tasks)
 
 
-### How to Setup
+## How to Setup
 
 Follow these steps to set up the project after cloning the repository:
 
@@ -46,13 +46,13 @@ Follow these steps to set up the project after cloning the repository:
 
    - Press the 'Play' button in the Unity Editor to run the project. If the first loaded scene is not the 'Main Menu' scene, you may need to navigate to the 'Scenes' folder in assets and double-click on the 'Main Menu' scene.
 
-### Story
+## Story
 Lost in the depths of a dark, enchanted forest, you stumble upon an eerie, ancient hut. Rumors among villagers speak of a sinister witch who dwells here, weaving spells and concocting potions. Seeking refuge from the brewing storm, you enter the hut, but the door slams shut behind you, trapping you inside. The air is thick with magic, and you hear the witch's cackle echoing around you. Now, you must find a way to escape before the witch returns.
 
 As you explore the witch's hut, you encounter a room filled with mysterious and magical items. Shelves are lined with old spell books, strange potions bubble on the tables, and peculiar artifacts are scattered throughout. The hut seems to be alive, with hidden mechanisms and enchanted locks guarding its secrets.
 Your goal is to solve the various puzzles within the hut. Each puzzle you solve brings you closer to uncovering the secrets of the witch's magic and finding the key to escape. The atmosphere is tense, with the constant fear of the witch's imminent return urging you to hurry.
 
-### Models
+## Models
 - Characters
     - Witch
     - Cat
@@ -75,7 +75,7 @@ Your goal is to solve the various puzzles within the hut. Each puzzle you solve 
     - Inside: Tables, Shelfs, Lectern, Key, Stove, Bed, Bucket, Broom
     - Outside: Trees, Mushrooms, Water Well, Wagon
 
-### Animations
+## Animations
 - Witch
     - Idle (looking around suspiciously)
     - Walk (stalking suspiciously)
@@ -86,7 +86,7 @@ Your goal is to solve the various puzzles within the hut. Each puzzle you solve 
     - Idle (pecking the floor)
 	
 
-### Code Implementation
+## Code Implementation
 
 __Controls:__  
 - WASD for Player Movement  
@@ -124,7 +124,7 @@ __Additional Features:__
 - SusMeterOverlay (an overlay to signalise the danger the player is in while the witch is looking at them which gets stronger the longer the player is looked at)
 - RenderTexture (used to show the witch brewing something in a different room in real time)
 
-### Game Audio
+## Game Audio
 
 __NPC Sounds:__  
 - Cat Purring
