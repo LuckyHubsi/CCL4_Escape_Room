@@ -8,16 +8,17 @@
 4. [Animations](#animations)
 5. [Code Implementation](#code-implementation)
 6. [Game Audio](#game-audio)
-7. [Task Distribution](#task-distribution)
-   1. [Game Design Tasks](#game-design-tasks)
-   2. [Art Tasks](#art-tasks)
-   3. [Dev Tasks](#dev-tasks)
-8. [Reflection](#reflection)
+7. [Reflection](#reflection)
    1. [Noelle](#noelle)
    2. [Michaela](#michaela)
    3. [Marco](#marco)
    4. [Leonard](#leonard)
    5. [Promotional Slogans](#promotional-slogans)
+8. [Task Distribution](#task-distribution)
+   1. [Game Design Tasks](#game-design-tasks)
+   2. [Art Tasks](#art-tasks)
+   3. [Dev Tasks](#dev-tasks)
+
 
 ### How to Setup
 
