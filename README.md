@@ -4,17 +4,18 @@
 ### Table of Contents
 1. [How to Setup](#how-to-setup)
 2. [Story](#story)
-3. [Models](#models)
-4. [Animations](#animations)
-5. [Code Implementation](#code-implementation)
-6. [Game Audio](#game-audio)
-7. [Reflection](#reflection)
+3. [Group Members](#group-members)
+4. [Models](#models)
+5. [Animations](#animations)
+6. [Code Implementation](#code-implementation)
+7. [Game Audio](#game-audio)
+8. [Reflection](#reflection)
    1. [Noelle](#noelle)
    2. [Michaela](#michaela)
    3. [Marco](#marco)
    4. [Leonard](#leonard)
    5. [Promotional Slogans](#promotional-slogans)
-8. [Task Distribution](#task-distribution)
+9. [Task Distribution](#task-distribution)
    1. [Game Design Tasks](#game-design-tasks)
    2. [Art Tasks](#art-tasks)
    3. [Dev Tasks](#dev-tasks)
@@ -51,6 +52,21 @@ Lost in the depths of a dark, enchanted forest, you stumble upon an eerie, ancie
 
 As you explore the witch's hut, you encounter a room filled with mysterious and magical items. Shelves are lined with old spell books, strange potions bubble on the tables, and peculiar artifacts are scattered throughout. The hut seems to be alive, with hidden mechanisms and enchanted locks guarding its secrets.
 Your goal is to solve the various puzzles within the hut. Each puzzle you solve brings you closer to uncovering the secrets of the witch's magic and finding the key to escape. The atmosphere is tense, with the constant fear of the witch's imminent return urging you to hurry.
+
+## Group Members
+- Noelle Jamöck
+  - Art
+  - Game Design (secondary)
+- Michaela Topalovic
+  - Art
+  - Game Design (secondary)
+- Marco Huber
+  - Dev (primary)
+  - Game Design (secondary)
+- Leonard Grill
+  - Art (Audio)
+  - Game Design (primary)
+  - Dev (secondary)
 
 ## Models
 - Characters
@@ -212,7 +228,7 @@ __Others:__
 
 ## Promotional Slogans
 
-1. Noelle: Play Enchanted Escape to escape from this cursed reaity!
+1. Noelle: If you can't magick away all of life's problems, play Enchanted Escape to escape this cursed reality.
 2. Michi: Immerse yourself in the magical challenge of Enchanted Escape and escape the witch's grasp!
 3. Marco: Tired of escaping your problems? How about trying to escape a virtual escape room in Enchanted Escape. Play Now!
 4. Leonard: The game is an escape room experience of all ages that people can enjoy at home!
