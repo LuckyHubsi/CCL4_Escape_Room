@@ -115,144 +115,731 @@ __Others:__
 ## Task Distribution
 
 ### Game Design Tasks
-| **Type** | **Description** | **Status** | **Person** |
-|--------------|--------------|--------------|--------------|
-| Game Design  | Riddle 1 - Idea  | `Done`  | 🔴 Leonard  |
-| Game Design  | Riddle 1 - Specifics  | `Done`  | 🔴 Leonard  |
-| Game Design  | Riddle 2 - Idea  | `Done`  | 🔴 Leonard  |
-| Game Design  | Riddle 2 - Specifics  | `Done`  | 🔴 Leonard  |
-| Game Design  | Riddle 3 - Idea  | `Done`  | 🔴 Leonard  |
-| Game Design  | Riddle 3 - Specifics  | `Done`  | 🔴 Leonard  |
-| Game Design  | Riddle 4 - Idea  | `Done`  | 🔴 Leonard  |
-| Game Design  | Riddle 4 - Specifics  | `Done`  | 🔴 Leonard  |
-| Game Design  | Room Layout  | `Done`  | 🔴 Leonard  |
-| Game Design  | Garden Layout  | `Done`  | 🔴 Leonard  |
-
-### Art Tasks
-| **Type** | **Description** | **Status** | **Person** |
-|--------------|--------------|--------------|--------------|
-| **Characters**  |   |   |   |
-| Modelling  | Witch  | `Done`  | 🔵 Michaela  |
-| Texturing  | Witch  | `Done`  | 🔵 Michaela  |
-| Rigging  | Witch  | `Done`  | 🔵 Michaela  |
-| Animation  | Witch - Idle  | `Done`  | 🔵 Michaela  |
-| Animation  | Witch - Walk  | `Done`  | 🔵 Michaela  |
-| Animation  | Witch - Action  | `Done`  | 🔵 Michaela  |
-|     |     |    |     |
-| Modelling  | Cat  | `Done`  | 🟣 Noelle  |
-| Texturing  | Cat  | `Done`  | 🟣 Noelle  |
-| Rigging  | Cat  | `Done`  | 🟣 Noelle  |
-| Animation  | Cat - Idle  | `Done`  | 🟣 Noelle  |
-|     |     |    |     |
-| Modelling  | Bird  | `Done`  | 🟣 Noelle  |
-| Texturing  | Bird  | `Done`  | 🟣 Noelle  |
-| Rigging  | Bird  | `Done`  | 🟣 Noelle  |
-| Animation  | Bird   Idle  | `Done`  | 🟣 Noelle  |
-|     |     |    |     |
-| **Props**  |   |   |   |
-| Modelling  | Cauldron and Stand  | `Done`  | 🟣 Noelle  |
-| Texturing  | Cauldron and Stand  | `Done`  | 🟣 Noelle  |
-|     |     |    |     |
-| Modelling  | Spellbook  | `Done`  | 🔵 Michaela  |
-| Texturing  | Spellbook  | `Done`  | 🔵 Michaela  |
-|     |     |    |     |
-| Modelling  | Torch  | `Done`  | 🟣 Noelle  |
-| Texturing  | Torch  | `Done`  | 🟣 Noelle  |
-|     |     |    |     |
-| Modelling  | Ingredient Glasses  | `Done`  | 🟣 Noelle  |
-| Texturing  | Ingredient Glasses  | `Done`  | 🟣 Noelle  |
-|     |     |    |     |
-| Modelling  | Window & Door  | `Done`  | 🔵 Michaela, 🟣 Noelle  |
-| Texturing  | Window & Door  | `Done`  | 🟣 Noelle  |
-| Animation  | Window  | `Done`  | 🟣 Noelle  |
-|     |     |    |     |
-| Modelling  | Gravestones  | `Done`  | 🟣 Noelle  |
-| Texturing  | Gravestones  | `Done`  | 🟣 Noelle  |
-|     |     |    |     |
-| Modelling  | Barriers & Glass Orb | `Done`  | 🟣 Noelle  |
-| Texturing  | Barriers & Glass Orb  | `Done`  | 🟣 Noelle  |
-|     |     |    |     |
-| Modelling  | Bird Cage | `Done`  | 🟣 Noelle  |
-| Texturing  | Bird Cage  | `Done`  | 🟣 Noelle  |
-|     |     |    |     |
-| Modelling  | Potions  | `Done`  | 🔵 Michaela  |
-| Texturing  | Potions  | `Done`  | 🔵 Michaela  |
-|     |     |    |     |
-| Modelling  | Mirror  | `Done`  | 🔵 Michaela  |
-| Texturing  | Mirror  | `Done`  | 🔵 Michaela  |
-|     |     |    |     |
-| Assets  | from Unity Asset Store   | `Done`  | 🔴 Leonard, 🔵 Michaela  |
-| Assets  | from Sketchfab.com  | `Done`  | 🔵 Michaela  |
-|     |     |    |     |
-| Design  | Main Menu   | `Done`  | 🔵 Michaela  |
-| Design  | Win Screen   | `Done`  | 🔵 Michaela  |
-| Design  | Lose Screen   | `Done`  | 🔵 Michaela  |
-|     |     |    |     |
-| **Audio**  |   |   |   |
-| Audio  | Footsteps  | `Done`  | 🔴 Leonard  |
-| Audio  | Cauldron Bubbling  | `Done`  | 🔴 Leonard  |
-| Audio  | Garden Ambience  | `Done`  | 🔴 Leonard  |
-| Audio  | MAgic Effects  | `Done`  | 🔴 Leonard  |
-| Audio  | Pick up   | `Done`  | 🔴 Leonard  |
-| Audio  | Drop   | `Done`  | 🔴 Leonard  |
-| Audio  | Creature noises  | `Done`  | 🔴 Leonard  |
-| Audio  | Fire   | `Done`  | 🔴 Leonard  |
-| Audio  | Alight torches   | `Done`  | 🔴 Leonard  |
-| Audio  | Bucket/Water   | `Done`  | 🔴 Leonard  |
-| Audio  | Turning book pages  | `Done`  | 🔴 Leonard  |
-| Audio  | Menu  | `Done`  | 🔴 Leonard  |
-
-### Dev Tasks
-| **Type** | **Description** | **Status** | **Person** |
-|--------------|--------------|--------------|--------------|
-| **General**  |   |   |   |
-| Dev  | Character Movement  | `Done`  | 🟢 Marco  |
-| Dev  | Camera Panning  | `Done`  | 🟢 Marco  |
-| Dev  | Camera Effects  | `Done`  | 🟢 Marco  |
-| Asset  | Item Outlines  | `Done`  | 🟢 Marco  |
-| Placement  | Room layout  | `Done`  | 🟢 Marco  |
-| Placement  | Garden layout  | `Done`  | 🟢 Marco  |
-| Dev  | Config Files  | `Done`  | 🟢 Marco  |
-| Dev  | Interactions  | `Done`  | 🟢 Marco  |
-| Dev  | Pick up/Drop/Use Mechanic  | `Done`  | 🟢 Marco  |
-| Dev  | Timer  | `Done`  | 🟢 Marco  |
-| Placement  | Mirror Room  | `Done`  | 🟢 Marco  |
-| Dev  | Witch Animator  | `Done`  | 🟢 Marco  |
-| Asset  | Importing Assets/Models  | `Done`  | 🟡 All  |
-| Collaboration  | Creating Prefabs  | `Done`  | 🟢 Marco, 🔴 Leonard  |
-| UI  | Main Menu  | `Done`  | 🟢 Marco  |
-| UI  | Win Screen  | `Done`  | 🔴 Leonard  |
-| UI  | Lose Screen  | `Done`  | 🔴 Leonard  |
-|     |     |    |     |
-| **Puzzle 1**  |   |   |   |
-| Dev  | Smoke on Timer  | `Done`  | 🟢 Marco  |
-| UI  | Smoke overlay  | `Done`  | 🟢 Marco  |
-| Placement  | 3 colored/1 normal torch  | `Done`  | 🟢 Marco  |
-| Dev  | Take normal torch  | `Done`  | 🟢 Marco  |
-| Dev  | Color change torch  | `Done`  | 🟢 Marco  |
-| Dev  | Color combination torch  | `Done`  | 🟢 Marco  |
-| Dev  | Barrier Removal  | `Done`  | 🟢 Marco  |
-|     |     |    |     |
-| **Puzzle 2**  |   |   |   |
-| Dev  | Window Animator  | `Done`  | 🟢 Marco  |
-| Dev  | Throwing items into cauldron  | `Done`  | 🟢 Marco  |
-| Dev  | Fire in fireplace  | `Done`  | 🟢 Marco  |
-| Dev  | Bucket interaction  | `Done`  | 🟢 Marco  |
-| Dev  | Get Key  | `Done`  | 🟢 Marco  |
-|     |     |    |     |
-| **Puzzle 3**  |   |   |   |
-| Dev  | Mirror Activation  | `Done`  | 🟢 Marco  |
-| Dev, Placement  | Witch Movement/Logic  | `Done`  | 🟢 Marco, 🔴 Leonard  |
-| Dev  | 'SUS' Meter  | `Done`  | 🔴 Leonard  |
-| Dev  | Potion interaction  | `Done`  | 🟢 Marco  |
-| Dev  | Barrier Removal  | `Done`  | 🟢 Marco  |
-|     |     |    |     |
-| **Puzzle 4**  |   |   |   |
-| Dev  | Scene Change  | `Done`  | 🟢 Marco  |
-| Dev  | Stone Interaction  | `Done`  | 🟢 Marco  |
-| Dev  | Place Stones  | `Done`  | 🔴 Leonard  |
-| Dev  | Potion interaction  | `Done`  | 🟢 Marco  |
-| Dev  | Win Condition  | `Done`  | 🟢 Marco  |
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Person</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Game Design</td>
+      <td>Riddle 1 - Idea</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Game Design</td>
+      <td>Riddle 1 - Specifics</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Game Design</td>
+      <td>Riddle 2 - Idea</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Game Design</td>
+      <td>Riddle 2 - Specifics</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Game Design</td>
+      <td>Riddle 3 - Idea</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Game Design</td>
+      <td>Riddle 3 - Specifics</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Game Design</td>
+      <td>Riddle 4 - Idea</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Game Design</td>
+      <td>Riddle 4 - Specifics</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Game Design</td>
+      <td>Room Layout</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Game Design</td>
+      <td>Garden Layout</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+  </tbody>
+</table>
+Art Tasks
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Person</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="4">Characters</th>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Witch</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Witch</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td>Rigging</td>
+      <td>Witch</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td>Animation</td>
+      <td>Witch - Idle</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td>Animation</td>
+      <td>Witch - Walk</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td>Animation</td>
+      <td>Witch - Action</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Cat</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Cat</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Rigging</td>
+      <td>Cat</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Animation</td>
+      <td>Cat - Idle</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Bird</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Bird</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Rigging</td>
+      <td>Bird</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Animation</td>
+      <td>Bird Idle</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <th colspan="4">Props</th>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Cauldron and Stand</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Cauldron and Stand</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Spellbook</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Spellbook</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Torch</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Torch</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Ingredient Glasses</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Ingredient Glasses</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Window & Door</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela, 🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Window & Door</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Animation</td>
+      <td>Window</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Gravestones</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Gravestones</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Barriers & Glass Orb</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Barriers & Glass Orb</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Bird Cage</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Bird Cage</td>
+      <td><code>Done</code></td>
+      <td>🟣 Noelle</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Potions</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Potions</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Modelling</td>
+      <td>Mirror</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td>Texturing</td>
+      <td>Mirror</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Assets</td>
+      <td>from Unity Asset Store</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard, 🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td>Assets</td>
+      <td>from Sketchfab.com</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Design</td>
+      <td>Main Menu</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td>Design</td>
+      <td>Win Screen</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td>Design</td>
+      <td>Lose Screen</td>
+      <td><code>Done</code></td>
+      <td>🔵 Michaela</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <th colspan="4">Audio</th>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Footsteps</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Cauldron Bubbling</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Garden Ambience</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Magic Effects</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Pick up</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Drop</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Creature noises</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Fire</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Alight torches</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Bucket/Water</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Turning book pages</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Menu</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+  </tbody>
+</table>
+Dev Tasks
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Person</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="4">General</th>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Character Movement</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Camera Panning</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Camera Effects</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Asset</td>
+      <td>Item Outlines</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Placement</td>
+      <td>Room layout</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Placement</td>
+      <td>Garden layout</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Config Files</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Interactions</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Pick up/Drop/Use Mechanic</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Timer</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Placement</td>
+      <td>Mirror Room</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Witch Animator</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Asset</td>
+      <td>Importing Assets/Models</td>
+      <td><code>Done</code></td>
+      <td>🟡 All</td>
+    </tr>
+    <tr>
+      <td>Collaboration</td>
+      <td>Creating Prefabs</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco, 🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>UI</td>
+      <td>Main Menu</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>UI</td>
+      <td>Win Screen</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>UI</td>
+      <td>Lose Screen</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <th colspan="4">Puzzle 1</th>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Smoke on Timer</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>UI</td>
+      <td>Smoke overlay</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Placement</td>
+      <td>3 colored/1 normal torch</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Take normal torch</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Color change torch</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Color combination torch</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Barrier Removal</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <th colspan="4">Puzzle 2</th>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Window Animator</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Throwing items into cauldron</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Fire in fireplace</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Bucket interaction</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Get Key</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <th colspan="4">Puzzle 3</th>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Mirror Activation</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev, Placement</td>
+      <td>Witch Movement/Logic</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco, 🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>'SUS' Meter</td>
+      <td><code>Done</code></td>
+      <td>🔴 Leonard</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Potion interaction</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Barrier Removal</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <th colspan="4">Puzzle 4</th>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Scene Change</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Stone Interaction</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Place Stones</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Potion interaction</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+    <tr>
+      <td>Dev</td>
+      <td>Win Condition</td>
+      <td><code>Done</code></td>
+      <td>🟢 Marco</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
