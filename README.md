@@ -8,6 +8,8 @@ Lost in the depths of a dark, enchanted forest, you stumble upon an eerie, ancie
 As you explore the witch's hut, you encounter a room filled with mysterious and magical items. Shelves are lined with old spell books, strange potions bubble on the tables, and peculiar artifacts are scattered throughout. The hut seems to be alive, with hidden mechanisms and enchanted locks guarding its secrets.
 Your goal is to solve the various puzzles within the hut. Each puzzle you solve brings you closer to uncovering the secrets of the witch's magic and finding the key to escape. The atmosphere is tense, with the constant fear of the witch's imminent return urging you to hurry.
 
+[click me](#animations)
+
 ### Models
 - Characters
     - Witch
