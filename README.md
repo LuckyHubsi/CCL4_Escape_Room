@@ -3,21 +3,47 @@
 
 ### Table of Contents
 1. [Story](#story)
-2. [Models](#models)
-3. [Animations](#animations)
-4. [Code Implementation](#code-implementation)
-5. [Game Audio](#game-audio)
-6. [Task Distribution](#task-distribution)
+2. [How to Setup](#how-to-setup)
+3. [Models](#models)
+4. [Animations](#animations)
+5. [Code Implementation](#code-implementation)
+6. [Game Audio](#game-audio)
+7. [Task Distribution](#task-distribution)
    1. [Game Design Tasks](#game-design-tasks)
    2. [Art Tasks](#art-tasks)
    3. [Dev Tasks](#dev-tasks)
     
-
 ### Story
 Lost in the depths of a dark, enchanted forest, you stumble upon an eerie, ancient hut. Rumors among villagers speak of a sinister witch who dwells here, weaving spells and concocting potions. Seeking refuge from the brewing storm, you enter the hut, but the door slams shut behind you, trapping you inside. The air is thick with magic, and you hear the witch's cackle echoing around you. Now, you must find a way to escape before the witch returns.
 
 As you explore the witch's hut, you encounter a room filled with mysterious and magical items. Shelves are lined with old spell books, strange potions bubble on the tables, and peculiar artifacts are scattered throughout. The hut seems to be alive, with hidden mechanisms and enchanted locks guarding its secrets.
 Your goal is to solve the various puzzles within the hut. Each puzzle you solve brings you closer to uncovering the secrets of the witch's magic and finding the key to escape. The atmosphere is tense, with the constant fear of the witch's imminent return urging you to hurry.
+
+### How to Setup
+
+Follow these steps to set up the project after cloning the repository:
+
+#### Prerequisites
+
+1. **Unity Hub**: Download and install [Unity Hub](https://unity3d.com/get-unity/download).
+2. **Unity Editor**: Ensure you have the correct version of the Unity Editor installed. The project was developed with Unity version `2022.3.4f1`. You can install the appropriate version via Unity Hub.
+
+#### Steps
+
+1. __Open the Project in Unity Hub:__
+
+   - Launch Unity Hub.
+   - Click on the 'Add' button.
+   - Navigate to the cloned repository folder and select it.
+   - Make sure the correct Unity version (as mentioned above) is selected for the project. If not, you may need to install the correct version via Unity Hub.
+
+2. __Open the Project:__
+
+   - After adding the project to Unity Hub, click on the project to open it in the Unity Editor.
+  
+3. __Run the Project:__
+
+   - Press the 'Play' button in the Unity Editor to run the project. If the first loaded scene is not the 'Main Menu' scene, you may need to navigate to the 'Scenes' folder in assets and double-click on the 'Main Menu' scene.
 
 ### Models
 - Characters
